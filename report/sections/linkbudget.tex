@@ -1,0 +1,32 @@
+\chapter{linkbudget}\label{ch:linkbudget}
+
+Typically in satellite communication a LOS component exist. Therefore the only obstacle between the satellite and user is the atmosphere and therefore the loss can be modelled as free space, with a limited variation due to weather conditions. ADS-B signal is sent through a linear polarized monopol with power varying from 75 W to 500 W depending of the airplane and speed \citep{FlyingLab}. The height of a low orbit satellite is between 600 km to 800 km. To calculate the power loss Friis Transmission Equation is used. 
+
+\begin{equation}
+\frac{P_r}{P_t} = (\frac{\lambda}{4\pi R})^2 G_t G_r|\vec{Pr}\cdot \vec{Pt}|^2
+\end{equation}
+
+\begin{equation}
+\lambda = \frac{c}{f}
+\end{equation}
+Where $c = 3e8$ is speed of light in vaccum and $ f$ is the frequency in Hz. $|\vec{Pr}\cdot \vec{Pt}|^2$ denotes polarization mishmash. When solving for $f = 137MHz$ $R=800km$  $G_t = 0 dB$ and a polarization loss at 0, the free-space loss becomes 133.2dB.
+
+
+\begin{center}
+  \begin{tabular}{ l  l  l  l  l}
+    \hline
+   \textit{Item} & \textit{Link parameter} & \textit{Value} & \textit{Unit} & \textit{Computation} \\ \hline
+    1 & Frequency	& 1090 & MHz & \\ \hline
+    2 & Transmit power (75W) & 18.8 & dB & \\ \hline
+    3 & Transmit antenna gain & 0 & dBi & \\ \hline
+    4 & Athmospheric absorbtion (clean air) & 0.1 & dB & \\ \hline
+    5 & Free-space loss & 151.3 & dB & \\ \hline
+    6 & Polarisation loss & 3 & dB & \\ \hline
+    7 & Received carrier power & -132.6 & dB & 2-4-5\\ \hline
+    8 & Bandwith (4.6MHz) & 66.6 & dB Hz & \\ \hline 
+    9 & System noise temperature (373K) & 25.7 & dBK& \\ \hline 
+    10 & Boltzmann's constant & -228.6 & dBW/Hz/K& \\ \hline 
+    11 & Noise power & -136.6 & dBW& 8+9+10\\ \hline 
+    12 & Carrier to noise ratio & 4.0 & db & 7-11\\ \hline 
+  \end{tabular}
+\end{center}

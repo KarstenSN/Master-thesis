@@ -1,0 +1,18 @@
+\begin{thebibliography}{}
+
+\bibitem[Francis, 2011]{FlyingLab}
+Francis, e.~a. (2011).
+\newblock The flying laboratory for the observation of ads-b signals.
+\newblock \url{https://www.hindawi.com/journals/ijno/2011/973656/}.
+
+\bibitem[Mittelbach, 2005]{Mittelbach2005}
+Mittelbach, F. (2005).
+\newblock {\em The LATEX companion}.
+\newblock Addison-Wesley, 2. ed. edition.
+
+\bibitem[Oetiker, 2010]{Oetiker2010}
+Oetiker, T. (2010).
+\newblock The not so short a introduction to {LaTeX2e}.
+\newblock \url{http://tobi.oetiker.ch/lshort/lshort.pdf}.
+
+\end{thebibliography}
