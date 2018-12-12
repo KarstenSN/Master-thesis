@@ -1,18 +1,56 @@
 \begin{thebibliography}{}
 
+\bibitem[Balanis, 2005]{Balanis2005}
+Balanis, C.~A. (2005).
+\newblock {\em Antenna Theory Analysis And Design}.
+\newblock Wiley, 3. ed. edition.
+
 \bibitem[Francis, 2011]{FlyingLab}
 Francis, e.~a. (2011).
 \newblock The flying laboratory for the observation of ads-b signals.
 \newblock \url{https://www.hindawi.com/journals/ijno/2011/973656/}.
 
-\bibitem[Mittelbach, 2005]{Mittelbach2005}
-Mittelbach, F. (2005).
-\newblock {\em The LATEX companion}.
-\newblock Addison-Wesley, 2. ed. edition.
+\bibitem[ITU-R, 2017]{itu2017}
+ITU-R (2017).
+\newblock Reception of automatic dependent surveillance broadcast via satellite
+  and compatibility studies with incumbent systems in the frequency band
+  1087.7-1092.3 mhz.
+\newblock
+  \url{https://www.itu.int/dms_pub/itu-r/opb/rep/R-REP-M.2413-2017-PDF-E.pdf}.
 
-\bibitem[Oetiker, 2010]{Oetiker2010}
-Oetiker, T. (2010).
-\newblock The not so short a introduction to {LaTeX2e}.
-\newblock \url{http://tobi.oetiker.ch/lshort/lshort.pdf}.
+\bibitem[Iyer, 2010]{Iyver2010}
+Iyer, V. (2010).
+\newblock Broadband impedance matching of antenna radiators.
+\newblock
+  \url{https://web.wpi.edu/Pubs/ETD/Available/etd-092910-012955/unrestricted/viyer.pdf}.
+
+\bibitem[Rumsey, 1966]{Rumsey1966}
+Rumsey, V.~H. (1966).
+\newblock {\em Frequency Independent Antennas}.
+\newblock Academic Press, 1. ed. edition.
+
+\bibitem[Shkelzen~Cakaj, 2014]{Cakaj2014}
+Shkelzen~Cakaj, e.~a. (2014).
+\newblock The coverage analysis for low earth orbiting satellites at low
+  elevation.
+\newblock International Journal of Advanced Computer Science and Applications,
+  Vol. 5, No. 6, 2014.
+
+\bibitem[William A.~Imbriale, 2012]{Imbriale2012}
+William A.~Imbriale, e.~a. (2012).
+\newblock {\em Space Antenna Handbook}.
+\newblock Wiley, 1. ed. edition.
+
+\bibitem[Xiaoqiang~Yang, 2014]{Yang2014}
+Xiaoqiang~Yang, e.~a. (2014).
+\newblock A broadband printed quadrifilar helical antenna with a novel compact
+  broadband feeding network.
+\newblock Progress In Electromagnetics Research C, Vol. 51, 103–109, 2014.
+
+\bibitem[Xudong~Bai, 2014]{Bai2014}
+Xudong~Bai, e.~a. (2014).
+\newblock Compact design of triple-band circularly polarized quadrifilar helix
+  antennas.
+\newblock IEEE antennas and wireless propagation letters, VOL. 13 2014.
 
 \end{thebibliography}
