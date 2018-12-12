@@ -63,6 +63,82 @@ G=\eta \frac{4\pi A}{\lambda^2}, A = \frac{\pi D^2}{4}
 
 
 \section{Helical Antennas}
+\subsection{Helical antenna with ground plane}
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.5]{figures/antennas/helical/helical}
+\caption{Helical antenna with ground plane \citep{Balanis2005}}
+\label{fig:helical}
+\end{figure}
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.5]{figures/antennas/helical/modes}
+\caption{Farfield for (a) normal mode and (b)end-fire mode \citep{Balanis2005}}
+\label{fig:helical_modes}
+\end{figure}
+
+A helical antenna is a wire wound in form of a screw and is depicted in figure \ref{fig:helical}. The helical antenna consist of N turns, diameter D and spacing between the turns S and circumference is $C = \pi D$w here the total length is $L = NS$. Normally the helical antenna has a circular ground plane with the diameter $G_d = \frac{3\lambda}{4}$. Another important parameter is the pitch angle $\alpha$ which is the angle formed by a line tangent to the helix wire and a plane perpendicular to the helix axis. The pitch angle is defined by   
+
+\begin{equation}
+\alpha = tan^{-1}(\frac{S}{\pi D}) = tan^{-1}(\frac{S}{C})
+\end{equation} 
+
+The radiation pattern of the antenna can be varied by controlling the size of its
+geometrical properties compared to the wavelength. The input impedance is critically
+dependent upon the pitch angle and the size of the conducting wire, especially near the
+feed point, and it can be adjusted by controlling their values. The general polarization
+of the antenna is elliptical. However circular and linear polarizations can be achieved
+over different frequency ranges \citep{Balanis2005}. The helical antenna can operates typically in one of two modes which is
+the normal (broadside) and the axial (end-fire) mode see figure \ref{fig:helical_modes}. In end-fire mode a circular polarization is archived if the D and S is large fractions of the wavelength. The design criteria is $\frac{3}{4} < C/\lambda < \frac{4}{3}$ where $C = \lambda$ is optimum. $S = \frac{\lambda}{4}$ this gives a pitch angle between $12^o \leq \alpha \leq 14^o $ and a ground plane at least $G_d = \frac{\lambda}{2}$. Formulas for radiation resistance Half Power Beam Width (HPBW) and reflection coefficient is given by equation \ref{eq:heli1} to \ref{eq:heli4}. The formulas has an accuracy about 20\% the formulas are therefore held up with a simulation at $f = 1GHz$.\\
+
+Directivity
+\begin{equation}
+D =  15N\frac{C^2 S}{\lambda^3} = 12.7dB
+\end{equation}  
+\label{eq:heli1}
+
+Half Power Beam Width
+\begin{equation}
+HPBW = \frac{52\lambda^{3/2} }{C\sqrt{NS}} = 46.5^o
+\end{equation}  
+\label{eq:heli2}
+
+Impedance of antenna 
+\begin{equation}
+Z_l = 140\frac{C}{\lambda} = 140\Omega
+\end{equation} 
+\label{eq:heli3}
+ 
+Reflection coefficient 
+\begin{equation}
+\Gamma = \frac{Z_l+Z_s}{Z_l-Z_s} = -3.2dB
+\end{equation}  
+\label{eq:heli4}
+
+The simulation results are depicted in figure \ref{fig:helical_cst} to \ref{fig:helical_farfield}. It can be seen that the simulated results corresponds well with the formulas whit-in 20\% accuracy . 
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.5]{figures/antennas/helical/helical_cst}
+\caption{Simulated helical antenna}
+\label{fig:helical_cst}
+\end{figure}
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.5]{figures/antennas/helical/helical_cst_s11}
+\caption{Reflection coefficient for simulated helical antenna}
+\label{fig:helical_s11}
+\end{figure}
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.5]{figures/antennas/helical/helical_cst_farfield}
+\caption{Farfield for simulated helical antenna with a maximum directivity a 7.1dB and a HPBW at $58.8^o$}
+\label{fig:helical_farfield}
+\end{figure}
 
 \subsection{Quadrifilar Helical Antenna}
 
