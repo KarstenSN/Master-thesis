@@ -3,7 +3,7 @@
 \section{ADS-B signals}
 Automatic dependent surveillance-broadcast (ADS-B) is a system in which aircraft continually transmit their identity and GPS-derived navigational information. ADS-B networks for air traffic monitoring have already been implemented in areas around the world, but ground stations cannot be installed in mid-ocean and are difficult to maintain in the Arctic, leaving a coverage gap for oceanic and high latitude airspace \citep{FlyingLab}. Therefore a solution can be to monitor the signals with a low orbit satellite using an antenna matched to the frequencies of the ADS-B.There are currently three types of ADS-B transmissions, including the 1090 MHz extended squitter (ES), the 978 MHz universal access transceiver (UAT), and the VHF data link (VDL) mode 4 operating between 108 and 137 MHz.
  \\
-An ADS-B message is 112 bits long and the transmission takes 120us. The mudulation is pulsed RF and the package consist of 5 parts. The first part is Downlink Format which tells that this is an ADS-B signal, second part is Additional Identifier which has different meaning within each ADS-B subtype. The third is the ICAO which is the unique identifier of the aircraft. The fourth is the DATA which contains several informations including aircraft operation status, airborne position and velocities measured from different sensors. The fifth and last is the checksum \citep{Modesorg}. It is observed that the ADS-B signal is a unencrypted signal which makes it easy to detect and therefore also vulnerable to attacks \citep{Attacks}.       
+An ADS-B message is 112 bits long and the transmission takes 120us. The modulation is Binary Pulse Position Modulation (BPPM) and the package consist of 5 parts. The first part is Downlink Format which tells that this is an ADS-B signal, second part is Additional Identifier which has different meaning within each ADS-B subtype. The third is the ICAO which is the unique identifier of the aircraft. The fourth is the DATA which contains several informations including aircraft operation status, airborne position and velocities measured from different sensors. The fifth and last is the checksum \citep{Modesorg}.      
 
 \begin{figure}[h]
 \centering 
@@ -91,14 +91,21 @@ Knowing equation \ref{eq:dist} and \ref{eq:dist2} a polar plot of the farfield c
 is depicted in figure \ref{fig:sat_farfield_polar} for $f=122.5MHz$, $H=800km$ and $\alpha_{max} = 62.7^{\circ}$. It is seen that in the $\alpha_{max}$ direction a gain of 12dB is required. It is also seen from the equation that the loss due to the angle is frequency independent.  
   
 \begin{equation}
-Gain_{required} = -10\cdot log_{10}(\frac{(\frac{\lambda}{4 \pi d(\alpha) })^2}{(\frac{\lambda}{4 \pi d(0) })^2}) = -10\cdot log_{10}(\frac{d(0)^2}{d(\alpha)^2})
+G_r(\alpha) = 10\cdot log_{10}(\frac{(\frac{\lambda}{4 \pi d(0) })^2}{(\frac{\lambda}{4 \pi d(\alpha) })^2}) = 10\cdot log_{10}(\frac{d(\alpha)^2}{d(0)^2})
 \end{equation}
 \label{eq:coverage_farfield} 
 
+Since the antenna is for reception the integration of the farfield should not exceed an areal of 2 to obey equation \ref{eq:farfield_cov}. 
+
+\begin{equation}
+2 \pi \int_0^\pi \! k \cdot G_r(\theta) \cdot sin(\theta) \, \mathrm{d}\theta = 4\pi
+\end{equation}
+\label{eq:farfield_cov}
+
 \begin{figure}[H]
 \centering 
-\includegraphics[scale = 1]{figures/linkbudget/sat_farfield_polar.png}
-\caption{Desired farfield for a LEO satellite}
+\includegraphics[scale = 0.7]{figures/linkbudget/sat_farfield_matlab.png}
+\caption{Required gain for a LEO satellite at H = 800km}
 \label{fig:sat_farfield_polar}
 \end{figure} 
 

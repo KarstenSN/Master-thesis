@@ -151,17 +151,10 @@ The simulation results are depicted in figure \ref{fig:helical_cst} to \ref{fig:
 
 The Quadrifilar Helical Antenna (QHA) (see figure \ref{fig:QHA1}) is an resonant antenna which is typically feed by two ports with a $90^\circ$ phase difference. The antenna has a circular polarization and the size is often smaller than a normal helical antenna. Typically the length of each arm is an integral multiple of the quarter-wavelength. The end of the helix
 is open when the integer is odd, while short when the integer is
-even \citep{Bai2014}. Despite the typically design the turn ratio, radius, length and feeding topology will affect the radiation pattern and polarization. Another important measure of all helical antennas is the pitch angle which is defined in equation \ref{eq:pitch}.
-
-\begin{equation}
-\alpha = tan^{-1}(\frac{S}{\pi D})
-\end{equation}
-\label{eq:pitch}
-
-Where D is the diameter of the antenna, S is the spacing between the loops and futher N is the number of turns and L is the length of the antenna \citep{Balanis2005}.
+even \citep{Bai2014}. Despite the typically design the turn ratio, radius, length and feeding topology will affect the radiation pattern and polarization. 
 \newline
 \newline
-An QHA has been build and simulated in CST studio. The dimensions are $D=80mm$,$L=\frac{\lambda}{2}-D\cdot 2$, $N=0.6$ at the frequency $f=122.5MHz$ and $\lambda = 2450mm$ with the wire diameter $Wd = 2mm$. The diameter is chosen so the antenna can be stowed in a 10x10x10cm box and the length is calculated so there is a half wavelength between the negative and positive side of a port. The feeding is done using two discrete ports as shoved in figure \ref{fig:QHA2}.  
+An QHA has been build and simulated in CST studio. The dimensions are $D=80mm$,$L=\frac{\lambda}{2}-D\cdot 2$, $N=0.6$ at the frequency $f=122.5MHz$ and $\lambda = 2450mm$ with the wire diameter $Wd = 2mm$. The length is calculated so there is a half wavelength between the negative and positive side of a port. The feeding is done using two discrete ports as shoved in figure \ref{fig:QHA2}.  
 
 \begin{figure}[H]
 \centering 
@@ -170,35 +163,46 @@ An QHA has been build and simulated in CST studio. The dimensions are $D=80mm$,$
 \label{fig:QHA2}
 \end{figure}
  
-The QHA has been simulated and the results shows, that the antenna is matched to 131MHz even thou the S11 parameter at this frequency is only -2dB, see figure \ref{fig:QHA_S11}. The error is caused by the gap between the ports in the bottom and the extra length caused by the turn of N. It can be seen that the antenna also radiates at multiply of the match frequency and that the lowest return-loss is obtained at 4 times the frequency which gives 524MHz. The farfields for the frequencies 131,262 and 393MHz are shown in figure \ref{fig:QHA_ff_131}, \ref{fig:QHA_ff_262} and \ref{fig:QHA_ff_393}, where port 1 is fed with a positive phase at $90^\circ$. It is seen that the farfield not surprisingly changes with the frequency. The farfield suited best for tracking of ADS-B signals is the one in figure \ref{fig:QHA_ff_131}. \todo[inline,color=orange]{write someting about the earth curvature and why?}.      
+The QHA has been simulated and the results shows, that the antenna is resonating at 131MHz even thou the S11 parameter at this frequency is only -2dB, see figure \ref{fig:QHA_S11}. The small difference in frequency due to the calculations is caused by the gap between the ports in the bottom and the extra length caused by the turn of N. It can be seen that the antenna also radiates at multiply of the first resonant frequency and that the lowest return-loss is obtained at 4 times the frequency which gives 524MHz. The farfields for the frequencies 131,262 and 393MHz are shown in figure \ref{fig:QHA_ff_131}, \ref{fig:QHA_ff_262} and \ref{fig:QHA_ff_393}, where port 1 is fed with a positive phase at $90^\circ$. It is seen that the farfield not surprisingly changes with the frequency and that a higher frequency will result in side lobes.        
 
 \begin{figure}[H]
 \centering 
-\includegraphics[scale = 0.5]{figures/antennas/qha/qha_6_S11}
+\includegraphics[scale = 0.4]{figures/antennas/qha/qha_6_S11}
 \caption{S11 parameter of the QHA for 122.5MHz}
 \label{fig:QHA_S11}
 \end{figure}
 
 \begin{figure}[H]
-\centering 
-\includegraphics[scale = 0.5]{figures/antennas/qha/qha_6_ff_131}
-\caption{Simulated farfield at 131MHz}
-\label{fig:QHA_ff_131}
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/antennas/qha/qha_6_ff_131}
+	\caption{Simulated farfield at 131MHz}	
+    \label{fig:WB_QHA}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+	\includegraphics[scale = 0.5]{figures/antennas/qha/qha_6_ff_262}
+	\caption{Simulated farfield at 262MHz}
+    \label{fig:WB_QHA_feed}
+  \end{minipage}
 \end{figure}
 
-\begin{figure}[H]
-\centering 
-\includegraphics[scale = 0.5]{figures/antennas/qha/qha_6_ff_262}
-\caption{Simulated farfield at 262MHz}
-\label{fig:QHA_ff_262}
-\end{figure}
 
 \begin{figure}[H]
-\centering 
-\includegraphics[scale = 0.5]{figures/antennas/qha/qha_6_ff_393}
-\caption{Simulated farfield at 393MHz}
-\label{fig:QHA_ff_393}
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/antennas/qha/qha_6_ff_393}
+	\caption{Simulated farfield at 393MHz}
+    \label{fig:WB_QHA}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/antennas/qha/qha_6_ff_519}
+\caption{Simulated farfield at 519MHz}
+    \label{fig:WB_QHA_feed}
+  \end{minipage}
 \end{figure}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Feeding %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Feeding methods}
@@ -211,8 +215,52 @@ In figure \ref{fig:QHA2} the feeding of the QHA is done using two discrete ports
 \label{fig:QHA_common}
 \end{figure}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% wideband %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Wideband QHA}
-As shown previously a QHA in its basic form radiates only at a narrow frequency band. For the S-parameters in figure \ref{fig:QHA_S11} it is seen that at 131MHz the return loss is about -2dB which results in an efficiency at only -5dB. This can be improved using a match network, but the antenna still needs to be a radiating element and therefore the matching can only improve the return-loss and not the bandwidth \citep{Iyver2010}. Therefore some modifications needs to be done at the QHA to improve the bandwith.     
+As shown previously a QHA in its basic form radiates only at a narrow frequency band. For the S-parameters in figure \ref{fig:QHA_S11} it is seen that at 131MHz the return loss is about -2dB which results in an efficiency at only -5dB. This can be improved using a match network, but the antenna still needs to be a radiating element and therefore the matching can only improve the return-loss and not the bandwidth \citep{Iyver2010}. Therefore some modifications needs to be done at the QHA to improve the bandwidth. One method is to make the bifilar arms of the QHA in diffrent lengths so one arm is longer than the resonant frequency and the other shorter as depicted in figure \ref{fig:WB_QHA}. The feeding is done by shortening the feeds as in figure \ref{fig:WB_QHA_feed} and feed with a $1/4\lambda$ coax cable as balun. Because the feeding is done this way the farfield will not be omnidirectional and is skewed in one direction as depicted in figure \ref{fig:WB_QHA_ff} but still useful in some applications. The S-parameter in figure \ref{fig:WB_QHA_spar} shows a bandwidth at 10\% which is limited by the $1/4\lambda$ balun. This could be improved, but the farfield will then change and the improvements will be doubtful.       
+
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+    \includegraphics[scale = 0.3]{figures/antennas/qha/wideband}
+    \caption{Wideband QHA with dimentions $f = 1GHz$, $\lambda = 300mm$, $R1 = \lambda 0.091$, $ L = \lambda 0.36$, $R2 = \lambda 0.086$, $ L = \lambda 0.34$}
+    \label{fig:WB_QHA}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+	\includegraphics[scale = 0.3]{figures/antennas/qha/wideband_feeding}
+    \caption{Feeding for the wideband QHA}
+    \label{fig:WB_QHA_feed}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.4]{figures/antennas/qha/wideband_ff}
+\caption{Farfield for the wide band QHA in linear scale}
+\label{fig:WB_QHA_ff}
+\end{figure}   
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.4]{figures/antennas/qha/wideband_spar}
+\caption{S-parameters for the wideband QHA shows a bandwidth at 10\%}
+\label{fig:WB_QHA_spar}
+\end{figure} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% wideband %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Multiband QHA}
+Another configuration of the QHA is the Multiband QHA \citep{Bai2014} which can be build up on several narrowband or wideband QHA's inside each other as depicted in figure \ref{fig:TB_QHA}. This configuration allows several frequency bands to be covered since several QHA's can be build inside each other. The consequence is though a heavy and complex design which may also needs a complicated feeding network or several ports for each frequency.  
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.5]{figures/antennas/qha/dual_band}
+\caption{Dual band QHA using two single QHA's \citep{Bai2014}}
+\label{fig:TB_QHA}
+\end{figure} 
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
