@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.10)  6 FEB 2019 15:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.10)  11 FEB 2019 11:54
 entering extended mode
 **./master.tex
 (master.tex
@@ -1454,26 +1454,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [6 <./figures/linkbudget/sat_farfield.png>]
-<figures/linkbudget/sat_farfield_matlab.png, id=284, 628.59843pt x 310.15875pt>
+<figures/linkbudget/sat_farfield_matlab.png, id=284, 624.08156pt x 335.75438pt>
 File: figures/linkbudget/sat_farfield_matlab.png Graphic file (type png)
 <use figures/linkbudget/sat_farfield_matlab.png>
 Package pdftex.def Info: figures/linkbudget/sat_farfield_matlab.png used on inp
 ut line 107.
-(pdftex.def)             Requested size: 440.0159pt x 217.10963pt.
+(pdftex.def)             Requested size: 436.85411pt x 235.02646pt.
 
-Overfull \hbox (38.83203pt too wide) in paragraph at lines 107--108
+Overfull \hbox (35.67024pt too wide) in paragraph at lines 107--108
  [][] 
  []
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 116.
+(caption)                particular \caption on input line 113.
 See the caption package documentation for explanation.
-
-
-Overfull \hbox (60.89977pt too wide) in paragraph at lines 117--135
- [] 
- []
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1484,21 +1479,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [7 <./figures/linkbudget/sat_farfield_matlab.png>]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 139.
+(caption)                particular \caption on input line 133.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (60.89977pt too wide) in paragraph at lines 140--159
+Overfull \hbox (30.45291pt too wide) in paragraph at lines 134--155
  [] 
  []
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 162.
+(caption)                particular \caption on input line 159.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (60.89977pt too wide) in paragraph at lines 163--182
+Overfull \hbox (60.89977pt too wide) in paragraph at lines 160--182
  [] 
  []
 
@@ -1526,7 +1521,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 Chapter 3.
-[11] <figures/antennas/reflector/types.png, id=335, 557.08125pt x 458.46281pt>
+[11] <figures/antennas/reflector/types.png, id=336, 557.08125pt x 458.46281pt>
 File: figures/antennas/reflector/types.png Graphic file (type png)
 
 <use figures/antennas/reflector/types.png>
@@ -1541,14 +1536,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [12 <./figures/antennas/reflector/types.png>]
-<figures/antennas/reflector/parabola_cst.png, id=347, 360.59718pt x 438.8897pt>
+<figures/antennas/reflector/parabola_cst.png, id=348, 360.59718pt x 438.8897pt>
 File: figures/antennas/reflector/parabola_cst.png Graphic file (type png)
 <use figures/antennas/reflector/parabola_cst.png>
 Package pdftex.def Info: figures/antennas/reflector/parabola_cst.png used on in
 put line 51.
 (pdftex.def)             Requested size: 180.29814pt x 219.4443pt.
 
-<figures/antennas/reflector/parabola_cst_farfield.png, id=348, 430.60875pt x 43
+<figures/antennas/reflector/parabola_cst_farfield.png, id=349, 430.60875pt x 43
 3.62pt>
 File: figures/antennas/reflector/parabola_cst_farfield.png Graphic file (type p
 ng)
@@ -1565,7 +1560,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [13 <./figures/antennas/reflector/parabola_cst.png> <./figures/antennas/reflect
 or/parabola_cst_farfield.png>]
-<figures/antennas/helical/helical.png, id=356, 436.63126pt x 483.30562pt>
+<figures/antennas/helical/helical.png, id=357, 436.63126pt x 483.30562pt>
 File: figures/antennas/helical/helical.png Graphic file (type png)
 
 <use figures/antennas/helical/helical.png>
@@ -1573,7 +1568,7 @@ Package pdftex.def Info: figures/antennas/helical/helical.png used on input lin
 e 70.
 (pdftex.def)             Requested size: 218.3151pt x 241.65222pt.
 
-<figures/antennas/helical/modes.png, id=361, 616.55344pt x 282.30469pt>
+<figures/antennas/helical/modes.png, id=362, 616.55344pt x 282.30469pt>
 File: figures/antennas/helical/modes.png Graphic file (type png)
 
 <use figures/antennas/helical/modes.png>
@@ -1593,7 +1588,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--95
 
  []
 
-<figures/antennas/helical/helical_cst.png, id=382, 502.87875pt x 238.64156pt>
+<figures/antennas/helical/helical_cst.png, id=383, 502.87875pt x 238.64156pt>
 File: figures/antennas/helical/helical_cst.png Graphic file (type png)
 
 <use figures/antennas/helical/helical_cst.png>
@@ -1608,7 +1603,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [15]
-<figures/antennas/helical/helical_cst_s11.png, id=394, 1002.74625pt x 443.40656
+<figures/antennas/helical/helical_cst_s11.png, id=395, 1002.74625pt x 443.40656
 pt>
 File: figures/antennas/helical/helical_cst_s11.png Graphic file (type png)
  <use figures/antennas/helical/helical_cst_s11.png>
@@ -1621,7 +1616,7 @@ Overfull \hbox (100.18803pt too wide) in paragraph at lines 131--132
  []
 
 
-<figures/antennas/helical/helical_cst_farfield.png, id=395, 447.17062pt x 451.6
+<figures/antennas/helical/helical_cst_farfield.png, id=396, 447.17062pt x 451.6
 875pt>
 File: figures/antennas/helical/helical_cst_farfield.png Graphic file (type png)
 
@@ -1642,7 +1637,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [16 <./figures/antennas/helical/helical_cst.png> <./figures/antennas/helical/he
 lical_cst_s11.png>]
-<figures/antennas/qha/qha_6_1mhz.png, id=403, 325.96782pt x 423.08063pt>
+<figures/antennas/qha/qha_6_1mhz.png, id=404, 325.96782pt x 423.08063pt>
 File: figures/antennas/qha/qha_6_1mhz.png Graphic file (type png)
 
 <use figures/antennas/qha/qha_6_1mhz.png>
@@ -1661,7 +1656,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--158
 
  []
 
-<figures/antennas/qha/qha_6_feeding.png, id=416, 764.8575pt x 439.6425pt>
+<figures/antennas/qha/qha_6_feeding.png, id=417, 764.8575pt x 439.6425pt>
 File: figures/antennas/qha/qha_6_feeding.png Graphic file (type png)
 
 <use figures/antennas/qha/qha_6_feeding.png>
@@ -1688,7 +1683,7 @@ LaTeX Warning: Reference `fig:QHA_ff_262' on page 19 undefined on input line 16
 LaTeX Warning: Reference `fig:QHA_ff_393' on page 19 undefined on input line 16
 6.
 
-<figures/antennas/qha/qha_6_S11.png, id=428, 991.45406pt x 449.42906pt>
+<figures/antennas/qha/qha_6_S11.png, id=429, 991.45406pt x 449.42906pt>
 File: figures/antennas/qha/qha_6_S11.png Graphic file (type png)
 
 <use figures/antennas/qha/qha_6_S11.png>
@@ -1696,7 +1691,7 @@ Package pdftex.def Info: figures/antennas/qha/qha_6_S11.png used on input line
 170.
 (pdftex.def)             Requested size: 396.5746pt x 179.76843pt.
 
-<figures/antennas/qha/qha_6_ff_131.png, id=429, 431.36156pt x 457.71pt>
+<figures/antennas/qha/qha_6_ff_131.png, id=430, 431.36156pt x 457.71pt>
 File: figures/antennas/qha/qha_6_ff_131.png Graphic file (type png)
 
 <use figures/antennas/qha/qha_6_ff_131.png>
@@ -1708,7 +1703,7 @@ Overfull \hbox (15.08832pt too wide) in paragraph at lines 178--179
 [][] 
  []
 
-<figures/antennas/qha/qha_6_ff_262.png, id=430, 439.6425pt x 453.19313pt>
+<figures/antennas/qha/qha_6_ff_262.png, id=431, 439.6425pt x 453.19313pt>
 File: figures/antennas/qha/qha_6_ff_262.png Graphic file (type png)
 
 <use figures/antennas/qha/qha_6_ff_262.png>
@@ -1728,7 +1723,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [19 <./figures/antennas/qha/qha_6_feeding.png> <./figures/antennas/qha/qha_6_S1
 1.png>]
-<figures/antennas/qha/qha_6_ff_393.png, id=439, 434.37282pt x 453.19313pt>
+<figures/antennas/qha/qha_6_ff_393.png, id=440, 434.37282pt x 453.19313pt>
 File: figures/antennas/qha/qha_6_ff_393.png Graphic file (type png)
 
 <use figures/antennas/qha/qha_6_ff_393.png>
@@ -1740,7 +1735,7 @@ Overfull \hbox (16.59393pt too wide) in paragraph at lines 194--195
 [][] 
  []
 
-<figures/antennas/qha/qha_6_ff_519.png, id=440, 447.92343pt x 453.19313pt>
+<figures/antennas/qha/qha_6_ff_519.png, id=441, 447.92343pt x 453.19313pt>
 File: figures/antennas/qha/qha_6_ff_519.png Graphic file (type png)
 
 <use figures/antennas/qha/qha_6_ff_519.png>
@@ -1761,7 +1756,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [20 <./figures/antennas/qha/qha_6_ff_131.png> <./figures/antennas/qha/qha_6_ff_
 262.png> <./figures/antennas/qha/qha_6_ff_393.png> <./figures/antennas/qha/qha_
 6_ff_519.png>]
-<figures/antennas/qha/qha_6_common_gnd.png, id=458, 825.0825pt x 435.12563pt>
+<figures/antennas/qha/qha_6_common_gnd.png, id=459, 825.0825pt x 435.12563pt>
 File: figures/antennas/qha/qha_6_common_gnd.png Graphic file (type png)
 
 <use figures/antennas/qha/qha_6_common_gnd.png>
@@ -1776,7 +1771,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [21 <./figures/antennas/qha/qha_6_common_gnd.png>]
-<figures/antennas/qha/wideband.png, id=476, 411.78844pt x 496.10344pt>
+<figures/antennas/qha/wideband.png, id=477, 411.78844pt x 496.10344pt>
 File: figures/antennas/qha/wideband.png Graphic file (type png)
 
 <use figures/antennas/qha/wideband.png>
@@ -1784,7 +1779,7 @@ Package pdftex.def Info: figures/antennas/qha/wideband.png used on input line 2
 26.
 (pdftex.def)             Requested size: 123.53748pt x 148.83217pt.
 
-<figures/antennas/qha/wideband_feeding.png, id=477, 721.19438pt x 450.9347pt>
+<figures/antennas/qha/wideband_feeding.png, id=478, 721.19438pt x 450.9347pt>
 File: figures/antennas/qha/wideband_feeding.png Graphic file (type png)
 
 <use figures/antennas/qha/wideband_feeding.png>
@@ -1796,7 +1791,7 @@ Overfull \hbox (55.8889pt too wide) in paragraph at lines 232--233
 [][] 
  []
 
-<figures/antennas/qha/wideband_ff.png, id=478, 485.56406pt x 505.13719pt>
+<figures/antennas/qha/wideband_ff.png, id=479, 485.56406pt x 505.13719pt>
 File: figures/antennas/qha/wideband_ff.png Graphic file (type png)
 
 <use figures/antennas/qha/wideband_ff.png>
@@ -1804,7 +1799,7 @@ Package pdftex.def Info: figures/antennas/qha/wideband_ff.png used on input lin
 e 240.
 (pdftex.def)             Requested size: 194.22217pt x 202.05128pt.
 
-<figures/antennas/qha/wideband_spar.png, id=479, 1007.26312pt x 490.83376pt>
+<figures/antennas/qha/wideband_spar.png, id=480, 1007.26312pt x 490.83376pt>
 File: figures/antennas/qha/wideband_spar.png Graphic file (type png)
 
 <use figures/antennas/qha/wideband_spar.png>
@@ -1824,7 +1819,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [22 <./figures/antennas/qha/wideband.png> <./figures/antennas/qha/wideband_feed
 ing.png> <./figures/antennas/qha/wideband_ff.png>]
-<figures/antennas/qha/dual_band.png, id=492, 454.69875pt x 453.94594pt>
+<figures/antennas/qha/dual_band.png, id=493, 454.69875pt x 453.94594pt>
 File: figures/antennas/qha/dual_band.png Graphic file (type png)
 
 <use figures/antennas/qha/dual_band.png>
@@ -1839,7 +1834,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [23 <./figures/antennas/qha/wideband_spar.png>]
-<figures/antennas/spiral/conical_spiral.png, id=504, 429.10312pt x 537.50812pt>
+<figures/antennas/spiral/conical_spiral.png, id=505, 429.10312pt x 537.50812pt>
 File: figures/antennas/spiral/conical_spiral.png Graphic file (type png)
 <use figures/antennas/spiral/conical_spiral.png>
 Package pdftex.def Info: figures/antennas/spiral/conical_spiral.png used on inp
@@ -1935,8 +1930,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 45.
  ) 
 Here is how much of TeX's memory you used:
  20742 strings out of 493333
- 372563 string characters out of 3139188
- 456669 words of memory out of 3000000
+ 372565 string characters out of 3139188
+ 454668 words of memory out of 3000000
  23629 multiletter control sequences out of 15000+200000
  84414 words of font info for 63 fonts, out of 3000000 for 9000
  1146 hyphenation exceptions out of 8191
@@ -1962,9 +1957,9 @@ pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/lm/lmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
 m/lmtt10.pfb>
-Output written on master.pdf (43 pages, 1815152 bytes).
+Output written on master.pdf (43 pages, 1716255 bytes).
 PDF statistics:
- 668 PDF objects out of 1000 (max. 8388607)
+ 669 PDF objects out of 1000 (max. 8388607)
  130 named destinations out of 1000 (max. 500000)
  353 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -105,12 +105,29 @@ Since the antenna is for reception the integration of the farfield should not ex
 \begin{figure}[H]
 \centering 
 \includegraphics[scale = 0.7]{figures/linkbudget/sat_farfield_matlab.png}
-\caption{Required gain for a LEO satellite at H = 800km}
+\caption{Normalized gain requirement for a LEO satellite at different heights}
 \label{fig:sat_farfield_polar}
 \end{figure} 
 
+\begin{center}
+\captionof{table}{scaling factor} \label{tab:scaling}
+  \begin{tabular}{ l  l  l  l  l}
+    \hline
+   \textit{Height} & \textit{Scaling factor} & \textit{Max angle} \\ \hline
+    600km & 0.99	& $64.7^\circ$   \\ \hline
+    800km & 1.16	& $61.4^\circ$   \\ \hline
+    1000km & 1.30	& $58.6^\circ$   \\ \hline
+    1200km & 1.40	& $56.2^\circ$   \\ \hline
+    1400km & 1.55	& $54.0^\circ$   \\ \hline
+    1600km & 1.74	& $52.0^\circ$   \\ \hline
+    1800km & 1.88	& $50.2^\circ$   \\ \hline
+    2000km & 2.04	& $48.6^\circ$   \\ \hline
+\end{tabular}
+\end{center}
+
+
 \section{Tabels}
-With the previously description is it now easy to calculate a linkbudget. It is assumed that the receiving antenna is a circular polarized antenna which will cause a polarization mismatch at -3dB \citep{Balanis2005}. Futher an atmospheric loss at 0.1dB is assumed together with a carier to noise radio at minimum 9dB \citep{itu2017}. The system noise temperature is set to 373K because of the high temperature span in the LEO \citep{FlyingLab}. The calculations is done at a transmit power at 75W which is the minimum due to the standard. Normally when planes are over the sea the transmit power is increased up to 500W.   
+With the previously description is it now easy to calculate a linkbudget. It is assumed that the receiving antenna is a circular polarized antenna which will cause a polarization mismatch at -3dB \citep{Balanis2005}. Futher an atmospheric loss at 0.1dB is assumed together with a carier to noise radio at minimum 9dB \citep{itu2017}. The system noise temperature is set to 373K because of the high temperature span in the LEO \citep{FlyingLab}. The calculations is done at a transmit power at 75W which is the minimum due to the standard and at 500W. Normally when planes are over the sea the transmit power is increased up to 500W which is the position the satellite has to capture.    
  
 \begin{center}
 \captionof{table}{Linkbudget for 1090MHZ and H = 800km} \label{tab:1090}
@@ -119,6 +136,7 @@ With the previously description is it now easy to calculate a linkbudget. It is 
    \textit{Item} & \textit{Link parameter} & \textit{Value} & \textit{Unit} & \textit{Computation} \\ \hline
     1 & Frequency	& 1090 & MHz & \\ \hline
     2 & Transmit power (75W) & 18.8 & dB & \\ \hline
+    2 & Transmit power (500W) & 27.0 & dB & \\ \hline
     3 & Transmit antenna gain & 3 & dBi & \\ \hline
     4 & Athmospheric absorbtion (clean air) & 0.1 & dB & \\ \hline
     5 & Free-space loss & 151.2 & dB & \\ \hline
@@ -130,8 +148,10 @@ With the previously description is it now easy to calculate a linkbudget. It is 
     11 & Noise power & -136.6 & dBW& 8+9+10\\ \hline 
     12 & Carrier to noise ratio & 7.0 & db & 7-11\\ \hline 
     13 & C/(N+I) & 9 & db & Requirement\\ \hline
-    14 & Minimum receive antenna gain at $\alpha_0 = 0 $ & 2.0 & db & 13-12\\ \hline
-    15 & Minimum receive antenna gain at $\alpha_0 = \alpha_{max} $ & 14.0 & db & 14+equation \ref{eq:max_cov} \\ \hline  \end{tabular}
+    14 & Antenna gain at 75W and $\alpha_0 = 0 $ & 2.0 & db & 13-12\\ \hline
+    15 & Antenna gain at 75W and $\alpha_0 = \alpha_{max} $ & 14.0 & db & 14+equation \ref{eq:max_cov} \\ \hline 
+    16 & Antenna gain at 500W and  $\alpha_0 = 0 $  & -10.2 & db & 13-12\\ \hline
+    17 & Antenna gain at 500W and $\alpha_0 = \alpha_{max} $ & 2.2 & db & 14+equation \ref{eq:max_cov} \\ \hline \end{tabular}
 \end{center}
 
 
@@ -142,6 +162,7 @@ With the previously description is it now easy to calculate a linkbudget. It is 
    \textit{Item} & \textit{Link parameter} & \textit{Value} & \textit{Unit} & \textit{Computation} \\ \hline
     1 & Frequency	& 978 & MHz & \\ \hline
     2 & Transmit power (75W) & 18.8 & dB & \\ \hline
+    2 & Transmit power (500W) & 27.0 & dB & \\ \hline
     3 & Transmit antenna gain & 3 & dBi & \\ \hline
     4 & Athmospheric absorbtion (clean air) & 0.1 & dB & \\ \hline
     5 & Free-space loss & 150.3 & dB & \\ \hline
@@ -155,8 +176,12 @@ With the previously description is it now easy to calculate a linkbudget. It is 
     13 & C/(N+I) & 9 & db & Requirement\\ \hline
     14 & Minimum receive antenna gain at $\alpha_0 = 0 $ & 1.0 & db & 13-12\\ \hline
     15 & Minimum receive antenna gain at $\alpha_0 = \alpha_{max} $ & 13.0 & db & 14+equation \ref{eq:max_cov} \\ \hline
+    16 & Antenna gain at 500W and  $\alpha_0 = 0 $  & -11.2 & db & 13-12\\ \hline
+    17 & Antenna gain at 500W and $\alpha_0 = \alpha_{max} $ & 1.2 & db & 14+equation \ref{eq:max_cov} \\ \hline 
   \end{tabular}
 \end{center}
+
+\iffalse 
 
 \begin{center}
 \captionof{table}{Linkbudget for 122.5MHZ and H = 800km} \label{tab:122.5}
@@ -180,3 +205,5 @@ With the previously description is it now easy to calculate a linkbudget. It is 
     15 & Minimum receive antenna gain at $\alpha_0 = \alpha_{max} $ & -11.3 & db & 14+equation \ref{eq:max_cov} \\ \hline
   \end{tabular}
 \end{center}
+
+\fi
