@@ -5,11 +5,10 @@ Balanis, C.~A. (2005).
 \newblock {\em Antenna Theory Analysis And Design}.
 \newblock Wiley, 3. ed. edition.
 
-\bibitem[CPSU, 2013]{CalPol13}
-CPSU, C. P. S.~U. (2013).
-\newblock Cubesat design specification.
-\newblock
-  \url{https://static1.squarespace.com/static/5418c831e4b0fa4ecac1bacd/t/56e9b62337013b6c063a655a/1458157095454/cds_rev13_final2.pdf}.
+\bibitem[Clark, 2003]{Clark2003}
+Clark, J.~R. (2003).
+\newblock Multifilar hemispherical helical antennas.
+\newblock Virginia Polytechnic Institute and State University.
 
 \bibitem[Francis, 2011]{FlyingLab}
 Francis, e.~a. (2011).
@@ -30,17 +29,17 @@ Iyer, V. (2010).
 \newblock
   \url{https://web.wpi.edu/Pubs/ETD/Available/etd-092910-012955/unrestricted/viyer.pdf}.
 
-\bibitem[Rumsey, 1966]{Rumsey1966}
-Rumsey, V.~H. (1966).
-\newblock {\em Frequency Independent Antennas}.
-\newblock Academic Press, 1. ed. edition.
-
 \bibitem[Shkelzen~Cakaj, 2014]{Cakaj2014}
 Shkelzen~Cakaj, e.~a. (2014).
 \newblock The coverage analysis for low earth orbiting satellites at low
   elevation.
 \newblock International Journal of Advanced Computer Science and Applications,
   Vol. 5, No. 6, 2014.
+
+\bibitem[Sun, 2015]{Modesorg}
+Sun, J. (2015).
+\newblock The 1090mhz riddle.
+\newblock \url{https://mode-s.org/decode/}.
 
 \bibitem[William A.~Imbriale, 2012]{Imbriale2012}
 William A.~Imbriale, e.~a. (2012).

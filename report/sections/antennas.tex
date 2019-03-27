@@ -1,13 +1,10 @@
 \chapter{Antennas}\label{ch:antennas}
 
-With the requirements calculated in chapter \ref{ch:linkbudget}, it is now possible to design an antenna to overcome these requirements.  
-
-\section{Dipole antennas}
-
+In this section different antenna types is analysed and simulated in CST studio. Simple structures such as monopoles and dipoles is not considered since the polarization in the antennas basic form is linear. Even though it is possible to make a crossed dipole array that is circular polarized and have a high gain, but this structure would become large and still not have the opportunity to form the radiation pattern as required. Other structures such as spiral antennas and conical antennas is neither considered since those primarily is used as wideband antennas. This section will investigate the possibility to form the radiation pattern to a field to overcome the requirements from chapter \ref{ch:linkbudget} only.     
 
 \section{Reflector Antennas}
 
-Reflector antennas are used places where a high gain and directivity is needed. The reflector antenna do also have a wide bandwith, which all together has made them poplar for deep space communication \citep{Imbriale2012}. Although reflector antennas can be made in different types, shapes and configurations, they all essentially consist of a passive reflecting surface illuminated by a smaller primary feed. The basic analysis is done using trigonometry which provides satisfactory result because the diameter of the reflecting surface often is ten times the wavelength. In figure \ref{fig:reflector_types} four main configurations is depicted. (a) is the on-focus parabolic reflector where the feed for the parabolic is placed F distance apart called the focal point. This would leave an area where the feed is placed, where there will be a gap in the coverage. This is omitted in (b) which is the off-axis reflector. This types has no gap in coverage and therefore is often used as radar. The (c) Cassegrain reflector and (d) Gregorian reflector uses both a feed in the middle of the reflector which then uses a second reflector at the focal point to reflect the energy back to the large reflector. Because of the large dimensions a reflector antenna are not suited for low frequencies < 2GHz. Using the equations \ref{eq:para1} to \ref{eq:para4} a design has been made for $f = 10GHz$, $\lambda = 30mm$, $D = 10\lambda = 300mm$, $\theta = 60^{\circ}$. This should give a gain at 30dBi. The design has been simulated in CST studio in figure \ref{fig:para_sim1} and \ref{fig:para_sim2}. The feeding antenna used is a dipole which is an omnidirectional antenna, this causes a loss in efficiency. An ideal reflector should be uniformly illuminated and all power should
+Reflector antennas are used places where a high gain is needed. The reflector antenna do also have a wide bandwith, which all together has made them popular for deep space communication \citep{Imbriale2012}. Although reflector antennas can be made in different types, shapes and configurations, they all essentially consist of a passive reflecting surface illuminated by a smaller primary feed. The basic analysis is done using trigonometry which provides satisfactory result because the diameter of the reflecting surface often is ten times the wavelength. In figure \ref{fig:reflector_types} four main configurations is depicted. (a) is the on-focus parabolic reflector where the feed for the parabolic is placed F distance apart called the focal point. This would leave an area where the feed is placed, where there will be a gap in the coverage. This is omitted in (b) which is the off-axis reflector. This types has no gap in coverage and therefore is often used as radar. The (c) Cassegrain reflector and (d) Gregorian reflector uses both a feed in the middle of the reflector which then uses a second reflector at the focal point to reflect the energy back to the large reflector. Because of the large dimensions a reflector antenna are not suited for low frequencies < 2GHz. Using the equations \ref{eq:para1} to \ref{eq:para4} a design has been made for $f = 10GHz$, $\lambda = 30mm$, $D = 10\lambda = 300mm$, $\theta = 60^{\circ}$. This should give a gain at 30dBi. The design has been simulated in CST studio in figure \ref{fig:para_sim1} and \ref{fig:para_sim2}. The feeding antenna used is a dipole which is an omnidirectional antenna, this causes a loss in efficiency. An ideal reflector should be uniformly illuminated and all power should
 be focused on the reflecting surface. The portion of the feed power that does not reach the reflector is referred to
 as spillover loss while the ability to uniformly feed the parabola is referred to as illumination efficiency. Since
 primary feeds have a tapered radiation pattern, a compromise between spillover losses and illumination
@@ -75,11 +72,11 @@ G=\eta \frac{4\pi A}{\lambda^2}, A = \frac{\pi D^2}{4}
 \begin{figure}[H]
 \centering 
 \includegraphics[scale = 0.5]{figures/antennas/helical/modes}
-\caption{Farfield for (a) normal mode and (b)end-fire mode \citep{Balanis2005}}
+\caption{Farfield for (a) normal mode and (b)end-fire mode in linear scale \citep{Balanis2005}}
 \label{fig:helical_modes}
 \end{figure}
 
-A helical antenna is a wire wound in form of a screw and is depicted in figure \ref{fig:helical}. The helical antenna consist of N turns, diameter D and spacing between the turns S and circumference is $C = \pi D$w here the total length is $L = NS$. Normally the helical antenna has a circular ground plane with the diameter $G_d = \frac{3\lambda}{4}$. Another important parameter is the pitch angle $\alpha$ which is the angle formed by a line tangent to the helix wire and a plane perpendicular to the helix axis. The pitch angle is defined by   
+A helical antenna is a wire wound in form of a screw and is depicted in figure \ref{fig:helical}. The helical antenna consist of N turns, diameter D and spacing between the turns S and circumference is $C = \pi D$ where the total length is $L = NS$. Normally the helical antenna has a circular ground plane with the diameter $G_d = \frac{3\lambda}{4}$. Another important parameter is the pitch angle $\alpha$ which is the angle formed by a line tangent to the helix wire and a plane perpendicular to the helix axis. The pitch angle is defined by   
 
 \begin{equation}
 \alpha = tan^{-1}(\frac{S}{\pi D}) = tan^{-1}(\frac{S}{C})
@@ -90,7 +87,7 @@ geometrical properties compared to the wavelength. The input impedance is critic
 dependent upon the pitch angle and the size of the conducting wire, especially near the
 feed point, and it can be adjusted by controlling their values. The general polarization
 of the antenna is elliptical. However circular and linear polarizations can be achieved
-over different frequency ranges \citep{Balanis2005}. The helical antenna can operates typically in one of two modes which is
+over different frequency ranges \citep{Balanis2005}. The helical antenna can operate typically in one of two modes which is
 the normal (broadside) and the axial (end-fire) mode see figure \ref{fig:helical_modes}. In end-fire mode a circular polarization is archived if the D and S is large fractions of the wavelength. The design criteria is $\frac{3}{4} < C/\lambda < \frac{4}{3}$ where $C = \lambda$ is optimum. $S = \frac{\lambda}{4}$ this gives a pitch angle between $12^o \leq \alpha \leq 14^o $ and a ground plane at least $G_d = \frac{\lambda}{2}$. Formulas for radiation resistance Half Power Beam Width (HPBW) and reflection coefficient is given by equation \ref{eq:heli1} to \ref{eq:heli4}. The formulas has an accuracy about 20\% the formulas are therefore held up with a simulation at $f = 1GHz$.\\
 
 Directivity
@@ -117,7 +114,7 @@ Reflection coefficient
 \end{equation}  
 \label{eq:heli4}
 
-The simulation results are depicted in figure \ref{fig:helical_cst} to \ref{fig:helical_farfield}. It can be seen that the simulated results corresponds well with the formulas whit-in 20\% accuracy . 
+The simulation results are depicted in figure \ref{fig:helical_cst} to \ref{fig:helical_farfield}. It can be seen that the simulated results corresponds well with the formulas whit in 20\% accuracy. Even though the shape of the radiation pattern can be adjusted by varying the shape of the helix, it it not possible to obtain circular polarization in those "custom" shapes and therefore the helix cannot be used for tracking of ADS-B signals other than in the end-fire mode. 
 
 \begin{figure}[H]
 \centering 
@@ -128,15 +125,15 @@ The simulation results are depicted in figure \ref{fig:helical_cst} to \ref{fig:
 
 \begin{figure}[H]
 \centering 
-\includegraphics[scale = 0.5]{figures/antennas/helical/helical_cst_s11}
+\includegraphics[scale = 0.35]{figures/antennas/helical/helical_cst_s11}
 \caption{Reflection coefficient for simulated helical antenna}
 \label{fig:helical_s11}
 \end{figure}
 
 \begin{figure}[H]
 \centering 
-\includegraphics[scale = 0.5]{figures/antennas/helical/helical_cst_farfield}
-\caption{Farfield for simulated helical antenna with a maximum directivity a 7.1dB and a HPBW at $58.8^o$}
+\includegraphics[scale = 0.7]{figures/antennas/helical/helical_cst_farfield}
+\caption{Farfield for simulated helical antenna with a maximum gain at 8.5dB and a HPBW at $58.8^o$. This gives a coverage percentage at the earth at 0.5\% }
 \label{fig:helical_farfield}
 \end{figure}
 
@@ -154,7 +151,7 @@ is open when the integer is odd, while short when the integer is
 even \citep{Bai2014}. Despite the typically design the turn ratio, radius, length and feeding topology will affect the radiation pattern and polarization. 
 \newline
 \newline
-An QHA has been build and simulated in CST studio. The dimensions are $D=80mm$,$L=\frac{\lambda}{2}-D\cdot 2$, $N=0.6$ at the frequency $f=122.5MHz$ and $\lambda = 2450mm$ with the wire diameter $Wd = 2mm$. The length is calculated so there is a half wavelength between the negative and positive side of a port. The feeding is done using two discrete ports as shoved in figure \ref{fig:QHA2}.  
+An QHA has been build and simulated in CST studio. The dimensions are $D=80mm$,$L=\frac{\lambda}{2}-D\cdot 2$, $N=0.6$ at the frequency $f=122.5MHz$ and $\lambda = 2450mm$ with the wire diameter $Wd = 2mm$. The length is calculated so there is a half wavelength for the current flow between the negative and positive side of a port. The feeding is done using two discrete ports as shoved in figure \ref{fig:QHA2}.  
 
 \begin{figure}[H]
 \centering 
@@ -163,7 +160,7 @@ An QHA has been build and simulated in CST studio. The dimensions are $D=80mm$,$
 \label{fig:QHA2}
 \end{figure}
  
-The QHA has been simulated and the results shows, that the antenna is resonating at 131MHz even thou the S11 parameter at this frequency is only -2dB, see figure \ref{fig:QHA_S11}. The small difference in frequency due to the calculations is caused by the gap between the ports in the bottom and the extra length caused by the turn of N. It can be seen that the antenna also radiates at multiply of the first resonant frequency and that the lowest return-loss is obtained at 4 times the frequency which gives 524MHz. The farfields for the frequencies 131,262 and 393MHz are shown in figure \ref{fig:QHA_ff_131}, \ref{fig:QHA_ff_262} and \ref{fig:QHA_ff_393}, where port 1 is fed with a positive phase at $90^\circ$. It is seen that the farfield not surprisingly changes with the frequency and that a higher frequency will result in side lobes.        
+The QHA has been simulated and the results shows, that the antenna is resonating at 131MHz even thou the S11 parameter at this frequency is only -2dB, see figure \ref{fig:QHA_S11}. The small difference in frequency due to the calculations is caused by the gap between the ports in the bottom and the extra length caused by the turn of N. It can be seen that the antenna also radiates at multiply of the first resonant frequency and that the lowest return-loss is obtained at 4 times the frequency which gives 519MHz. The farfields for the frequencies 131,262,393 and 519MHz are shown in figure \ref{fig:QHA_ff_131}, \ref{fig:QHA_ff_262}, \ref{fig:QHA_ff_393} and \ref{fig:QHA_ff_519}, where port 1 is fed with a positive phase at $90^\circ$. It is seen that the farfield not surprisingly changes with the frequency and that a higher frequency will result in side lobes. This could be an advantage to overcome the requirement from figure \ref{fig:sat_farfield} but unfortunately the polarization becomes linear in the angle of the sidelobes which then makes this option unuseful.        
 
 \begin{figure}[H]
 \centering 
@@ -175,15 +172,15 @@ The QHA has been simulated and the results shows, that the antenna is resonating
 \begin{figure}[H]
   \centering
   \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/antennas/qha/qha_6_ff_131}
+	\includegraphics[scale = 0.4]{figures/antennas/qha/qha_6_ff_131}
 	\caption{Simulated farfield at 131MHz}	
-    \label{fig:WB_QHA}
+    \label{fig:QHA_ff_131}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.4\textwidth}
-	\includegraphics[scale = 0.5]{figures/antennas/qha/qha_6_ff_262}
+	\includegraphics[scale = 0.4]{figures/antennas/qha/qha_6_ff_262}
 	\caption{Simulated farfield at 262MHz}
-    \label{fig:WB_QHA_feed}
+    \label{fig:QHA_ff_262}
   \end{minipage}
 \end{figure}
 
@@ -191,18 +188,49 @@ The QHA has been simulated and the results shows, that the antenna is resonating
 \begin{figure}[H]
   \centering
   \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/antennas/qha/qha_6_ff_393}
+	\includegraphics[scale = 0.4]{figures/antennas/qha/qha_6_ff_393}
 	\caption{Simulated farfield at 393MHz}
-    \label{fig:WB_QHA}
+    \label{fig:QHA_ff_393}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/antennas/qha/qha_6_ff_519}
+\includegraphics[scale = 0.4]{figures/antennas/qha/qha_6_ff_519}
 \caption{Simulated farfield at 519MHz}
-    \label{fig:WB_QHA_feed}
+    \label{fig:QHA_ff_519}
   \end{minipage}
 \end{figure}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Axial Ratio
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.6]{figures/antennas/qha/qha_6_ff_131_AR}
+	\caption{Simulated Axial Ratio at 131MHz}	
+    \label{fig:QHA_ff_131_AR}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4 \textwidth}
+	\includegraphics[scale = 0.6]{figures/antennas/qha/qha_6_ff_262_AR}
+	\caption{Simulated Axial Ratio at 262MHz}
+    \label{fig:QHA_ff_262_AR}
+  \end{minipage}
+\end{figure}
+
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.6]{figures/antennas/qha/qha_6_ff_393_AR}
+	\caption{Simulated Axial Ratio at 393MHz}
+    \label{fig:QHA_ff_393_AR}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.6]{figures/antennas/qha/qha_6_ff_519_AR}
+\caption{Simulated Axial Ratio at 519MHz}
+    \label{fig:QHA_ff_519_AR}
+  \end{minipage}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Feeding %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Feeding methods}
@@ -265,34 +293,83 @@ Another configuration of the QHA is the Multiband QHA \citep{Bai2014} which can 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 
-\section{Spiral antennas}
+\section{Truncated Spherical Helical Antenna}
+The Bifilar Truncated Spherical Helical Antenna (BTSHA) is a modification of the normal Spherical Helical Antenna (SHA) whos geometry is described by equation \ref{eq:SHA1} to \ref{eq:SHA3} where N is number of turns of the wire. The BTSHA is made upon two half's of the SHA which then is turned $180^\circ$ to connect to each other. See figure \ref{fig:SHA1}.  
 
+\begin{equation}\label{eq:SHA1}
+r = a
+\end{equation}
 
-\subsection{Conical Log-Spiral antenna}
+\begin{equation}\label{eq:SHA2}
+\theta = cos^{-1}(\frac{\phi}{N\pi}-1)
+\end{equation}
+
+\begin{equation}\label{eq:SHA3}
+0<=\phi<=2\pi N
+\end{equation}
+
+The BTSHA can be fed different ways using bottom feeding, side feeding or top feeding. One advantage using top feeding is that it can be fed using a "monopole" that will make a field inside the BTSHA together with the current flowing in opposite direction which makes it able to radiate in axial-null mode because of the symmetry. See figure \ref{eq:SHA2}. This makes it possible to archive better gain in the side direction as wanted for a satellite antenna for reception of ADS-B. Another advantage is the compact size compared to a conventional helical antenna. An important feature of this structure is that the angle of the cone can be adjusted by moving the height of the ground-plane. If the cone shall become broader the ground plane can be moved backward and if the cone is wanted narrower then the ground plane can be formed as an reflector. Unfortunately the structure has a lack of gain in the center. Simulations has shown that the number of the wire turns has only little effect on the S-parameter and radiation pattern. A simulation has been made with the dimension $a=2.86\lambda$, see figure \ref{fig:SHA_ff1}. It is stated in \citep{Clark2003} that the radiation pattern for this configuration should be omnidirectional. This has been shown not to be true and there is only two main-beams. The polarization is overall circular but with linear polarization in the direction of the two main-beams.    
 
 \begin{figure}[H]
 \centering 
-\includegraphics[scale = 0.5]{figures/antennas/spiral/conical_spiral}
-\caption{Conical spiral antenna \citep{Rumsey1966}}
-\label{fig:con_spi}
+\includegraphics[scale = 0.5]{figures/antennas/hemispherical/hemispherical1}
+\caption{Bifilar Truncated Spherical Helical Antenna \citep{Clark2003}}
+\label{fig:SHA1}
+\end{figure} 
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.5]{figures/antennas/hemispherical/hemispherical_currentflow}
+\caption{Currentflow of the BTSHA \citep{Clark2003}}
+\label{fig:SHA2}
+\end{figure} 
+
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.7]{figures/antennas/hemispherical/hemispherical_farfield1}
+\caption{Farfield of a simulated BTSHA with $a=2.86\lambda$ and $N=1.5$. Maximal gain is 7.1dB. Be aware that the strucure at only this farfield is pointing at $180^\circ$}
+\label{fig:SHA_ff1}
+\end{figure} 
+
+Another simulation has shown to have a more omnidirectional radiation pattern, which uses four arms instead of two (QTSHA) with a rotation of $90^\circ$ each. Futher the structure is streched in the Z-direction by a factor of two. But still this structure has a lack of gain in the center. To overcome this problem simulations has shown that it is rather difficult to make a change to the structure that will increase the gain in the middle. The best solution to this problem is to change the feed point, see figure \ref{fig:SHA_feed}. The feeding point has been simulated for various points and a feeding point at $0.06\lambda$ from the top has shown to be the best. See figure \ref{fig:SHA_ff3}. Unfortunately this asymmetry makes the polarization of the antenna more linear which then makes this option a bad decision.     
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.7]{figures/antennas/hemispherical/hemispherical2}
+\caption{Stretched Quadrifilar Truncated Spherical Helical Antenna}
+\label{fig:SH32}
+\end{figure} 
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.7]{figures/antennas/hemispherical/hemispherical_farfield2}
+\caption{Farfield of a simulated QTSHA with $a=2.86\lambda$ and $N=1.5$. Maximal gain is 5.9dB}
+\label{fig:SHA_ff2}
+\end{figure} 
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.5]{figures/antennas/hemispherical/hemispherical_feed}
+\caption{Position of the changed feeding point}
+\label{fig:SHA_feed}
 \end{figure}
 
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.7]{figures/antennas/hemispherical/hemispherical_farfield3}
+\caption{Farfield of a simulated QTSHA with $a=2.86\lambda$ and $N=1.5$. The figure is fully omnidirectional.}
+\label{fig:SHA_ff3}
+\end{figure}  
 
-The balanced two arm Conical Log-Spiral Antenna (CLSA) depicted in figure \ref{fig:con_spi} is a derivative of planar spiral antennas which all are frequency independent because the geometry is only described by angles \citep{Balanis2005}. The CLSA consist of two metal strips on the surface of a cone, whose shapes are defined by the equiangular spiral of equation \ref{eq:spiral} \citep{Rumsey1966}.
-
-\begin{equation}
-r = e^{\alpha\phi sin(\theta_0)}
-\end{equation}
-\label{eq:spiral} 
-
-The angle $\alpha$ between the radius and the tangent to the spiral is $cot^{-1}(\alpha)$ and because of the spiral $\theta_0 = 90^\circ$. The CSA do also have circular polarization which makes it usable for satellite communication. 
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.7]{figures/antennas/hemispherical/hemispherical_farfield3_AR}
+\caption{Axial ratio of the simulates antenna shows that this is not a circular polarized antenna}
+\label{fig:SHA_ff3_AR}
+\end{figure} 
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Horn antennas}
-\section{Printed antennas}
 
 
 

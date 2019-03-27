@@ -5,23 +5,19 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}Linkbudget}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}ADS-B signals}{3}{section.2.1}
-\contentsline {section}{\numberline {2.2}Free space loss}{4}{section.2.2}
+\contentsline {section}{\numberline {2.2}Free space loss}{3}{section.2.2}
 \contentsline {section}{\numberline {2.3}LEO coverage}{4}{section.2.3}
-\contentsline {section}{\numberline {2.4}LEO radiation pattern}{6}{section.2.4}
-\contentsline {section}{\numberline {2.5}Tabels}{7}{section.2.5}
-\contentsline {chapter}{\numberline {3}Antennas}{11}{chapter.3}
-\contentsline {section}{\numberline {3.1}Dipole antennas}{11}{section.3.1}
-\contentsline {section}{\numberline {3.2}Reflector Antennas}{11}{section.3.2}
-\contentsline {section}{\numberline {3.3}Helical Antennas}{14}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Helical antenna with ground plane}{14}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Quadrifilar Helical Antenna}{18}{subsection.3.3.2}
-\contentsline {subsubsection}{Feeding methods}{21}{subsubsection*.22}
-\contentsline {subsubsection}{Wideband QHA}{21}{subsubsection*.24}
-\contentsline {subsubsection}{Multiband QHA}{23}{subsubsection*.28}
-\contentsline {section}{\numberline {3.4}Spiral antennas}{24}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Conical Log-Spiral antenna}{25}{subsection.3.4.1}
-\contentsline {section}{\numberline {3.5}Horn antennas}{25}{section.3.5}
-\contentsline {section}{\numberline {3.6}Printed antennas}{25}{section.3.6}
-\contentsline {chapter}{\numberline {4}Conclusion}{27}{chapter.4}
-\contentsline {chapter}{Bibliography}{29}{chapter*.31}
-\contentsline {chapter}{\numberline {A}Appendix A name}{31}{appendix.A}
+\contentsline {section}{\numberline {2.4}LEO radiation pattern}{5}{section.2.4}
+\contentsline {section}{\numberline {2.5}Tabel}{7}{section.2.5}
+\contentsline {chapter}{\numberline {3}Antennas}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}Reflector Antennas}{9}{section.3.1}
+\contentsline {section}{\numberline {3.2}Helical Antennas}{12}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Helical antenna with ground plane}{12}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Quadrifilar Helical Antenna}{16}{subsection.3.2.2}
+\contentsline {subsubsection}{Feeding methods}{19}{subsubsection*.23}
+\contentsline {subsubsection}{Wideband QHA}{20}{subsubsection*.25}
+\contentsline {subsubsection}{Multiband QHA}{22}{subsubsection*.29}
+\contentsline {section}{\numberline {3.3}Truncated Spherical Helical Antenna}{23}{section.3.3}
+\contentsline {chapter}{\numberline {4}Conclusion}{29}{chapter.4}
+\contentsline {chapter}{Bibliography}{31}{chapter*.39}
+\contentsline {chapter}{\numberline {A}Appendix A name}{33}{appendix.A}
