@@ -148,10 +148,10 @@ The simulation results are depicted in figure \ref{fig:helical_cst} to \ref{fig:
 
 The Quadrifilar Helical Antenna (QHA) (see figure \ref{fig:QHA1}) is an resonant antenna which is typically feed by two ports with a $90^\circ$ phase difference. The antenna has a circular polarization and the size is often smaller than a normal helical antenna. Typically the length of each arm is an integral multiple of the quarter-wavelength. The end of the helix
 is open when the integer is odd, while short when the integer is
-even \citep{Bai2014}. Despite the typically design the turn ratio, radius, length and feeding topology will affect the radiation pattern and polarization. 
+even \citep{Bai2014}.
 \newline
 \newline
-An QHA has been build and simulated in CST studio. The dimensions are $D=80mm$,$L=\frac{\lambda}{2}-D\cdot 2$, $N=0.6$ at the frequency $f=122.5MHz$ and $\lambda = 2450mm$ with the wire diameter $Wd = 2mm$. The length is calculated so there is a half wavelength for the current flow between the negative and positive side of a port. The feeding is done using two discrete ports as shoved in figure \ref{fig:QHA2}.  
+An QHA has been build and simulated in CST studio. The dimensions are $D=80mm$,$L=\frac{\lambda}{2}-D\cdot 2$, $N=0.6$ at the frequency $f=122.5MHz$ and $\lambda = 2450mm$ with the wire diameter $Wd = 2mm$. The length is calculated so there is a half wavelength for the current flow between the negative and positive side of a port. The feeding is done using two discrete ports as shoved in figure \ref{fig:QHA2}. When port 1 is fed with a positive phase at $90^\circ$ the QHA will have it's maximum radiation in the forward direction. If the port instead is fed with a negative phase at $90^\circ$ then the QHA will have it's maximum radiation in the backward direction. Other phases will result in non-uniform radiation pattern.  
 
 \begin{figure}[H]
 \centering 
@@ -216,7 +216,6 @@ The QHA has been simulated and the results shows, that the antenna is resonating
   \end{minipage}
 \end{figure}
 
-
 \begin{figure}[H]
   \centering
   \begin{minipage}[b]{0.5\textwidth}
@@ -232,20 +231,35 @@ The QHA has been simulated and the results shows, that the antenna is resonating
   \end{minipage}
 \end{figure}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Feeding %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Feeding methods}
-In figure \ref{fig:QHA2} the feeding of the QHA is done using two discrete ports. When port 1 is fed with a positive phase at $90^\circ$ the QHA will have it's maximum radiation in the forward direction. If the port instead is fed with a negative phase at $90^\circ$ then the QHA will have it's maximum radiation in the backward direction. Other phases will result in non-uniform radiation patterns with one ore more peaks in the azimuth axis. It is easy to believe that it is possible to connect two of the arms of the QHA to a common ground and feed the one port with a phase difference at $90^\circ$ using a $1/4 \lambda $ transmission-line and the other directly from the source depicted in figure \ref{fig:QHA_common}. But this will not work since the geometry of the QHA will change from an electrically perspective. The shortening of the two grounds will affect the flow of the current resulting of only a pattern difference of $45^\circ$ in the farfield which then makes it impossible to archive a omnidirectional radiation pattern and circular polarization. To overcome this is has been shown in \citep{Bai2014} that it is possible to use a feeding network consisting of one second-iteration Moore $180^\circ$ hybrid coupler and two second-iteration Sierpinski $90^\circ$ hybrid couplers. It has also been showen in \citep{Yang2014} that a broadband feed network can be done using an wilkinson powerdivider and broadband $90^\circ$ phase shifters.     
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%SMALL QHA with groundplane¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+\subsubsection{QHA for 1090 MHZ}
+By simulating the diameter of the QHA and the length, it has been shown that a diameter of $D=0.16\lambda = 24mm$ and a length of $L=0.22\lambda = 66mm$ gives a good performance at 1090Mhz with a S11 at -30dB. The antenna has a nearly perfect circular polarization and a maximum gain at 6.0dB together with a HPBW at $103^\circ$. This gives a coverage percentage at 1.4\% on the earth at a height of 800km. The antenna has been simulated with a ground-plane and without a ground-plane and the difference in the performance is small. The feeding is done using two microstrip lines for each loop and then feeding those with a discrete port. This is done at both top and bottom of the design.   
 
 \begin{figure}[H]
 \centering 
-\includegraphics[scale = 0.3]{figures/antennas/qha/qha_6_common_gnd}
-\caption{Common GND for the QHA}
-\label{fig:QHA_common}
+\includegraphics[scale = 0.8]{figures/antennas/qha/1090mhz}
+\caption{QHA for 1090Mhz with a diameter of $D=0.16\lambda = 24mm$, a length of $L=0.22\lambda = 66mm$ and a ground-plane at 10x10cm}
+\label{fig:QHA_1090}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.6]{figures/antennas/qha/1090mhz_ff}
+	\caption{Farfield of the QHA}
+    \label{fig:1090_ff}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.6]{figures/antennas/qha/1090mhz_ar}
+\caption{Axial ratio of the QHA showing good circular polarication}
+    \label{fig:1090_ar}
+  \end{minipage}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% wideband %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Wideband QHA}
-As shown previously a QHA in its basic form radiates only at a narrow frequency band. For the S-parameters in figure \ref{fig:QHA_S11} it is seen that at 131MHz the return loss is about -2dB which results in an efficiency at only -5dB. This can be improved using a match network, but the antenna still needs to be a radiating element and therefore the matching can only improve the return-loss and not the bandwidth \citep{Iyver2010}. Therefore some modifications needs to be done at the QHA to improve the bandwidth. One method is to make the bifilar arms of the QHA in diffrent lengths so one arm is longer than the resonant frequency and the other shorter as depicted in figure \ref{fig:WB_QHA}. The feeding is done by shortening the feeds as in figure \ref{fig:WB_QHA_feed} and feed with a $1/4\lambda$ coax cable as balun. Because the feeding is done this way the farfield will not be omnidirectional and is skewed in one direction as depicted in figure \ref{fig:WB_QHA_ff} but still useful in some applications. The S-parameter in figure \ref{fig:WB_QHA_spar} shows a bandwidth at 10\% which is limited by the $1/4\lambda$ balun. This could be improved, but the farfield will then change and the improvements will be doubtful.       
+\subsubsection{Wideband QHA} 
+As shown previously a QHA in its basic form radiates only at a narrow frequency band. For the S-parameters in figure \ref{fig:QHA_S11} it is seen that at 131MHz the return loss is about -2dB which results in an efficiency at only -5dB. This can be improved using a match network, but the antenna still needs to be a radiating element and therefore the matching can only improve the return-loss and not the bandwidth \citep{Iyver2010}. Therefore some modifications needs to be done at the QHA to improve the bandwidth. One method is to make the bifilar arms of the QHA in diffrent lengths so one arm is longer than the resonant frequency and the other shorter as depicted in figure \ref{fig:WB_QHA}. The feeding is done by shortening the feeds as in figure \ref{fig:WB_QHA_feed} and feed with a $1/4\lambda$ coax cable as balun. Because the feeding is done this way the farfield will not be omnidirectional and is skewed in one direction as depicted in figure \ref{fig:WB_QHA_ff}. A more omnidirectional radiation pattern could be obtained by looking more into the feeding method. It has been shown in \citep{Bai2014} that it is possible to use a feeding network consisting of one second-iteration Moore $180^\circ$ hybrid coupler and two second-iteration Sierpinski $90^\circ$ hybrid couplers. It has also been showen in \citep{Yang2014} that a broadband feed network can be done using an wilkinson powerdivider and broadband $90^\circ$ phase shifters.       
 
 
 \begin{figure}[H]
@@ -293,8 +307,8 @@ Another configuration of the QHA is the Multiband QHA \citep{Bai2014} which can 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 
-\section{Truncated Spherical Helical Antenna}
-The Bifilar Truncated Spherical Helical Antenna (BTSHA) is a modification of the normal Spherical Helical Antenna (SHA) whos geometry is described by equation \ref{eq:SHA1} to \ref{eq:SHA3} where N is number of turns of the wire. The BTSHA is made upon two half's of the SHA which then is turned $180^\circ$ to connect to each other. See figure \ref{fig:SHA1}.  
+\subsection{Truncated Spherical Helical Antenna}
+The Bifilar Truncated Spherical Helical Antenna (BTSHA) is a modification of the normal Spherical Helical Antenna (SHA) whos geometry is described by equation \ref{eq:SHA1} to \ref{eq:SHA3} in spherical coordinates, where N is number of turns of the wire. The BTSHA is made upon two half's of the SHA which then is turned $180^\circ$ to connect to each other. See figure \ref{fig:SHA1}.  
 
 \begin{equation}\label{eq:SHA1}
 r = a
@@ -308,7 +322,7 @@ r = a
 0<=\phi<=2\pi N
 \end{equation}
 
-The BTSHA can be fed different ways using bottom feeding, side feeding or top feeding. One advantage using top feeding is that it can be fed using a "monopole" that will make a field inside the BTSHA together with the current flowing in opposite direction which makes it able to radiate in axial-null mode because of the symmetry. See figure \ref{eq:SHA2}. This makes it possible to archive better gain in the side direction as wanted for a satellite antenna for reception of ADS-B. Another advantage is the compact size compared to a conventional helical antenna. An important feature of this structure is that the angle of the cone can be adjusted by moving the height of the ground-plane. If the cone shall become broader the ground plane can be moved backward and if the cone is wanted narrower then the ground plane can be formed as an reflector. Unfortunately the structure has a lack of gain in the center. Simulations has shown that the number of the wire turns has only little effect on the S-parameter and radiation pattern. A simulation has been made with the dimension $a=2.86\lambda$, see figure \ref{fig:SHA_ff1}. It is stated in \citep{Clark2003} that the radiation pattern for this configuration should be omnidirectional. This has been shown not to be true and there is only two main-beams. The polarization is overall circular but with linear polarization in the direction of the two main-beams.    
+The BTSHA can be fed different ways using bottom feeding, side feeding or top feeding. One advantage using top feeding is that it can be fed using a "monopole" that will make a field inside the BTSHA together with the current flowing in opposite direction which makes it able to radiate in axial-null mode because of the symmetry. See figure \ref{fig:SHA2}. This makes it possible to archive better gain in the side direction as wanted for a satellite antenna for reception of ADS-B. Unfortunately the structure has a lack of gain in the center which would result in no reception in the direct path to the earth. A solution for this has to be found. Another advantage is the compact size compared to a conventional helical antenna. An important feature of this structure is that the angle of the cone can be adjusted by moving the height of the ground-plane. If the cone shall become broader the ground plane can be moved backward and if the cone is wanted narrower then the ground plane can be formed as an reflector. Simulations has shown that the number of the wire turns has only little effect on the S-parameter and radiation pattern. A simulation has been made with the dimension $a=2.86\lambda$, see figure \ref{fig:SHA_ff1}. It is stated in \citep{Clark2003} that the radiation pattern for this dimension should be omnidirectional. This has been shown not to be fully true and there is only two main-beams. The polarization is overall circular but with linear polarization in the direction of the two main-beams.    
 
 \begin{figure}[H]
 \centering 
@@ -332,7 +346,7 @@ The BTSHA can be fed different ways using bottom feeding, side feeding or top fe
 \label{fig:SHA_ff1}
 \end{figure} 
 
-Another simulation has shown to have a more omnidirectional radiation pattern, which uses four arms instead of two (QTSHA) with a rotation of $90^\circ$ each. Futher the structure is streched in the Z-direction by a factor of two. But still this structure has a lack of gain in the center. To overcome this problem simulations has shown that it is rather difficult to make a change to the structure that will increase the gain in the middle. The best solution to this problem is to change the feed point, see figure \ref{fig:SHA_feed}. The feeding point has been simulated for various points and a feeding point at $0.06\lambda$ from the top has shown to be the best. See figure \ref{fig:SHA_ff3}. Unfortunately this asymmetry makes the polarization of the antenna more linear which then makes this option a bad decision.     
+Another simulation has been shown to have a more omnidirectional radiation pattern, which uses four arms instead of two (QTSHA) with a rotation of $90^\circ$ each. Futher the structure is stretched in the Z-direction by a factor of two. The stretching gives a higher gain and a broader radiation angle close to $100^\circ$, but still this structure has a lack of gain in the center and the polarization becomes non circular. To overcome this problem simulations has shown that it is rather difficult to make a change to the structure that will increase the gain in the middle. The best solution to this problem is to change the feed point, see figure \ref{fig:SHA_feed}. The feeding point has been simulated for various points and a feeding point at $0.06\lambda$ from the top has shown to be the best. See figure \ref{fig:SHA_ff3}. Unfortunately this does not help making the structure circular polarized.   
 
 \begin{figure}[H]
 \centering 

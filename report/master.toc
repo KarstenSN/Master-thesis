@@ -14,10 +14,10 @@
 \contentsline {section}{\numberline {3.2}Helical Antennas}{12}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Helical antenna with ground plane}{12}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Quadrifilar Helical Antenna}{16}{subsection.3.2.2}
-\contentsline {subsubsection}{Feeding methods}{19}{subsubsection*.23}
-\contentsline {subsubsection}{Wideband QHA}{20}{subsubsection*.25}
-\contentsline {subsubsection}{Multiband QHA}{22}{subsubsection*.29}
-\contentsline {section}{\numberline {3.3}Truncated Spherical Helical Antenna}{23}{section.3.3}
+\contentsline {subsubsection}{QHA for 1090 MHZ}{19}{subsubsection*.23}
+\contentsline {subsubsection}{Wideband QHA}{20}{subsubsection*.26}
+\contentsline {subsubsection}{Multiband QHA}{22}{subsubsection*.30}
+\contentsline {subsection}{\numberline {3.2.3}Truncated Spherical Helical Antenna}{23}{subsection.3.2.3}
 \contentsline {chapter}{\numberline {4}Conclusion}{29}{chapter.4}
-\contentsline {chapter}{Bibliography}{31}{chapter*.39}
+\contentsline {chapter}{Bibliography}{31}{chapter*.40}
 \contentsline {chapter}{\numberline {A}Appendix A name}{33}{appendix.A}
