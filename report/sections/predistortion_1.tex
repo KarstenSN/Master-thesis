@@ -104,6 +104,20 @@ frequency response of the PA around the carrier frequency,
 the impedance variation of bias circuits at baseband, and the
 harmonic loading in the PA power stage.} Even modelling of this is rather comprehensive the DPD still needs to take these effects into account to generate a non-distorted output at the PA.  
 
+\section{AM/AM and AM/PM distortion}
+If the input signal to the PA is modelled as equation \ref{eq:amam1}
+
+\begin{equation}\label{eq:amam1}
+x(t) = a(t)e^{j\phi(t)}
+\end{equation}
+
+Where $a(t)$ is the envelope of the signal and $e^{j\phi(t)}$ is the phase of the input signal. Then the distorted output of the amplifier will be that of equation \ref{eq:amam1} where $g()$ is the amplitude distortion and $f()$ is the phase distortion also called Amplitude to Amplitude (AM/AM) and Amplitude to Phase (AM/PM) distortion. AM/AM distortion can be defined as the deviation from the constant gain when PA is
+operated in compression region. On the other hand, the increased phase change at compression
+region can be termed as AM/PM distortion.In presence of wideband signals having non constant amplitude, PA behaves as nonlinear system and exhibits two types of nonlinearities which is static distortion and memory effects.  
+
+\begin{equation}\label{eq:amam2}
+y(t) = g(a(t))e^{j\phi(t)+f(a(t))}
+\end{equation}
 
 
 \section{Crosstalk}
@@ -218,7 +232,7 @@ A = -2Re(S_{12}^*(1-S_{11}))
 B = |1-S_{11}|^2 + |S_{12}|^2
 \end{equation}
 
-A simulation has been made in CST studio with 4 antennas separated $0.1\lambda$ at $f = 3.5Ghz$ or 8.6mm.
+A simulation has been made in CST studio with 4 antennas separated $0.1\lambda$ at $f = 3.5Ghz$ or 8.6mm, see figure \ref{fig:correlation}. The simulated S-parameters has been imported to MATLAB and the formula is used to generate the correlation plot in figure \ref{fig:correlation_plot}. From the figure it can bee seen that when the frequency increases the correlation becomes lower. 
 
 
 \begin{figure}[H]
@@ -228,7 +242,12 @@ A simulation has been made in CST studio with 4 antennas separated $0.1\lambda$ 
 \label{fig:correlation}
 \end{figure}
 
-
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.9]{figures/ch1/antenna_array_corr.png}
+\caption{Correlation between antenna 1 and 2}
+\label{fig:correlation_plot}
+\end{figure}
 
 
 

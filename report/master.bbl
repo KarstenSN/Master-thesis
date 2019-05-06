@@ -1,5 +1,11 @@
 \begin{thebibliography}{}
 
+\bibitem[Ali~Cheaito, 2016]{ali2016}
+Ali~Cheaito, e.~a. (2016).
+\newblock Evm derivation of multicarrier signals to determine the operating
+  point of the power amplifier considering clipping and predistortion.
+\newblock ResearchGate.
+
 \bibitem[Balanis, 2005]{Balanis2005}
 Balanis, C.~A. (2005).
 \newblock {\em Antenna Theory Analysis And Design}.
@@ -29,6 +35,22 @@ Iyer, V. (2010).
 \newblock
   \url{https://web.wpi.edu/Pubs/ETD/Available/etd-092910-012955/unrestricted/viyer.pdf}.
 
+\bibitem[Katharina~Hausmair, 2017]{Hausmair2017}
+Katharina~Hausmair, e.~a. (2017).
+\newblock Digital predistortion for multi-antenna transmitters affected by
+  antenna crosstalk.
+\newblock
+  \url{http://www.ieee.org/publications_standards/publications/rights/index.html}.
+
+\bibitem[Molisch, 2011]{molisch2011}
+Molisch, A.~F. (2011).
+\newblock Wireless communications.
+
+\bibitem[National-Instruments, 2019]{NI}
+National-Instruments (2019).
+\newblock Optimizing ip3 and acpr measurements.
+\newblock \url{www.ni.com/rf-academy}.
+
 \bibitem[Shkelzen~Cakaj, 2014]{Cakaj2014}
 Shkelzen~Cakaj, e.~a. (2014).
 \newblock The coverage analysis for low earth orbiting satellites at low
@@ -41,6 +63,12 @@ Sun, J. (2015).
 \newblock The 1090mhz riddle.
 \newblock \url{https://mode-s.org/decode/}.
 
+\bibitem[Taijun~Liu, 2007]{liu2007}
+Taijun~Liu, e. (2007).
+\newblock Memory effect pre-compensation for wideband rf power amplifiers using
+  fir-based weak nonlinear filters.
+\newblock \url{https://ieeexplore.ieee.org}.
+
 \bibitem[William A.~Imbriale, 2012]{Imbriale2012}
 William A.~Imbriale, e.~a. (2012).
 \newblock {\em Space Antenna Handbook}.
@@ -52,10 +80,30 @@ Xiaoqiang~Yang, e.~a. (2014).
   broadband feeding network.
 \newblock Progress In Electromagnetics Research C, Vol. 51, 103–109, 2014.
 
+\bibitem[Xuan~Wang, 2011]{wang2011}
+Xuan~Wang, e.~a. (2011).
+\newblock Correlation coefficient expression by s-parameters for two
+  omni-directional mimo antennas.
+\newblock \url{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=5996702}.
+
 \bibitem[Xudong~Bai, 2014]{Bai2014}
 Xudong~Bai, e.~a. (2014).
 \newblock Compact design of triple-band circularly polarized quadrifilar helix
   antennas.
 \newblock IEEE antennas and wireless propagation letters, VOL. 13 2014.
+
+\bibitem[Yan~Guo, 2015]{guo2015}
+Yan~Guo, e. (2015).
+\newblock Power adaptive digital predistortion for wideband rf power amplifiers
+  with dynamic power transmission.
+\newblock IEEE TRANSACTIONS ON MICROWAVE THEORY AND TECHNIQUES, VOL. 63, NO.
+  11, NOVEMBER 2015.
+
+\bibitem[Zahidul Islam~Shahin, 2017]{islam2017}
+Zahidul Islam~Shahin, e.~a. (2017).
+\newblock Efficient dpd coefficient extraction for compensating antenna
+  crosstalk and mismatch effects in advanced antenna system.
+\newblock Department of Electrical and Information Technology LTH, Lund
+  University SE-221 00 Lund, Sweden.
 
 \end{thebibliography}
