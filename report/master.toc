@@ -3,34 +3,34 @@
 \select@language {english}
 \contentsline {chapter}{Preface}{xi}{chapter*.3}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {chapter}{\numberline {2}Linkbudget}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}ADS-B signals}{3}{section.2.1}
-\contentsline {section}{\numberline {2.2}Free space loss}{3}{section.2.2}
-\contentsline {section}{\numberline {2.3}LEO coverage}{4}{section.2.3}
-\contentsline {section}{\numberline {2.4}LEO radiation pattern}{5}{section.2.4}
-\contentsline {section}{\numberline {2.5}Tabel}{7}{section.2.5}
-\contentsline {chapter}{\numberline {3}Antennas}{9}{chapter.3}
-\contentsline {section}{\numberline {3.1}Reflector Antennas}{9}{section.3.1}
-\contentsline {section}{\numberline {3.2}Helical Antennas}{12}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Helical antenna with ground plane}{12}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Quadrifilar Helical Antenna}{16}{subsection.3.2.2}
-\contentsline {subsubsection}{QHA for 1090 MHZ}{19}{subsubsection*.23}
-\contentsline {subsubsection}{Wideband QHA}{20}{subsubsection*.26}
-\contentsline {subsubsection}{Multiband QHA}{22}{subsubsection*.30}
-\contentsline {subsection}{\numberline {3.2.3}Truncated Spherical Helical Antenna}{23}{subsection.3.2.3}
-\contentsline {chapter}{\numberline {4}Power Amplifier Imperfections}{29}{chapter.4}
-\contentsline {section}{\numberline {4.1}Amplifier non-linearity}{29}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Impact of non-linearity}{31}{subsection.4.1.1}
-\contentsline {section}{\numberline {4.2}Memory effects}{33}{section.4.2}
-\contentsline {section}{\numberline {4.3}AM/AM and AM/PM distortion}{33}{section.4.3}
-\contentsline {section}{\numberline {4.4}Crosstalk}{34}{section.4.4}
-\contentsline {section}{\numberline {4.5}Antenna Diversity and MIMO}{36}{section.4.5}
-\contentsline {chapter}{\numberline {5}Measurement}{39}{chapter.5}
-\contentsline {section}{\numberline {5.1}Power Amplifier}{39}{section.5.1}
-\contentsline {section}{\numberline {5.2}Measurement setup}{40}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Measurement of AM/AM distortion}{42}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}PSD}{44}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}ACPR}{46}{subsection.5.2.3}
-\contentsline {chapter}{\numberline {6}Conclusion}{47}{chapter.6}
-\contentsline {chapter}{Bibliography}{49}{chapter*.68}
-\contentsline {chapter}{\numberline {A}Appendix A name}{51}{appendix.A}
+\contentsline {chapter}{\numberline {2}Amplifier Imperfections}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Non-linearity}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Distortion due to non-linearity}{5}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}AM/AM and AM/PM distortion}{7}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Memory effects}{7}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Efficiency}{8}{section.2.3}
+\contentsline {section}{\numberline {2.4}Antenna Diversity and MIMO}{8}{section.2.4}
+\contentsline {section}{\numberline {2.5}Array factor}{11}{section.2.5}
+\contentsline {chapter}{\numberline {3}Amplifier modelling}{15}{chapter.3}
+\contentsline {section}{\numberline {3.1}Pre-distortion}{15}{section.3.1}
+\contentsline {section}{\numberline {3.2}DPD models}{15}{section.3.2}
+\contentsline {subsubsection}{Weiner}{15}{subsubsection*.17}
+\contentsline {subsubsection}{Hammerstein}{16}{subsubsection*.18}
+\contentsline {subsubsection}{Memory Polynomial}{16}{subsubsection*.19}
+\contentsline {section}{\numberline {3.3}Crosstalk}{16}{section.3.3}
+\contentsline {chapter}{\numberline {4}Measurement}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}Simulation of PCB antenna}{19}{section.4.1}
+\contentsline {section}{\numberline {4.2}Power Amplifier}{21}{section.4.2}
+\contentsline {section}{\numberline {4.3}Measurement setup}{22}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Measurement of AM/AM distortion}{25}{subsection.4.3.1}
+\contentsline {subsubsection}{Two transmit antenna}{26}{subsubsection*.33}
+\contentsline {subsubsection}{Four transmit antenna}{27}{subsubsection*.37}
+\contentsline {subsection}{\numberline {4.3.2}PSD}{28}{subsection.4.3.2}
+\contentsline {subsubsection}{Two transmit antenna}{29}{subsubsection*.42}
+\contentsline {subsubsection}{Four transmit antenna}{30}{subsubsection*.46}
+\contentsline {subsection}{\numberline {4.3.3}ACPR}{31}{subsection.4.3.3}
+\contentsline {subsubsection}{Two transmit antenna}{32}{subsubsection*.50}
+\contentsline {subsubsection}{Four transmit antenna}{33}{subsubsection*.52}
+\contentsline {chapter}{\numberline {5}Conclusion}{35}{chapter.5}
+\contentsline {chapter}{Bibliography}{37}{chapter*.54}
+\contentsline {chapter}{\numberline {A}Appendix A name}{39}{appendix.A}

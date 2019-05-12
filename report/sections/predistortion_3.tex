@@ -1,0 +1,124 @@
+\chapter{Amplifier modelling}
+
+\section{Pre-distortion}
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.7]{figures/ch1/predistortion_consept.png}
+\caption{Consept of predistortion \citep{guo2015}}
+\label{fig:pre_cons}
+\end{figure}
+
+In figure \ref{fig:pre_cons} the consept of Digital Pre-Distortion (DPD) is depicted. DPD is a way to "distort" the incomming signal with the inverse transfer-function of the amplifier. For example the gain of the amplifier is ideally linear in the small-signal region and gets non-linear at higher signal levels. To overcome this, a block called the predistorter inverses this non-linear curve which is the exact inverse of the PA, then a linear amplification can be achieved at the final PA output. But to archive this inverse of the PA all the non-linear effects has to be accounted for including memory effects. 
+
+\section{DPD models}
+
+
+\subsubsection{Weiner}
+A simpel model to include memory effects is the Weiner model, which consists of a linear filter $h(m)$ followed by $a_k$ which is the polynomial coefficients of the non-linearity. The model is given by equation \ref{eq:wiener}
+
+\begin{equation}\label{wiener}
+y_{wiener}(n) = \sum_{k=1}^{K} a_k [\sum_{m=0}^{M-1}h(m)x(n-m)]^k
+\end{equation} 
+
+It is seen that the output consists of the sum of the non-linear response multiplied with the sum of the input with the former input multiplied with a filter. The Weiner model is one of the simplest ways to combine memory effects with non-linearity but unfortunately it does not provide good results for modelling a power amplifier. 
+
+ 
+\subsubsection{Hammerstein} 
+Another simple model is the Hammerstein model which is given by equation \ref{eq:hammer}
+
+\begin{equation} \label{eq:hammer}
+y_{hammerstein}(n) = \sum_{m=0}^{M-1}g(m)\sum_{k=1}^{K}a_k x^k(n-m)
+\end{equation} 
+
+Which is formed by a non-linearity followed by a linear filter. It is seen that the output consist of the sum of the linear filter $g(m)$ multiplied with the sum of the filter coefficielts $a_k$ multiplied with the input signal and the former input signal in the power of $k$. 
+Yet this filter is simple it does also have it's limitations when it come to modelling of power amplifiers. 
+   
+\subsubsection{Memory Polynomial}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%     
+
+
+\section{Crosstalk}
+Crosstalk is coupling from one branch to another branch. When only a signal is present on a single branch, no crosstalk would appear to this branch. On the other hand if a signal is presented at two branches then crosstalk would appear to both of them. There exist three types of crosstalk where 1) Crosstalk before the PA's, see figure \ref{fig:cross_bf}, 2) Crosstalk after the PA's, see figure \ref{fig:cross_af}. 3) Crosstalk on the antennas and mishmash due to coupling. Crosstalk before the PA is also called nonlinear since it is amplified by the non linear PA. The nonlinear crosstalk and the PA nonlinear response should be jointly
+compensated by a predistorter to get a reliable system performance \citep{islam2017} denoted $\mu_k (.)$. The output from the branches would become that of equation \ref{eq:nonlin}.
+
+\begin{equation} \label{eq:nonlin}
+Y_{1k} = fk(uk(X_{11},X_{12},X_{13},X_{1k}))
+\end{equation}   
+
+Where X is the input signal, Y is the output and $fk$ is the PA response. 
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/ch1/crosstalk_before}
+	\caption{Crosstalk before PA \citep{islam2017}}	
+    \label{fig:cross_bf}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+	\includegraphics[scale = 0.5]{figures/ch1/crosstalk_after}
+	\caption{Crosstalk after PA \citep{islam2017}}
+    \label{fig:cross_af}
+  \end{minipage}
+\end{figure}
+
+Crosstalk after the PA is called linear since it has an linear impact. In figure \ref{fig:cross_af} the output of the amplifier is connected to an isolator, which makes the output unaffected by reflections. A linear model can therefore be used which is shown in equation \ref{eq:lin_iso}. 
+
+\begin{equation} \label{eq:lin_iso}
+Y_{1k} = \mu_k(f1(X_{11}),f2(X_{12}),f3(X_{13})..fk(X_{1k}))
+\end{equation}     
+
+When no isolators is presented the output will now be affected by the crosstalk or mutual-coupling between the antennas. A sketch of this is depicted in figure \ref{fig:cross_ant} where $a_{1k}$ is the incoming signal to the amplifier, $b_{2k}$ is the output from the amplifier and $a_{2k}$ is the reflected signal form the antenna array at the k'th branch \citep{Hausmair2017}. The relation between $a_{2k}$
+and the output signals $b_{2k}$ is determined by the characteristics
+of the antenna array. The system model of the multi-antenna
+transmitter can, therefore, be split in to a crosstalk and
+mismatch model (CTMM). This block can further be used together with a dual-input-DPD which holds the model for the PA, see figure \ref{fig:cross_ctmm}. 
+
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/ch1/crosstalk_antenna}
+	\caption{Model of the antenna crosstalk \citep{Hausmair2017}}	
+    \label{fig:cross_ant}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+	\includegraphics[scale = 0.5]{figures/ch1/crosstalk_ctmm.png}
+	\caption{The predistortion method consists of two main blocks: one linear CTMM block
+for the whole transmitter and a dual-input DPD block in every transmit path. \citep{Hausmair2017}}
+	\label{fig:cross_ctmm}
+  \end{minipage}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

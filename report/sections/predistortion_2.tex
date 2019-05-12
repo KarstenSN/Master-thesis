@@ -1,7 +1,40 @@
 \chapter{Measurement}\label{ch:measurement}
-The purpose of this section is to characterize a power amplifier for its distortion mechanisms and then measure the impact of the crosstalk from the antennas. 
+The purpose of this section is to characterize a power amplifier for its ACPR and AM/AM distortion and afterwards measure the impact of the crosstalk from the antennas. 
 
 \section{Simulation of PCB antenna}
+The antenna used for measurement is a PCB antenna that measures 100x300mm on standard 1.6mm FR-4. The antenna has a $S_{11}$ below -10dB from 2.5GHz to 6.0GHz and only gets as high as -7.5dB all the way up to 10GHz. The antenna is linear polarized and has a transmit and receive gain at 11.4dB. On the front of the PCB a large copper area is presented. This copper area is feed from the backside of the PCB where a small track is feed with a sma connector. In the simulation this track is feed with a wave guide port.  
+   
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.7]{figures/measurement/antenna_front.png}
+	\caption{Front of PCB antenna}
+    \label{fig:ant_front}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.7]{figures/measurement/antenna_back.png}
+\caption{Backside of PCB antenna}
+    \label{fig:ant_back}
+  \end{minipage}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.7]{figures/measurement/antenna_ff.png}
+\caption{Farfield of the antenna}
+\label{fig:ant_ff}
+\end{figure} 
+
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.6]{figures/measurement/antenna_spar.png}
+\caption{$S_{11}$ of the antenna}
+\label{fig:ant_spar}
+\end{figure} 
+
 
 \section{Power Amplifier}
 The  \textit{ZX60-6013E+} amplifier is a small buffer-amplifier with a BW from 20MHz - 6GHz. It has an output-power at maximum 11.16dBm at 3.5GHz (1 dB compression ). The gain is 13.85 dB and the noise figure is 3.42dB. In figure \ref{fig:amp_gain} and \ref{fig:amp_outpower} curves for the amplifier gain and output power versus frequency it depicted respectively. The amplifier is shown in figure \ref{fig:amplifier} 
@@ -30,7 +63,7 @@ The  \textit{ZX60-6013E+} amplifier is a small buffer-amplifier with a BW from 2
 
 
 \section{Measurement setup} \label{ch_meas_setup}
-To measure the impact of the antenna crosstalk, several measurements must be done at different setup. The first setup is shown in figure \ref{fig:Meas_setup1}. In this setup only the amplifier is measured because it is necessary with a reference. The signal generator is generating a 10MHz LTE signal at 3.5GHz which output is then connected to the input of the amplifier. The amplifier is supplied with a 12.0VDC signal from the power supply and the output of the amplifier is connected to a 6dB attenuator to protect the input stage of the spectrum analyser, which measures the output signal from the amplifier.   
+To measure the impact of the antenna crosstalk, several measurements must be done at different setups. The first setup is shown in figure \ref{fig:Meas_setup1}. In this setup only the amplifier is measured. The signal generator is generating a 10MHz LTE signal at 3.5GHz where the output is connected to the input of the amplifier. The amplifier is supplied with a 12.0VDC signal from the power supply and the output of the amplifier is connected to a 6dB attenuator to protect the input stage of the spectrum analyser, which measures the output signal from the amplifier.   
 
 \begin{figure}[H]
 \centering 
@@ -49,7 +82,7 @@ In figure \ref{fig:Meas_setup2} the second measurement setup is shown. In this s
 \label{fig:Meas_setup2}
 \end{figure} 
 
-In setup three a power-divider is now introduced together with a second amplifier and another antenna. The received power will now increase 3dB but because the amplifiers has to be driven in the same power levels as before, one must add another 3dB to the input of the power divider. Be aware that in the measurements a 1:4 power divider was used and therefore the power was increased 6dB. 
+In setup three a power-divider is now introduced together with a second amplifier and second antenna. The received power will now increase 3dB but because the amplifiers has to be driven in the same power levels as before, one must add another 3dB to the input of the power divider. Be aware that in the measurements a 1:4 power divider was used and therefore the power was increased 6dB. The unused ports was terminated to a $50\Omega$ load. Also measurement using 4 antennas has been done in the same way. The only diffrence from the measurement was that the terminations was removed and an other 2 amplifiers and 2 antennas was added. See figure \ref{fig:Meas_setup4nt}.
 
 \begin{figure}[H]
 \centering 
@@ -59,21 +92,26 @@ In setup three a power-divider is now introduced together with a second amplifie
 \end{figure} 
 
 
-In figure \ref{fig:Meas_setup} a picture of a real measurement setup is shown. The antennas are spaced 1 meter apart from the input terminals and are pointing directly towards each other. The PA is mounted on a aluminium sheet with a tool grip to keep it at a constant temperature. The PA is supplied with 12.0VDC from the power supply and draws 40mA of current. The signal generator is connected to the input of the amplifier and the output of the amplifier is connected to the Tx antenna. The spectrum analyser is connected to Rx antenna. 
+In figure \ref{fig:Meas_setup} a picture of a real measurement setup is shown. The antennas are spaced 1 meter apart from the input terminals and are pointing directly towards each other. The PA is mounted on a aluminium sheet with a tool grip to keep it at a constant temperature. The PA is supplied with 12.0VDC from the power supply and draws 40mA of current. The signal generator is connected to the input of the amplifier and the output of the amplifier is connected to the Tx antenna. The spectrum analyser is connected to Rx antenna. In figure \ref{fig:Meas_setup4ant} a measurement with 4 antennas is depicted. The antennas is mounted in a piece of flamingo with slots at at distance of $0.1\lambda$. This way the antenna can be moved to make the desired measurement.   
 
 
 \begin{figure}[H]
 \centering 
 \includegraphics[scale = 0.1]{figures/measurement/measurement_setup.jpg}
-\caption{Measurement setup}
+\caption{Measurement setup using one transmit antennas}
 \label{fig:Meas_setup}
 \end{figure} 
 
-
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.1]{figures/measurement/measurement_setup_4.jpg}
+\caption{Measurement setup using four transmit antennas}
+\label{fig:Meas_setup4ant}
+\end{figure} 
 
 
 \subsection{Measurement of AM/AM distortion}\label{ch:meas_amam}
-Measurement has been done using the methods described in section \ref{ch_meas_setup}. The results in figure \ref{fig:amam_amp} is a measurement of only the amplifier. It is seen that at an input of -2.5dB the amplifier starts to decrese its gain. This is expected due to the compression point. The mean gain of the amplifier is  measured closly to 13.8dB as expected. It is further seen that the spreading of the signal is highest at low signal levels. When introducing one Tx antenna and one Rx antenna the free space loss must be accounted for. This is done by use of equation \ref{eq:friss_1m} which gives 20.5dB in loss. In the measurement 19.5dB was obtained, the diffrence is might caused by the antenna them self, since the used antenna gain is only simulated, and the antenna are spaced relativity close, or it can be reflections from the table that are causing the difference. Cable loss and connector loss has been measured and accounted for.  
+Measurement has been done using the methods described in section \ref{ch_meas_setup}. The results in figure \ref{fig:amam_amp} is a measurement of only the amplifier. It is seen that at an input of -2.5dB the amplifier starts to decrese its gain. This is expected due to the compression point. The mean gain of the amplifier is  measured closly to 13.8dB as expected. It is further seen that the spreading of the signal is highest at low signal levels. When introducing one Tx antenna and one Rx antenna the free space loss must be accounted for. This is done by use of equation \ref{eq:friss_1m} \citep{Balanis2005} which gives 20.5dB in loss. In the measurement 19.5dB was measured, the difference is might caused by the antenna them self, since the used antenna gain is only simulated, and the antenna are spaced relativity close, or it can be reflections from the table or room that are causing the difference. Cable loss and connector loss has been measured and accounted for.  
 
 \begin{equation}\label{eq:friss_1m}
 Pathloss(db) = 10*log10(G_r G_t (\frac{4\pi d}{\lambda})^2)=20.5dB
@@ -102,18 +140,19 @@ It can be seen from figure \ref{fig:amam_one_ant} that the antenna system makes 
   \end{minipage}
 \end{figure}
 
+\subsubsection{Two transmit antenna}
 
 \begin{figure}[H]
   \centering
   \begin{minipage}[b]{0.5\textwidth}
 	\includegraphics[scale = 0.5]{figures/measurement/two_antenna/amam_01.png}
-	\caption{AM/AM distortion at 0.1 $\lambda$}
+	\caption{AM/AM distortion at 0.1 $\lambda$ spacing between two antennas}
     \label{fig:amam01}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.4\textwidth}
 \includegraphics[scale = 0.5]{figures/measurement/two_antenna/amam_02.png}
-\caption{AM/AM distortion at 0.2 $\lambda$}
+\caption{AM/AM distortion at 0.2 $\lambda$ spacing between two antennas}
     \label{fig:amam02}
   \end{minipage}
 \end{figure}
@@ -122,13 +161,13 @@ It can be seen from figure \ref{fig:amam_one_ant} that the antenna system makes 
   \centering
   \begin{minipage}[b]{0.5\textwidth}
 	\includegraphics[scale = 0.5]{figures/measurement/two_antenna/amam_03.png}
-	\caption{AM/AM distortion at 0.3 $\lambda$}
+	\caption{AM/AM distortion at 0.3 $\lambda$ spacing between two antennas}
     \label{fig:amam03}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.4\textwidth}
 \includegraphics[scale = 0.5]{figures/measurement/two_antenna/amam_04.png}
-\caption{AM/AM distortion at 0.4 $\lambda$}
+\caption{AM/AM distortion at 0.4 $\lambda$ spacing between two antennas}
     \label{fig:amam04}
   \end{minipage}
 \end{figure}
@@ -137,16 +176,64 @@ It can be seen from figure \ref{fig:amam_one_ant} that the antenna system makes 
   \centering
   \begin{minipage}[b]{0.5\textwidth}
 	\includegraphics[scale = 0.5]{figures/measurement/two_antenna/amam_05.png}
-	\caption{AM/AM distortion at 0.4 $\lambda$}
+	\caption{AM/AM distortion at 0.5 $\lambda$ spacing between two antennas}
     \label{fig:amam05}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.4\textwidth}
 \includegraphics[scale = 0.5]{figures/measurement/two_antenna/amam_06.png}
-\caption{AM/AM distortion at 0.5 $\lambda$}
+\caption{AM/AM distortion at 0.6 $\lambda$ spacing between two antennas}
     \label{fig:amam06}
   \end{minipage}
 \end{figure}
+
+\subsubsection{Four transmit antenna}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/four_antenna/amam_0p1.png}
+	\caption{AM/AM distortion at 0.1 $\lambda$ spacing between four antennas}
+    \label{fig:amam01_4}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/measurement/four_antenna/amam_0p2.png}
+\caption{AM/AM distortion at 0.2 $\lambda$ spacing between four antennas}
+    \label{fig:amam02_4}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/four_antenna/amam_0p3.png}
+	\caption{AM/AM distortion at 0.3 $\lambda$ spacing between four antennas}
+    \label{fig:amam03_4}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/measurement/four_antenna/amam_0p4.png}
+\caption{AM/AM distortion at 0.4 $\lambda$ spacing between four antennas}
+    \label{fig:amam04_4}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/four_antenna/amam_0p5.png}
+	\caption{AM/AM distortion at 0.5 $\lambda$ spacing between four antennas}
+    \label{fig:amam05_4}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/measurement/four_antenna/amam_0p6.png}
+\caption{AM/AM distortion at 0.6 $\lambda$ spacing between four antennas}
+    \label{fig:amam06_4}
+  \end{minipage}
+\end{figure}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 \subsection{PSD}
@@ -168,17 +255,19 @@ The Power Sprectal Density (PSD) shown in figure \ref{fig:psd_amp} is measured d
   \end{minipage}
 \end{figure}
 
+\subsubsection{Two transmit antenna}
+
 \begin{figure}[H]
   \centering
   \begin{minipage}[b]{0.5\textwidth}
 	\includegraphics[scale = 0.5]{figures/measurement/two_antenna/psd_01.png}
-	\caption{PSD at 0.1 $\lambda$}
+	\caption{PSD at 0.1 $\lambda$ spacing between two antennas}
     \label{fig:psd01}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.4\textwidth}
 \includegraphics[scale = 0.5]{figures/measurement/two_antenna/psd_02.png}
-\caption{PSD at 0.2 $\lambda$}
+\caption{PSD at 0.2 $\lambda$ spacing between two antennas}
     \label{fig:psd02}
   \end{minipage}
 \end{figure}
@@ -187,13 +276,13 @@ The Power Sprectal Density (PSD) shown in figure \ref{fig:psd_amp} is measured d
   \centering
   \begin{minipage}[b]{0.5\textwidth}
 	\includegraphics[scale = 0.5]{figures/measurement/two_antenna/psd_03.png}
-	\caption{PSD at 0.3 $\lambda$}
+	\caption{PSD at 0.3 $\lambda$ spacing between two antennas}
     \label{fig:psd03}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.4\textwidth}
 \includegraphics[scale = 0.5]{figures/measurement/two_antenna/psd_04.png}
-\caption{PSD at 0.4 $\lambda$}
+\caption{PSD at 0.4 $\lambda$ spacing between two antennas}
     \label{fig:psd04}
   \end{minipage}
 \end{figure}
@@ -202,24 +291,80 @@ The Power Sprectal Density (PSD) shown in figure \ref{fig:psd_amp} is measured d
   \centering
   \begin{minipage}[b]{0.5\textwidth}
 	\includegraphics[scale = 0.5]{figures/measurement/two_antenna/psd_05.png}
-	\caption{PSD at 0.5 $\lambda$}
+	\caption{PSD at 0.5 $\lambda$ spacing between two antennas}
     \label{fig:psd05}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.4\textwidth}
 \includegraphics[scale = 0.5]{figures/measurement/two_antenna/psd_06.png}
-\caption{PSD at 0.6 $\lambda$}
+\caption{PSD at 0.6 $\lambda$ spacing between two antennas}
     \label{fig:psd06}
+  \end{minipage}
+\end{figure}
+
+\subsubsection{Four transmit antenna}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/four_antenna/psd_0p1.png}
+	\caption{PSD at 0.1 $\lambda$ spacing between four antennas}
+    \label{fig:psd01_4}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/measurement/four_antenna/psd_0p2.png}
+\caption{PSD at 0.2 $\lambda$ spacing between four antennas}
+    \label{fig:psd02_4}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/four_antenna/psd_0p3.png}
+	\caption{PSD at 0.3 $\lambda$ spacing between four antennas}
+    \label{fig:psd03_4}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/measurement/four_antenna/psd_0p4.png}
+\caption{PSD at 0.4 $\lambda$ spacing between four antennas}
+    \label{fig:psd04_4}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/four_antenna/psd_0p5.png}
+	\caption{PSD at 0.5 $\lambda$ spacing between four antennas}
+    \label{fig:psd05_4}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/measurement/four_antenna/psd_0p6.png}
+\caption{PSD at 0.6 $\lambda$ spacing between four antennas}
+    \label{fig:psd06_4}
   \end{minipage}
 \end{figure}
 
 \subsection{ACPR} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\subsubsection{Two transmit antenna}
+
 \begin{figure}[H]
 \centering 
 \includegraphics[scale = 1]{figures/measurement/two_antenna/ACPR.png}
-\caption{ACPR}
-\label{fig:acpr_meas}
+\caption{ACPR using two transmit antennas}
+\label{fig:acpr_meas1}
 \end{figure} 
 
+\subsubsection{Four transmit antenna}
 
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 1]{figures/measurement/four_antenna/ACPR.png}
+\caption{ACPR using four transmit antennas}
+\label{fig:acpr_meas2}
+\end{figure} 
