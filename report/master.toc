@@ -17,20 +17,22 @@
 \contentsline {subsubsection}{Weiner}{15}{subsubsection*.17}
 \contentsline {subsubsection}{Hammerstein}{16}{subsubsection*.18}
 \contentsline {subsubsection}{Memory Polynomial}{16}{subsubsection*.19}
-\contentsline {section}{\numberline {3.3}Crosstalk}{16}{section.3.3}
-\contentsline {chapter}{\numberline {4}Measurement}{19}{chapter.4}
-\contentsline {section}{\numberline {4.1}Simulation of PCB antenna}{19}{section.4.1}
-\contentsline {section}{\numberline {4.2}Power Amplifier}{21}{section.4.2}
-\contentsline {section}{\numberline {4.3}Measurement setup}{22}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Measurement of AM/AM distortion}{25}{subsection.4.3.1}
-\contentsline {subsubsection}{Two transmit antenna}{26}{subsubsection*.33}
-\contentsline {subsubsection}{Four transmit antenna}{27}{subsubsection*.37}
-\contentsline {subsection}{\numberline {4.3.2}PSD}{28}{subsection.4.3.2}
-\contentsline {subsubsection}{Two transmit antenna}{29}{subsubsection*.42}
-\contentsline {subsubsection}{Four transmit antenna}{30}{subsubsection*.46}
-\contentsline {subsection}{\numberline {4.3.3}ACPR}{31}{subsection.4.3.3}
-\contentsline {subsubsection}{Two transmit antenna}{32}{subsubsection*.50}
-\contentsline {subsubsection}{Four transmit antenna}{33}{subsubsection*.52}
-\contentsline {chapter}{\numberline {5}Conclusion}{35}{chapter.5}
-\contentsline {chapter}{Bibliography}{37}{chapter*.54}
-\contentsline {chapter}{\numberline {A}Appendix A name}{39}{appendix.A}
+\contentsline {subsubsection}{Estimation of coefficients}{16}{subsubsection*.20}
+\contentsline {subsubsection}{Estimation in MATLAB}{17}{subsubsection*.21}
+\contentsline {section}{\numberline {3.3}Crosstalk}{19}{section.3.3}
+\contentsline {chapter}{\numberline {4}Measurement}{23}{chapter.4}
+\contentsline {section}{\numberline {4.1}Simulation of PCB antenna}{23}{section.4.1}
+\contentsline {section}{\numberline {4.2}Power Amplifier}{25}{section.4.2}
+\contentsline {section}{\numberline {4.3}Measurement setup}{26}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Measurement of AM/AM distortion}{29}{subsection.4.3.1}
+\contentsline {subsubsection}{Two transmit antenna}{30}{subsubsection*.38}
+\contentsline {subsubsection}{Four transmit antenna}{31}{subsubsection*.42}
+\contentsline {subsection}{\numberline {4.3.2}PSD}{32}{subsection.4.3.2}
+\contentsline {subsubsection}{Two transmit antenna}{33}{subsubsection*.47}
+\contentsline {subsubsection}{Four transmit antenna}{34}{subsubsection*.51}
+\contentsline {subsection}{\numberline {4.3.3}ACPR}{35}{subsection.4.3.3}
+\contentsline {subsubsection}{Two transmit antenna}{36}{subsubsection*.55}
+\contentsline {subsubsection}{Four transmit antenna}{37}{subsubsection*.57}
+\contentsline {chapter}{\numberline {5}Conclusion}{39}{chapter.5}
+\contentsline {chapter}{Bibliography}{41}{chapter*.59}
+\contentsline {chapter}{\numberline {A}Appendix A name}{43}{appendix.A}

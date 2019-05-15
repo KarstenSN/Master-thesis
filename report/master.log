@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.10)  11 MAY 2019 18:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.10)  14 MAY 2019 14:16
 entering extended mode
 **./master.tex
 (master.tex
@@ -362,6 +362,35 @@ Language: english 2012/08/20 v3.3p English support from the babel system
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+\lst@mode=\count89
+\lst@gtempboxa=\box26
+\lst@token=\toks17
+\lst@length=\count90
+\lst@currlwidth=\dimen104
+\lst@column=\count91
+\lst@pos=\count92
+\lst@lostspace=\dimen105
+\lst@width=\dimen106
+\lst@newlines=\count93
+\lst@lineno=\count94
+\lst@maxwidth=\dimen107
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count95
+\lst@skipnumbers=\count96
+\lst@framebox=\box27
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\lmodern.sty"
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -406,11 +435,11 @@ LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count89
-\float@exts=\toks16
-\float@box=\box26
-\@float@everytoks=\toks17
-\@floatcapt=\box27
+\c@float@type=\count97
+\float@exts=\toks18
+\float@box=\box28
+\@float@everytoks=\toks19
+\@floatcapt=\box29
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
@@ -429,7 +458,7 @@ Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count90
+\Gread@gobject=\count98
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
@@ -444,10 +473,6 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks18
-)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
 
@@ -459,8 +484,8 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 )
-\Gin@req@height=\dimen104
-\Gin@req@width=\dimen105
+\Gin@req@height=\dimen108
+\Gin@req@width=\dimen109
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
@@ -468,52 +493,53 @@ Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen106
-\captionmargin@=\dimen107
-\captionwidth=\dimen108
-\caption@tempdima=\dimen109
-\caption@indent=\dimen110
-\caption@parindent=\dimen111
-\caption@hangindent=\dimen112
+\captionmargin=\dimen110
+\captionmargin@=\dimen111
+\captionwidth=\dimen112
+\caption@tempdima=\dimen113
+\caption@indent=\dimen114
+\caption@parindent=\dimen115
+\caption@hangindent=\dimen116
 )
-\c@ContinuedFloat=\count91
+\c@ContinuedFloat=\count99
 Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen113
-\extrarowheight=\dimen114
-\NC@list=\toks19
+\col@sep=\dimen117
+\extrarowheight=\dimen118
+\NC@list=\toks20
 \extratabsurround=\skip43
 \backup@length=\skip44
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen115
-\lightrulewidth=\dimen116
-\cmidrulewidth=\dimen117
-\belowrulesep=\dimen118
-\belowbottomsep=\dimen119
-\aboverulesep=\dimen120
-\abovetopsep=\dimen121
-\cmidrulesep=\dimen122
-\cmidrulekern=\dimen123
-\defaultaddspace=\dimen124
-\@cmidla=\count92
-\@cmidlb=\count93
-\@aboverulesep=\dimen125
-\@belowrulesep=\dimen126
-\@thisruleclass=\count94
-\@lastruleclass=\count95
-\@thisrulewidth=\dimen127
+\heavyrulewidth=\dimen119
+\lightrulewidth=\dimen120
+\cmidrulewidth=\dimen121
+\belowrulesep=\dimen122
+\belowbottomsep=\dimen123
+\aboverulesep=\dimen124
+\abovetopsep=\dimen125
+\cmidrulesep=\dimen126
+\cmidrulekern=\dimen127
+\defaultaddspace=\dimen128
+\@cmidla=\count100
+\@cmidlb=\count101
+\@aboverulesep=\dimen129
+\@belowrulesep=\dimen130
+\@thisruleclass=\count102
+\@lastruleclass=\count103
+\@thisrulewidth=\dimen131
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\framed\framed.sty"
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip45
-\fb@frw=\dimen128
-\fb@frh=\dimen129
-\FrameRule=\dimen130
-\FrameSep=\dimen131
+\fb@frw=\dimen132
+\fb@frh=\dimen133
+\FrameRule=\dimen134
+\FrameSep=\dimen135
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2016/06/28 v2.15d AMS math features
@@ -525,51 +551,51 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks20
-\ex@=\dimen132
+\@emptytoks=\toks21
+\ex@=\dimen136
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen133
+\pmbraise@=\dimen137
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count96
+\inf@bad=\count104
 LaTeX Info: Redefining \frac on input line 199.
-\uproot@=\count97
-\leftroot@=\count98
+\uproot@=\count105
+\leftroot@=\count106
 LaTeX Info: Redefining \overline on input line 297.
-\classnum@=\count99
-\DOTSCASE@=\count100
+\classnum@=\count107
+\DOTSCASE@=\count108
 LaTeX Info: Redefining \ldots on input line 394.
 LaTeX Info: Redefining \dots on input line 397.
 LaTeX Info: Redefining \cdots on input line 518.
-\Mathstrutbox@=\box28
-\strutbox@=\box29
-\big@size=\dimen134
+\Mathstrutbox@=\box30
+\strutbox@=\box31
+\big@size=\dimen138
 LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
-\macc@depth=\count101
-\c@MaxMatrixCols=\count102
+\macc@depth=\count109
+\c@MaxMatrixCols=\count110
 \dotsspace@=\muskip10
-\c@parentequation=\count103
-\dspbrk@lvl=\count104
-\tag@help=\toks21
-\row@=\count105
-\column@=\count106
-\maxfields@=\count107
-\andhelp@=\toks22
-\eqnshift@=\dimen135
-\alignsep@=\dimen136
-\tagshift@=\dimen137
-\tagwidth@=\dimen138
-\totwidth@=\dimen139
-\lineht@=\dimen140
-\@envbody=\toks23
+\c@parentequation=\count111
+\dspbrk@lvl=\count112
+\tag@help=\toks22
+\row@=\count113
+\column@=\count114
+\maxfields@=\count115
+\andhelp@=\toks23
+\eqnshift@=\dimen139
+\alignsep@=\dimen140
+\tagshift@=\dimen141
+\tagwidth@=\dimen142
+\totwidth@=\dimen143
+\lineht@=\dimen144
+\@envbody=\toks24
 \multlinegap=\skip47
 \multlinetaggap=\skip48
-\mathdisplay@stack=\toks24
+\mathdisplay@stack=\toks25
 LaTeX Info: Redefining \[ on input line 2739.
 LaTeX Info: Redefining \] on input line 2740.
 )
@@ -589,45 +615,45 @@ Package: ntheorem 2011/08/15 1.33
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\theorem@style=\toks25
-\theorem@@style=\toks26
-\theorembodyfont=\toks27
-\theoremnumbering=\toks28
+\theorem@style=\toks26
+\theorem@@style=\toks27
+\theorembodyfont=\toks28
+\theoremnumbering=\toks29
 \theorempreskipamount=\skip49
 \theorempostskipamount=\skip50
 \theoremframepreskipamount=\skip51
 \theoremframepostskipamount=\skip52
 \theoreminframepreskipamount=\skip53
 \theoreminframepostskipamount=\skip54
-\theorem@preskip=\toks29
-\theorem@postskip=\toks30
-\theorem@framepreskip=\toks31
-\theorem@framepostskip=\toks32
-\theorem@inframepreskip=\toks33
-\theorem@inframepostskip=\toks34
-\theoremindent=\dimen141
-\theorem@indent=\dimen142
-\theoremrightindent=\dimen143
-\theorem@rightindent=\dimen144
-\theoremheaderfont=\toks35
-\theoremseparator=\toks36
-\theoremprework=\toks37
-\theorempostwork=\toks38
-\theoremsymbol=\toks39
-\qedsymbol=\toks40
-\theoremkeyword=\toks41
-\qedsymbol=\toks42
+\theorem@preskip=\toks30
+\theorem@postskip=\toks31
+\theorem@framepreskip=\toks32
+\theorem@framepostskip=\toks33
+\theorem@inframepreskip=\toks34
+\theorem@inframepostskip=\toks35
+\theoremindent=\dimen145
+\theorem@indent=\dimen146
+\theoremrightindent=\dimen147
+\theorem@rightindent=\dimen148
+\theoremheaderfont=\toks36
+\theoremseparator=\toks37
+\theoremprework=\toks38
+\theorempostwork=\toks39
+\theoremsymbol=\toks40
+\qedsymbol=\toks41
+\theoremkeyword=\toks42
+\qedsymbol=\toks43
 \thm@topsep=\skip55
 \thm@topsepadd=\skip56
 Package ntheorem Info: Option `thmmarks' loaded on input line 1175.
-\c@endNonectr=\count108
-\c@currNonectr=\count109
+\c@endNonectr=\count116
+\c@currNonectr=\count117
 \mysavskip=\skip57
 Package ntheorem Info: option `amsmath' handling for `thmmarks' loaded on input
  line 1175.
-\thm@amstmpdepth=\dimen145
-\tagwidth=\dimen146
-\shadecolor=\toks43
+\thm@amstmpdepth=\dimen149
+\tagwidth=\dimen150
+\shadecolor=\toks44
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
@@ -642,31 +668,31 @@ Package ifvtex Info: VTeX not detected.
 ("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count110
-\Gm@cntv=\count111
-\c@Gm@tempcnt=\count112
-\Gm@bindingoffset=\dimen147
-\Gm@wd@mp=\dimen148
-\Gm@odd@mp=\dimen149
-\Gm@even@mp=\dimen150
-\Gm@layoutwidth=\dimen151
-\Gm@layoutheight=\dimen152
-\Gm@layouthoffset=\dimen153
-\Gm@layoutvoffset=\dimen154
-\Gm@dimlist=\toks44
+\Gm@cnth=\count118
+\Gm@cntv=\count119
+\c@Gm@tempcnt=\count120
+\Gm@bindingoffset=\dimen151
+\Gm@wd@mp=\dimen152
+\Gm@odd@mp=\dimen153
+\Gm@even@mp=\dimen154
+\Gm@layoutwidth=\dimen155
+\Gm@layoutheight=\dimen156
+\Gm@layouthoffset=\dimen157
+\Gm@layoutvoffset=\dimen158
+\Gm@dimlist=\toks45
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty"
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
-\ttl@box=\box30
+\ttl@box=\box32
 \beforetitleunit=\skip58
 \aftertitleunit=\skip59
-\ttl@plus=\dimen155
-\ttl@minus=\dimen156
-\ttl@toksa=\toks45
-\titlewidth=\dimen157
-\titlewidthlast=\dimen158
-\titlewidthfirst=\dimen159
+\ttl@plus=\dimen159
+\ttl@minus=\dimen160
+\ttl@toksa=\toks46
+\titlewidth=\dimen161
+\titlewidthlast=\dimen162
+\titlewidthfirst=\dimen163
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
 Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
@@ -682,15 +708,15 @@ Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count113
-\calc@Bcount=\count114
-\calc@Adimen=\dimen160
-\calc@Bdimen=\dimen161
+\calc@Acount=\count121
+\calc@Bcount=\count122
+\calc@Adimen=\dimen164
+\calc@Bdimen=\dimen165
 \calc@Askip=\skip69
 \calc@Bskip=\skip70
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count115
+\calc@Ccount=\count123
 \calc@Cskip=\skip71
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
@@ -698,7 +724,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip72
 \bibsep=\skip73
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count116
+\c@NAT@ctr=\count124
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tocbibind\tocbibind.sty"
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
@@ -716,23 +742,23 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
-\XKV@toks=\toks46
-\XKV@tempa@toks=\toks47
+\XKV@toks=\toks47
+\XKV@tempa@toks=\toks48
 )
-\XKV@depth=\count117
+\XKV@depth=\count125
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\frontendlayer\tikz.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.tex"
-\pgfutil@everybye=\toks48
-\pgfutil@tempdima=\dimen162
-\pgfutil@tempdimb=\dimen163
+\pgfutil@everybye=\toks49
+\pgfutil@tempdima=\dimen166
+\pgfutil@tempdimb=\dimen167
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common-lists.te
 x")) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def"
-\pgfutil@abb=\box31
+\pgfutil@abb=\box33
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
@@ -747,30 +773,30 @@ Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"
-\pgfkeys@pathtoks=\toks49
-\pgfkeys@temptoks=\toks50
+\pgfkeys@pathtoks=\toks50
+\pgfkeys@temptoks=\toks51
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeysfiltered.code.te
 x"
-\pgfkeys@tmptoks=\toks51
+\pgfkeys@tmptoks=\toks52
 ))
-\pgf@x=\dimen164
-\pgf@y=\dimen165
-\pgf@xa=\dimen166
-\pgf@ya=\dimen167
-\pgf@xb=\dimen168
-\pgf@yb=\dimen169
-\pgf@xc=\dimen170
-\pgf@yc=\dimen171
+\pgf@x=\dimen168
+\pgf@y=\dimen169
+\pgf@xa=\dimen170
+\pgf@ya=\dimen171
+\pgf@xb=\dimen172
+\pgf@yb=\dimen173
+\pgf@xc=\dimen174
+\pgf@yc=\dimen175
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
-\c@pgf@counta=\count118
-\c@pgf@countb=\count119
-\c@pgf@countc=\count120
-\c@pgf@countd=\count121
-\t@pgf@toka=\toks52
-\t@pgf@tokb=\toks53
-\t@pgf@tokc=\toks54
+\c@pgf@counta=\count126
+\c@pgf@countb=\count127
+\c@pgf@countc=\count128
+\c@pgf@countd=\count129
+\t@pgf@toka=\toks53
+\t@pgf@tokb=\toks54
+\t@pgf@tokc=\toks55
  ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgf.cfg"
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
@@ -786,8 +812,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.t
 ex"
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count122
-\pgfsyssoftpath@bigbuffer@items=\count123
+\pgfsyssoftpath@smallbuffer@items=\count130
+\pgfsyssoftpath@bigbuffer@items=\count131
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.t
 ex"
@@ -798,12 +824,12 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex")
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex"
-\pgfmath@dimen=\dimen172
-\pgfmath@count=\count124
-\pgfmath@box=\box32
-\pgfmath@toks=\toks55
-\pgfmath@stack@operand=\toks56
-\pgfmath@stack@operation=\toks57
+\pgfmath@dimen=\dimen176
+\pgfmath@count=\count132
+\pgfmath@box=\box34
+\pgfmath@toks=\toks56
+\pgfmath@stack@operand=\toks57
+\pgfmath@stack@operation=\toks58
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.code.tex"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.basic.code.
@@ -823,57 +849,57 @@ ex")
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.integerarit
 hmetics.code.tex")))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex"
-\c@pgfmathroundto@lastzeros=\count125
+\c@pgfmathroundto@lastzeros=\count133
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
 "
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen173
-\pgf@picmaxx=\dimen174
-\pgf@picminy=\dimen175
-\pgf@picmaxy=\dimen176
-\pgf@pathminx=\dimen177
-\pgf@pathmaxx=\dimen178
-\pgf@pathminy=\dimen179
-\pgf@pathmaxy=\dimen180
-\pgf@xx=\dimen181
-\pgf@xy=\dimen182
-\pgf@yx=\dimen183
-\pgf@yy=\dimen184
-\pgf@zx=\dimen185
-\pgf@zy=\dimen186
+\pgf@picminx=\dimen177
+\pgf@picmaxx=\dimen178
+\pgf@picminy=\dimen179
+\pgf@picmaxy=\dimen180
+\pgf@pathminx=\dimen181
+\pgf@pathmaxx=\dimen182
+\pgf@pathminy=\dimen183
+\pgf@pathmaxy=\dimen184
+\pgf@xx=\dimen185
+\pgf@xy=\dimen186
+\pgf@yx=\dimen187
+\pgf@yy=\dimen188
+\pgf@zx=\dimen189
+\pgf@zy=\dimen190
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconstruct.c
 ode.tex"
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen187
-\pgf@path@lasty=\dimen188
+\pgf@path@lastx=\dimen191
+\pgf@path@lasty=\dimen192
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage.code.
 tex"
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen189
-\pgf@shorten@start@additional=\dimen190
+\pgf@shorten@end@additional=\dimen193
+\pgf@shorten@start@additional=\dimen194
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
 "
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box33
-\pgf@hbox=\box34
-\pgf@layerbox@main=\box35
-\pgf@picture@serial@count=\count126
+\pgfpic=\box35
+\pgf@hbox=\box36
+\pgf@layerbox@main=\box37
+\pgf@picture@serial@count=\count134
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.co
 de.tex"
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen191
+\pgflinewidth=\dimen195
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransformations
 .code.tex"
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen192
-\pgf@pt@y=\dimen193
-\pgf@pt@temp=\dimen194
+\pgf@pt@x=\dimen196
+\pgf@pt@y=\dimen197
+\pgf@pt@temp=\dimen198
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.code.tex"
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
@@ -889,12 +915,12 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
 "
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen195
+\pgfarrowsep=\dimen199
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen196
-\pgf@sys@shading@range@num=\count127
+\pgf@max=\dimen256
+\pgf@sys@shading@range@num=\count135
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.te
 x"
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -902,7 +928,7 @@ File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.code.t
 ex"
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box36
+\pgfexternal@startupbox=\box38
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex
 "
@@ -918,15 +944,15 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleshapes.code.tex"
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box37
+\pgfnodeparttextbox=\box39
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleplot.code.tex"
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-0-65.
 sty"
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen197
-\pgf@nodesepend=\dimen198
+\pgf@nodesepstart=\dimen257
+\pgf@nodesepend=\dimen258
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-1-18.
 sty"
@@ -940,10 +966,10 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex")
-\pgffor@iter=\dimen199
-\pgffor@skip=\dimen256
-\pgffor@stack=\toks58
-\pgffor@toks=\toks59
+\pgffor@iter=\dimen259
+\pgffor@skip=\dimen260
+\pgffor@stack=\toks59
+\pgffor@toks=\toks60
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex"
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
@@ -951,31 +977,31 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothandlers.
 code.tex"
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count128
-\pgfplotmarksize=\dimen257
+\pgf@plot@mark@count=\count136
+\pgfplotmarksize=\dimen261
 )
-\tikz@lastx=\dimen258
-\tikz@lasty=\dimen259
-\tikz@lastxsaved=\dimen260
-\tikz@lastysaved=\dimen261
-\tikzleveldistance=\dimen262
-\tikzsiblingdistance=\dimen263
-\tikz@figbox=\box38
-\tikz@figbox@bg=\box39
-\tikz@tempbox=\box40
-\tikz@tempbox@bg=\box41
-\tikztreelevel=\count129
-\tikznumberofchildren=\count130
-\tikznumberofcurrentchild=\count131
-\tikz@fig@count=\count132
+\tikz@lastx=\dimen262
+\tikz@lasty=\dimen263
+\tikz@lastxsaved=\dimen264
+\tikz@lastysaved=\dimen265
+\tikzleveldistance=\dimen266
+\tikzsiblingdistance=\dimen267
+\tikz@figbox=\box40
+\tikz@figbox@bg=\box41
+\tikz@tempbox=\box42
+\tikz@tempbox@bg=\box43
+\tikztreelevel=\count137
+\tikznumberofchildren=\count138
+\tikznumberofcurrentchild=\count139
+\tikz@fig@count=\count140
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count133
-\pgfmatrixcurrentcolumn=\count134
-\pgf@matrix@numberofcolumns=\count135
+\pgfmatrixcurrentrow=\count141
+\pgfmatrixcurrentcolumn=\count142
+\pgf@matrix@numberofcolumns=\count143
 )
-\tikz@expandcount=\count136
+\tikz@expandcount=\count144
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
 librarytopaths.code.tex"
@@ -985,7 +1011,7 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 librarypositioning.code.tex"
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
 )
-\c@@todonotes@numberoftodonotes=\count137
+\c@@todonotes@numberoftodonotes=\count145
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lastpage\lastpage.sty"
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
@@ -1042,16 +1068,16 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen264
-\Hy@linkcounter=\count138
-\Hy@pagecounter=\count139
+\@linkdim=\dimen268
+\Hy@linkcounter=\count146
+\Hy@pagecounter=\count147
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count140
+\Hy@SavedSpaceFactor=\count148
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -1063,17 +1089,17 @@ Package hyperref Info: Plain pages OFF on input line 4501.
 Package hyperref Info: Backreferencing OFF on input line 4506.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4735.
-\c@Hy@tempcnt=\count141
+\c@Hy@tempcnt=\count149
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5088.
-\XeTeXLinkMargin=\dimen265
-\Fld@menulength=\count142
-\Field@Width=\dimen266
-\Fld@charsize=\dimen267
+\XeTeXLinkMargin=\dimen269
+\Fld@menulength=\count150
+\Field@Width=\dimen270
+\Fld@charsize=\dimen271
 Package hyperref Info: Hyper figures OFF on input line 6342.
 Package hyperref Info: Link nesting OFF on input line 6347.
 Package hyperref Info: Hyper index ON on input line 6350.
@@ -1083,17 +1109,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6367.
 Package hyperref Info: PDF/A mode OFF on input line 6372.
 LaTeX Info: Redefining \ref on input line 6412.
 LaTeX Info: Redefining \pageref on input line 6416.
-\Hy@abspage=\count143
-\c@Item=\count144
-\c@Hfootnote=\count145
+\Hy@abspage=\count151
+\c@Item=\count152
+\c@Hfootnote=\count153
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
 File: hpdftex.def 2016/06/24 v6.83q Hyperref driver for pdfTeX
-\Fld@listcount=\count146
-\c@bookmark@seq@number=\count147
+\Fld@listcount=\count154
+\c@bookmark@seq@number=\count155
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
@@ -1104,19 +1130,28 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 
 Package hyperref Warning: Option `pdfpagelabels' has already been used,
-(hyperref)                setting the option has no effect on input line 162.
+(hyperref)                setting the option has no effect on input line 166.
 
-Package hyperref Info: Option `plainpages' set `false' on input line 162.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 162.
+Package hyperref Info: Option `plainpages' set `false' on input line 166.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 166.
 
-Package hyperref Info: Option `colorlinks' set `true' on input line 162.
+Package hyperref Info: Option `colorlinks' set `true' on input line 166.
 ) (setup/hyphenations.tex) (setup/macros.tex
-\c@currexactr=\count148
-\c@endexactr=\count149
-\c@exa=\count150
+\c@currexactr=\count156
+\c@endexactr=\count157
+\c@exa=\count158
 ) (master.aux
 
 LaTeX Warning: Label `fig:correlation' multiply defined.
+
+
+LaTeX Warning: Label `fig:pre_cons' multiply defined.
+
+
+LaTeX Warning: Label `fig:pre_cons' multiply defined.
+
+
+LaTeX Warning: Label `fig:pre_cons' multiply defined.
 
 
 LaTeX Warning: Label `fig:pre_cons' multiply defined.
@@ -1142,19 +1177,21 @@ LaTeX Font Info:    Try loading font information for T1+lmr on input line 21.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
+\c@lstlisting=\count159
+
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count151
-\scratchdimen=\dimen268
-\scratchbox=\box42
-\nofMPsegments=\count152
-\nofMParguments=\count153
-\everyMPshowfont=\toks60
-\MPscratchCnt=\count154
-\MPscratchDim=\dimen269
-\MPnumerator=\count155
-\makeMPintoPDFobject=\count156
-\everyMPtoPDFconversion=\toks61
+\scratchcounter=\count160
+\scratchdimen=\dimen272
+\scratchbox=\box44
+\nofMPsegments=\count161
+\nofMParguments=\count162
+\everyMPshowfont=\toks61
+\MPscratchCnt=\count163
+\MPscratchDim=\dimen273
+\MPnumerator=\count164
+\makeMPintoPDFobject=\count165
+\everyMPtoPDFconversion=\toks62
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1210,7 +1247,7 @@ ABD: EveryShipout initializing macros
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 21.
-\AtBeginShipoutBox=\box43
+\AtBeginShipoutBox=\box45
 Package hyperref Info: Link coloring ON on input line 21.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
@@ -1219,7 +1256,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count157
+\c@section@level=\count166
 )
 LaTeX Info: Redefining \ref on input line 21.
 LaTeX Info: Redefining \pageref on input line 21.
@@ -1596,32 +1633,85 @@ File: figures/ch1/predistortion_consept.png Graphic file (type png)
 Package pdftex.def Info: figures/ch1/predistortion_consept.png used on input li
 ne 7.
 (pdftex.def)             Requested size: 285.08813pt x 115.93231pt.
+ [15 <./figures/ch1/predistortion_consept.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16]
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 84.
+
+Overfull \hbox (6.15942pt too wide) in paragraph at lines 84--85
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
 
 
-LaTeX Warning: Reference `eq:wiener' on page 15 undefined on input line 18.
+Overfull \hbox (6.15942pt too wide) in paragraph at lines 101--102
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
 
-[15 <./figures/ch1/predistortion_consept.png>]
-<figures/ch1/crosstalk_before.png, id=397, 453.19313pt x 392.96812pt>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[17] <figures/measurement/predis.png, id=438, 415.43205pt x 284.5029pt>
+File: figures/measurement/predis.png Graphic file (type png)
+
+<use figures/measurement/predis.png>
+Package pdftex.def Info: figures/measurement/predis.png used on input line 110.
+
+(pdftex.def)             Requested size: 290.80045pt x 199.15067pt.
+
+<figures/measurement/psd_dpd.png, id=439, 415.43205pt x 284.5029pt>
+File: figures/measurement/psd_dpd.png Graphic file (type png)
+
+<use figures/measurement/psd_dpd.png>
+Package pdftex.def Info: figures/measurement/psd_dpd.png used on input line 117
+.
+(pdftex.def)             Requested size: 290.80045pt x 199.15067pt.
+
+<figures/measurement/inoutmodel.png, id=440, 415.43205pt x 284.5029pt>
+File: figures/measurement/inoutmodel.png Graphic file (type png)
+
+<use figures/measurement/inoutmodel.png>
+Package pdftex.def Info: figures/measurement/inoutmodel.png used on input line 
+124.
+(pdftex.def)             Requested size: 290.80045pt x 199.15067pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[18 <./figures/measurement/predis.png (PNG copy)> <./figures/measurement/psd_dp
+d.png (PNG copy)>]
+<figures/ch1/crosstalk_before.png, id=453, 453.19313pt x 392.96812pt>
 File: figures/ch1/crosstalk_before.png Graphic file (type png)
 
 <use figures/ch1/crosstalk_before.png>
-Package pdftex.def Info: figures/ch1/crosstalk_before.png used on input line 57
-.
+Package pdftex.def Info: figures/ch1/crosstalk_before.png used on input line 14
+5.
 (pdftex.def)             Requested size: 226.59601pt x 196.48357pt.
 
-Overfull \hbox (26.00407pt too wide) in paragraph at lines 57--58
+Overfull \hbox (26.00407pt too wide) in paragraph at lines 145--146
 [][] 
  []
 
-<figures/ch1/crosstalk_after.png, id=402, 393.72093pt x 360.59718pt>
+<figures/ch1/crosstalk_after.png, id=458, 393.72093pt x 360.59718pt>
 File: figures/ch1/crosstalk_after.png Graphic file (type png)
 
 <use figures/ch1/crosstalk_after.png>
-Package pdftex.def Info: figures/ch1/crosstalk_after.png used on input line 63.
-
+Package pdftex.def Info: figures/ch1/crosstalk_after.png used on input line 151
+.
 (pdftex.def)             Requested size: 196.85999pt x 180.29814pt.
 
-Overfull \hbox (36.3889pt too wide) in paragraph at lines 63--64
+Overfull \hbox (36.3889pt too wide) in paragraph at lines 151--152
 [][] 
  []
 
@@ -1631,22 +1721,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16] <figures/ch1/crosstalk_antenna.png, id=424, 308.65312pt x 289.83281pt>
+[19 <./figures/measurement/inoutmodel.png (PNG copy)>]
+<figures/ch1/crosstalk_antenna.png, id=477, 308.65312pt x 289.83281pt>
 File: figures/ch1/crosstalk_antenna.png Graphic file (type png)
 
 <use figures/ch1/crosstalk_antenna.png>
-Package pdftex.def Info: figures/ch1/crosstalk_antenna.png used on input line 8
-5.
+Package pdftex.def Info: figures/ch1/crosstalk_antenna.png used on input line 1
+73.
 (pdftex.def)             Requested size: 154.32617pt x 144.91605pt.
 
-<figures/ch1/crosstalk_ctmm.png, id=429, 381.67593pt x 289.08pt>
+<figures/ch1/crosstalk_ctmm.png, id=482, 381.67593pt x 289.08pt>
 File: figures/ch1/crosstalk_ctmm.png Graphic file (type png)
 
 <use figures/ch1/crosstalk_ctmm.png>
-Package pdftex.def Info: figures/ch1/crosstalk_ctmm.png used on input line 91.
+Package pdftex.def Info: figures/ch1/crosstalk_ctmm.png used on input line 179.
+
 (pdftex.def)             Requested size: 190.8375pt x 144.53964pt.
 
-Overfull \hbox (30.36641pt too wide) in paragraph at lines 91--93
+Overfull \hbox (30.36641pt too wide) in paragraph at lines 179--181
 [][] 
  []
 
@@ -1656,7 +1748,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17 <./figures/ch1/crosstalk_before.png> <./figures/ch1/crosstalk_after.png>])
+[20 <./figures/ch1/crosstalk_before.png> <./figures/ch1/crosstalk_after.png>])
 (sections/predistortion_2.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1664,9 +1756,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18 <./figures/ch1/crosstalk_antenna.png> <./figures/ch1/crosstalk_ctmm.png>]
+[21 <./figures/ch1/crosstalk_antenna.png> <./figures/ch1/crosstalk_ctmm.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[22
+
+]
 Chapter 4.
-<figures/measurement/antenna_front.png, id=449, 204.01219pt x 566.115pt>
+<figures/measurement/antenna_front.png, id=506, 204.01219pt x 566.115pt>
 File: figures/measurement/antenna_front.png Graphic file (type png)
 
 <use figures/measurement/antenna_front.png>
@@ -1674,17 +1775,15 @@ Package pdftex.def Info: figures/measurement/antenna_front.png used on input li
 ne 10.
 (pdftex.def)             Requested size: 142.80756pt x 396.2778pt.
 
-<figures/measurement/antenna_back.png, id=450, 214.55156pt x 586.44093pt>
+<figures/measurement/antenna_back.png, id=507, 214.55156pt x 586.44093pt>
 File: figures/measurement/antenna_back.png Graphic file (type png)
 
 <use figures/measurement/antenna_back.png>
 Package pdftex.def Info: figures/measurement/antenna_back.png used on input lin
 e 16.
 (pdftex.def)             Requested size: 150.18506pt x 410.50584pt.
- [19
-
-]
-<figures/measurement/antenna_ff.png, id=456, 368.1253pt x 291.33844pt>
+ [23]
+<figures/measurement/antenna_ff.png, id=512, 368.1253pt x 291.33844pt>
 File: figures/measurement/antenna_ff.png Graphic file (type png)
 
 <use figures/measurement/antenna_ff.png>
@@ -1698,9 +1797,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20 <./figures/measurement/antenna_front.png> <./figures/measurement/antenna_ba
+[24 <./figures/measurement/antenna_front.png> <./figures/measurement/antenna_ba
 ck.png>]
-<figures/measurement/antenna_spar.png, id=462, 782.17218pt x 289.08pt>
+<figures/measurement/antenna_spar.png, id=518, 782.17218pt x 289.08pt>
 File: figures/measurement/antenna_spar.png Graphic file (type png)
 
 <use figures/measurement/antenna_spar.png>
@@ -1712,7 +1811,7 @@ Overfull \hbox (68.12306pt too wide) in paragraph at lines 33--34
  [][] 
  []
 
-<figures/measurement/amplifier.png, id=466, 642.90187pt x 469.755pt>
+<figures/measurement/amplifier.png, id=522, 642.90187pt x 469.755pt>
 File: figures/measurement/amplifier.png Graphic file (type png)
 
 <use figures/measurement/amplifier.png>
@@ -1726,8 +1825,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21 <./figures/measurement/antenna_ff.png> <./figures/measurement/antenna_spar.
-png>] <figures/measurement/amp_gain.png, id=478, 273.27094pt x 219.82124pt>
+[25 <./figures/measurement/antenna_ff.png> <./figures/measurement/antenna_spar.
+png>] <figures/measurement/amp_gain.png, id=535, 273.27094pt x 219.82124pt>
 File: figures/measurement/amp_gain.png Graphic file (type png)
 
 <use figures/measurement/amp_gain.png>
@@ -1735,7 +1834,7 @@ Package pdftex.def Info: figures/measurement/amp_gain.png used on input line 52
 .
 (pdftex.def)             Requested size: 191.28833pt x 153.87381pt.
 
-<figures/measurement/amp_outpower.png, id=479, 273.27094pt x 222.8325pt>
+<figures/measurement/amp_outpower.png, id=536, 273.27094pt x 222.8325pt>
 File: figures/measurement/amp_outpower.png Graphic file (type png)
 
 <use figures/measurement/amp_outpower.png>
@@ -1747,7 +1846,7 @@ Overfull \hbox (30.81725pt too wide) in paragraph at lines 58--59
 [][] 
  []
 
-<figures/measurement/meas_set_1.png, id=481, 592.46344pt x 225.09094pt>
+<figures/measurement/meas_set_1.png, id=538, 592.46344pt x 225.09094pt>
 File: figures/measurement/meas_set_1.png Graphic file (type png)
 
 <use figures/measurement/meas_set_1.png>
@@ -1761,9 +1860,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22 <./figures/measurement/amplifier.png> <./figures/measurement/amp_gain.png> 
+[26 <./figures/measurement/amplifier.png> <./figures/measurement/amp_gain.png> 
 <./figures/measurement/amp_outpower.png>]
-<figures/measurement/meas_set_2.png, id=488, 812.28468pt x 182.93344pt>
+<figures/measurement/meas_set_2.png, id=545, 812.28468pt x 182.93344pt>
 File: figures/measurement/meas_set_2.png Graphic file (type png)
 
 <use figures/measurement/meas_set_2.png>
@@ -1776,10 +1875,10 @@ Overfull \hbox (86.1907pt too wide) in paragraph at lines 80--81
  []
 
 
-LaTeX Warning: Reference `fig:Meas_setup4nt' on page 23 undefined on input line
+LaTeX Warning: Reference `fig:Meas_setup4nt' on page 27 undefined on input line
  85.
 
-<figures/measurement/meas_set_3.png, id=489, 790.45313pt x 234.1247pt>
+<figures/measurement/meas_set_3.png, id=546, 790.45313pt x 234.1247pt>
 File: figures/measurement/meas_set_3.png Graphic file (type png)
 
 <use figures/measurement/meas_set_3.png>
@@ -1797,8 +1896,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23 <./figures/measurement/meas_set_1.png> <./figures/measurement/meas_set_2.pn
-g>] <figures/measurement/measurement_setup.jpg, id=497, 3131.7pt x 2348.775pt>
+[27 <./figures/measurement/meas_set_1.png> <./figures/measurement/meas_set_2.pn
+g>] <figures/measurement/measurement_setup.jpg, id=554, 3131.7pt x 2348.775pt>
 File: figures/measurement/measurement_setup.jpg Graphic file (type jpg)
 
 <use figures/measurement/measurement_setup.jpg>
@@ -1806,7 +1905,7 @@ Package pdftex.def Info: figures/measurement/measurement_setup.jpg used on inpu
 t line 100.
 (pdftex.def)             Requested size: 313.18834pt x 234.89127pt.
 
-<figures/measurement/measurement_setup_4.jpg, id=498, 3131.7pt x 2348.775pt>
+<figures/measurement/measurement_setup_4.jpg, id=555, 3131.7pt x 2348.775pt>
 File: figures/measurement/measurement_setup_4.jpg Graphic file (type jpg)
 
 <use figures/measurement/measurement_setup_4.jpg>
@@ -1820,7 +1919,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24 <./figures/measurement/meas_set_3.png> <./figures/measurement/measurement_s
+[28 <./figures/measurement/meas_set_3.png> <./figures/measurement/measurement_s
 etup.jpg>]
 Overfull \hbox (8.40833pt too wide) detected at line 124
 []\OML/lmm/m/it/10.95 G[]\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 dB\OT1/lmr/m/n
@@ -1839,8 +1938,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25 <./figures/measurement/measurement_setup_4.jpg>]
-<figures/measurement/two_antenna/amplifier_amam.png, id=523, 415.43205pt x 284.
+[29 <./figures/measurement/measurement_setup_4.jpg>]
+<figures/measurement/two_antenna/amplifier_amam.png, id=579, 415.43205pt x 284.
 5029pt>
 File: figures/measurement/two_antenna/amplifier_amam.png Graphic file (type png
 )
@@ -1854,7 +1953,7 @@ Overfull \hbox (7.12358pt too wide) in paragraph at lines 131--132
  []
 
 
-<figures/measurement/two_antenna/one_ant_amam.png, id=524, 415.43205pt x 284.50
+<figures/measurement/two_antenna/one_ant_amam.png, id=580, 415.43205pt x 284.50
 29pt>
 File: figures/measurement/two_antenna/one_ant_amam.png Graphic file (type png)
  <use figures/measurement/two_antenna/one_ant_amam.png>
@@ -1867,7 +1966,7 @@ Overfull \hbox (47.24443pt too wide) in paragraph at lines 137--138
  []
 
 
-<figures/measurement/two_antenna/amam_01.png, id=525, 415.43205pt x 284.5029pt>
+<figures/measurement/two_antenna/amam_01.png, id=581, 415.43205pt x 284.5029pt>
 File: figures/measurement/two_antenna/amam_01.png Graphic file (type png)
 <use figures/measurement/two_antenna/amam_01.png>
 Package pdftex.def Info: figures/measurement/two_antenna/amam_01.png used on in
@@ -1879,7 +1978,7 @@ Overfull \hbox (7.12358pt too wide) in paragraph at lines 148--149
  []
 
 
-<figures/measurement/two_antenna/amam_02.png, id=526, 415.43205pt x 284.5029pt>
+<figures/measurement/two_antenna/amam_02.png, id=582, 415.43205pt x 284.5029pt>
 File: figures/measurement/two_antenna/amam_02.png Graphic file (type png)
 <use figures/measurement/two_antenna/amam_02.png>
 Package pdftex.def Info: figures/measurement/two_antenna/amam_02.png used on in
@@ -1891,7 +1990,7 @@ Overfull \hbox (47.24443pt too wide) in paragraph at lines 154--155
  []
 
 
-<figures/measurement/two_antenna/amam_03.png, id=527, 415.43205pt x 284.5029pt>
+<figures/measurement/two_antenna/amam_03.png, id=583, 415.43205pt x 284.5029pt>
 File: figures/measurement/two_antenna/amam_03.png Graphic file (type png)
 <use figures/measurement/two_antenna/amam_03.png>
 Package pdftex.def Info: figures/measurement/two_antenna/amam_03.png used on in
@@ -1903,7 +2002,7 @@ Overfull \hbox (7.12358pt too wide) in paragraph at lines 163--164
  []
 
 
-<figures/measurement/two_antenna/amam_04.png, id=528, 415.43205pt x 284.5029pt>
+<figures/measurement/two_antenna/amam_04.png, id=584, 415.43205pt x 284.5029pt>
 File: figures/measurement/two_antenna/amam_04.png Graphic file (type png)
 <use figures/measurement/two_antenna/amam_04.png>
 Package pdftex.def Info: figures/measurement/two_antenna/amam_04.png used on in
@@ -1920,11 +2019,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26 <./figures/measurement/two_antenna/amplifier_amam.png (PNG copy)> <./figure
+[30 <./figures/measurement/two_antenna/amplifier_amam.png (PNG copy)> <./figure
 s/measurement/two_antenna/one_ant_amam.png (PNG copy)> <./figures/measurement/t
 wo_antenna/amam_01.png (PNG copy)> <./figures/measurement/two_antenna/amam_02.p
 ng (PNG copy)>]
-<figures/measurement/two_antenna/amam_05.png, id=536, 415.43205pt x 284.5029pt>
+<figures/measurement/two_antenna/amam_05.png, id=592, 415.43205pt x 284.5029pt>
 File: figures/measurement/two_antenna/amam_05.png Graphic file (type png)
 <use figures/measurement/two_antenna/amam_05.png>
 Package pdftex.def Info: figures/measurement/two_antenna/amam_05.png used on in
@@ -1936,7 +2035,7 @@ Overfull \hbox (7.12358pt too wide) in paragraph at lines 178--179
  []
 
 
-<figures/measurement/two_antenna/amam_06.png, id=537, 415.43205pt x 284.5029pt>
+<figures/measurement/two_antenna/amam_06.png, id=593, 415.43205pt x 284.5029pt>
 File: figures/measurement/two_antenna/amam_06.png Graphic file (type png)
 <use figures/measurement/two_antenna/amam_06.png>
 Package pdftex.def Info: figures/measurement/two_antenna/amam_06.png used on in
@@ -1948,7 +2047,7 @@ Overfull \hbox (47.24443pt too wide) in paragraph at lines 184--185
  []
 
 
-<figures/measurement/four_antenna/amam_0p1.png, id=538, 415.43205pt x 284.5029p
+<figures/measurement/four_antenna/amam_0p1.png, id=594, 415.43205pt x 284.5029p
 t>
 File: figures/measurement/four_antenna/amam_0p1.png Graphic file (type png)
  <use figures/measurement/four_antenna/amam_0p1.png>
@@ -1961,7 +2060,7 @@ Overfull \hbox (7.12358pt too wide) in paragraph at lines 195--196
  []
 
 
-<figures/measurement/four_antenna/amam_0p2.png, id=539, 415.43205pt x 284.5029p
+<figures/measurement/four_antenna/amam_0p2.png, id=595, 415.43205pt x 284.5029p
 t>
 File: figures/measurement/four_antenna/amam_0p2.png Graphic file (type png)
  <use figures/measurement/four_antenna/amam_0p2.png>
@@ -1974,7 +2073,7 @@ Overfull \hbox (47.24443pt too wide) in paragraph at lines 201--202
  []
 
 
-<figures/measurement/four_antenna/amam_0p3.png, id=540, 415.43205pt x 284.5029p
+<figures/measurement/four_antenna/amam_0p3.png, id=596, 415.43205pt x 284.5029p
 t>
 File: figures/measurement/four_antenna/amam_0p3.png Graphic file (type png)
  <use figures/measurement/four_antenna/amam_0p3.png>
@@ -1987,7 +2086,7 @@ Overfull \hbox (7.12358pt too wide) in paragraph at lines 210--211
  []
 
 
-<figures/measurement/four_antenna/amam_0p4.png, id=541, 415.43205pt x 284.5029p
+<figures/measurement/four_antenna/amam_0p4.png, id=597, 415.43205pt x 284.5029p
 t>
 File: figures/measurement/four_antenna/amam_0p4.png Graphic file (type png)
  <use figures/measurement/four_antenna/amam_0p4.png>
@@ -2005,12 +2104,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27 <./figures/measurement/two_antenna/amam_03.png (PNG copy)> <./figures/measu
+[31 <./figures/measurement/two_antenna/amam_03.png (PNG copy)> <./figures/measu
 rement/two_antenna/amam_04.png (PNG copy)> <./figures/measurement/two_antenna/a
 mam_05.png (PNG copy)> <./figures/measurement/two_antenna/amam_06.png (PNG copy
 )> <./figures/measurement/four_antenna/amam_0p1.png (PNG copy)> <./figures/meas
 urement/four_antenna/amam_0p2.png (PNG copy)>]
-<figures/measurement/four_antenna/amam_0p5.png, id=549, 415.43205pt x 284.5029p
+<figures/measurement/four_antenna/amam_0p5.png, id=606, 415.43205pt x 284.5029p
 t>
 File: figures/measurement/four_antenna/amam_0p5.png Graphic file (type png)
  <use figures/measurement/four_antenna/amam_0p5.png>
@@ -2023,7 +2122,7 @@ Overfull \hbox (7.12358pt too wide) in paragraph at lines 225--226
  []
 
 
-<figures/measurement/four_antenna/amam_0p6.png, id=550, 415.43205pt x 284.5029p
+<figures/measurement/four_antenna/amam_0p6.png, id=607, 415.43205pt x 284.5029p
 t>
 File: figures/measurement/four_antenna/amam_0p6.png Graphic file (type png)
  <use figures/measurement/four_antenna/amam_0p6.png>
@@ -2036,7 +2135,7 @@ Overfull \hbox (47.24443pt too wide) in paragraph at lines 231--232
  []
 
 
-<figures/measurement/two_antenna/amplifier_psd.png, id=554, 415.43205pt x 284.5
+<figures/measurement/two_antenna/amplifier_psd.png, id=611, 415.43205pt x 284.5
 029pt>
 File: figures/measurement/two_antenna/amplifier_psd.png Graphic file (type png)
 
@@ -2050,7 +2149,7 @@ Overfull \hbox (7.12358pt too wide) in paragraph at lines 246--247
  []
 
 
-<figures/measurement/two_antenna/one_ant_psd.png, id=555, 415.43205pt x 284.502
+<figures/measurement/two_antenna/one_ant_psd.png, id=612, 415.43205pt x 284.502
 9pt>
 File: figures/measurement/two_antenna/one_ant_psd.png Graphic file (type png)
  <use figures/measurement/two_antenna/one_ant_psd.png>
@@ -2068,11 +2167,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28 <./figures/measurement/four_antenna/amam_0p3.png (PNG copy)> <./figures/mea
+[32 <./figures/measurement/four_antenna/amam_0p3.png (PNG copy)> <./figures/mea
 surement/four_antenna/amam_0p4.png (PNG copy)> <./figures/measurement/four_ante
 nna/amam_0p5.png (PNG copy)> <./figures/measurement/four_antenna/amam_0p6.png (
 PNG copy)>]
-<figures/measurement/two_antenna/psd_01.png, id=563, 415.43205pt x 284.5029pt>
+<figures/measurement/two_antenna/psd_01.png, id=620, 415.43205pt x 284.5029pt>
 File: figures/measurement/two_antenna/psd_01.png Graphic file (type png)
 
 <use figures/measurement/two_antenna/psd_01.png>
@@ -2085,7 +2184,7 @@ Overfull \hbox (7.12358pt too wide) in paragraph at lines 263--264
  []
 
 
-<figures/measurement/two_antenna/psd_02.png, id=564, 415.43205pt x 284.5029pt>
+<figures/measurement/two_antenna/psd_02.png, id=621, 415.43205pt x 284.5029pt>
 File: figures/measurement/two_antenna/psd_02.png Graphic file (type png)
 
 <use figures/measurement/two_antenna/psd_02.png>
@@ -2098,7 +2197,7 @@ Overfull \hbox (47.24443pt too wide) in paragraph at lines 269--270
  []
 
 
-<figures/measurement/two_antenna/psd_03.png, id=565, 415.43205pt x 284.5029pt>
+<figures/measurement/two_antenna/psd_03.png, id=622, 415.43205pt x 284.5029pt>
 File: figures/measurement/two_antenna/psd_03.png Graphic file (type png)
 
 <use figures/measurement/two_antenna/psd_03.png>
@@ -2111,7 +2210,7 @@ Overfull \hbox (7.12358pt too wide) in paragraph at lines 278--279
  []
 
 
-<figures/measurement/two_antenna/psd_04.png, id=566, 415.43205pt x 284.5029pt>
+<figures/measurement/two_antenna/psd_04.png, id=623, 415.43205pt x 284.5029pt>
 File: figures/measurement/two_antenna/psd_04.png Graphic file (type png)
 
 <use figures/measurement/two_antenna/psd_04.png>
@@ -2129,11 +2228,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29 <./figures/measurement/two_antenna/amplifier_psd.png (PNG copy)> <./figures
+[33 <./figures/measurement/two_antenna/amplifier_psd.png (PNG copy)> <./figures
 /measurement/two_antenna/one_ant_psd.png (PNG copy)> <./figures/measurement/two
 _antenna/psd_01.png (PNG copy)> <./figures/measurement/two_antenna/psd_02.png (
 PNG copy)>]
-<figures/measurement/two_antenna/psd_05.png, id=573, 415.43205pt x 284.5029pt>
+<figures/measurement/two_antenna/psd_05.png, id=630, 415.43205pt x 284.5029pt>
 File: figures/measurement/two_antenna/psd_05.png Graphic file (type png)
 
 <use figures/measurement/two_antenna/psd_05.png>
@@ -2146,7 +2245,7 @@ Overfull \hbox (7.12358pt too wide) in paragraph at lines 293--294
  []
 
 
-<figures/measurement/two_antenna/psd_06.png, id=574, 415.43205pt x 284.5029pt>
+<figures/measurement/two_antenna/psd_06.png, id=631, 415.43205pt x 284.5029pt>
 File: figures/measurement/two_antenna/psd_06.png Graphic file (type png)
 
 <use figures/measurement/two_antenna/psd_06.png>
@@ -2159,7 +2258,7 @@ Overfull \hbox (47.24443pt too wide) in paragraph at lines 299--300
  []
 
 
-<figures/measurement/four_antenna/psd_0p1.png, id=575, 415.43205pt x 284.5029pt
+<figures/measurement/four_antenna/psd_0p1.png, id=632, 415.43205pt x 284.5029pt
 >
 File: figures/measurement/four_antenna/psd_0p1.png Graphic file (type png)
  <use figures/measurement/four_antenna/psd_0p1.png>
@@ -2172,7 +2271,7 @@ Overfull \hbox (7.12358pt too wide) in paragraph at lines 310--311
  []
 
 
-<figures/measurement/four_antenna/psd_0p2.png, id=576, 415.43205pt x 284.5029pt
+<figures/measurement/four_antenna/psd_0p2.png, id=633, 415.43205pt x 284.5029pt
 >
 File: figures/measurement/four_antenna/psd_0p2.png Graphic file (type png)
  <use figures/measurement/four_antenna/psd_0p2.png>
@@ -2185,7 +2284,7 @@ Overfull \hbox (47.24443pt too wide) in paragraph at lines 316--317
  []
 
 
-<figures/measurement/four_antenna/psd_0p3.png, id=577, 415.43205pt x 284.5029pt
+<figures/measurement/four_antenna/psd_0p3.png, id=634, 415.43205pt x 284.5029pt
 >
 File: figures/measurement/four_antenna/psd_0p3.png Graphic file (type png)
  <use figures/measurement/four_antenna/psd_0p3.png>
@@ -2198,7 +2297,7 @@ Overfull \hbox (7.12358pt too wide) in paragraph at lines 325--326
  []
 
 
-<figures/measurement/four_antenna/psd_0p4.png, id=578, 415.43205pt x 284.5029pt
+<figures/measurement/four_antenna/psd_0p4.png, id=635, 415.43205pt x 284.5029pt
 >
 File: figures/measurement/four_antenna/psd_0p4.png Graphic file (type png)
  <use figures/measurement/four_antenna/psd_0p4.png>
@@ -2216,12 +2315,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30 <./figures/measurement/two_antenna/psd_03.png (PNG copy)> <./figures/measur
+[34 <./figures/measurement/two_antenna/psd_03.png (PNG copy)> <./figures/measur
 ement/two_antenna/psd_04.png (PNG copy)> <./figures/measurement/two_antenna/psd
 _05.png (PNG copy)> <./figures/measurement/two_antenna/psd_06.png (PNG copy)> <
 ./figures/measurement/four_antenna/psd_0p1.png (PNG copy)> <./figures/measureme
 nt/four_antenna/psd_0p2.png (PNG copy)>]
-<figures/measurement/four_antenna/psd_0p5.png, id=587, 415.43205pt x 284.5029pt
+<figures/measurement/four_antenna/psd_0p5.png, id=644, 415.43205pt x 284.5029pt
 >
 File: figures/measurement/four_antenna/psd_0p5.png Graphic file (type png)
  <use figures/measurement/four_antenna/psd_0p5.png>
@@ -2234,7 +2333,7 @@ Overfull \hbox (7.12358pt too wide) in paragraph at lines 340--341
  []
 
 
-<figures/measurement/four_antenna/psd_0p6.png, id=588, 415.43205pt x 284.5029pt
+<figures/measurement/four_antenna/psd_0p6.png, id=645, 415.43205pt x 284.5029pt
 >
 File: figures/measurement/four_antenna/psd_0p6.png Graphic file (type png)
  <use figures/measurement/four_antenna/psd_0p6.png>
@@ -2246,7 +2345,7 @@ Overfull \hbox (47.24443pt too wide) in paragraph at lines 346--347
 [][] 
  []
 
-<figures/measurement/two_antenna/ACPR.png, id=589, 415.43205pt x 284.5029pt>
+<figures/measurement/two_antenna/ACPR.png, id=646, 415.43205pt x 284.5029pt>
 File: figures/measurement/two_antenna/ACPR.png Graphic file (type png)
 
 <use figures/measurement/two_antenna/ACPR.png>
@@ -2264,11 +2363,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[31 <./figures/measurement/four_antenna/psd_0p3.png (PNG copy)> <./figures/meas
+[35 <./figures/measurement/four_antenna/psd_0p3.png (PNG copy)> <./figures/meas
 urement/four_antenna/psd_0p4.png (PNG copy)> <./figures/measurement/four_antenn
 a/psd_0p5.png (PNG copy)> <./figures/measurement/four_antenna/psd_0p6.png (PNG 
 copy)>]
-<figures/measurement/four_antenna/ACPR.png, id=598, 415.43205pt x 284.5029pt>
+<figures/measurement/four_antenna/ACPR.png, id=654, 415.43205pt x 284.5029pt>
 File: figures/measurement/four_antenna/ACPR.png Graphic file (type png)
 
 <use figures/measurement/four_antenna/ACPR.png>
@@ -2287,39 +2386,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[32 <./figures/measurement/two_antenna/ACPR.png (PNG copy)>]
+[36 <./figures/measurement/two_antenna/ACPR.png (PNG copy)>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[33 <./figures/measurement/four_antenna/ACPR.png (PNG copy)>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[34
-
-]
-Chapter 5.
-) (master.bbl [35]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[36
-
-]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 24.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-))
-(sections/appAname.tex [37]
+[37 <./figures/measurement/four_antenna/ACPR.png (PNG copy)>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -2329,6 +2403,31 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [38
 
 ]
+Chapter 5.
+) (master.bbl [39]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[40
+
+]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 24.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+))
+(sections/appAname.tex [41]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[42
+
+]
 Appendix A.
 )
 \tf@thm=\write7
@@ -2336,14 +2435,14 @@ Appendix A.
 
  
 AED: lastpage setting LastPage
-[39]
+[43]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 48.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 48.
  (master.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 48.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 48.
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: 3A1705B7363759C816AC97617C61239A;1787.
+(rerunfilecheck)             Checksum: 08C117E302736535E707418CEE1C6900;1787.
 
 
 LaTeX Warning: There were undefined references.
@@ -2354,13 +2453,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 48.
  ) 
 Here is how much of TeX's memory you used:
- 20940 strings out of 493333
- 378290 string characters out of 3139188
- 451324 words of memory out of 3000000
- 23755 multiletter control sequences out of 15000+200000
+ 22578 strings out of 493333
+ 400072 string characters out of 3139188
+ 484825 words of memory out of 3000000
+ 25341 multiletter control sequences out of 15000+200000
  93388 words of font info for 66 fonts, out of 3000000 for 9000
  1146 hyphenation exceptions out of 8191
- 64i,14n,77p,1395b,497s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 64i,14n,77p,1395b,1115s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/d
 vips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy
@@ -2380,9 +2479,9 @@ gram Files/MiKTeX 2.9/fonts/type1/public/lm/lmri9.pfb><C:/Program Files/MiKTeX
 ublic/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on master.pdf (51 pages, 22105445 bytes).
+Output written on master.pdf (55 pages, 23647789 bytes).
 PDF statistics:
- 748 PDF objects out of 1000 (max. 8388607)
- 165 named destinations out of 1000 (max. 500000)
- 542 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 812 PDF objects out of 1000 (max. 8388607)
+ 203 named destinations out of 1000 (max. 500000)
+ 557 words of extra memory for PDF output out of 10000 (max. 10000000)
 
