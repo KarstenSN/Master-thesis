@@ -7,13 +7,13 @@ The antenna used for measurement is a PCB antenna that measures 100x300mm on sta
 \begin{figure}[H]
   \centering
   \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.7]{figures/measurement/antenna_front.png}
+	\includegraphics[scale = 0.5]{figures/measurement/antenna_front.png}
 	\caption{Front of PCB antenna}
     \label{fig:ant_front}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.7]{figures/measurement/antenna_back.png}
+\includegraphics[scale = 0.5]{figures/measurement/antenna_back.png}
 \caption{Backside of PCB antenna}
     \label{fig:ant_back}
   \end{minipage}
@@ -35,7 +35,14 @@ The antenna used for measurement is a PCB antenna that measures 100x300mm on sta
 \label{fig:ant_spar}
 \end{figure} 
 
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.7]{figures/measurement/antenna_array.png}
+\caption{4 wideband PCB antennas separated $0.1\lambda = 8.6mm$ }
+\label{fig:ant_array}
+\end{figure}
 
+\todo[inline]{insert s-par marix}
 \section{Power Amplifier}
 The  \textit{ZX60-6013E+} amplifier is a small buffer-amplifier with a BW from 20MHz - 6GHz. It has an output-power at maximum 11.16dBm at 3.5GHz (1 dB compression ). The gain is 13.85 dB and the noise figure is 3.42dB. In figure \ref{fig:amp_gain} and \ref{fig:amp_outpower} curves for the amplifier gain and output power versus frequency it depicted respectively. The amplifier is shown in figure \ref{fig:amplifier} 
 
@@ -368,3 +375,320 @@ The Power Sprectal Density (PSD) shown in figure \ref{fig:psd_amp} is measured d
 \caption{ACPR using four transmit antennas}
 \label{fig:acpr_meas2}
 \end{figure} 
+
+\todo[inline]{lav figur med -dbm input ved forskellige afstande}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Measurement setup 2}
+
+\subsubsection{Amplifier only}
+
+In this section an other amplifier has been used.....
+
+First step is to measure the amplifier and find the input level where the amplifier compresses and then do the DPD. 
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.5]{figures/measurement/meas_set_cree_1.png}
+\caption{Measurement setup}
+\label{fig:meas2_cree1}
+\end{figure} 
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/amam_cree_amp_no_dpd.png}
+	\caption{AM/AM of amplifier}
+    \label{fig:cree_amam1}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/measurement/cree/amam_cree_amp_with_dpd.png}
+\caption{AM/AM of amplifier with DPD}
+    \label{fig:cree_amam2}
+  \end{minipage}
+\end{figure}
+
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/psd_cree_amp_no_dpd.png}
+	\caption{PSD of amplifier}
+    \label{fig:cree_amam1}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/measurement/cree/psd_cree_amp_with_dpd.png}
+\caption{PSD of amplifier with DPD}
+    \label{fig:cree_amam2}
+  \end{minipage}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{With one antenna}
+
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.5]{figures/measurement/cree/one2one_draw.png}
+\caption{Measurement setup using one tx antenna}
+\label{fig:Meas_setup_draw_cree1}
+\end{figure} 
+
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.1]{figures/measurement/cree/one2one.jpg}
+\caption{Picture of measurement setup using one tx antenna}
+\label{fig:Meas_setup_cree1}
+\end{figure} 
+
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/amam_one_ant.png}
+	\caption{AM/AM of amplifier with one Tx and one Rx antenna}
+    \label{fig:cree_amam_one_ant}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/measurement/cree/psd_one_ant.png}
+\caption{PSD of amplifier with one Tx and one Rx antenna}
+    \label{fig:cree_psd_one_ant}
+  \end{minipage}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{With two antennas}
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.4]{figures/measurement/cree/two2one_draw.png}
+\caption{Measurement setup using two tx antenna}
+\label{fig:Meas_setup_draw_cree1}
+\end{figure} 
+
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.1]{figures/measurement/cree/two2one.jpg}
+\caption{Picture of measurement setup using two tx antenna}
+\label{fig:Meas_setup_cree1}
+\end{figure} 
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/two/amam_two_ant_0p1.png}
+	\caption{AM/AM of amplifier with two Tx antenna spaced $0.1\lambda$ and one Rx antenna}
+    \label{fig:cree_amam_one_ant}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/measurement/cree/two/psd_two_ant_0p1.png}
+\caption{PSD of amplifier with two Tx antenna spaced $0.1\lambda$ and one Rx antenna}
+    \label{fig:cree_psd_one_ant}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/two/amam_two_ant_0p2.png}
+	\caption{AM/AM of amplifier with two Tx antenna spaced $0.2\lambda$ and one Rx antenna}
+    \label{fig:cree_amam_two_ant1}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/measurement/cree/two/psd_two_ant_0p2.png}
+\caption{PSD of amplifier with two Tx antenna spaced $0.2\lambda$ and one Rx antenna}
+    \label{fig:cree_psd_two_ant1}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/two/amam_two_ant_0p3.png}
+	\caption{AM/AM of amplifier with two Tx antenna spaced $0.3\lambda$ and one Rx antenna}
+    \label{fig:cree_amam_two_ant2}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/measurement/cree/two/psd_two_ant_0p3.png}
+\caption{PSD of amplifier with two Tx antenna spaced $0.3\lambda$ and one Rx antenna}
+    \label{fig:cree_psd_two_ant2}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/two/amam_two_ant_0p4.png}
+	\caption{AM/AM of amplifier with two Tx antenna spaced $0.4\lambda$ and one Rx antenna}
+    \label{fig:cree_amam_two_ant3}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/measurement/cree/two/psd_two_ant_0p4.png}
+\caption{PSD of amplifier with two Tx antenna spaced $0.4\lambda$ and one Rx antenna}
+    \label{fig:cree_psd_two_ant3}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/two/amam_two_ant_0p5.png}
+	\caption{AM/AM of amplifier with two Tx antenna spaced $0.5\lambda$ and one Rx antenna}
+    \label{fig:cree_amam_two_ant4}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/measurement/cree/two/psd_two_ant_0p5.png}
+\caption{PSD of amplifier with two Tx antenna spaced $0.5\lambda$ and one Rx antenna}
+    \label{fig:cree_psd_two_ant4}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/two/amam_two_ant_0p6.png}
+	\caption{AM/AM of amplifier with two Tx antenna spaced $0.6\lambda$ and one Rx antenna}
+    \label{fig:cree_amam_two_ant5}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/measurement/cree/two/psd_two_ant_0p1.png}
+\caption{PSD of amplifier with two Tx antenna spaced $0.6\lambda$ and one Rx antenna}
+    \label{fig:cree_psd_two_ant5}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/two/amam_two_ant_1p0.png}
+	\caption{AM/AM of amplifier with two Tx antenna spaced $1\lambda$ and one Rx antenna}
+    \label{fig:cree_amam_two_ant6}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/measurement/cree/two/psd_two_ant_1p0.png}
+\caption{PSD of amplifier with two Tx antenna spaced $1\lambda$ and one Rx antenna}
+    \label{fig:cree_psd_two_ant6}
+  \end{minipage}
+\end{figure}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{With four antennas}
+
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.08]{figures/measurement/cree/four2one.jpg}
+\caption{Picture of measurement setup using four tx antenna}
+\label{fig:Meas_setup_cree1}
+\end{figure} 
+
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/four/amam_four_ant_0p1.png}
+	\caption{AM/AM of amplifier with four Tx antenna spaced $0.1\lambda$ and one Rx antenna}
+    \label{fig:cree_amam_one_ant}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/measurement/cree/four/psd_four_ant_0p1.png}
+\caption{PSD of amplifier with four Tx antenna spaced $0.1\lambda$ and one Rx antenna}
+    \label{fig:cree_psd_one_ant}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/four/amam_four_ant_0p2.png}
+	\caption{AM/AM of amplifier with four Tx antenna spaced $0.2\lambda$ and one Rx antenna}
+    \label{fig:cree_amam_four_ant1}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/measurement/cree/four/psd_four_ant_0p2.png}
+\caption{PSD of amplifier with four Tx antenna spaced $0.2\lambda$ and one Rx antenna}
+    \label{fig:cree_psd_four_ant1}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/four/amam_four_ant_0p3.png}
+	\caption{AM/AM of amplifier with four Tx antenna spaced $0.3\lambda$ and one Rx antenna}
+    \label{fig:cree_amam_four_ant2}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/measurement/cree/four/psd_four_ant_0p3.png}
+\caption{PSD of amplifier with four Tx antenna spaced $0.3\lambda$ and one Rx antenna}
+    \label{fig:cree_psd_four_ant2}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/four/amam_four_ant_0p4.png}
+	\caption{AM/AM of amplifier with four Tx antenna spaced $0.4\lambda$ and one Rx antenna}
+    \label{fig:cree_amam_four_ant3}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/measurement/cree/four/psd_four_ant_0p4.png}
+\caption{PSD of amplifier with four Tx antenna spaced $0.4\lambda$ and one Rx antenna}
+    \label{fig:cree_psd_four_ant3}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/four/amam_four_ant_0p5.png}
+	\caption{AM/AM of amplifier with four Tx antenna spaced $0.5\lambda$ and one Rx antenna}
+    \label{fig:cree_amam_four_ant4}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/measurement/cree/four/psd_four_ant_0p5.png}
+\caption{PSD of amplifier with four Tx antenna spaced $0.5\lambda$ and one Rx antenna}
+    \label{fig:cree_psd_four_ant4}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/four/amam_four_ant_0p6.png}
+	\caption{AM/AM of amplifier with four Tx antenna spaced $0.6\lambda$ and one Rx antenna}
+    \label{fig:cree_amam_four_ant5}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/measurement/cree/four/psd_four_ant_0p1.png}
+\caption{PSD of amplifier with four Tx antenna spaced $0.6\lambda$ and one Rx antenna}
+    \label{fig:cree_psd_four_ant5}
+  \end{minipage}
+\end{figure}
+
+
+
+
+

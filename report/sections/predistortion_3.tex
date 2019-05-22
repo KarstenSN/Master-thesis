@@ -85,10 +85,9 @@ for m = 1:M
     end
 end
 
-x2 = x(M:end);%Remove M samples
-w = Y\x2;%Do the regression
-x_est = Y*w;%
-error = mean(abs(x2-x_est))
+w = Y\x(M:end);%Do the regression
+x_est = Y*w;%estimated input
+error = mean(abs(x(M:end)-x_est))
 
 \end{lstlisting}
 
@@ -102,28 +101,25 @@ for m = 1:M
     end
 end
 
-x_inv = X*Coeff;%inverse model
+x_inv = X*w;%inverse model
 \end{lstlisting}
+
+
+In figure \ref{fig:dpd_amam} a AM/AM plot is depicted of measurements done at an amplifier. The plot shows how the output (blue) is driven close to it's compression point. Then the inverse model (red) inverses this non-linearity and when this signal it presented at the input of the amplifier, then the response will become close to linear (yellow). The reason that it still reaches some level of compression is because of the limit of the supply-voltage to the amplifier. A PSD of the same measurements is depicted in figure \ref{fig:dpd_psd}. From that it is easy to see how the predistorted signal lowers the distortion. 
+
 
 \begin{figure}[H]
 \centering 
 \includegraphics[scale = 0.7]{figures/measurement/predis.png}
 \caption{AM/AM plot of measured response and inverse model}
-\label{fig:pre_cons}
+\label{fig:dpd_amam}
 \end{figure}
 
 \begin{figure}[H]
 \centering 
 \includegraphics[scale = 0.7]{figures/measurement/psd_dpd.png}
-\caption{PSD of output, input and inverse model}
-\label{fig:pre_cons}
-\end{figure}
-
-\begin{figure}[H]
-\centering 
-\includegraphics[scale = 0.7]{figures/measurement/inoutmodel.png}
-\caption{Baseband signal of input, output and inverse model}
-\label{fig:pre_cons}
+\caption{PSD of output measured at amplifier close to it's compression point and output at same power level but with predistortion. }
+\label{fig:dpd_psd}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%     

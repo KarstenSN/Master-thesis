@@ -1,0 +1,179 @@
+\chapter{Antenna measurement}
+In this section measurement of the used antennas for this project is presented
+
+\section{Single antenna}
+The first measurement done is the farfield of a single antenna only. The measurement is done in an anechoic chamber to ensure that no reflections will affect the results. The antenna is mounted in a fixture made of flamingo and is connected directly to a cable that further is connected to a signal generator. The measurement shows that the antenna has a maximum gain at 11.1 dB and that the farfield can be assumed omnidirectional. 
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.05]{figures/measurement/antennas/one_ant.jpg}
+\caption{Measurement of a single antenna in an anechoic chamber}
+\label{fig:chamber_one_ant}
+\end{figure} 
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.8]{figures/measurement/antennas/one_ant.png}
+\caption{Measured farfield in dB. Maximum gain is 11.1dB}
+\label{fig:chamber_one_ant_ff}
+\end{figure} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Two antennas}
+In this section measurement is done at two antennas that are spaced at different distances. This is to see how the farfield will change due to coupling of the array. In the theory the gain should become 3dB greater using two antennas than using one antenna, but for this measurement a power divider is used, which is a a 4-port divider that introduces a loss at 6dB to every port. Therefore a decrease of 3dB is expected. The unused ports of the power divider is terminated to a $50\Omega$ load. It is seen from figure \ref{fig:chamber_two_ant_ff_01} to \ref{fig:chamber_two_ant_ff_06} that the farfield flattens in the y direction and that the gain varies with the distances between the elements. The loss seems to be lower than expected since a loss at only 2.2dB is obtained at $d=0.5\lambda$.
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.05]{figures/measurement/antennas/two_ant.jpg}
+\caption{Measurement of two antennas with a powerdivider in an anechoic chamber. The distances between the antennas are varied for every measurement. The distance is $0.5\lambda$ on the picture}
+\label{fig:chamber_two_ant}
+\end{figure} 
+
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/antennas/array_2_0p1.png}
+	\caption{Farfield for $d = 0.1\lambda$. Maximum gain is 7.8dB}
+    \label{fig:chamber_two_ant_ff_01}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/measurement/antennas/array_2_0p2.png}
+\caption{Farfield for $d = 0.2\lambda$. Maximum gain is 8.2dB}
+    \label{fig:chamber_two_ant_ff:02}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/antennas/array_2_0p3.png}
+	\caption{Farfield for $d = 0.3\lambda$. Maximum gain is 8.5dB}
+    \label{fig:chamber_two_ant_ff_03}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/measurement/antennas/array_2_0p4.png}
+\caption{Farfield for $d = 0.4\lambda$. Maximum gain is 8.7dB}
+    \label{fig:chamber_two_ant_ff:04}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/antennas/array_2_0p5.png}
+	\caption{Farfield for $d = 0.5\lambda$. Maximum gain is 8.9dB}
+    \label{fig:chamber_two_ant_ff_05}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/measurement/antennas/array_2_0p6.png}
+\caption{Farfield for $d = 0.6\lambda$. Maximum gain is 8.4dB}
+    \label{fig:chamber_two_ant_ff:06}
+  \end{minipage}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Four antennas}
+In this section four antennas is measured. The expected gain is the same as for one antenna because of the powerdivider. Like the case for the measurement done at two antennas the distances is also varied in these measurements. It is seen that the farfield flattens even more at this configuration in the y axis. This is mainly caused by the geometry of the antennas. The gain is also higher then expected which can be seen from figure \ref{fig:chamber_four_ant_ff_01} to \ref{fig:chamber_four_ant_ff_06}.  
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.05]{figures/measurement/antennas/four_ant.jpg}
+\caption{Measurement of four antennas with a powerdivider in an anechoic chamber. The distances between the antennas are varied for every measurement. The distance is $0.5\lambda$ on the picture}
+\label{fig:chamber_four_ant}
+\end{figure} 
+
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/antennas/array_4_0p1.png}
+	\caption{Farfield for $d = 0.1\lambda$. Maximum gain is 10.3dB}
+    \label{fig:chamber_four_ant_ff_01}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/measurement/antennas/array_4_0p2.png}
+\caption{Farfield for $d = 0.2\lambda$. Maximum gain is 11.3dB}
+    \label{fig:chamber_four_ant_ff:02}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/antennas/array_4_0p3.png}
+	\caption{Farfield for $d = 0.3\lambda$. Maximum gain is 12.2dB}
+    \label{fig:chamber_four_ant_ff_03}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/measurement/antennas/array_4_0p4.png}
+\caption{Farfield for $d = 0.4\lambda$. Maximum gain is 13.1dB}
+    \label{fig:chamber_four_ant_ff:04}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/antennas/array_4_0p5.png}
+	\caption{Farfield for $d = 0.5\lambda$. Maximum gain is 13.8dB}
+    \label{fig:chamber_four_ant_ff_05}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/measurement/antennas/array_4_0p6.png}
+\caption{Farfield for $d = 0.6\lambda$. Maximum gain is 13.0dB}
+    \label{fig:chamber_four_ant_ff:06}
+  \end{minipage}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Single element four antennas}
+In this section the farfield of a single element in a array with 4 antennas is measured. It is expected that the first and fourth element has a radiation pattern opposite to each other and that second and the third also is opposite with each other. It is seen to be somewhat true in figure \ref{fig:chamber_four_ant_ff_1} to \ref{fig:chamber_four_ant_ff_4} thou variations is seen.     
+
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.05]{figures/measurement/antennas/single_element_array.jpg}
+\caption{Measurement of a single antenna in a 4 element array. The unused antennas is terminated to $50\Omega$. For every measurement the cable is mounted on another antenna and the load is shifted.}
+\label{fig:chamber_four_ant0}
+\end{figure} 
+
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/antennas/1st_element_4_array.png}
+	\caption{Farfield first element in the four element array. Maximum gain is 10.4dB}
+    \label{fig:chamber_four_ant_ff_1}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/measurement/antennas/2nd_element_4_array.png}
+\caption{Farfield second element in the four element array. Maximum gain is 9.1dB}
+    \label{fig:chamber_four_ant_ff:2}
+  \end{minipage}
+\end{figure}
+
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/antennas/3rd_element_4_array.png}
+	\caption{Farfield third element in the four element array. Maximum gain is 8.8dB}
+    \label{fig:chamber_four_ant_ff_3}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+\includegraphics[scale = 0.5]{figures/measurement/antennas/4th_element_4_array.png}
+\caption{Farfield fourth element in the four element array. Maximum gain is 9.9dB}
+    \label{fig:chamber_four_ant_ff_4}
+  \end{minipage}
+\end{figure}
+
+

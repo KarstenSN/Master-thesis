@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.10)  14 MAY 2019 14:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.10)  22 MAY 2019 18:58
 entering extended mode
 **./master.tex
 (master.tex
@@ -1142,19 +1142,34 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 166.
 \c@exa=\count158
 ) (master.aux
 
-LaTeX Warning: Label `fig:correlation' multiply defined.
-
-
 LaTeX Warning: Label `fig:pre_cons' multiply defined.
 
 
-LaTeX Warning: Label `fig:pre_cons' multiply defined.
+LaTeX Warning: Label `fig:cree_amam1' multiply defined.
 
 
-LaTeX Warning: Label `fig:pre_cons' multiply defined.
+LaTeX Warning: Label `fig:cree_amam2' multiply defined.
 
 
-LaTeX Warning: Label `fig:pre_cons' multiply defined.
+LaTeX Warning: Label `fig:Meas_setup_draw_cree1' multiply defined.
+
+
+LaTeX Warning: Label `fig:Meas_setup_cree1' multiply defined.
+
+
+LaTeX Warning: Label `fig:cree_amam_one_ant' multiply defined.
+
+
+LaTeX Warning: Label `fig:cree_psd_one_ant' multiply defined.
+
+
+LaTeX Warning: Label `fig:Meas_setup_cree1' multiply defined.
+
+
+LaTeX Warning: Label `fig:cree_amam_one_ant' multiply defined.
+
+
+LaTeX Warning: Label `fig:cree_psd_one_ant' multiply defined.
 
 )
 \openout1 = `master.aux'.
@@ -1321,7 +1336,7 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10> not available
 \titlepageleftcolumnwidth=\skip75
 \titlepagerightcolumnwidth=\skip76
 
-<figures/aau_logo_en.pdf, id=131, 115.43124pt x 77.28876pt>
+<figures/aau_logo_en.pdf, id=155, 115.43124pt x 77.28876pt>
 File: figures/aau_logo_en.pdf Graphic file (type pdf)
 
 <use figures/aau_logo_en.pdf>
@@ -1356,7 +1371,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 33.
 
-<figures/aau_logo_da.pdf, id=149, 121.45375pt x 77.28876pt>
+<figures/aau_logo_da.pdf, id=173, 121.45375pt x 77.28876pt>
 File: figures/aau_logo_da.pdf Graphic file (type pdf)
 
 <use figures/aau_logo_da.pdf>
@@ -1388,26 +1403,26 @@ Package babel Info: Redefining danish shorthand "~
 [5 <./figures/aau_logo_da.pdf>]) [6
 
 
-] (master.toc)
+] (master.toc [7
+
+])
 \tf@toc=\write5
 \openout5 = `master.toc'.
 
- [7
 
-]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8
-
-] (master.tdo)
+[8] (master.tdo)
 \tf@tdo=\write6
 \openout6 = `master.tdo'.
 
- (sections/preface.tex [9]
+ (sections/preface.tex [9
+
+]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1440,7 +1455,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 Chapter 2.
-<figures/ch1/amp_lin.png, id=223, 415.43205pt x 284.5029pt>
+<figures/ch1/amp_lin.png, id=257, 415.43205pt x 284.5029pt>
 File: figures/ch1/amp_lin.png Graphic file (type png)
 
 <use figures/ch1/amp_lin.png>
@@ -1461,14 +1476,14 @@ it/10.95 a[]\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 sin\OT1/lmr/m/n/10.95 (\OML
 :
  []
 
-<figures/ch1/amp_psd.png, id=240, 294.34969pt x 164.11313pt>
+<figures/ch1/amp_psd.png, id=274, 294.34969pt x 164.11313pt>
 File: figures/ch1/amp_psd.png Graphic file (type png)
 
 <use figures/ch1/amp_psd.png>
 Package pdftex.def Info: figures/ch1/amp_psd.png used on input line 32.
 (pdftex.def)             Requested size: 206.04337pt x 114.87839pt.
 
-<figures/ch1/acpr.png, id=241, 640.64343pt x 371.88937pt>
+<figures/ch1/acpr.png, id=275, 640.64343pt x 371.88937pt>
 File: figures/ch1/acpr.png Graphic file (type png)
 
 <use figures/ch1/acpr.png>
@@ -1482,7 +1497,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4 <./figures/ch1/amp_psd.png>]
-<figures/ch1/evm.png, id=261, 322.95656pt x 197.98969pt>
+<figures/ch1/evm.png, id=295, 322.95656pt x 197.98969pt>
 File: figures/ch1/evm.png Graphic file (type png)
 
 <use figures/ch1/evm.png>
@@ -1496,7 +1511,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [5 <./figures/ch1/acpr.png>]
-<figures/ch1/ads_nonlin_dest.png, id=271, 495.35063pt x 354.57469pt>
+<figures/ch1/ads_nonlin_dest.png, id=305, 495.35063pt x 354.57469pt>
 File: figures/ch1/ads_nonlin_dest.png Graphic file (type png)
 
 <use figures/ch1/ads_nonlin_dest.png>
@@ -1515,7 +1530,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [6 <./figures/ch1/evm.png> <./figures/ch1/ads_nonlin_dest.png>]
-<figures/ch1/amplitude.png, id=283, 415.43205pt x 284.5029pt>
+<figures/ch1/amplitude.png, id=317, 415.43205pt x 284.5029pt>
 File: figures/ch1/amplitude.png Graphic file (type png)
 
 <use figures/ch1/amplitude.png>
@@ -1529,7 +1544,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [7 <./figures/ch1/amplitude.png (PNG copy)>]
-<figures/ch1/mimo.png, id=300, 582.67688pt x 359.84438pt>
+<figures/ch1/mimo.png, id=334, 582.67688pt x 359.84438pt>
 File: figures/ch1/mimo.png Graphic file (type png)
 
 <use figures/ch1/mimo.png>
@@ -1543,7 +1558,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8 <./figures/ch1/mimo.png>]
-<figures/ch1/correlation.png, id=323, 415.43205pt x 284.5029pt>
+<figures/ch1/correlation.png, id=357, 415.43205pt x 284.5029pt>
 File: figures/ch1/correlation.png Graphic file (type png)
 
 <use figures/ch1/correlation.png>
@@ -1556,12 +1571,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9] <figures/ch1/antenna_array.png, id=341, 530.73282pt x 262.73157pt>
-File: figures/ch1/antenna_array.png Graphic file (type png)
+[9] <figures/measurement/af_2ant.png, id=377, 415.43205pt x 284.5029pt>
+File: figures/measurement/af_2ant.png Graphic file (type png)
 
-<use figures/ch1/antenna_array.png>
-Package pdftex.def Info: figures/ch1/antenna_array.png used on input line 182.
-(pdftex.def)             Requested size: 371.51044pt x 183.91083pt.
+<use figures/measurement/af_2ant.png>
+Package pdftex.def Info: figures/measurement/af_2ant.png used on input line 192
+.
+(pdftex.def)             Requested size: 290.80045pt x 199.15067pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1570,77 +1586,47 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [10 <./figures/ch1/correlation.png (PNG copy)>]
-<figures/ch1/antenna_array_corr.png, id=352, 415.43205pt x 284.5029pt>
-File: figures/ch1/antenna_array_corr.png Graphic file (type png)
-
-<use figures/ch1/antenna_array_corr.png>
-Package pdftex.def Info: figures/ch1/antenna_array_corr.png used on input line 
-189.
-(pdftex.def)             Requested size: 373.88539pt x 256.05023pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[11 <./figures/ch1/antenna_array.png> <./figures/ch1/antenna_array_corr.png (PN
-G copy)>] <figures/measurement/af_2ant.png, id=361, 415.43205pt x 284.5029pt>
-File: figures/measurement/af_2ant.png Graphic file (type png)
-
-<use figures/measurement/af_2ant.png>
-Package pdftex.def Info: figures/measurement/af_2ant.png used on input line 208
-.
-(pdftex.def)             Requested size: 290.80045pt x 199.15067pt.
-
-<figures/measurement/af_4ant.png, id=362, 415.43205pt x 284.5029pt>
+<figures/measurement/af_4ant.png, id=389, 415.43205pt x 284.5029pt>
 File: figures/measurement/af_4ant.png Graphic file (type png)
 
 <use figures/measurement/af_4ant.png>
-Package pdftex.def Info: figures/measurement/af_4ant.png used on input line 216
+Package pdftex.def Info: figures/measurement/af_4ant.png used on input line 200
 .
 (pdftex.def)             Requested size: 290.80045pt x 199.15067pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[12 <./figures/measurement/af_2ant.png (PNG copy)>])
-(sections/predistortion_3.tex
+) (sections/predistortion_3.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13 <./figures/measurement/af_4ant.png (PNG copy)>]
+[11 <./figures/measurement/af_2ant.png (PNG copy)> <./figures/measurement/af_4a
+nt.png (PNG copy)>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14
+[12
 
 ]
 Chapter 3.
-<figures/ch1/predistortion_consept.png, id=379, 407.27156pt x 165.61874pt>
+<figures/ch1/predistortion_consept.png, id=398, 407.27156pt x 165.61874pt>
 File: figures/ch1/predistortion_consept.png Graphic file (type png)
 
 <use figures/ch1/predistortion_consept.png>
 Package pdftex.def Info: figures/ch1/predistortion_consept.png used on input li
 ne 7.
 (pdftex.def)             Requested size: 285.08813pt x 115.93231pt.
- [15 <./figures/ch1/predistortion_consept.png>]
+ [13 <./figures/ch1/predistortion_consept.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16]
+[14]
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 84.
 
@@ -1649,7 +1635,7 @@ Overfull \hbox (6.15942pt too wide) in paragraph at lines 84--85
  []
 
 
-Overfull \hbox (6.15942pt too wide) in paragraph at lines 101--102
+Overfull \hbox (6.15942pt too wide) in paragraph at lines 100--101
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
@@ -1659,28 +1645,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17] <figures/measurement/predis.png, id=438, 415.43205pt x 284.5029pt>
+[15] <figures/measurement/predis.png, id=459, 415.43205pt x 284.5029pt>
 File: figures/measurement/predis.png Graphic file (type png)
 
 <use figures/measurement/predis.png>
-Package pdftex.def Info: figures/measurement/predis.png used on input line 110.
+Package pdftex.def Info: figures/measurement/predis.png used on input line 113.
 
 (pdftex.def)             Requested size: 290.80045pt x 199.15067pt.
 
-<figures/measurement/psd_dpd.png, id=439, 415.43205pt x 284.5029pt>
+<figures/measurement/psd_dpd.png, id=460, 415.43205pt x 284.5029pt>
 File: figures/measurement/psd_dpd.png Graphic file (type png)
 
 <use figures/measurement/psd_dpd.png>
-Package pdftex.def Info: figures/measurement/psd_dpd.png used on input line 117
+Package pdftex.def Info: figures/measurement/psd_dpd.png used on input line 120
 .
-(pdftex.def)             Requested size: 290.80045pt x 199.15067pt.
-
-<figures/measurement/inoutmodel.png, id=440, 415.43205pt x 284.5029pt>
-File: figures/measurement/inoutmodel.png Graphic file (type png)
-
-<use figures/measurement/inoutmodel.png>
-Package pdftex.def Info: figures/measurement/inoutmodel.png used on input line 
-124.
 (pdftex.def)             Requested size: 290.80045pt x 199.15067pt.
 
 
@@ -1689,29 +1667,29 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18 <./figures/measurement/predis.png (PNG copy)> <./figures/measurement/psd_dp
+[16 <./figures/measurement/predis.png (PNG copy)> <./figures/measurement/psd_dp
 d.png (PNG copy)>]
-<figures/ch1/crosstalk_before.png, id=453, 453.19313pt x 392.96812pt>
+<figures/ch1/crosstalk_before.png, id=472, 453.19313pt x 392.96812pt>
 File: figures/ch1/crosstalk_before.png Graphic file (type png)
 
 <use figures/ch1/crosstalk_before.png>
 Package pdftex.def Info: figures/ch1/crosstalk_before.png used on input line 14
-5.
+1.
 (pdftex.def)             Requested size: 226.59601pt x 196.48357pt.
 
-Overfull \hbox (26.00407pt too wide) in paragraph at lines 145--146
+Overfull \hbox (26.00407pt too wide) in paragraph at lines 141--142
 [][] 
  []
 
-<figures/ch1/crosstalk_after.png, id=458, 393.72093pt x 360.59718pt>
+<figures/ch1/crosstalk_after.png, id=477, 393.72093pt x 360.59718pt>
 File: figures/ch1/crosstalk_after.png Graphic file (type png)
 
 <use figures/ch1/crosstalk_after.png>
-Package pdftex.def Info: figures/ch1/crosstalk_after.png used on input line 151
+Package pdftex.def Info: figures/ch1/crosstalk_after.png used on input line 147
 .
 (pdftex.def)             Requested size: 196.85999pt x 180.29814pt.
 
-Overfull \hbox (36.3889pt too wide) in paragraph at lines 151--152
+Overfull \hbox (36.3889pt too wide) in paragraph at lines 147--148
 [][] 
  []
 
@@ -1721,69 +1699,55 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19 <./figures/measurement/inoutmodel.png (PNG copy)>]
-<figures/ch1/crosstalk_antenna.png, id=477, 308.65312pt x 289.83281pt>
+[17 <./figures/ch1/crosstalk_before.png> <./figures/ch1/crosstalk_after.png>]
+<figures/ch1/crosstalk_antenna.png, id=499, 308.65312pt x 289.83281pt>
 File: figures/ch1/crosstalk_antenna.png Graphic file (type png)
 
 <use figures/ch1/crosstalk_antenna.png>
 Package pdftex.def Info: figures/ch1/crosstalk_antenna.png used on input line 1
-73.
+69.
 (pdftex.def)             Requested size: 154.32617pt x 144.91605pt.
 
-<figures/ch1/crosstalk_ctmm.png, id=482, 381.67593pt x 289.08pt>
+<figures/ch1/crosstalk_ctmm.png, id=504, 381.67593pt x 289.08pt>
 File: figures/ch1/crosstalk_ctmm.png Graphic file (type png)
 
 <use figures/ch1/crosstalk_ctmm.png>
-Package pdftex.def Info: figures/ch1/crosstalk_ctmm.png used on input line 179.
+Package pdftex.def Info: figures/ch1/crosstalk_ctmm.png used on input line 175.
 
 (pdftex.def)             Requested size: 190.8375pt x 144.53964pt.
 
-Overfull \hbox (30.36641pt too wide) in paragraph at lines 179--181
+Overfull \hbox (30.36641pt too wide) in paragraph at lines 175--177
 [][] 
  []
 
+) (sections/predistortion_2.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20 <./figures/ch1/crosstalk_before.png> <./figures/ch1/crosstalk_after.png>])
-(sections/predistortion_2.tex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[21 <./figures/ch1/crosstalk_antenna.png> <./figures/ch1/crosstalk_ctmm.png>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[22
-
-]
+[18 <./figures/ch1/crosstalk_antenna.png> <./figures/ch1/crosstalk_ctmm.png>]
 Chapter 4.
-<figures/measurement/antenna_front.png, id=506, 204.01219pt x 566.115pt>
+<figures/measurement/antenna_front.png, id=516, 204.01219pt x 566.115pt>
 File: figures/measurement/antenna_front.png Graphic file (type png)
 
 <use figures/measurement/antenna_front.png>
 Package pdftex.def Info: figures/measurement/antenna_front.png used on input li
 ne 10.
-(pdftex.def)             Requested size: 142.80756pt x 396.2778pt.
+(pdftex.def)             Requested size: 102.00584pt x 283.05681pt.
 
-<figures/measurement/antenna_back.png, id=507, 214.55156pt x 586.44093pt>
+<figures/measurement/antenna_back.png, id=517, 214.55156pt x 586.44093pt>
 File: figures/measurement/antenna_back.png Graphic file (type png)
 
 <use figures/measurement/antenna_back.png>
 Package pdftex.def Info: figures/measurement/antenna_back.png used on input lin
 e 16.
-(pdftex.def)             Requested size: 150.18506pt x 410.50584pt.
- [23]
-<figures/measurement/antenna_ff.png, id=512, 368.1253pt x 291.33844pt>
+(pdftex.def)             Requested size: 107.27551pt x 293.21974pt.
+ [19
+
+]
+<figures/measurement/antenna_ff.png, id=523, 368.1253pt x 291.33844pt>
 File: figures/measurement/antenna_ff.png Graphic file (type png)
 
 <use figures/measurement/antenna_ff.png>
@@ -1791,15 +1755,7 @@ Package pdftex.def Info: figures/measurement/antenna_ff.png used on input line
 25.
 (pdftex.def)             Requested size: 257.68596pt x 203.93552pt.
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[24 <./figures/measurement/antenna_front.png> <./figures/measurement/antenna_ba
-ck.png>]
-<figures/measurement/antenna_spar.png, id=518, 782.17218pt x 289.08pt>
+<figures/measurement/antenna_spar.png, id=524, 782.17218pt x 289.08pt>
 File: figures/measurement/antenna_spar.png Graphic file (type png)
 
 <use figures/measurement/antenna_spar.png>
@@ -1811,12 +1767,30 @@ Overfull \hbox (68.12306pt too wide) in paragraph at lines 33--34
  [][] 
  []
 
-<figures/measurement/amplifier.png, id=522, 642.90187pt x 469.755pt>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20 <./figures/measurement/antenna_front.png> <./figures/measurement/antenna_ba
+ck.png> <./figures/measurement/antenna_ff.png>]
+<figures/measurement/antenna_array.png, id=531, 530.73282pt x 262.73157pt>
+File: figures/measurement/antenna_array.png Graphic file (type png)
+
+<use figures/measurement/antenna_array.png>
+Package pdftex.def Info: figures/measurement/antenna_array.png used on input li
+ne 40.
+(pdftex.def)             Requested size: 371.51044pt x 183.91083pt.
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 45.
+
+<figures/measurement/amplifier.png, id=535, 642.90187pt x 469.755pt>
 File: figures/measurement/amplifier.png Graphic file (type png)
 
 <use figures/measurement/amplifier.png>
-Package pdftex.def Info: figures/measurement/amplifier.png used on input line 4
-4.
+Package pdftex.def Info: figures/measurement/amplifier.png used on input line 5
+1.
 (pdftex.def)             Requested size: 192.87204pt x 140.92758pt.
 
 
@@ -1825,33 +1799,33 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25 <./figures/measurement/antenna_ff.png> <./figures/measurement/antenna_spar.
-png>] <figures/measurement/amp_gain.png, id=535, 273.27094pt x 219.82124pt>
+[21 <./figures/measurement/antenna_spar.png> <./figures/measurement/antenna_arr
+ay.png>] <figures/measurement/amp_gain.png, id=548, 273.27094pt x 219.82124pt>
 File: figures/measurement/amp_gain.png Graphic file (type png)
 
 <use figures/measurement/amp_gain.png>
-Package pdftex.def Info: figures/measurement/amp_gain.png used on input line 52
+Package pdftex.def Info: figures/measurement/amp_gain.png used on input line 59
 .
 (pdftex.def)             Requested size: 191.28833pt x 153.87381pt.
 
-<figures/measurement/amp_outpower.png, id=536, 273.27094pt x 222.8325pt>
+<figures/measurement/amp_outpower.png, id=549, 273.27094pt x 222.8325pt>
 File: figures/measurement/amp_outpower.png Graphic file (type png)
 
 <use figures/measurement/amp_outpower.png>
 Package pdftex.def Info: figures/measurement/amp_outpower.png used on input lin
-e 58.
+e 65.
 (pdftex.def)             Requested size: 191.28833pt x 155.98167pt.
 
-Overfull \hbox (30.81725pt too wide) in paragraph at lines 58--59
+Overfull \hbox (30.81725pt too wide) in paragraph at lines 65--66
 [][] 
  []
 
-<figures/measurement/meas_set_1.png, id=538, 592.46344pt x 225.09094pt>
+<figures/measurement/meas_set_1.png, id=551, 592.46344pt x 225.09094pt>
 File: figures/measurement/meas_set_1.png Graphic file (type png)
 
 <use figures/measurement/meas_set_1.png>
 Package pdftex.def Info: figures/measurement/meas_set_1.png used on input line 
-70.
+77.
 (pdftex.def)             Requested size: 355.4808pt x 135.05559pt.
 
 
@@ -1860,33 +1834,33 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26 <./figures/measurement/amplifier.png> <./figures/measurement/amp_gain.png> 
+[22 <./figures/measurement/amplifier.png> <./figures/measurement/amp_gain.png> 
 <./figures/measurement/amp_outpower.png>]
-<figures/measurement/meas_set_2.png, id=545, 812.28468pt x 182.93344pt>
+<figures/measurement/meas_set_2.png, id=558, 812.28468pt x 182.93344pt>
 File: figures/measurement/meas_set_2.png Graphic file (type png)
 
 <use figures/measurement/meas_set_2.png>
 Package pdftex.def Info: figures/measurement/meas_set_2.png used on input line 
-80.
+87.
 (pdftex.def)             Requested size: 487.37457pt x 109.7609pt.
 
-Overfull \hbox (86.1907pt too wide) in paragraph at lines 80--81
+Overfull \hbox (86.1907pt too wide) in paragraph at lines 87--88
  [][] 
  []
 
 
-LaTeX Warning: Reference `fig:Meas_setup4nt' on page 27 undefined on input line
- 85.
+LaTeX Warning: Reference `fig:Meas_setup4nt' on page 23 undefined on input line
+ 92.
 
-<figures/measurement/meas_set_3.png, id=546, 790.45313pt x 234.1247pt>
+<figures/measurement/meas_set_3.png, id=559, 790.45313pt x 234.1247pt>
 File: figures/measurement/meas_set_3.png Graphic file (type png)
 
 <use figures/measurement/meas_set_3.png>
 Package pdftex.def Info: figures/measurement/meas_set_3.png used on input line 
-89.
+96.
 (pdftex.def)             Requested size: 474.27553pt x 140.47589pt.
 
-Overfull \hbox (73.09166pt too wide) in paragraph at lines 89--90
+Overfull \hbox (73.09166pt too wide) in paragraph at lines 96--97
  [][] 
  []
 
@@ -1896,21 +1870,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27 <./figures/measurement/meas_set_1.png> <./figures/measurement/meas_set_2.pn
-g>] <figures/measurement/measurement_setup.jpg, id=554, 3131.7pt x 2348.775pt>
+[23 <./figures/measurement/meas_set_1.png> <./figures/measurement/meas_set_2.pn
+g>] <figures/measurement/measurement_setup.jpg, id=567, 3131.7pt x 2348.775pt>
 File: figures/measurement/measurement_setup.jpg Graphic file (type jpg)
 
 <use figures/measurement/measurement_setup.jpg>
 Package pdftex.def Info: figures/measurement/measurement_setup.jpg used on inpu
-t line 100.
+t line 107.
 (pdftex.def)             Requested size: 313.18834pt x 234.89127pt.
 
-<figures/measurement/measurement_setup_4.jpg, id=555, 3131.7pt x 2348.775pt>
+<figures/measurement/measurement_setup_4.jpg, id=568, 3131.7pt x 2348.775pt>
 File: figures/measurement/measurement_setup_4.jpg Graphic file (type jpg)
 
 <use figures/measurement/measurement_setup_4.jpg>
 Package pdftex.def Info: figures/measurement/measurement_setup_4.jpg used on in
-put line 107.
+put line 114.
 (pdftex.def)             Requested size: 313.18834pt x 234.89127pt.
 
 
@@ -1919,9 +1893,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28 <./figures/measurement/meas_set_3.png> <./figures/measurement/measurement_s
+[24 <./figures/measurement/meas_set_3.png> <./figures/measurement/measurement_s
 etup.jpg>]
-Overfull \hbox (8.40833pt too wide) detected at line 124
+Overfull \hbox (8.40833pt too wide) detected at line 131
 []\OML/lmm/m/it/10.95 G[]\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 dB\OT1/lmr/m/n
 /10.95 ) = \OML/lmm/m/it/10.95 G[] \OT1/lmr/m/n/10.95 + \OML/lmm/m/it/10.95 G[]
  \OMS/lmsy/m/n/10.95   \OML/lmm/m/it/10.95 Pathloss \OT1/lmr/m/n/10.95 = 13\OML
@@ -1938,78 +1912,78 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29 <./figures/measurement/measurement_setup_4.jpg>]
-<figures/measurement/two_antenna/amplifier_amam.png, id=579, 415.43205pt x 284.
+[25 <./figures/measurement/measurement_setup_4.jpg>]
+<figures/measurement/two_antenna/amplifier_amam.png, id=593, 415.43205pt x 284.
 5029pt>
 File: figures/measurement/two_antenna/amplifier_amam.png Graphic file (type png
 )
  <use figures/measurement/two_antenna/amplifier_amam.png>
 Package pdftex.def Info: figures/measurement/two_antenna/amplifier_amam.png use
-d on input line 131.
+d on input line 138.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 131--132
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 138--139
 [][] 
  []
 
 
-<figures/measurement/two_antenna/one_ant_amam.png, id=580, 415.43205pt x 284.50
+<figures/measurement/two_antenna/one_ant_amam.png, id=594, 415.43205pt x 284.50
 29pt>
 File: figures/measurement/two_antenna/one_ant_amam.png Graphic file (type png)
  <use figures/measurement/two_antenna/one_ant_amam.png>
 Package pdftex.def Info: figures/measurement/two_antenna/one_ant_amam.png used 
-on input line 137.
+on input line 144.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 137--138
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 144--145
 [][] 
  []
 
 
-<figures/measurement/two_antenna/amam_01.png, id=581, 415.43205pt x 284.5029pt>
+<figures/measurement/two_antenna/amam_01.png, id=595, 415.43205pt x 284.5029pt>
 File: figures/measurement/two_antenna/amam_01.png Graphic file (type png)
 <use figures/measurement/two_antenna/amam_01.png>
 Package pdftex.def Info: figures/measurement/two_antenna/amam_01.png used on in
-put line 148.
+put line 155.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 148--149
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 155--156
 [][] 
  []
 
 
-<figures/measurement/two_antenna/amam_02.png, id=582, 415.43205pt x 284.5029pt>
+<figures/measurement/two_antenna/amam_02.png, id=596, 415.43205pt x 284.5029pt>
 File: figures/measurement/two_antenna/amam_02.png Graphic file (type png)
 <use figures/measurement/two_antenna/amam_02.png>
 Package pdftex.def Info: figures/measurement/two_antenna/amam_02.png used on in
-put line 154.
+put line 161.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 154--155
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 161--162
 [][] 
  []
 
 
-<figures/measurement/two_antenna/amam_03.png, id=583, 415.43205pt x 284.5029pt>
+<figures/measurement/two_antenna/amam_03.png, id=597, 415.43205pt x 284.5029pt>
 File: figures/measurement/two_antenna/amam_03.png Graphic file (type png)
 <use figures/measurement/two_antenna/amam_03.png>
 Package pdftex.def Info: figures/measurement/two_antenna/amam_03.png used on in
-put line 163.
+put line 170.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 163--164
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 170--171
 [][] 
  []
 
 
-<figures/measurement/two_antenna/amam_04.png, id=584, 415.43205pt x 284.5029pt>
+<figures/measurement/two_antenna/amam_04.png, id=598, 415.43205pt x 284.5029pt>
 File: figures/measurement/two_antenna/amam_04.png Graphic file (type png)
 <use figures/measurement/two_antenna/amam_04.png>
 Package pdftex.def Info: figures/measurement/two_antenna/amam_04.png used on in
-put line 169.
+put line 176.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 169--170
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 176--177
 [][] 
  []
 
@@ -2019,82 +1993,82 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30 <./figures/measurement/two_antenna/amplifier_amam.png (PNG copy)> <./figure
+[26 <./figures/measurement/two_antenna/amplifier_amam.png (PNG copy)> <./figure
 s/measurement/two_antenna/one_ant_amam.png (PNG copy)> <./figures/measurement/t
 wo_antenna/amam_01.png (PNG copy)> <./figures/measurement/two_antenna/amam_02.p
 ng (PNG copy)>]
-<figures/measurement/two_antenna/amam_05.png, id=592, 415.43205pt x 284.5029pt>
+<figures/measurement/two_antenna/amam_05.png, id=606, 415.43205pt x 284.5029pt>
 File: figures/measurement/two_antenna/amam_05.png Graphic file (type png)
 <use figures/measurement/two_antenna/amam_05.png>
 Package pdftex.def Info: figures/measurement/two_antenna/amam_05.png used on in
-put line 178.
+put line 185.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 178--179
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 185--186
 [][] 
  []
 
 
-<figures/measurement/two_antenna/amam_06.png, id=593, 415.43205pt x 284.5029pt>
+<figures/measurement/two_antenna/amam_06.png, id=607, 415.43205pt x 284.5029pt>
 File: figures/measurement/two_antenna/amam_06.png Graphic file (type png)
 <use figures/measurement/two_antenna/amam_06.png>
 Package pdftex.def Info: figures/measurement/two_antenna/amam_06.png used on in
-put line 184.
+put line 191.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 184--185
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 191--192
 [][] 
  []
 
 
-<figures/measurement/four_antenna/amam_0p1.png, id=594, 415.43205pt x 284.5029p
+<figures/measurement/four_antenna/amam_0p1.png, id=608, 415.43205pt x 284.5029p
 t>
 File: figures/measurement/four_antenna/amam_0p1.png Graphic file (type png)
  <use figures/measurement/four_antenna/amam_0p1.png>
 Package pdftex.def Info: figures/measurement/four_antenna/amam_0p1.png used on 
-input line 195.
+input line 202.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 195--196
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 202--203
 [][] 
  []
 
 
-<figures/measurement/four_antenna/amam_0p2.png, id=595, 415.43205pt x 284.5029p
+<figures/measurement/four_antenna/amam_0p2.png, id=609, 415.43205pt x 284.5029p
 t>
 File: figures/measurement/four_antenna/amam_0p2.png Graphic file (type png)
  <use figures/measurement/four_antenna/amam_0p2.png>
 Package pdftex.def Info: figures/measurement/four_antenna/amam_0p2.png used on 
-input line 201.
+input line 208.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 201--202
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 208--209
 [][] 
  []
 
 
-<figures/measurement/four_antenna/amam_0p3.png, id=596, 415.43205pt x 284.5029p
+<figures/measurement/four_antenna/amam_0p3.png, id=610, 415.43205pt x 284.5029p
 t>
 File: figures/measurement/four_antenna/amam_0p3.png Graphic file (type png)
  <use figures/measurement/four_antenna/amam_0p3.png>
 Package pdftex.def Info: figures/measurement/four_antenna/amam_0p3.png used on 
-input line 210.
+input line 217.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 210--211
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 217--218
 [][] 
  []
 
 
-<figures/measurement/four_antenna/amam_0p4.png, id=597, 415.43205pt x 284.5029p
+<figures/measurement/four_antenna/amam_0p4.png, id=611, 415.43205pt x 284.5029p
 t>
 File: figures/measurement/four_antenna/amam_0p4.png Graphic file (type png)
  <use figures/measurement/four_antenna/amam_0p4.png>
 Package pdftex.def Info: figures/measurement/four_antenna/amam_0p4.png used on 
-input line 216.
+input line 223.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 216--217
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 223--224
 [][] 
  []
 
@@ -2104,60 +2078,60 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[31 <./figures/measurement/two_antenna/amam_03.png (PNG copy)> <./figures/measu
+[27 <./figures/measurement/two_antenna/amam_03.png (PNG copy)> <./figures/measu
 rement/two_antenna/amam_04.png (PNG copy)> <./figures/measurement/two_antenna/a
 mam_05.png (PNG copy)> <./figures/measurement/two_antenna/amam_06.png (PNG copy
 )> <./figures/measurement/four_antenna/amam_0p1.png (PNG copy)> <./figures/meas
 urement/four_antenna/amam_0p2.png (PNG copy)>]
-<figures/measurement/four_antenna/amam_0p5.png, id=606, 415.43205pt x 284.5029p
+<figures/measurement/four_antenna/amam_0p5.png, id=619, 415.43205pt x 284.5029p
 t>
 File: figures/measurement/four_antenna/amam_0p5.png Graphic file (type png)
  <use figures/measurement/four_antenna/amam_0p5.png>
 Package pdftex.def Info: figures/measurement/four_antenna/amam_0p5.png used on 
-input line 225.
+input line 232.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 225--226
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 232--233
 [][] 
  []
 
 
-<figures/measurement/four_antenna/amam_0p6.png, id=607, 415.43205pt x 284.5029p
+<figures/measurement/four_antenna/amam_0p6.png, id=620, 415.43205pt x 284.5029p
 t>
 File: figures/measurement/four_antenna/amam_0p6.png Graphic file (type png)
  <use figures/measurement/four_antenna/amam_0p6.png>
 Package pdftex.def Info: figures/measurement/four_antenna/amam_0p6.png used on 
-input line 231.
+input line 238.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 231--232
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 238--239
 [][] 
  []
 
 
-<figures/measurement/two_antenna/amplifier_psd.png, id=611, 415.43205pt x 284.5
+<figures/measurement/two_antenna/amplifier_psd.png, id=624, 415.43205pt x 284.5
 029pt>
 File: figures/measurement/two_antenna/amplifier_psd.png Graphic file (type png)
 
  <use figures/measurement/two_antenna/amplifier_psd.png>
 Package pdftex.def Info: figures/measurement/two_antenna/amplifier_psd.png used
- on input line 246.
+ on input line 253.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 246--247
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 253--254
 [][] 
  []
 
 
-<figures/measurement/two_antenna/one_ant_psd.png, id=612, 415.43205pt x 284.502
+<figures/measurement/two_antenna/one_ant_psd.png, id=625, 415.43205pt x 284.502
 9pt>
 File: figures/measurement/two_antenna/one_ant_psd.png Graphic file (type png)
  <use figures/measurement/two_antenna/one_ant_psd.png>
 Package pdftex.def Info: figures/measurement/two_antenna/one_ant_psd.png used o
-n input line 252.
+n input line 259.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 252--253
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 259--260
 [][] 
  []
 
@@ -2167,58 +2141,58 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[32 <./figures/measurement/four_antenna/amam_0p3.png (PNG copy)> <./figures/mea
+[28 <./figures/measurement/four_antenna/amam_0p3.png (PNG copy)> <./figures/mea
 surement/four_antenna/amam_0p4.png (PNG copy)> <./figures/measurement/four_ante
 nna/amam_0p5.png (PNG copy)> <./figures/measurement/four_antenna/amam_0p6.png (
 PNG copy)>]
-<figures/measurement/two_antenna/psd_01.png, id=620, 415.43205pt x 284.5029pt>
+<figures/measurement/two_antenna/psd_01.png, id=633, 415.43205pt x 284.5029pt>
 File: figures/measurement/two_antenna/psd_01.png Graphic file (type png)
 
 <use figures/measurement/two_antenna/psd_01.png>
 Package pdftex.def Info: figures/measurement/two_antenna/psd_01.png used on inp
-ut line 263.
+ut line 270.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 263--264
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 270--271
 [][] 
  []
 
 
-<figures/measurement/two_antenna/psd_02.png, id=621, 415.43205pt x 284.5029pt>
+<figures/measurement/two_antenna/psd_02.png, id=634, 415.43205pt x 284.5029pt>
 File: figures/measurement/two_antenna/psd_02.png Graphic file (type png)
 
 <use figures/measurement/two_antenna/psd_02.png>
 Package pdftex.def Info: figures/measurement/two_antenna/psd_02.png used on inp
-ut line 269.
+ut line 276.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 269--270
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 276--277
 [][] 
  []
 
 
-<figures/measurement/two_antenna/psd_03.png, id=622, 415.43205pt x 284.5029pt>
+<figures/measurement/two_antenna/psd_03.png, id=635, 415.43205pt x 284.5029pt>
 File: figures/measurement/two_antenna/psd_03.png Graphic file (type png)
 
 <use figures/measurement/two_antenna/psd_03.png>
 Package pdftex.def Info: figures/measurement/two_antenna/psd_03.png used on inp
-ut line 278.
+ut line 285.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 278--279
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 285--286
 [][] 
  []
 
 
-<figures/measurement/two_antenna/psd_04.png, id=623, 415.43205pt x 284.5029pt>
+<figures/measurement/two_antenna/psd_04.png, id=636, 415.43205pt x 284.5029pt>
 File: figures/measurement/two_antenna/psd_04.png Graphic file (type png)
 
 <use figures/measurement/two_antenna/psd_04.png>
 Package pdftex.def Info: figures/measurement/two_antenna/psd_04.png used on inp
-ut line 284.
+ut line 291.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 284--285
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 291--292
 [][] 
  []
 
@@ -2228,84 +2202,84 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[33 <./figures/measurement/two_antenna/amplifier_psd.png (PNG copy)> <./figures
+[29 <./figures/measurement/two_antenna/amplifier_psd.png (PNG copy)> <./figures
 /measurement/two_antenna/one_ant_psd.png (PNG copy)> <./figures/measurement/two
 _antenna/psd_01.png (PNG copy)> <./figures/measurement/two_antenna/psd_02.png (
 PNG copy)>]
-<figures/measurement/two_antenna/psd_05.png, id=630, 415.43205pt x 284.5029pt>
+<figures/measurement/two_antenna/psd_05.png, id=643, 415.43205pt x 284.5029pt>
 File: figures/measurement/two_antenna/psd_05.png Graphic file (type png)
 
 <use figures/measurement/two_antenna/psd_05.png>
 Package pdftex.def Info: figures/measurement/two_antenna/psd_05.png used on inp
-ut line 293.
+ut line 300.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 293--294
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 300--301
 [][] 
  []
 
 
-<figures/measurement/two_antenna/psd_06.png, id=631, 415.43205pt x 284.5029pt>
+<figures/measurement/two_antenna/psd_06.png, id=644, 415.43205pt x 284.5029pt>
 File: figures/measurement/two_antenna/psd_06.png Graphic file (type png)
 
 <use figures/measurement/two_antenna/psd_06.png>
 Package pdftex.def Info: figures/measurement/two_antenna/psd_06.png used on inp
-ut line 299.
+ut line 306.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 299--300
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 306--307
 [][] 
  []
 
 
-<figures/measurement/four_antenna/psd_0p1.png, id=632, 415.43205pt x 284.5029pt
+<figures/measurement/four_antenna/psd_0p1.png, id=645, 415.43205pt x 284.5029pt
 >
 File: figures/measurement/four_antenna/psd_0p1.png Graphic file (type png)
  <use figures/measurement/four_antenna/psd_0p1.png>
 Package pdftex.def Info: figures/measurement/four_antenna/psd_0p1.png used on i
-nput line 310.
+nput line 317.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 310--311
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 317--318
 [][] 
  []
 
 
-<figures/measurement/four_antenna/psd_0p2.png, id=633, 415.43205pt x 284.5029pt
+<figures/measurement/four_antenna/psd_0p2.png, id=646, 415.43205pt x 284.5029pt
 >
 File: figures/measurement/four_antenna/psd_0p2.png Graphic file (type png)
  <use figures/measurement/four_antenna/psd_0p2.png>
 Package pdftex.def Info: figures/measurement/four_antenna/psd_0p2.png used on i
-nput line 316.
+nput line 323.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 316--317
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 323--324
 [][] 
  []
 
 
-<figures/measurement/four_antenna/psd_0p3.png, id=634, 415.43205pt x 284.5029pt
+<figures/measurement/four_antenna/psd_0p3.png, id=647, 415.43205pt x 284.5029pt
 >
 File: figures/measurement/four_antenna/psd_0p3.png Graphic file (type png)
  <use figures/measurement/four_antenna/psd_0p3.png>
 Package pdftex.def Info: figures/measurement/four_antenna/psd_0p3.png used on i
-nput line 325.
+nput line 332.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 325--326
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 332--333
 [][] 
  []
 
 
-<figures/measurement/four_antenna/psd_0p4.png, id=635, 415.43205pt x 284.5029pt
+<figures/measurement/four_antenna/psd_0p4.png, id=648, 415.43205pt x 284.5029pt
 >
 File: figures/measurement/four_antenna/psd_0p4.png Graphic file (type png)
  <use figures/measurement/four_antenna/psd_0p4.png>
 Package pdftex.def Info: figures/measurement/four_antenna/psd_0p4.png used on i
-nput line 331.
+nput line 338.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 331--332
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 338--339
 [][] 
  []
 
@@ -2315,45 +2289,45 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[34 <./figures/measurement/two_antenna/psd_03.png (PNG copy)> <./figures/measur
+[30 <./figures/measurement/two_antenna/psd_03.png (PNG copy)> <./figures/measur
 ement/two_antenna/psd_04.png (PNG copy)> <./figures/measurement/two_antenna/psd
 _05.png (PNG copy)> <./figures/measurement/two_antenna/psd_06.png (PNG copy)> <
 ./figures/measurement/four_antenna/psd_0p1.png (PNG copy)> <./figures/measureme
 nt/four_antenna/psd_0p2.png (PNG copy)>]
-<figures/measurement/four_antenna/psd_0p5.png, id=644, 415.43205pt x 284.5029pt
+<figures/measurement/four_antenna/psd_0p5.png, id=657, 415.43205pt x 284.5029pt
 >
 File: figures/measurement/four_antenna/psd_0p5.png Graphic file (type png)
  <use figures/measurement/four_antenna/psd_0p5.png>
 Package pdftex.def Info: figures/measurement/four_antenna/psd_0p5.png used on i
-nput line 340.
+nput line 347.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 340--341
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 347--348
 [][] 
  []
 
 
-<figures/measurement/four_antenna/psd_0p6.png, id=645, 415.43205pt x 284.5029pt
+<figures/measurement/four_antenna/psd_0p6.png, id=658, 415.43205pt x 284.5029pt
 >
 File: figures/measurement/four_antenna/psd_0p6.png Graphic file (type png)
  <use figures/measurement/four_antenna/psd_0p6.png>
 Package pdftex.def Info: figures/measurement/four_antenna/psd_0p6.png used on i
-nput line 346.
+nput line 353.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 346--347
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 353--354
 [][] 
  []
 
-<figures/measurement/two_antenna/ACPR.png, id=646, 415.43205pt x 284.5029pt>
+<figures/measurement/two_antenna/ACPR.png, id=659, 415.43205pt x 284.5029pt>
 File: figures/measurement/two_antenna/ACPR.png Graphic file (type png)
 
 <use figures/measurement/two_antenna/ACPR.png>
 Package pdftex.def Info: figures/measurement/two_antenna/ACPR.png used on input
- line 358.
+ line 365.
 (pdftex.def)             Requested size: 415.43103pt x 284.5022pt.
 
-Overfull \hbox (14.24716pt too wide) in paragraph at lines 358--359
+Overfull \hbox (14.24716pt too wide) in paragraph at lines 365--366
  [][] 
  []
 
@@ -2363,69 +2337,961 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[35 <./figures/measurement/four_antenna/psd_0p3.png (PNG copy)> <./figures/meas
+[31 <./figures/measurement/four_antenna/psd_0p3.png (PNG copy)> <./figures/meas
 urement/four_antenna/psd_0p4.png (PNG copy)> <./figures/measurement/four_antenn
 a/psd_0p5.png (PNG copy)> <./figures/measurement/four_antenna/psd_0p6.png (PNG 
 copy)>]
-<figures/measurement/four_antenna/ACPR.png, id=654, 415.43205pt x 284.5029pt>
+<figures/measurement/four_antenna/ACPR.png, id=668, 415.43205pt x 284.5029pt>
 File: figures/measurement/four_antenna/ACPR.png Graphic file (type png)
 
 <use figures/measurement/four_antenna/ACPR.png>
 Package pdftex.def Info: figures/measurement/four_antenna/ACPR.png used on inpu
-t line 367.
+t line 374.
 (pdftex.def)             Requested size: 415.43103pt x 284.5022pt.
 
-Overfull \hbox (14.24716pt too wide) in paragraph at lines 367--368
+Overfull \hbox (14.24716pt too wide) in paragraph at lines 374--375
  [][] 
  []
 
-) (sections/conclusion.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36 <./figures/measurement/two_antenna/ACPR.png (PNG copy)>]
+[32 <./figures/measurement/two_antenna/ACPR.png (PNG copy)>]
+<figures/measurement/meas_set_cree_1.png, id=675, 602.25pt x 192.72pt>
+File: figures/measurement/meas_set_cree_1.png Graphic file (type png)
+
+<use figures/measurement/meas_set_cree_1.png>
+Package pdftex.def Info: figures/measurement/meas_set_cree_1.png used on input 
+line 394.
+(pdftex.def)             Requested size: 301.12425pt x 96.35976pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[37 <./figures/measurement/four_antenna/ACPR.png (PNG copy)>]
+[33 <./figures/measurement/four_antenna/ACPR.png (PNG copy)>]
+<figures/measurement/cree/amam_cree_amp_no_dpd.png, id=683, 415.43205pt x 284.5
+029pt>
+File: figures/measurement/cree/amam_cree_amp_no_dpd.png Graphic file (type png)
+
+ <use figures/measurement/cree/amam_cree_amp_no_dpd.png>
+Package pdftex.def Info: figures/measurement/cree/amam_cree_amp_no_dpd.png used
+ on input line 402.
+(pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
+
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 402--403
+[][] 
+ []
+
+
+<figures/measurement/cree/amam_cree_amp_with_dpd.png, id=684, 415.43205pt x 284
+.5029pt>
+File: figures/measurement/cree/amam_cree_amp_with_dpd.png Graphic file (type pn
+g)
+ <use figures/measurement/cree/amam_cree_amp_with_dpd.png>
+Package pdftex.def Info: figures/measurement/cree/amam_cree_amp_with_dpd.png us
+ed on input line 408.
+(pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
+
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 408--409
+[][] 
+ []
+
+
+<figures/measurement/cree/psd_cree_amp_no_dpd.png, id=685, 415.43205pt x 284.50
+29pt>
+File: figures/measurement/cree/psd_cree_amp_no_dpd.png Graphic file (type png)
+ <use figures/measurement/cree/psd_cree_amp_no_dpd.png>
+Package pdftex.def Info: figures/measurement/cree/psd_cree_amp_no_dpd.png used 
+on input line 418.
+(pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
+
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 418--419
+[][] 
+ []
+
+
+<figures/measurement/cree/psd_cree_amp_with_dpd.png, id=686, 415.43205pt x 284.
+5029pt>
+File: figures/measurement/cree/psd_cree_amp_with_dpd.png Graphic file (type png
+)
+ <use figures/measurement/cree/psd_cree_amp_with_dpd.png>
+Package pdftex.def Info: figures/measurement/cree/psd_cree_amp_with_dpd.png use
+d on input line 424.
+(pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
+
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 424--425
+[][] 
+ []
+
+<figures/measurement/cree/one2one_draw.png, id=687, 933.4875pt x 188.20313pt>
+File: figures/measurement/cree/one2one_draw.png Graphic file (type png)
+
+<use figures/measurement/cree/one2one_draw.png>
+Package pdftex.def Info: figures/measurement/cree/one2one_draw.png used on inpu
+t line 436.
+(pdftex.def)             Requested size: 466.74261pt x 94.10132pt.
+
+Overfull \hbox (65.55875pt too wide) in paragraph at lines 436--437
+ [][] 
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38
+[34 <./figures/measurement/meas_set_cree_1.png> <./figures/measurement/cree/ama
+m_cree_amp_no_dpd.png (PNG copy)> <./figures/measurement/cree/amam_cree_amp_wit
+h_dpd.png (PNG copy)> <./figures/measurement/cree/psd_cree_amp_no_dpd.png (PNG 
+copy)> <./figures/measurement/cree/psd_cree_amp_with_dpd.png (PNG copy)>]
+<figures/measurement/cree/one2one.jpg, id=697, 3131.7pt x 2348.775pt>
+File: figures/measurement/cree/one2one.jpg Graphic file (type jpg)
+
+<use figures/measurement/cree/one2one.jpg>
+Package pdftex.def Info: figures/measurement/cree/one2one.jpg used on input lin
+e 444.
+(pdftex.def)             Requested size: 313.18834pt x 234.89127pt.
+
+<figures/measurement/cree/amam_one_ant.png, id=698, 415.43205pt x 284.5029pt>
+File: figures/measurement/cree/amam_one_ant.png Graphic file (type png)
+
+<use figures/measurement/cree/amam_one_ant.png>
+Package pdftex.def Info: figures/measurement/cree/amam_one_ant.png used on inpu
+t line 453.
+(pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
+
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 453--454
+[][] 
+ []
+
+<figures/measurement/cree/psd_one_ant.png, id=699, 415.43205pt x 284.5029pt>
+File: figures/measurement/cree/psd_one_ant.png Graphic file (type png)
+
+<use figures/measurement/cree/psd_one_ant.png>
+Package pdftex.def Info: figures/measurement/cree/psd_one_ant.png used on input
+ line 459.
+(pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
+
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 459--460
+[][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[35 <./figures/measurement/cree/one2one_draw.png> <./figures/measurement/cree/o
+ne2one.jpg>]
+<figures/measurement/cree/two2one_draw.png, id=707, 1111.15125pt x 280.79906pt>
+File: figures/measurement/cree/two2one_draw.png Graphic file (type png)
+<use figures/measurement/cree/two2one_draw.png>
+Package pdftex.def Info: figures/measurement/cree/two2one_draw.png used on inpu
+t line 469.
+(pdftex.def)             Requested size: 444.45262pt x 112.31763pt.
+
+Overfull \hbox (43.26875pt too wide) in paragraph at lines 469--470
+ [][] 
+ []
+
+<figures/measurement/cree/two2one.jpg, id=708, 3131.7pt x 2348.775pt>
+File: figures/measurement/cree/two2one.jpg Graphic file (type jpg)
+
+<use figures/measurement/cree/two2one.jpg>
+Package pdftex.def Info: figures/measurement/cree/two2one.jpg used on input lin
+e 477.
+(pdftex.def)             Requested size: 313.18834pt x 234.89127pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[36 <./figures/measurement/cree/amam_one_ant.png (PNG copy)> <./figures/measure
+ment/cree/psd_one_ant.png (PNG copy)> <./figures/measurement/cree/two2one_draw.
+png>]
+<figures/measurement/cree/two/amam_two_ant_0p1.png, id=717, 415.43205pt x 311.6
+0416pt>
+File: figures/measurement/cree/two/amam_two_ant_0p1.png Graphic file (type png)
+
+ <use figures/measurement/cree/two/amam_two_ant_0p1.png>
+Package pdftex.def Info: figures/measurement/cree/two/amam_two_ant_0p1.png used
+ on input line 485.
+(pdftex.def)             Requested size: 207.71552pt x 155.80168pt.
+
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 485--486
+[][] 
+ []
+
+
+<figures/measurement/cree/two/psd_two_ant_0p1.png, id=718, 415.43205pt x 311.60
+416pt>
+File: figures/measurement/cree/two/psd_two_ant_0p1.png Graphic file (type png)
+ <use figures/measurement/cree/two/psd_two_ant_0p1.png>
+Package pdftex.def Info: figures/measurement/cree/two/psd_two_ant_0p1.png used 
+on input line 491.
+(pdftex.def)             Requested size: 207.71552pt x 155.80168pt.
+
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 491--492
+[][] 
+ []
+
+
+<figures/measurement/cree/two/amam_two_ant_0p2.png, id=719, 415.43205pt x 311.6
+0416pt>
+File: figures/measurement/cree/two/amam_two_ant_0p2.png Graphic file (type png)
+
+ <use figures/measurement/cree/two/amam_two_ant_0p2.png>
+Package pdftex.def Info: figures/measurement/cree/two/amam_two_ant_0p2.png used
+ on input line 500.
+(pdftex.def)             Requested size: 207.71552pt x 155.80168pt.
+
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 500--501
+[][] 
+ []
+
+
+<figures/measurement/cree/two/psd_two_ant_0p2.png, id=720, 415.43205pt x 311.60
+416pt>
+File: figures/measurement/cree/two/psd_two_ant_0p2.png Graphic file (type png)
+ <use figures/measurement/cree/two/psd_two_ant_0p2.png>
+Package pdftex.def Info: figures/measurement/cree/two/psd_two_ant_0p2.png used 
+on input line 506.
+(pdftex.def)             Requested size: 207.71552pt x 155.80168pt.
+
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 506--507
+[][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[37 <./figures/measurement/cree/two2one.jpg> <./figures/measurement/cree/two/am
+am_two_ant_0p1.png (PNG copy)> <./figures/measurement/cree/two/psd_two_ant_0p1.
+png (PNG copy)>]
+<figures/measurement/cree/two/amam_two_ant_0p3.png, id=728, 415.43205pt x 311.6
+0416pt>
+File: figures/measurement/cree/two/amam_two_ant_0p3.png Graphic file (type png)
+
+ <use figures/measurement/cree/two/amam_two_ant_0p3.png>
+Package pdftex.def Info: figures/measurement/cree/two/amam_two_ant_0p3.png used
+ on input line 515.
+(pdftex.def)             Requested size: 207.71552pt x 155.80168pt.
+
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 515--516
+[][] 
+ []
+
+
+<figures/measurement/cree/two/psd_two_ant_0p3.png, id=729, 415.43205pt x 311.60
+416pt>
+File: figures/measurement/cree/two/psd_two_ant_0p3.png Graphic file (type png)
+ <use figures/measurement/cree/two/psd_two_ant_0p3.png>
+Package pdftex.def Info: figures/measurement/cree/two/psd_two_ant_0p3.png used 
+on input line 521.
+(pdftex.def)             Requested size: 207.71552pt x 155.80168pt.
+
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 521--522
+[][] 
+ []
+
+
+<figures/measurement/cree/two/amam_two_ant_0p4.png, id=730, 415.43205pt x 311.6
+0416pt>
+File: figures/measurement/cree/two/amam_two_ant_0p4.png Graphic file (type png)
+
+ <use figures/measurement/cree/two/amam_two_ant_0p4.png>
+Package pdftex.def Info: figures/measurement/cree/two/amam_two_ant_0p4.png used
+ on input line 530.
+(pdftex.def)             Requested size: 207.71552pt x 155.80168pt.
+
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 530--531
+[][] 
+ []
+
+
+<figures/measurement/cree/two/psd_two_ant_0p4.png, id=731, 415.43205pt x 311.60
+416pt>
+File: figures/measurement/cree/two/psd_two_ant_0p4.png Graphic file (type png)
+ <use figures/measurement/cree/two/psd_two_ant_0p4.png>
+Package pdftex.def Info: figures/measurement/cree/two/psd_two_ant_0p4.png used 
+on input line 536.
+(pdftex.def)             Requested size: 207.71552pt x 155.80168pt.
+
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 536--537
+[][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[38 <./figures/measurement/cree/two/amam_two_ant_0p2.png (PNG copy)> <./figures
+/measurement/cree/two/psd_two_ant_0p2.png (PNG copy)> <./figures/measurement/cr
+ee/two/amam_two_ant_0p3.png (PNG copy)> <./figures/measurement/cree/two/psd_two
+_ant_0p3.png (PNG copy)>]
+<figures/measurement/cree/two/amam_two_ant_0p5.png, id=738, 415.43205pt x 311.6
+0416pt>
+File: figures/measurement/cree/two/amam_two_ant_0p5.png Graphic file (type png)
+
+ <use figures/measurement/cree/two/amam_two_ant_0p5.png>
+Package pdftex.def Info: figures/measurement/cree/two/amam_two_ant_0p5.png used
+ on input line 545.
+(pdftex.def)             Requested size: 207.71552pt x 155.80168pt.
+
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 545--546
+[][] 
+ []
+
+
+<figures/measurement/cree/two/psd_two_ant_0p5.png, id=739, 415.43205pt x 311.60
+416pt>
+File: figures/measurement/cree/two/psd_two_ant_0p5.png Graphic file (type png)
+ <use figures/measurement/cree/two/psd_two_ant_0p5.png>
+Package pdftex.def Info: figures/measurement/cree/two/psd_two_ant_0p5.png used 
+on input line 551.
+(pdftex.def)             Requested size: 207.71552pt x 155.80168pt.
+
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 551--552
+[][] 
+ []
+
+
+<figures/measurement/cree/two/amam_two_ant_0p6.png, id=740, 415.43205pt x 311.6
+0416pt>
+File: figures/measurement/cree/two/amam_two_ant_0p6.png Graphic file (type png)
+
+ <use figures/measurement/cree/two/amam_two_ant_0p6.png>
+Package pdftex.def Info: figures/measurement/cree/two/amam_two_ant_0p6.png used
+ on input line 560.
+(pdftex.def)             Requested size: 207.71552pt x 155.80168pt.
+
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 560--561
+[][] 
+ []
+
+File: figures/measurement/cree/two/psd_two_ant_0p1.png Graphic file (type png)
+<use figures/measurement/cree/two/psd_two_ant_0p1.png>
+Package pdftex.def Info: figures/measurement/cree/two/psd_two_ant_0p1.png used 
+on input line 566.
+(pdftex.def)             Requested size: 207.71552pt x 155.80168pt.
+
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 566--567
+[][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[39 <./figures/measurement/cree/two/amam_two_ant_0p4.png (PNG copy)> <./figures
+/measurement/cree/two/psd_two_ant_0p4.png (PNG copy)> <./figures/measurement/cr
+ee/two/amam_two_ant_0p5.png (PNG copy)> <./figures/measurement/cree/two/psd_two
+_ant_0p5.png (PNG copy)>]
+<figures/measurement/cree/two/amam_two_ant_1p0.png, id=747, 415.43205pt x 311.6
+0416pt>
+File: figures/measurement/cree/two/amam_two_ant_1p0.png Graphic file (type png)
+
+ <use figures/measurement/cree/two/amam_two_ant_1p0.png>
+Package pdftex.def Info: figures/measurement/cree/two/amam_two_ant_1p0.png used
+ on input line 575.
+(pdftex.def)             Requested size: 207.71552pt x 155.80168pt.
+
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 575--576
+[][] 
+ []
+
+
+<figures/measurement/cree/two/psd_two_ant_1p0.png, id=748, 415.43205pt x 311.60
+416pt>
+File: figures/measurement/cree/two/psd_two_ant_1p0.png Graphic file (type png)
+ <use figures/measurement/cree/two/psd_two_ant_1p0.png>
+Package pdftex.def Info: figures/measurement/cree/two/psd_two_ant_1p0.png used 
+on input line 581.
+(pdftex.def)             Requested size: 207.71552pt x 155.80168pt.
+
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 581--582
+[][] 
+ []
+
+<figures/measurement/cree/four2one.jpg, id=749, 4175.6pt x 3131.7pt>
+File: figures/measurement/cree/four2one.jpg Graphic file (type jpg)
+
+<use figures/measurement/cree/four2one.jpg>
+Package pdftex.def Info: figures/measurement/cree/four2one.jpg used on input li
+ne 595.
+(pdftex.def)             Requested size: 334.05482pt x 250.54112pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[40 <./figures/measurement/cree/two/amam_two_ant_0p6.png (PNG copy)> <./figures
+/measurement/cree/two/amam_two_ant_1p0.png (PNG copy)> <./figures/measurement/c
+ree/two/psd_two_ant_1p0.png (PNG copy)>]
+<figures/measurement/cree/four/amam_four_ant_0p1.png, id=757, 415.43205pt x 311
+.60416pt>
+File: figures/measurement/cree/four/amam_four_ant_0p1.png Graphic file (type pn
+g)
+ <use figures/measurement/cree/four/amam_four_ant_0p1.png>
+Package pdftex.def Info: figures/measurement/cree/four/amam_four_ant_0p1.png us
+ed on input line 604.
+(pdftex.def)             Requested size: 207.71552pt x 155.80168pt.
+
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 604--605
+[][] 
+ []
+
+
+<figures/measurement/cree/four/psd_four_ant_0p1.png, id=758, 415.43205pt x 311.
+60416pt>
+File: figures/measurement/cree/four/psd_four_ant_0p1.png Graphic file (type png
+)
+ <use figures/measurement/cree/four/psd_four_ant_0p1.png>
+Package pdftex.def Info: figures/measurement/cree/four/psd_four_ant_0p1.png use
+d on input line 610.
+(pdftex.def)             Requested size: 207.71552pt x 155.80168pt.
+
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 610--611
+[][] 
+ []
+
+
+<figures/measurement/cree/four/amam_four_ant_0p2.png, id=759, 415.43205pt x 311
+.60416pt>
+File: figures/measurement/cree/four/amam_four_ant_0p2.png Graphic file (type pn
+g)
+ <use figures/measurement/cree/four/amam_four_ant_0p2.png>
+Package pdftex.def Info: figures/measurement/cree/four/amam_four_ant_0p2.png us
+ed on input line 619.
+(pdftex.def)             Requested size: 207.71552pt x 155.80168pt.
+
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 619--620
+[][] 
+ []
+
+
+<figures/measurement/cree/four/psd_four_ant_0p2.png, id=760, 415.43205pt x 311.
+60416pt>
+File: figures/measurement/cree/four/psd_four_ant_0p2.png Graphic file (type png
+)
+ <use figures/measurement/cree/four/psd_four_ant_0p2.png>
+Package pdftex.def Info: figures/measurement/cree/four/psd_four_ant_0p2.png use
+d on input line 625.
+(pdftex.def)             Requested size: 207.71552pt x 155.80168pt.
+
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 625--626
+[][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[41 <./figures/measurement/cree/four2one.jpg> <./figures/measurement/cree/four/
+amam_four_ant_0p1.png (PNG copy)> <./figures/measurement/cree/four/psd_four_ant
+_0p1.png (PNG copy)>]
+<figures/measurement/cree/four/amam_four_ant_0p3.png, id=767, 415.43205pt x 311
+.60416pt>
+File: figures/measurement/cree/four/amam_four_ant_0p3.png Graphic file (type pn
+g)
+ <use figures/measurement/cree/four/amam_four_ant_0p3.png>
+Package pdftex.def Info: figures/measurement/cree/four/amam_four_ant_0p3.png us
+ed on input line 634.
+(pdftex.def)             Requested size: 207.71552pt x 155.80168pt.
+
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 634--635
+[][] 
+ []
+
+
+<figures/measurement/cree/four/psd_four_ant_0p3.png, id=768, 415.43205pt x 311.
+60416pt>
+File: figures/measurement/cree/four/psd_four_ant_0p3.png Graphic file (type png
+)
+ <use figures/measurement/cree/four/psd_four_ant_0p3.png>
+Package pdftex.def Info: figures/measurement/cree/four/psd_four_ant_0p3.png use
+d on input line 640.
+(pdftex.def)             Requested size: 207.71552pt x 155.80168pt.
+
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 640--641
+[][] 
+ []
+
+
+<figures/measurement/cree/four/amam_four_ant_0p4.png, id=769, 415.43205pt x 311
+.60416pt>
+File: figures/measurement/cree/four/amam_four_ant_0p4.png Graphic file (type pn
+g)
+ <use figures/measurement/cree/four/amam_four_ant_0p4.png>
+Package pdftex.def Info: figures/measurement/cree/four/amam_four_ant_0p4.png us
+ed on input line 649.
+(pdftex.def)             Requested size: 207.71552pt x 155.80168pt.
+
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 649--650
+[][] 
+ []
+
+
+<figures/measurement/cree/four/psd_four_ant_0p4.png, id=770, 415.43205pt x 311.
+60416pt>
+File: figures/measurement/cree/four/psd_four_ant_0p4.png Graphic file (type png
+)
+ <use figures/measurement/cree/four/psd_four_ant_0p4.png>
+Package pdftex.def Info: figures/measurement/cree/four/psd_four_ant_0p4.png use
+d on input line 655.
+(pdftex.def)             Requested size: 207.71552pt x 155.80168pt.
+
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 655--656
+[][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[42 <./figures/measurement/cree/four/amam_four_ant_0p2.png (PNG copy)> <./figur
+es/measurement/cree/four/psd_four_ant_0p2.png (PNG copy)> <./figures/measuremen
+t/cree/four/amam_four_ant_0p3.png (PNG copy)> <./figures/measurement/cree/four/
+psd_four_ant_0p3.png (PNG copy)>]
+<figures/measurement/cree/four/amam_four_ant_0p5.png, id=777, 415.43205pt x 311
+.60416pt>
+File: figures/measurement/cree/four/amam_four_ant_0p5.png Graphic file (type pn
+g)
+ <use figures/measurement/cree/four/amam_four_ant_0p5.png>
+Package pdftex.def Info: figures/measurement/cree/four/amam_four_ant_0p5.png us
+ed on input line 664.
+(pdftex.def)             Requested size: 207.71552pt x 155.80168pt.
+
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 664--665
+[][] 
+ []
+
+
+<figures/measurement/cree/four/psd_four_ant_0p5.png, id=778, 415.43205pt x 311.
+60416pt>
+File: figures/measurement/cree/four/psd_four_ant_0p5.png Graphic file (type png
+)
+ <use figures/measurement/cree/four/psd_four_ant_0p5.png>
+Package pdftex.def Info: figures/measurement/cree/four/psd_four_ant_0p5.png use
+d on input line 670.
+(pdftex.def)             Requested size: 207.71552pt x 155.80168pt.
+
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 670--671
+[][] 
+ []
+
+
+<figures/measurement/cree/four/amam_four_ant_0p6.png, id=779, 415.43205pt x 311
+.60416pt>
+File: figures/measurement/cree/four/amam_four_ant_0p6.png Graphic file (type pn
+g)
+ <use figures/measurement/cree/four/amam_four_ant_0p6.png>
+Package pdftex.def Info: figures/measurement/cree/four/amam_four_ant_0p6.png us
+ed on input line 679.
+(pdftex.def)             Requested size: 207.71552pt x 155.80168pt.
+
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 679--680
+[][] 
+ []
+
+File: figures/measurement/cree/four/psd_four_ant_0p1.png Graphic file (type png
+)
+<use figures/measurement/cree/four/psd_four_ant_0p1.png>
+Package pdftex.def Info: figures/measurement/cree/four/psd_four_ant_0p1.png use
+d on input line 685.
+(pdftex.def)             Requested size: 207.71552pt x 155.80168pt.
+
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 685--686
+[][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[43 <./figures/measurement/cree/four/amam_four_ant_0p4.png (PNG copy)> <./figur
+es/measurement/cree/four/psd_four_ant_0p4.png (PNG copy)> <./figures/measuremen
+t/cree/four/amam_four_ant_0p5.png (PNG copy)> <./figures/measurement/cree/four/
+psd_four_ant_0p5.png (PNG copy)>]) (sections/antenna_measurement.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[44 <./figures/measurement/cree/four/amam_four_ant_0p6.png (PNG copy)>]
+Chapter 5.
+<figures/measurement/antennas/one_ant.jpg, id=792, 3131.7pt x 4175.6pt>
+File: figures/measurement/antennas/one_ant.jpg Graphic file (type jpg)
+
+<use figures/measurement/antennas/one_ant.jpg>
+Package pdftex.def Info: figures/measurement/antennas/one_ant.jpg used on input
+ line 9.
+(pdftex.def)             Requested size: 156.59416pt x 208.79224pt.
+
+<figures/measurement/antennas/one_ant.png, id=793, 415.43205pt x 284.5029pt>
+File: figures/measurement/antennas/one_ant.png Graphic file (type png)
+
+<use figures/measurement/antennas/one_ant.png>
+Package pdftex.def Info: figures/measurement/antennas/one_ant.png used on input
+ line 16.
+(pdftex.def)             Requested size: 332.34608pt x 227.60262pt.
+ [45
+
+ <./figures/measurement/antennas/one_ant.jpg>]
+
+LaTeX Warning: Reference `fig:chamber_two_ant_ff_06' on page 46 undefined on in
+put line 23.
+
+<figures/measurement/antennas/two_ant.jpg, id=800, 3131.7pt x 4175.6pt>
+File: figures/measurement/antennas/two_ant.jpg Graphic file (type jpg)
+
+<use figures/measurement/antennas/two_ant.jpg>
+Package pdftex.def Info: figures/measurement/antennas/two_ant.jpg used on input
+ line 27.
+(pdftex.def)             Requested size: 156.59416pt x 208.79224pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[46 <./figures/measurement/antennas/one_ant.png (PNG copy)>]
+<figures/measurement/antennas/array_2_0p1.png, id=807, 415.43205pt x 284.5029pt
+>
+File: figures/measurement/antennas/array_2_0p1.png Graphic file (type png)
+ <use figures/measurement/antennas/array_2_0p1.png>
+Package pdftex.def Info: figures/measurement/antennas/array_2_0p1.png used on i
+nput line 36.
+(pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
+
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 36--37
+[][] 
+ []
+
+
+<figures/measurement/antennas/array_2_0p2.png, id=808, 415.43205pt x 284.5029pt
+>
+File: figures/measurement/antennas/array_2_0p2.png Graphic file (type png)
+ <use figures/measurement/antennas/array_2_0p2.png>
+Package pdftex.def Info: figures/measurement/antennas/array_2_0p2.png used on i
+nput line 42.
+(pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
+
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 42--43
+[][] 
+ []
+
+
+<figures/measurement/antennas/array_2_0p3.png, id=809, 415.43205pt x 284.5029pt
+>
+File: figures/measurement/antennas/array_2_0p3.png Graphic file (type png)
+ <use figures/measurement/antennas/array_2_0p3.png>
+Package pdftex.def Info: figures/measurement/antennas/array_2_0p3.png used on i
+nput line 51.
+(pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
+
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 51--52
+[][] 
+ []
+
+
+<figures/measurement/antennas/array_2_0p4.png, id=810, 415.43205pt x 284.5029pt
+>
+File: figures/measurement/antennas/array_2_0p4.png Graphic file (type png)
+ <use figures/measurement/antennas/array_2_0p4.png>
+Package pdftex.def Info: figures/measurement/antennas/array_2_0p4.png used on i
+nput line 57.
+(pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
+
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 57--58
+[][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[47 <./figures/measurement/antennas/two_ant.jpg> <./figures/measurement/antenna
+s/array_2_0p1.png (PNG copy)> <./figures/measurement/antennas/array_2_0p2.png (
+PNG copy)>]
+<figures/measurement/antennas/array_2_0p5.png, id=816, 415.43205pt x 284.5029pt
+>
+File: figures/measurement/antennas/array_2_0p5.png Graphic file (type png)
+ <use figures/measurement/antennas/array_2_0p5.png>
+Package pdftex.def Info: figures/measurement/antennas/array_2_0p5.png used on i
+nput line 66.
+(pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
+
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 66--67
+[][] 
+ []
+
+
+<figures/measurement/antennas/array_2_0p6.png, id=817, 415.43205pt x 284.5029pt
+>
+File: figures/measurement/antennas/array_2_0p6.png Graphic file (type png)
+ <use figures/measurement/antennas/array_2_0p6.png>
+Package pdftex.def Info: figures/measurement/antennas/array_2_0p6.png used on i
+nput line 72.
+(pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
+
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 72--73
+[][] 
+ []
+
+
+LaTeX Warning: Reference `fig:chamber_four_ant_ff_06' on page 48 undefined on i
+nput line 80.
+
+<figures/measurement/antennas/four_ant.jpg, id=819, 3131.7pt x 4175.6pt>
+File: figures/measurement/antennas/four_ant.jpg Graphic file (type jpg)
+
+<use figures/measurement/antennas/four_ant.jpg>
+Package pdftex.def Info: figures/measurement/antennas/four_ant.jpg used on inpu
+t line 84.
+(pdftex.def)             Requested size: 156.59416pt x 208.79224pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[48 <./figures/measurement/antennas/array_2_0p3.png (PNG copy)> <./figures/meas
+urement/antennas/array_2_0p4.png (PNG copy)> <./figures/measurement/antennas/ar
+ray_2_0p5.png (PNG copy)> <./figures/measurement/antennas/array_2_0p6.png (PNG 
+copy)>]
+<figures/measurement/antennas/array_4_0p1.png, id=827, 415.43205pt x 284.5029pt
+>
+File: figures/measurement/antennas/array_4_0p1.png Graphic file (type png)
+ <use figures/measurement/antennas/array_4_0p1.png>
+Package pdftex.def Info: figures/measurement/antennas/array_4_0p1.png used on i
+nput line 93.
+(pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
+
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 93--94
+[][] 
+ []
+
+
+<figures/measurement/antennas/array_4_0p2.png, id=828, 415.43205pt x 284.5029pt
+>
+File: figures/measurement/antennas/array_4_0p2.png Graphic file (type png)
+ <use figures/measurement/antennas/array_4_0p2.png>
+Package pdftex.def Info: figures/measurement/antennas/array_4_0p2.png used on i
+nput line 99.
+(pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
+
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 99--100
+[][] 
+ []
+
+
+<figures/measurement/antennas/array_4_0p3.png, id=829, 415.43205pt x 284.5029pt
+>
+File: figures/measurement/antennas/array_4_0p3.png Graphic file (type png)
+ <use figures/measurement/antennas/array_4_0p3.png>
+Package pdftex.def Info: figures/measurement/antennas/array_4_0p3.png used on i
+nput line 108.
+(pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
+
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 108--109
+[][] 
+ []
+
+
+<figures/measurement/antennas/array_4_0p4.png, id=830, 415.43205pt x 284.5029pt
+>
+File: figures/measurement/antennas/array_4_0p4.png Graphic file (type png)
+ <use figures/measurement/antennas/array_4_0p4.png>
+Package pdftex.def Info: figures/measurement/antennas/array_4_0p4.png used on i
+nput line 114.
+(pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
+
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 114--115
+[][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[49 <./figures/measurement/antennas/four_ant.jpg> <./figures/measurement/antenn
+as/array_4_0p1.png (PNG copy)> <./figures/measurement/antennas/array_4_0p2.png 
+(PNG copy)>]
+<figures/measurement/antennas/array_4_0p5.png, id=837, 415.43205pt x 284.5029pt
+>
+File: figures/measurement/antennas/array_4_0p5.png Graphic file (type png)
+ <use figures/measurement/antennas/array_4_0p5.png>
+Package pdftex.def Info: figures/measurement/antennas/array_4_0p5.png used on i
+nput line 123.
+(pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
+
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 123--124
+[][] 
+ []
+
+
+<figures/measurement/antennas/array_4_0p6.png, id=838, 415.43205pt x 284.5029pt
+>
+File: figures/measurement/antennas/array_4_0p6.png Graphic file (type png)
+ <use figures/measurement/antennas/array_4_0p6.png>
+Package pdftex.def Info: figures/measurement/antennas/array_4_0p6.png used on i
+nput line 129.
+(pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
+
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 129--130
+[][] 
+ []
+
+
+<figures/measurement/antennas/single_element_array.jpg, id=841, 4175.6pt x 3131
+.7pt>
+File: figures/measurement/antennas/single_element_array.jpg Graphic file (type 
+jpg)
+ <use figures/measurement/antennas/single_element_array.jpg>
+Package pdftex.def Info: figures/measurement/antennas/single_element_array.jpg 
+used on input line 142.
+(pdftex.def)             Requested size: 208.79224pt x 156.59416pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[50 <./figures/measurement/antennas/array_4_0p3.png (PNG copy)> <./figures/meas
+urement/antennas/array_4_0p4.png (PNG copy)> <./figures/measurement/antennas/ar
+ray_4_0p5.png (PNG copy)> <./figures/measurement/antennas/array_4_0p6.png (PNG 
+copy)>]
+<figures/measurement/antennas/1st_element_4_array.png, id=850, 415.43205pt x 28
+4.5029pt>
+File: figures/measurement/antennas/1st_element_4_array.png Graphic file (type p
+ng)
+ <use figures/measurement/antennas/1st_element_4_array.png>
+Package pdftex.def Info: figures/measurement/antennas/1st_element_4_array.png u
+sed on input line 151.
+(pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
+
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 151--152
+[][] 
+ []
+
+
+<figures/measurement/antennas/2nd_element_4_array.png, id=851, 415.43205pt x 28
+4.5029pt>
+File: figures/measurement/antennas/2nd_element_4_array.png Graphic file (type p
+ng)
+ <use figures/measurement/antennas/2nd_element_4_array.png>
+Package pdftex.def Info: figures/measurement/antennas/2nd_element_4_array.png u
+sed on input line 157.
+(pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
+
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 157--158
+[][] 
+ []
+
+
+<figures/measurement/antennas/3rd_element_4_array.png, id=852, 415.43205pt x 28
+4.5029pt>
+File: figures/measurement/antennas/3rd_element_4_array.png Graphic file (type p
+ng)
+ <use figures/measurement/antennas/3rd_element_4_array.png>
+Package pdftex.def Info: figures/measurement/antennas/3rd_element_4_array.png u
+sed on input line 167.
+(pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
+
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 167--168
+[][] 
+ []
+
+
+<figures/measurement/antennas/4th_element_4_array.png, id=853, 415.43205pt x 28
+4.5029pt>
+File: figures/measurement/antennas/4th_element_4_array.png Graphic file (type p
+ng)
+ <use figures/measurement/antennas/4th_element_4_array.png>
+Package pdftex.def Info: figures/measurement/antennas/4th_element_4_array.png u
+sed on input line 173.
+(pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
+
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 173--174
+[][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[51 <./figures/measurement/antennas/single_element_array.jpg> <./figures/measur
+ement/antennas/1st_element_4_array.png (PNG copy)> <./figures/measurement/anten
+nas/2nd_element_4_array.png (PNG copy)>]) (sections/conclusion.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[52 <./figures/measurement/antennas/3rd_element_4_array.png (PNG copy)> <./figu
+res/measurement/antennas/4th_element_4_array.png (PNG copy)>]
+Chapter 6.
+) (master.bbl [53
 
 ]
-Chapter 5.
-) (master.bbl [39]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40
+[54
 
 ]
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 24.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
-(sections/appAname.tex [41]
+(sections/appAname.tex [55]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[42
+[56
 
 ]
 Appendix A.
@@ -2435,14 +3301,14 @@ Appendix A.
 
  
 AED: lastpage setting LastPage
-[43]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 48.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 48.
+[57]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 49.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
  (master.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 48.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 48.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: 08C117E302736535E707418CEE1C6900;1787.
+(rerunfilecheck)             Checksum: 392638D2699CEB5CA60B2730B403BE11;2196.
 
 
 LaTeX Warning: There were undefined references.
@@ -2450,16 +3316,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 48.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 49.
  ) 
 Here is how much of TeX's memory you used:
- 22578 strings out of 493333
- 400072 string characters out of 3139188
- 484825 words of memory out of 3000000
- 25341 multiletter control sequences out of 15000+200000
+ 23024 strings out of 493333
+ 416096 string characters out of 3139188
+ 490290 words of memory out of 3000000
+ 25668 multiletter control sequences out of 15000+200000
  93388 words of font info for 66 fonts, out of 3000000 for 9000
  1146 hyphenation exceptions out of 8191
- 64i,14n,77p,1395b,1115s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 64i,14n,80p,1395b,1115s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/d
 vips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy
@@ -2479,9 +3345,9 @@ gram Files/MiKTeX 2.9/fonts/type1/public/lm/lmri9.pfb><C:/Program Files/MiKTeX
 ublic/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on master.pdf (55 pages, 23647789 bytes).
+Output written on master.pdf (69 pages, 49482404 bytes).
 PDF statistics:
- 812 PDF objects out of 1000 (max. 8388607)
- 203 named destinations out of 1000 (max. 500000)
- 557 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1019 PDF objects out of 1200 (max. 8388607)
+ 261 named destinations out of 1000 (max. 500000)
+ 880 words of extra memory for PDF output out of 10000 (max. 10000000)
 
