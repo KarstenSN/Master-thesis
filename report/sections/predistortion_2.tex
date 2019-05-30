@@ -1,694 +1,499 @@
 \chapter{Measurement}\label{ch:measurement}
-The purpose of this section is to characterize a power amplifier for its ACPR and AM/AM distortion and afterwards measure the impact of the crosstalk from the antennas. 
 
-\section{Simulation of PCB antenna}
-The antenna used for measurement is a PCB antenna that measures 100x300mm on standard 1.6mm FR-4. The antenna has a $S_{11}$ below -10dB from 2.5GHz to 6.0GHz and only gets as high as -7.5dBi all the way up to 10GHz. The antenna is linear polarized and has a transmit and receive gain at 11.4dB. On the front of the PCB a large copper area is presented. This copper area is feed from the backside of the PCB where a small track is feed with a sma connector. In the simulation this track is feed with a wave guide port.  
-   
+
+\section{Amplifier}
+
+The amplifier used for measurements is a CGH400006P 6W RF Power GaN HEMT transistor mounted at a development board for this transistor type, driven in class AB. The Transistor has a specified mean gain at 13dB and a maximum output at 32dBm which gives a maximum input at 19dBm. This is a large amount of power to deliver for a signal generator so in order to protect the equipment an amplifier has been connected to the output. With cable loss taken into account the amplifier has a gain at 44dB. Futher after the amplifier a four port power divider has been connected to prepare the measurement setup to connect several amplifiers. A block diagram of the setup is depicted in figure \ref{fig:meas_amp}. The output of the amplifier is connected to a 31dBm attenuator to ensure that the spectrum analyser is operated under safe conditions. The signal generator generates a input signal that is a 10MHz LTE signal with a baseband frequency at 3.5GHz.   
+
+
+
 \begin{figure}[H]
-  \centering
-  \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/antenna_front.png}
-	\caption{Front of PCB antenna}
-    \label{fig:ant_front}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/antenna_back.png}
-\caption{Backside of PCB antenna}
-    \label{fig:ant_back}
-  \end{minipage}
+\centering 
+\includegraphics[scale = 0.9]{figures/measurement/cree/meas1/meas_set_1.pdf}
+\caption{Measurement setup for measurement at only the amplifier }
+\label{fig:meas_amp}
+\end{figure}
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.06]{figures/measurement/cree/meas1/meas_set_1.jpg}
+\caption{Picture of the mesurement setup }
+\label{fig:meas_amp_pic}
+\end{figure}
+ 
+
+In order to use DPD at the amplifier, it is important to drive the amplifier at its 1dB compression point or more. Therfore the first measurement that has to be done is to measure the gain response of the amplifier to find the the input power level that satisfies this. The gate voltage for the amplifier is $V_g = 2.798V$ and the drain current is $I_d = 100mA$. The result are depicted in figure \ref{fig:meas_amp_response}.   
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.7]{figures/measurement/cree/meas1/gainResponse.png}
+\caption{Measured gain response of the amplifier with a 10MHz LTE signal at 3.5GHz}
+\label{fig:meas_amp_response}
+\end{figure}
+
+It can be seen from figure \ref{fig:meas_amp_response} that the amplifier in this setup,has a gain about 10dB. The 1dB compresion point is at 22dBm input power and 2dB compression is at 26dBm. Is is therefore decided to continue with a power level that has a peak input power of 27dBm. The DPD algorithm has therefore been applied and the result can be seen in figure \ref{fig:meas_amp_amam} and \ref{fig:meas_amp_PSD}. It can be seen that the DPD works fine and that the distortion becomes lower with the DPD as expected. It can be seen from the AM/AM plot that the gain is lowered to 9dB with the DPD but that compression is avoided. 
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.7]{figures/measurement/cree/meas1/AMAM.png}
+\caption{AM/AM response of the amplifier with and without DPD}
+\label{fig:meas_amp_amam}
 \end{figure}
 
 
 \begin{figure}[H]
 \centering 
-\includegraphics[scale = 0.7]{figures/measurement/antenna_ff.png}
-\caption{Farfield of the antenna}
-\label{fig:ant_ff}
-\end{figure} 
-
-
-\begin{figure}[H]
-\centering 
-\includegraphics[scale = 0.6]{figures/measurement/antenna_spar.png}
-\caption{$S_{11}$ of the antenna}
-\label{fig:ant_spar}
-\end{figure} 
-
-\begin{figure}[H]
-\centering 
-\includegraphics[scale = 0.7]{figures/measurement/antenna_array.png}
-\caption{4 wideband PCB antennas separated $0.1\lambda = 8.6mm$ }
-\label{fig:ant_array}
+\includegraphics[scale = 0.7]{figures/measurement/cree/meas1/PSD_1.png}
+\caption{Measured PSD with and without DPD}
+\label{fig:meas_amp_PSD}
 \end{figure}
 
-\todo[inline]{insert s-par marix}
-\section{Power Amplifier}
-The  \textit{ZX60-6013E+} amplifier is a small buffer-amplifier with a BW from 20MHz - 6GHz. It has an output-power at maximum 11.16dBm at 3.5GHz (1 dB compression ). The gain is 13.85 dB and the noise figure is 3.42dB. In figure \ref{fig:amp_gain} and \ref{fig:amp_outpower} curves for the amplifier gain and output power versus frequency it depicted respectively. The amplifier is shown in figure \ref{fig:amplifier} 
+\section{One amplifier one antenna}
 
 \begin{figure}[H]
 \centering 
-\includegraphics[scale = 0.3]{figures/measurement/amplifier.png}
-\caption{The \textit{ZX60-6013E+} amplifier}
-\label{fig:amplifier}
-\end{figure} 
-
-\begin{figure}[H]
-  \centering
-  \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.7]{figures/measurement/amp_gain.png}
-	\caption{Gain versus frequency}
-    \label{fig:amp_gain}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.7]{figures/measurement/amp_outpower.png}
-\caption{Output power versus frequency}
-    \label{fig:amp_outpower}
-  \end{minipage}
+\includegraphics[scale = 0.9]{figures/measurement/cree/meas2/meas2.pdf}
+\caption{Measurement setup for measurement at one amplifier with one Tx and one Rx antenna}
+\label{fig:meas_amp2}
 \end{figure}
 
-
-\section{Measurement setup} \label{ch_meas_setup}
-To measure the impact of the antenna crosstalk, several measurements must be done at different setups. The first setup is shown in figure \ref{fig:Meas_setup1}. In this setup only the amplifier is measured. The signal generator is generating a 10MHz LTE signal at 3.5GHz where the output is connected to the input of the amplifier. The amplifier is supplied with a 12.0VDC signal from the power supply and the output of the amplifier is connected to a 6dB attenuator to protect the input stage of the spectrum analyser, which measures the output signal from the amplifier.   
-
-\begin{figure}[H]
-\centering 
-\includegraphics[scale = 0.6]{figures/measurement/meas_set_1.png}
-\caption{Block diagram of measurement at amplifier }
-\label{fig:Meas_setup1}
-\end{figure} 
-
-In figure \ref{fig:Meas_setup2} the second measurement setup is shown. In this setup the antennas are now introduced. The Tx antenna is connected to the output of the amplifier. The Rx antenna are spaced 1 meter apart from the Tx antenna (measured from feed to feed). The 6dB attenuator is removed and the antenna is connected to the spectrum analyzer. 
-
-
-\begin{figure}[H]
-\centering 
-\includegraphics[scale = 0.6]{figures/measurement/meas_set_2.png}
-\caption{Block diagram of measurement using one antenna}
-\label{fig:Meas_setup2}
-\end{figure} 
-
-In setup three a power-divider is now introduced together with a second amplifier and second antenna. The received power will now increase 3dB but because the amplifiers has to be driven in the same power levels as before, one must add another 3dB to the input of the power divider. Be aware that in the measurements a 1:4 power divider was used and therefore the power was increased 6dB. The unused ports was terminated to a $50\Omega$ load. Also measurement using 4 antennas has been done in the same way. The only diffrence from the measurement was that the terminations was removed and an other 2 amplifiers and 2 antennas was added. See figure \ref{fig:Meas_setup4nt}.
-
-\begin{figure}[H]
-\centering 
-\includegraphics[scale = 0.6]{figures/measurement/meas_set_3.png}
-\caption{Block diagram of measurement using two antennas}
-\label{fig:Meas_setup3}
-\end{figure} 
-
-
-In figure \ref{fig:Meas_setup} a picture of a real measurement setup is shown. The antennas are spaced 1 meter apart from the input terminals and are pointing directly towards each other. The PA is mounted on a aluminium sheet with a tool grip to keep it at a constant temperature. The PA is supplied with 12.0VDC from the power supply and draws 40mA of current. The signal generator is connected to the input of the amplifier and the output of the amplifier is connected to the Tx antenna. The spectrum analyser is connected to Rx antenna. In figure \ref{fig:Meas_setup4ant} a measurement with 4 antennas is depicted. The antennas is mounted in a piece of flamingo with slots at at distance of $0.1\lambda$. This way the antenna can be moved to make the desired measurement.   
-
-
-\begin{figure}[H]
-\centering 
-\includegraphics[scale = 0.1]{figures/measurement/measurement_setup.jpg}
-\caption{Measurement setup using one transmit antennas}
-\label{fig:Meas_setup}
-\end{figure} 
-
-\begin{figure}[H]
-\centering 
-\includegraphics[scale = 0.1]{figures/measurement/measurement_setup_4.jpg}
-\caption{Measurement setup using four transmit antennas}
-\label{fig:Meas_setup4ant}
-\end{figure} 
-
-
-\subsection{Measurement of AM/AM distortion}\label{ch:meas_amam}
-Measurement has been done using the methods described in section \ref{ch_meas_setup}. The results in figure \ref{fig:amam_amp} is a measurement of only the amplifier. It is seen that at an input of -2.5dB the amplifier starts to decrese its gain. This is expected due to the compression point. The mean gain of the amplifier is  measured closly to 13.8dB as expected. It is further seen that the spreading of the signal is highest at low signal levels. When introducing one Tx antenna and one Rx antenna the free space loss must be accounted for. This is done by use of equation \ref{eq:friss_1m} \citep{Balanis2005} which gives 20.5dB in loss. In the measurement 19.5dB was measured, the difference is might caused by the antenna them self, since the used antenna gain is only simulated, and the antenna are spaced relativity close, or it can be reflections from the table or room that are causing the difference. Cable loss and connector loss has been measured and accounted for.  
-
-\begin{equation}\label{eq:friss_1m}
-Pathloss(db) = 10*log10(G_r G_t (\frac{4\pi d}{\lambda})^2)=20.5dB
-\end{equation}
-
-The measurement using one Tx antenna and one Rx antenna shows that the gain of the system now becomes close to 6dB, this is also expected since the gain of the system is: 
+Since now it has been proven that the DPD works well for a single amplifier connected to a fixed load, it is necessary to see if there would be any changes when the amplifier is connected to a single Tx antenna. The measurement setup is depicted in figure \ref{fig:meas_amp2}. The output of the amplifier is connected to one Tx antenna with at gain at 11dB. The Rx antenna are spaced 1m apart which gives loss at 43dB in free space. The total loss can be calculated as:
 
 \begin{equation}
-G_{system}(dB) = G_{amplifier}+G_{antenna}-Pathloss = 13.85dB + 11.4dB -19.5dB = 5.75dB
+ L_{dB} = 20log_{10}(d)+20log_{10}(f)+20log_{10}(\frac{4\pi}{c})+G_t+G_r = 21.3dB
 \end{equation}
-
-It can be seen from figure \ref{fig:amam_one_ant} that the antenna system makes the AM/AM distortion wider at the compression point, but smaller at lower power levels. In figure \ref{fig:amam01} to \ref{fig:amam06} the results from measurement setup three is shown. The results are made with two transmit antennas and therefore the system gain is increased by 3dB. The results shows small variations due to AM/AM distortion between, but a significant change in AM/AM at compression point in the pre-sentence of two antennas instead of one. Also AM/AM at lower power levels seems to decrease with two antennas compared to one. 
-
-\begin{figure}[H]
-  \centering
-  \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/two_antenna/amplifier_amam.png}
-	\caption{AM/AM distortion at amplifier}
-    \label{fig:amam_amp}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/two_antenna/one_ant_amam.png}
-\caption{AM/AM distortion using one transmit antenna}
-    \label{fig:amam_one_ant}
-  \end{minipage}
-\end{figure}
-
-\subsubsection{Two transmit antenna}
-
-\begin{figure}[H]
-  \centering
-  \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/two_antenna/amam_01.png}
-	\caption{AM/AM distortion at 0.1 $\lambda$ spacing between two antennas}
-    \label{fig:amam01}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/two_antenna/amam_02.png}
-\caption{AM/AM distortion at 0.2 $\lambda$ spacing between two antennas}
-    \label{fig:amam02}
-  \end{minipage}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/two_antenna/amam_03.png}
-	\caption{AM/AM distortion at 0.3 $\lambda$ spacing between two antennas}
-    \label{fig:amam03}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/two_antenna/amam_04.png}
-\caption{AM/AM distortion at 0.4 $\lambda$ spacing between two antennas}
-    \label{fig:amam04}
-  \end{minipage}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/two_antenna/amam_05.png}
-	\caption{AM/AM distortion at 0.5 $\lambda$ spacing between two antennas}
-    \label{fig:amam05}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/two_antenna/amam_06.png}
-\caption{AM/AM distortion at 0.6 $\lambda$ spacing between two antennas}
-    \label{fig:amam06}
-  \end{minipage}
-\end{figure}
-
-\subsubsection{Four transmit antenna}
-
-\begin{figure}[H]
-  \centering
-  \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/four_antenna/amam_0p1.png}
-	\caption{AM/AM distortion at 0.1 $\lambda$ spacing between four antennas}
-    \label{fig:amam01_4}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/four_antenna/amam_0p2.png}
-\caption{AM/AM distortion at 0.2 $\lambda$ spacing between four antennas}
-    \label{fig:amam02_4}
-  \end{minipage}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/four_antenna/amam_0p3.png}
-	\caption{AM/AM distortion at 0.3 $\lambda$ spacing between four antennas}
-    \label{fig:amam03_4}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/four_antenna/amam_0p4.png}
-\caption{AM/AM distortion at 0.4 $\lambda$ spacing between four antennas}
-    \label{fig:amam04_4}
-  \end{minipage}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/four_antenna/amam_0p5.png}
-	\caption{AM/AM distortion at 0.5 $\lambda$ spacing between four antennas}
-    \label{fig:amam05_4}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/four_antenna/amam_0p6.png}
-\caption{AM/AM distortion at 0.6 $\lambda$ spacing between four antennas}
-    \label{fig:amam06_4}
-  \end{minipage}
-\end{figure}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-\subsection{PSD}
-The Power Sprectal Density (PSD) shown in figure \ref{fig:psd_amp} is measured directly at the amplifier. It shows that at a mean input-power at 0dBm the output of the amplifier is distorted, first at a input level at -9dBm the distortion becomes low. This is also expected since the input is mean power and therefore the peak of the signal would be closely to -3dBm (6dB backoff) which also is close to the compression point measured in section \ref{ch:meas_amam}. Be aware that the noise floor increases due to the normalization of the signal. Also the reference-level at the spectrum analyser has an impact. When introducing the antenna system with one Tx antenna the distortion at -9dBm increases slightly. When introducing two antennas the distortion increases which is not a surprise due to the results from section \ref{ch:meas_amam}.  
-
-
-\begin{figure}[H]
-  \centering
-  \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/two_antenna/amplifier_psd.png}
-	\caption{PSD at amplifier}
-    \label{fig:psd_amp}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/two_antenna/one_ant_psd.png}
-\caption{PSD using one transmit antenna}
-    \label{fig:psd_one_ant}
-  \end{minipage}
-\end{figure}
-
-\subsubsection{Two transmit antenna}
-
-\begin{figure}[H]
-  \centering
-  \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/two_antenna/psd_01.png}
-	\caption{PSD at 0.1 $\lambda$ spacing between two antennas}
-    \label{fig:psd01}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/two_antenna/psd_02.png}
-\caption{PSD at 0.2 $\lambda$ spacing between two antennas}
-    \label{fig:psd02}
-  \end{minipage}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/two_antenna/psd_03.png}
-	\caption{PSD at 0.3 $\lambda$ spacing between two antennas}
-    \label{fig:psd03}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/two_antenna/psd_04.png}
-\caption{PSD at 0.4 $\lambda$ spacing between two antennas}
-    \label{fig:psd04}
-  \end{minipage}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/two_antenna/psd_05.png}
-	\caption{PSD at 0.5 $\lambda$ spacing between two antennas}
-    \label{fig:psd05}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/two_antenna/psd_06.png}
-\caption{PSD at 0.6 $\lambda$ spacing between two antennas}
-    \label{fig:psd06}
-  \end{minipage}
-\end{figure}
-
-\subsubsection{Four transmit antenna}
-
-\begin{figure}[H]
-  \centering
-  \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/four_antenna/psd_0p1.png}
-	\caption{PSD at 0.1 $\lambda$ spacing between four antennas}
-    \label{fig:psd01_4}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/four_antenna/psd_0p2.png}
-\caption{PSD at 0.2 $\lambda$ spacing between four antennas}
-    \label{fig:psd02_4}
-  \end{minipage}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/four_antenna/psd_0p3.png}
-	\caption{PSD at 0.3 $\lambda$ spacing between four antennas}
-    \label{fig:psd03_4}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/four_antenna/psd_0p4.png}
-\caption{PSD at 0.4 $\lambda$ spacing between four antennas}
-    \label{fig:psd04_4}
-  \end{minipage}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/four_antenna/psd_0p5.png}
-	\caption{PSD at 0.5 $\lambda$ spacing between four antennas}
-    \label{fig:psd05_4}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/four_antenna/psd_0p6.png}
-\caption{PSD at 0.6 $\lambda$ spacing between four antennas}
-    \label{fig:psd06_4}
-  \end{minipage}
-\end{figure}
-
-\subsection{ACPR} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsubsection{Two transmit antenna}
-
-\begin{figure}[H]
-\centering 
-\includegraphics[scale = 1]{figures/measurement/two_antenna/ACPR.png}
-\caption{ACPR using two transmit antennas}
-\label{fig:acpr_meas1}
-\end{figure} 
-
-\subsubsection{Four transmit antenna}
-
-\begin{figure}[H]
-\centering 
-\includegraphics[scale = 1]{figures/measurement/four_antenna/ACPR.png}
-\caption{ACPR using four transmit antennas}
-\label{fig:acpr_meas2}
-\end{figure} 
-
-\todo[inline]{lav figur med -dbm input ved forskellige afstande}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Measurement setup 2}
-
-\subsubsection{Amplifier only}
-
-In this section an other amplifier has been used.....
-
-First step is to measure the amplifier and find the input level where the amplifier compresses and then do the DPD. 
-
-\begin{figure}[H]
-\centering 
-\includegraphics[scale = 0.5]{figures/measurement/meas_set_cree_1.png}
-\caption{Measurement setup}
-\label{fig:meas2_cree1}
-\end{figure} 
-
-\begin{figure}[H]
-  \centering
-  \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/cree/amam_cree_amp_no_dpd.png}
-	\caption{AM/AM of amplifier}
-    \label{fig:cree_amam1}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/cree/amam_cree_amp_with_dpd.png}
-\caption{AM/AM of amplifier with DPD}
-    \label{fig:cree_amam2}
-  \end{minipage}
-\end{figure}
-
-
-\begin{figure}[H]
-  \centering
-  \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/cree/psd_cree_amp_no_dpd.png}
-	\caption{PSD of amplifier}
-    \label{fig:cree_amam1}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/cree/psd_cree_amp_with_dpd.png}
-\caption{PSD of amplifier with DPD}
-    \label{fig:cree_amam2}
-  \end{minipage}
-\end{figure}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{With one antenna}
+Where $d$ is distance between the antennas, $f$ is the center frequency, $c=3.0e8$ is the speed of light and $G_t$ $G_r$ is the gain of the transmitting antenna and receiving antenna respectively \citep{Balanis2005}. In order to compensate for the loss and to drive the spectrum analyser in the same power level as in the former measurement, the attenuator has been reduced to 6dB. It is seen from figure \ref{fig:meas_amp2_amam} that the gain now is close to 10dB which is caused by the compensation for the free space loss that is not correct but close. The distortion seen in figure \ref{fig:meas_amp2_PSD} is lowered with DPD and therfore it can be concluded that the DPD still works with one antenna connected to the amplifier. The model used for DPD is the model for the amplifier only.     
 
 
 \begin{figure}[H]
 \centering 
-\includegraphics[scale = 0.5]{figures/measurement/cree/one2one_draw.png}
-\caption{Measurement setup using one tx antenna}
-\label{fig:Meas_setup_draw_cree1}
-\end{figure} 
+\includegraphics[scale = 0.06]{figures/measurement/cree/meas2/meas2.jpg}
+\caption{Picture of the mesurement setup for one amplifier with one Tx and one Rx antenna }
+\label{fig:meas_amp2_pic}
+\end{figure}
+
 
 
 \begin{figure}[H]
 \centering 
-\includegraphics[scale = 0.1]{figures/measurement/cree/one2one.jpg}
-\caption{Picture of measurement setup using one tx antenna}
-\label{fig:Meas_setup_cree1}
-\end{figure} 
-
-
-\begin{figure}[H]
-  \centering
-  \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/cree/amam_one_ant.png}
-	\caption{AM/AM of amplifier with one Tx and one Rx antenna}
-    \label{fig:cree_amam_one_ant}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/cree/psd_one_ant.png}
-\caption{PSD of amplifier with one Tx and one Rx antenna}
-    \label{fig:cree_psd_one_ant}
-  \end{minipage}
+\includegraphics[scale = 0.7]{figures/measurement/cree/meas2/AMAM.png}
+\caption{AM/AM response of the amplifier with and without DPD using one Tx antenna}
+\label{fig:meas_amp2_amam}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{With two antennas}
-
-\begin{figure}[H]
-\centering 
-\includegraphics[scale = 0.4]{figures/measurement/cree/two2one_draw.png}
-\caption{Measurement setup using two tx antenna}
-\label{fig:Meas_setup_draw_cree1}
-\end{figure} 
 
 
 \begin{figure}[H]
 \centering 
-\includegraphics[scale = 0.1]{figures/measurement/cree/two2one.jpg}
-\caption{Picture of measurement setup using two tx antenna}
-\label{fig:Meas_setup_cree1}
-\end{figure} 
-
-\begin{figure}[H]
-  \centering
-  \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/cree/two/amam_two_ant_0p1.png}
-	\caption{AM/AM of amplifier with two Tx antenna spaced $0.1\lambda$ and one Rx antenna}
-    \label{fig:cree_amam_one_ant}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/cree/two/psd_two_ant_0p1.png}
-\caption{PSD of amplifier with two Tx antenna spaced $0.1\lambda$ and one Rx antenna}
-    \label{fig:cree_psd_one_ant}
-  \end{minipage}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/cree/two/amam_two_ant_0p2.png}
-	\caption{AM/AM of amplifier with two Tx antenna spaced $0.2\lambda$ and one Rx antenna}
-    \label{fig:cree_amam_two_ant1}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/cree/two/psd_two_ant_0p2.png}
-\caption{PSD of amplifier with two Tx antenna spaced $0.2\lambda$ and one Rx antenna}
-    \label{fig:cree_psd_two_ant1}
-  \end{minipage}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/cree/two/amam_two_ant_0p3.png}
-	\caption{AM/AM of amplifier with two Tx antenna spaced $0.3\lambda$ and one Rx antenna}
-    \label{fig:cree_amam_two_ant2}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/cree/two/psd_two_ant_0p3.png}
-\caption{PSD of amplifier with two Tx antenna spaced $0.3\lambda$ and one Rx antenna}
-    \label{fig:cree_psd_two_ant2}
-  \end{minipage}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/cree/two/amam_two_ant_0p4.png}
-	\caption{AM/AM of amplifier with two Tx antenna spaced $0.4\lambda$ and one Rx antenna}
-    \label{fig:cree_amam_two_ant3}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/cree/two/psd_two_ant_0p4.png}
-\caption{PSD of amplifier with two Tx antenna spaced $0.4\lambda$ and one Rx antenna}
-    \label{fig:cree_psd_two_ant3}
-  \end{minipage}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/cree/two/amam_two_ant_0p5.png}
-	\caption{AM/AM of amplifier with two Tx antenna spaced $0.5\lambda$ and one Rx antenna}
-    \label{fig:cree_amam_two_ant4}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/cree/two/psd_two_ant_0p5.png}
-\caption{PSD of amplifier with two Tx antenna spaced $0.5\lambda$ and one Rx antenna}
-    \label{fig:cree_psd_two_ant4}
-  \end{minipage}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/cree/two/amam_two_ant_0p6.png}
-	\caption{AM/AM of amplifier with two Tx antenna spaced $0.6\lambda$ and one Rx antenna}
-    \label{fig:cree_amam_two_ant5}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/cree/two/psd_two_ant_0p1.png}
-\caption{PSD of amplifier with two Tx antenna spaced $0.6\lambda$ and one Rx antenna}
-    \label{fig:cree_psd_two_ant5}
-  \end{minipage}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/cree/two/amam_two_ant_1p0.png}
-	\caption{AM/AM of amplifier with two Tx antenna spaced $1\lambda$ and one Rx antenna}
-    \label{fig:cree_amam_two_ant6}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/cree/two/psd_two_ant_1p0.png}
-\caption{PSD of amplifier with two Tx antenna spaced $1\lambda$ and one Rx antenna}
-    \label{fig:cree_psd_two_ant6}
-  \end{minipage}
+\includegraphics[scale = 0.7]{figures/measurement/cree/meas2/PSD.png}
+\caption{Measured PSD with and without DPD using one Tx antenna}
+\label{fig:meas_amp2_PSD}
 \end{figure}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Two amplifiers two antennas}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{With four antennas}
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.9]{figures/measurement/cree/meas3/meas3.pdf}
+\caption{Measurement setup for measurement at two amplifiers with two Tx and one Rx antenna}
+\label{fig:meas_amp3}
+\end{figure}
+
+In this section it is measured if it has an impact if two amplifiers are connected to an antenna each, spaced at different distances. The measurement setup is depicted in figure \ref{fig:meas_amp3}. Since the extra amplifier and antenna will introduce 3dB more power, 3dB is added to the attenuator to ensure the same power level at the input to the spectrum analyzer. The measurements has all been done at the same powerlevel but the distances of the antennas are varied from 0.1 wavelength to 0.6 in steps of 0.1. First a measurement of the system is done without DPD for all distances, where the measured signal is imported into MATLAB and an inverse signal is generated. This inverse signal is then uploaded to the signal generator and the new measurement is called "With sys DPD" for each distance. Then a meausrement with the inverse signal in the former section is applied for each distance and the measured signal is then called "With amp DPD".The results can be seen from figure \ref{fig:meas3_amam1} to \ref{fig:meas3_amam6}.   
 
 
 \begin{figure}[H]
 \centering 
-\includegraphics[scale = 0.08]{figures/measurement/cree/four2one.jpg}
-\caption{Picture of measurement setup using four tx antenna}
-\label{fig:Meas_setup_cree1}
-\end{figure} 
-
+\includegraphics[scale = 0.06]{figures/measurement/cree/meas3/meas3.jpg}
+\caption{Picture of measurement setup using two Tx antennas}
+\label{fig:meas_amp3-2}
+\end{figure}
 
 \begin{figure}[H]
   \centering
   \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/cree/four/amam_four_ant_0p1.png}
-	\caption{AM/AM of amplifier with four Tx antenna spaced $0.1\lambda$ and one Rx antenna}
-    \label{fig:cree_amam_one_ant}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/amam_amp_dpd_0p1.png}
+	\caption{AM/AM distortion at $d = 0.1\lambda$ with amplifier DPD}	
+    \label{fig:meas3_amam1}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/cree/four/psd_four_ant_0p1.png}
-\caption{PSD of amplifier with four Tx antenna spaced $0.1\lambda$ and one Rx antenna}
-    \label{fig:cree_psd_one_ant}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/amam_sys_dpd_0p1.png}
+	\caption{AM/AM distortion at $d = 0.1\lambda$ with system DPD}
+    \label{fig:meas3_amam2}
   \end{minipage}
 \end{figure}
 
 \begin{figure}[H]
   \centering
   \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/cree/four/amam_four_ant_0p2.png}
-	\caption{AM/AM of amplifier with four Tx antenna spaced $0.2\lambda$ and one Rx antenna}
-    \label{fig:cree_amam_four_ant1}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/psd_0p1.png}
+	\caption{PSD of measurement at $d = 0.1\lambda$ }	
+    \label{fig:meas3_psd1}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/cree/four/psd_four_ant_0p2.png}
-\caption{PSD of amplifier with four Tx antenna spaced $0.2\lambda$ and one Rx antenna}
-    \label{fig:cree_psd_four_ant1}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/psd_0p2.png}
+	\caption{PSD of measurement at $d = 0.2\lambda$}
+    \label{fig:meas3_psd2}
   \end{minipage}
 \end{figure}
 
 \begin{figure}[H]
   \centering
   \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/cree/four/amam_four_ant_0p3.png}
-	\caption{AM/AM of amplifier with four Tx antenna spaced $0.3\lambda$ and one Rx antenna}
-    \label{fig:cree_amam_four_ant2}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/amam_amp_dpd_0p2.png}
+	\caption{AM/AM distortion at $d = 0.2\lambda$ with amplifier DPD}	
+    \label{fig:meas3_amam3}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/cree/four/psd_four_ant_0p3.png}
-\caption{PSD of amplifier with four Tx antenna spaced $0.3\lambda$ and one Rx antenna}
-    \label{fig:cree_psd_four_ant2}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/amam_sys_dpd_0p2.png}
+	\caption{AM/AM distortion at $d = 0.2\lambda$ with system DPD}
+    \label{fig:meas3_amam4}
   \end{minipage}
 \end{figure}
 
 \begin{figure}[H]
   \centering
   \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/cree/four/amam_four_ant_0p4.png}
-	\caption{AM/AM of amplifier with four Tx antenna spaced $0.4\lambda$ and one Rx antenna}
-    \label{fig:cree_amam_four_ant3}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/amam_amp_dpd_0p3.png}
+	\caption{AM/AM distortion at $d = 0.3\lambda$ with amplifier DPD}	
+    \label{fig:meas3_amam5}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/cree/four/psd_four_ant_0p4.png}
-\caption{PSD of amplifier with four Tx antenna spaced $0.4\lambda$ and one Rx antenna}
-    \label{fig:cree_psd_four_ant3}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/amam_sys_dpd_0p3.png}
+	\caption{AM/AM distortion at $d = 0.3\lambda$ with system DPD}
+    \label{fig:meas3_amam6}
   \end{minipage}
 \end{figure}
 
 \begin{figure}[H]
   \centering
   \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/cree/four/amam_four_ant_0p5.png}
-	\caption{AM/AM of amplifier with four Tx antenna spaced $0.5\lambda$ and one Rx antenna}
-    \label{fig:cree_amam_four_ant4}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/psd_0p3.png}
+	\caption{PSD of measurement at $d = 0.3\lambda$ }	
+    \label{fig:meas3_psd3}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/cree/four/psd_four_ant_0p5.png}
-\caption{PSD of amplifier with four Tx antenna spaced $0.5\lambda$ and one Rx antenna}
-    \label{fig:cree_psd_four_ant4}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/psd_0p4.png}
+	\caption{PSD of measurement at $d = 0.4\lambda$}
+    \label{fig:meas3_psd4}
   \end{minipage}
 \end{figure}
 
 \begin{figure}[H]
   \centering
   \begin{minipage}[b]{0.5\textwidth}
-	\includegraphics[scale = 0.5]{figures/measurement/cree/four/amam_four_ant_0p6.png}
-	\caption{AM/AM of amplifier with four Tx antenna spaced $0.6\lambda$ and one Rx antenna}
-    \label{fig:cree_amam_four_ant5}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/amam_amp_dpd_0p4.png}
+	\caption{AM/AM distortion at $d = 0.4\lambda$ with amplifier DPD}	
+    \label{fig:meas3_amam7}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[scale = 0.5]{figures/measurement/cree/four/psd_four_ant_0p1.png}
-\caption{PSD of amplifier with four Tx antenna spaced $0.6\lambda$ and one Rx antenna}
-    \label{fig:cree_psd_four_ant5}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/amam_sys_dpd_0p4.png}
+	\caption{AM/AM distortion at $d = 0.4\lambda$ with system DPD}
+    \label{fig:meas3_amam8}
   \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/amam_amp_dpd_0p5.png}
+	\caption{AM/AM distortion at $d = 0.5\lambda$ with amplifier DPD}	
+    \label{fig:meas3_amam5_2}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/amam_sys_dpd_0p5.png}
+	\caption{AM/AM distortion at $d = 0.5\lambda$ with system DPD}
+    \label{fig:meas3_amam6_2}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/psd_0p5.png}
+	\caption{PSD of measurement at $d = 0.5\lambda$ }	
+    \label{fig:meas3_psd3_2}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/psd_0p6.png}
+	\caption{PSD of measurement at $d = 0.6\lambda$}
+    \label{fig:meas3_psd4_2}
+  \end{minipage}
+\end{figure}
+
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/amam_amp_dpd_0p6.png}
+	\caption{AM/AM distortion at $d = 0.6\lambda$ with amplifier DPD}	
+    \label{fig:meas3_amam5_3}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/amam_sys_dpd_0p6.png}
+	\caption{AM/AM distortion at $d = 0.6\lambda$ with system DPD}
+    \label{fig:meas3_amam6_3}
+  \end{minipage}
+\end{figure}
+
+From the AM/AM plots it can be seen that when doing DPD with only the model for the amplifier taken into account,  there are lots of non-linearity about 22-27dBm input. When treating the two amplifiers with antennas as one model the AM/AM linearity is improved but it seems that the DPD algorithm tends to overcompensate at high power values. From the PSD plots it is seen that the ACPR is decreased when treating the setup as one model. 
+
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.6]{figures/measurement/cree/meas3/acpr_two_ant.png}
+\caption{ACPR versus distance between antennas}
+\label{fig:meas2_dpd}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Four amplifiers four antennas}
+
+In this section measurement is done at four amplifiers and four antennas. The setup for the measurement is the same as in figure \ref{fig:meas_amp2} but with four amplifier chains instead of two. The results are shown in figure \ref{fig:meas_amp4} to \ref{fig:meas4_amam6_3}.
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.06]{figures/measurement/cree/meas4/meas4.jpg}
+\caption{Picture of measurement setup using four Tx antennas}
+\label{fig:meas_amp4}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/amam_amp_dpd_0p1.png}
+	\caption{AM/AM distortion at $d = 0.1\lambda$ with amplifier DPD}	
+    \label{fig:meas4_amam1}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/amam_sys_dpd_0p1.png}
+	\caption{AM/AM distortion at $d = 0.1\lambda$ with system DPD}
+    \label{fig:meas4_amam2}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/psd_0p1.png}
+	\caption{PSD of measurement at $d = 0.1\lambda$ }	
+    \label{fig:meas4_psd1}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/psd_0p2.png}
+	\caption{PSD of measurement at $d = 0.2\lambda$}
+    \label{fig:meas4_psd2}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/amam_amp_dpd_0p2.png}
+	\caption{AM/AM distortion at $d = 0.2\lambda$ with amplifier DPD}	
+    \label{fig:meas4_amam3}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/amam_sys_dpd_0p2.png}
+	\caption{AM/AM distortion at $d = 0.2\lambda$ with system DPD}
+    \label{fig:meas4_amam4}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/amam_amp_dpd_0p3.png}
+	\caption{AM/AM distortion at $d = 0.3\lambda$ with amplifier DPD}	
+    \label{fig:meas4_amam5}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/amam_sys_dpd_0p3.png}
+	\caption{AM/AM distortion at $d = 0.3\lambda$ with system DPD}
+    \label{fig:meas4_amam6}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/psd_0p3.png}
+	\caption{PSD of measurement at $d = 0.3\lambda$ }	
+    \label{fig:meas4_psd3}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/psd_0p4.png}
+	\caption{PSD of measurement at $d = 0.4\lambda$}
+    \label{fig:meas4_psd4}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/amam_amp_dpd_0p4.png}
+	\caption{AM/AM distortion at $d = 0.4\lambda$ with amplifier DPD}	
+    \label{fig:meas4_amam7}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/amam_sys_dpd_0p4.png}
+	\caption{AM/AM distortion at $d = 0.4\lambda$ with system DPD}
+    \label{fig:meas4_amam8}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/amam_amp_dpd_0p5.png}
+	\caption{AM/AM distortion at $d = 0.5\lambda$ with amplifier DPD}	
+    \label{fig:meas4_amam5_2}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/amam_sys_dpd_0p5.png}
+	\caption{AM/AM distortion at $d = 0.5\lambda$ with system DPD}
+    \label{fig:meas4_amam6_2}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/psd_0p5.png}
+	\caption{PSD of measurement at $d = 0.5\lambda$ }	
+    \label{fig:meas4_psd3_2}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/psd_0p6.png}
+	\caption{PSD of measurement at $d = 0.6\lambda$}
+    \label{fig:meas4_psd4_2}
+  \end{minipage}
+\end{figure}
+
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/amam_amp_dpd_0p6.png}
+	\caption{AM/AM distortion at $d = 0.6\lambda$ with amplifier DPD}	
+    \label{fig:meas4_amam5_3}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas3/amam_sys_dpd_0p6.png}
+	\caption{AM/AM distortion at $d = 0.6\lambda$ with system DPD}
+    \label{fig:meas4_amam6_3}
+  \end{minipage}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.6]{figures/measurement/cree/meas4/acpr_four_ant.png}
+\caption{ACPR versus distance between antennas}
+\label{fig:meas4_dpd}
+\end{figure}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Two amplifiers different current}
+In the former measurement the drain current for each amplifier has been ajusted to 100mA by tuning the gate voltage, to ensure same working conditions for all four amplifiers. In this section is is measured if it has any impact that the current is different. First all four amplifiers is connected to the same gate voltage and the current is measured in each amplifier. The two amplifiers with the largest difference is then used for these measurement. The results are shown in figure \ref{fig:meas5_1} to \ref{fig:meas5_9} which shows that when the gate voltage is ajusted the performance of the amplifiers changes. This is seen at the AM/AM plots where a difference clearly is seen. This is also why DPD with only considering one amplifier as a model not can be used for multiple amplifiers if the current is different. The results shows thou that if the amplifiers with antennas are treated as a hole, then the DPD algorithm works well and therefore a different bias current is not a huge problem when doing so.
+
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas5/amam_no_dpd_2p798v.png}
+	\caption{AM/AM distortion at 56mA in amplifier 1 and 100mA in amplifier 2 with gate voltages at 2.798V without DPD}	
+    \label{fig:meas5_1}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas5/amam_sys_dpd_2p798v.png}
+	\caption{AM/AM distortion at 56mA in amplifier 1 and 100mA in amplifier 2 with gate voltages at 2.798V with DPD}
+    \label{fig:meas5_1}
+  \end{minipage}
+\end{figure}
+ 
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas5/psd_2p798v.png}
+	\caption{PSD at 56mA in amplifier 1 and 100mA in amplifier 2 with gate voltages at 2.798V}	
+    \label{fig:meas5_3}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas5/amam_no_dpd_2p742v.png}
+	\caption{AM/AM distortion at 75mA in amplifier 1 and 112mA in amplifier 2 with gate voltages at 2.742V without DPD}
+    \label{fig:meas5_4}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas5/amam_sys_dpd_2p742v.png}
+	\caption{AM/AM distortion at 75mA in amplifier 1 and 112mA in amplifier 2 with gate voltages at 2.742V with DPD}	
+    \label{fig:meas5_5}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas5/psd_2p742v.png}
+	\caption{PSD at 75mA in amplifier 1 and 112mA in amplifier 2 with gate voltages at 2.742V}
+    \label{fig:meas5_6}
+  \end{minipage}
+\end{figure}
+
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas5/amam_no_dpd_2p672v.png}
+	\caption{AM/AM distortion at 100mA in amplifier 1 and 136mA in amplifier 2 with gate voltages at 2.672V without DPD}	
+    \label{fig:meas5_7}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas5/amam_sys_dpd_2p672v.png}
+	\caption{AM/AM distortion at 100mA in amplifier 1 and 137mA in amplifier 2 with gate voltages at 2.672V with DPD}
+    \label{fig:meas5_8}
+  \end{minipage}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.5]{figures/measurement/cree/meas5/psd_2p672v.png}
+\caption{PSD at 100mA in amplifier 1 and 137mA in amplifier 2 with gate voltages at 2.672V}
+\label{fig:meas5_9}
 \end{figure}
 
 
 
 
+
+ 
 

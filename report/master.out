@@ -4,31 +4,27 @@
 \BOOKMARK [0][-]{label:contents.0}{Contents}{}% 4
 \BOOKMARK [0][-]{chapter*.3}{Preface}{}% 5
 \BOOKMARK [0][-]{chapter.1}{1 Introduction}{}% 6
-\BOOKMARK [0][-]{chapter.2}{2 Amplifier Imperfections}{}% 7
+\BOOKMARK [0][-]{chapter.2}{2 Basic Theory}{}% 7
 \BOOKMARK [1][-]{section.2.1}{2.1 Non-linearity}{chapter.2}% 8
-\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Distortion due to non-linearity}{section.2.1}% 9
-\BOOKMARK [1][-]{section.2.2}{2.2 AM/AM and AM/PM distortion}{chapter.2}% 10
-\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Memory effects}{section.2.2}% 11
-\BOOKMARK [1][-]{section.2.3}{2.3 Efficiency}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.4}{2.4 Antenna Diversity and MIMO}{chapter.2}% 13
-\BOOKMARK [1][-]{section.2.5}{2.5 Array factor}{chapter.2}% 14
-\BOOKMARK [0][-]{chapter.3}{3 Amplifier modelling}{}% 15
-\BOOKMARK [1][-]{section.3.1}{3.1 Pre-distortion}{chapter.3}% 16
-\BOOKMARK [1][-]{section.3.2}{3.2 DPD models}{chapter.3}% 17
-\BOOKMARK [1][-]{section.3.3}{3.3 Crosstalk}{chapter.3}% 18
-\BOOKMARK [0][-]{chapter.4}{4 Measurement}{}% 19
-\BOOKMARK [1][-]{section.4.1}{4.1 Simulation of PCB antenna}{chapter.4}% 20
-\BOOKMARK [1][-]{section.4.2}{4.2 Power Amplifier}{chapter.4}% 21
-\BOOKMARK [1][-]{section.4.3}{4.3 Measurement setup}{chapter.4}% 22
-\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Measurement of AM/AM distortion}{section.4.3}% 23
-\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 PSD}{section.4.3}% 24
-\BOOKMARK [2][-]{subsection.4.3.3}{4.3.3 ACPR}{section.4.3}% 25
-\BOOKMARK [1][-]{section.4.4}{4.4 Measurement setup 2}{chapter.4}% 26
-\BOOKMARK [0][-]{chapter.5}{5 Antenna measurement}{}% 27
-\BOOKMARK [1][-]{section.5.1}{5.1 Single antenna}{chapter.5}% 28
-\BOOKMARK [1][-]{section.5.2}{5.2 Two antennas}{chapter.5}% 29
-\BOOKMARK [1][-]{section.5.3}{5.3 Four antennas}{chapter.5}% 30
-\BOOKMARK [1][-]{section.5.4}{5.4 Single element four antennas}{chapter.5}% 31
-\BOOKMARK [0][-]{chapter.6}{6 Conclusion}{}% 32
-\BOOKMARK [0][-]{chapter*.98}{Bibliography}{}% 33
-\BOOKMARK [0][-]{appendix.A}{A Antenna measurements}{}% 34
+\BOOKMARK [1][-]{section.2.2}{2.2 AM/AM and AM/PM distortion}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.3}{2.3 Efficiency}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.4}{2.4 Antenna Diversity and MIMO}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.5}{2.5 Array factor}{chapter.2}% 12
+\BOOKMARK [0][-]{chapter.3}{3 Amplifier modelling}{}% 13
+\BOOKMARK [1][-]{section.3.1}{3.1 Pre-distortion}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.2}{3.2 DPD models}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.3}{3.3 Crosstalk}{chapter.3}% 16
+\BOOKMARK [0][-]{chapter.4}{4 Measurement}{}% 17
+\BOOKMARK [1][-]{section.4.1}{4.1 Amplifier}{chapter.4}% 18
+\BOOKMARK [1][-]{section.4.2}{4.2 One amplifier one antenna}{chapter.4}% 19
+\BOOKMARK [1][-]{section.4.3}{4.3 Two amplifiers two antennas}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.4}{4.4 Four amplifiers four antennas}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.5}{4.5 Two amplifiers different current}{chapter.4}% 22
+\BOOKMARK [0][-]{chapter.5}{5 Antenna measurement}{}% 23
+\BOOKMARK [1][-]{section.5.1}{5.1 Single antenna}{chapter.5}% 24
+\BOOKMARK [1][-]{section.5.2}{5.2 Two antennas}{chapter.5}% 25
+\BOOKMARK [1][-]{section.5.3}{5.3 Four antennas}{chapter.5}% 26
+\BOOKMARK [1][-]{section.5.4}{5.4 Single element four antennas}{chapter.5}% 27
+\BOOKMARK [0][-]{chapter.6}{6 Conclusion}{}% 28
+\BOOKMARK [0][-]{chapter*.88}{Bibliography}{}% 29
+\BOOKMARK [0][-]{appendix.A}{A Antenna measurements}{}% 30

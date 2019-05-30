@@ -3,46 +3,34 @@
 \select@language {english}
 \contentsline {chapter}{Preface}{xi}{chapter*.3}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {chapter}{\numberline {2}Amplifier Imperfections}{3}{chapter.2}
+\contentsline {chapter}{\numberline {2}Basic Theory}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Non-linearity}{3}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Distortion due to non-linearity}{5}{subsection.2.1.1}
+\contentsline {subsubsection}{Distortion due to non-linearity}{5}{subsubsection*.6}
 \contentsline {section}{\numberline {2.2}AM/AM and AM/PM distortion}{7}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Memory effects}{7}{subsection.2.2.1}
+\contentsline {subsubsection}{Memory effects}{7}{subsubsection*.10}
 \contentsline {section}{\numberline {2.3}Efficiency}{8}{section.2.3}
 \contentsline {section}{\numberline {2.4}Antenna Diversity and MIMO}{8}{section.2.4}
 \contentsline {section}{\numberline {2.5}Array factor}{10}{section.2.5}
 \contentsline {chapter}{\numberline {3}Amplifier modelling}{13}{chapter.3}
 \contentsline {section}{\numberline {3.1}Pre-distortion}{13}{section.3.1}
 \contentsline {section}{\numberline {3.2}DPD models}{13}{section.3.2}
-\contentsline {subsubsection}{Weiner}{13}{subsubsection*.15}
-\contentsline {subsubsection}{Hammerstein}{14}{subsubsection*.16}
-\contentsline {subsubsection}{Memory Polynomial}{14}{subsubsection*.17}
-\contentsline {subsubsection}{Estimation of coefficients}{14}{subsubsection*.18}
-\contentsline {subsubsection}{Estimation in MATLAB}{15}{subsubsection*.19}
+\contentsline {subsubsection}{Weiner}{13}{subsubsection*.17}
+\contentsline {subsubsection}{Hammerstein}{14}{subsubsection*.18}
+\contentsline {subsubsection}{Memory Polynomial}{14}{subsubsection*.19}
+\contentsline {subsubsection}{Estimation of coefficients}{14}{subsubsection*.20}
+\contentsline {subsubsection}{Estimation in MATLAB}{15}{subsubsection*.21}
 \contentsline {section}{\numberline {3.3}Crosstalk}{17}{section.3.3}
-\contentsline {chapter}{\numberline {4}Measurement}{19}{chapter.4}
-\contentsline {section}{\numberline {4.1}Simulation of PCB antenna}{19}{section.4.1}
-\contentsline {section}{\numberline {4.2}Power Amplifier}{21}{section.4.2}
-\contentsline {section}{\numberline {4.3}Measurement setup}{22}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Measurement of AM/AM distortion}{25}{subsection.4.3.1}
-\contentsline {subsubsection}{Two transmit antenna}{26}{subsubsection*.37}
-\contentsline {subsubsection}{Four transmit antenna}{27}{subsubsection*.41}
-\contentsline {subsection}{\numberline {4.3.2}PSD}{28}{subsection.4.3.2}
-\contentsline {subsubsection}{Two transmit antenna}{29}{subsubsection*.46}
-\contentsline {subsubsection}{Four transmit antenna}{30}{subsubsection*.50}
-\contentsline {subsection}{\numberline {4.3.3}ACPR}{31}{subsection.4.3.3}
-\contentsline {subsubsection}{Two transmit antenna}{32}{subsubsection*.54}
-\contentsline {subsubsection}{Four transmit antenna}{33}{subsubsection*.56}
-\contentsline {section}{\numberline {4.4}Measurement setup 2}{33}{section.4.4}
-\contentsline {subsubsection}{Amplifier only}{33}{subsubsection*.59}
-\contentsline {subsubsection}{With one antenna}{35}{subsubsection*.63}
-\contentsline {subsubsection}{With two antennas}{36}{subsubsection*.67}
-\contentsline {subsubsection}{With four antennas}{41}{subsubsection*.77}
-\contentsline {chapter}{\numberline {5}Antenna measurement}{45}{chapter.5}
-\contentsline {section}{\numberline {5.1}Single antenna}{45}{section.5.1}
-\contentsline {section}{\numberline {5.2}Two antennas}{46}{section.5.2}
-\contentsline {section}{\numberline {5.3}Four antennas}{48}{section.5.3}
-\contentsline {section}{\numberline {5.4}Single element four antennas}{50}{section.5.4}
+\contentsline {chapter}{\numberline {4}Measurement}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Amplifier}{21}{section.4.1}
+\contentsline {section}{\numberline {4.2}One amplifier one antenna}{24}{section.4.2}
+\contentsline {section}{\numberline {4.3}Two amplifiers two antennas}{26}{section.4.3}
+\contentsline {section}{\numberline {4.4}Four amplifiers four antennas}{31}{section.4.4}
+\contentsline {section}{\numberline {4.5}Two amplifiers different current}{35}{section.4.5}
+\contentsline {chapter}{\numberline {5}Antenna measurement}{39}{chapter.5}
+\contentsline {section}{\numberline {5.1}Single antenna}{39}{section.5.1}
+\contentsline {section}{\numberline {5.2}Two antennas}{41}{section.5.2}
+\contentsline {section}{\numberline {5.3}Four antennas}{44}{section.5.3}
+\contentsline {section}{\numberline {5.4}Single element four antennas}{49}{section.5.4}
 \contentsline {chapter}{\numberline {6}Conclusion}{53}{chapter.6}
-\contentsline {chapter}{Bibliography}{55}{chapter*.98}
+\contentsline {chapter}{Bibliography}{55}{chapter*.88}
 \contentsline {chapter}{\numberline {A}Antenna measurements}{57}{appendix.A}

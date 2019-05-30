@@ -1,4 +1,4 @@
-\chapter{Amplifier Imperfections}\label{ch:1}
+\chapter{Basic Theory}\label{ch:1}
 
 \section{Non-linearity}
 
@@ -35,7 +35,7 @@ This is also called Two-Tone Third-Order Intermodulation Distortion and is also 
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Distortion due to non-linearity}
+\subsubsection{Distortion due to non-linearity}
 
 \begin{figure}[H]
 \centering 
@@ -44,7 +44,7 @@ This is also called Two-Tone Third-Order Intermodulation Distortion and is also 
 \label{fig:acpr}
 \end{figure}
 
-Due to the non-linearity of the PA described before, spectral regrowth will occur which will affect nearby channels. The Adjacent Channel Power Ratio (ACPR) is a measure of the power of the distortion components, caused by the non-linearity of the PA, that are leaked into the adjacent channel see figure \ref{fig:acpr}. The formula for the ACPR is given by equation \ref{eq:acpr} and is used after a Fourier transform has been performed at the output of the PA.
+Due to the non-linearity of the PA described before, spectral regrowth will occur which will affect nearby channels. The Adjacent Channel Power Ratio (ACPR) is a measure of the power of the distortion components, caused by the non-linearity of the PA, that are leaked into the adjacent channel see figure \ref{fig:acpr}. The formula for the ACPR is given by equation \ref{eq:acpr} and is used after a Fourier transform has been performed at the output signal of the PA.
 
 \begin{equation} \label{eq:acpr}
 	ACPR = \frac{\int_{adjch}^{} |Y(f)|^2 df }{\int_{mainch}^{} |Y(f)|^2 df}
@@ -68,7 +68,7 @@ Another measure of the error is the Error Vector Measurement (EVM) or  Relative 
 \begin{figure}[H]
 \centering 
 \includegraphics[scale = 0.5]{figures/ch1/ads_nonlin_dest.png}
-\caption{Destortion simulated in ADS, where blue is input-signal and red is output-signal. The simulation is made with a single amplifier connected to a $50\Omega$ resistor. It is clearly that the output-signal is distorted. The ACPR becomes -45dB with a BW at 100MHZ}
+\caption{Destortion simulated in ADS, where blue is input-signal and red is output-signal. The simulation is made with a single amplifier connected to a $50\Omega$ resistor. It is clearly that the output-signal is distorted. The ACPR becomes -45dB with a BW at 10MHZ}
 \label{fig:pre_cons}
 \end{figure}
 
@@ -88,7 +88,7 @@ region can be termed as AM/PM distortion.In presence of wideband signals having 
 y(t) = g(a(t))e^{j\phi(t)+f(a(t))}
 \end{equation}
 
-\subsection{Memory effects}
+\subsubsection{Memory effects}
 
 \begin{figure}[H]
 \centering 
@@ -132,14 +132,8 @@ MIMO (Multiple Input Multiple Output) systems are systems with Multiple Element 
 \textbf{y = Hx+n}
 \end{equation}  
 
-Where \textbf{y} is the received vector, \textbf{H} is the channel matrix, \textbf{x} is the transmitted vector and \textbf{n} is noise. If the full channel matrix is known then the transmitted vector can be obtained by the receiver like equation \ref{eq:mimo2}.  
-
-\begin{equation}\label{eq:mimo2}
-\textbf{x+n} = \textbf{H}^{1} \textbf{y}
-\end{equation}  
-
-The principle of MIMO is to ensure that the same information reaches the receiver on several
-statistically independent channels. In MIMO systems, several transmits paths is archived by use of several antennas, which gives a spatial separation if they are separated enough to give a correlation factor $\rho$ that is below $0.5 - 0.7$ \citep{molisch2011}. The formula for the envelope correlation factor between two antennas is given by equation \ref{eq:corr_fac}. The formula assumes that the WSSUS (Wide-Sense Stationary Uncorrelated Scattering) model is valid, no LOS exists, the power delay profile has an exponential shape, the incident power is isotropically distributed in azimuth and only propagates in the horizontal plane, and an omni-antenna is used.
+Where \textbf{y} is the received vector, \textbf{H} is the channel matrix, \textbf{x} is the transmitted vector and \textbf{n} is noise. The principle of MIMO is to ensure that the same information reaches the receiver on several
+statistically independent channels. In MIMO systems, several transmits paths is archived by use of several antennas, which gives a spatial separation if they are separated enough to give a correlation factor $\rho$ that is below $0.5 - 0.7$ \citep{molisch2011}. The formula for the envelope correlation factor between two antennas is given by equation \ref{eq:corr_fac}. The formula assumes that the WSSUS (Wide-Sense Stationary Uncorrelated Scattering) model is valid, no LOS exists, the power delay profile has an exponential shape, the incident power is isotropically distributed in azimuth and only propagates in the horizontal plane, and an omnidirectional antenna is used.
 
 \begin{eqnarray} \label{eq:corr_fac}
 \rho = \frac{J_0^2( k_0 v \tau)}{1+(2\pi)^2 S_\tau^2(f_2 - f_1)^2 }
