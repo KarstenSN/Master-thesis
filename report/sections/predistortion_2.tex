@@ -57,7 +57,7 @@ It can be seen from figure \ref{fig:meas_amp_response} that the amplifier in thi
 \label{fig:meas_amp2}
 \end{figure}
 
-Since now it has been proven that the DPD works well for a single amplifier connected to a fixed load, it is necessary to see if there would be any changes when the amplifier is connected to a single Tx antenna. The measurement setup is depicted in figure \ref{fig:meas_amp2}. The output of the amplifier is connected to one Tx antenna with at gain at 11dB. The Rx antenna are spaced 1m apart which gives loss at 43dB in free space. The total loss can be calculated as:
+Since now it has been proven that the DPD works well for a single amplifier connected to a fixed load, it is necessary to see if there would be any changes when the amplifier is connected to a single Tx antenna. The measurement setup is depicted in figure \ref{fig:meas_amp2}. The output of the amplifier is connected to one Tx antenna with a gain at 11dB. The Rx antenna are spaced 1m apart which gives loss at 43dB in free space. The total loss can be calculated as:
 
 \begin{equation}
  L_{dB} = 20log_{10}(d)+20log_{10}(f)+20log_{10}(\frac{4\pi}{c})+G_t+G_r = 21.3dB
@@ -246,15 +246,17 @@ In this section it is measured if it has an impact if two amplifiers are connect
   \end{minipage}
 \end{figure}
 
-From the AM/AM plots it can be seen that when doing DPD with only the model for the amplifier taken into account,  there are lots of non-linearity about 22-27dBm input. When treating the two amplifiers with antennas as one model the AM/AM linearity is improved but it seems that the DPD algorithm tends to overcompensate at high power values. From the PSD plots it is seen that the ACPR is decreased when treating the setup as one model. 
-
-
 \begin{figure}[H]
 \centering 
 \includegraphics[scale = 0.6]{figures/measurement/cree/meas3/acpr_two_ant.png}
 \caption{ACPR versus distance between antennas}
 \label{fig:meas2_dpd}
 \end{figure}
+
+From the AM/AM plots it can be seen that when doing DPD with only the model for the amplifier taken into account,  there are lots of non-linearity about 22-27dBm input. When treating the amplifiers with antennas as one model the AM/AM linearity is improved but it seems that the DPD algorithm tends to overcompensate at high power values. From the PSD plots it is seen that the ACPR is decreased when treating the setup as one model. This can also be seen in figure \ref{fig:meas2_dpd} where the ACPR is shown for the diffrent distances. It is seen that the ACPR changes due to the distance between the antennas. This is caused by the gain difference in the antenna array, where the highest gain is at $0.5\lambda$ which then has the lowest ACPR. The antenna measurement is presented in section \ref{ch:ant_meas}.    
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -411,6 +413,23 @@ In this section measurement is done at four amplifiers and four antennas. The se
 \includegraphics[scale = 0.6]{figures/measurement/cree/meas4/acpr_four_ant.png}
 \caption{ACPR versus distance between antennas}
 \label{fig:meas4_dpd}
+\end{figure}
+
+It can be seen from figure \ref{fig:meas4_amam1} to \ref{fig:meas4_dpd} that it does not introduce other problems when introducing four amplifiers than using two. The DPD algorithm still tends to overcompensate at high power values but still maintains a low ACPR. The ACPR is depicted in figure \ref{fig:meas4_dpd} and shows like in the former section that the ACPR changes due to antenna gain. The lowest ACPR is found at $0.5\lambda$ like in the case with two amplifiers. Since the ACPR seems to be a constant value if there is accounted for the antenna gain. A test has been made where the DPD model is obtained at $0.5\lambda$ and used at the other distances also. This was expected to make a large difference in the distortion since the S-parameters of the antennas changes a lot. See section \ref{ch:ant_meas} for antenna measurement. But from figure \ref{fig:meas4_amam5_4} and \ref{fig:meas4_amam6_4} it can be seen that the ACPR becomes linke the ACPR in figure \ref{fig:meas4_dpd}.
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.5\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas4/PSD_dif.png}
+	\caption{PSD of measurement where the DPD model is obtained at 0.6$\lambda$ but is also used at other distances}	
+    \label{fig:meas4_amam5_4}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+	\includegraphics[scale = 0.5]{figures/measurement/cree/meas4/ACPR_dif.png}
+	\caption{ACPR of measurement where the DPD model is obtained at 0.6$\lambda$ but is also used at other distances}
+    \label{fig:meas4_amam6_4}
+  \end{minipage}
 \end{figure}
 
 

@@ -1,2 +1,167 @@
-\chapter{Antenna measurements}\label{ch:appAlabel}
+\chapter{MATLAB code}\label{ch:appAlabel}
+
+Code to plot AM/AM distortion. powerLev is peak power level at signel generator, preGain is gain of pre-amplifier, Att is attenuation at spectrum analyzer. 
+
+\begin{lstlisting}[frame = single]
+powerLev = -11;
+preGain = 44;
+Att = 31;
+
+input =  10*log10(abs(e0)./max(abs(e0)))+preGain+powerLev;  
+
+for i=1:N
+    figure;
+    gain = 20*log10(abs(e(i,:))*10^(Att/20)./
+    (abs(e0)*10^(preGain/20)))-(powerLev);
+    plot(input,gain-6,'.r');
+    grid on
+    title('AM/AM')
+    xlabel('Peak input power (dBm)')
+    ylabel('Gain of amplifier (dB)')
+    legend('With sys DPD')
+    ylim([-6 4])
+    xlim([10 28])
+end
+
+\end{lstlisting}
+
+
+Code to plot PSD
+
+\begin{lstlisting}[frame = single]
+Fs=1e8;
+Res = 100e3;
+Nfft = Fs/Res;
+[Psd_in,F_in] = pwelch(e0/sqrt(Fs),blackman(Nfft),
+[],Nfft, Fs,'centered');
+
+%setFigOptions
+q = [200:800]; % plot only from 30MHz
+figure;
+plot(F_in(q)*1e-6, 10*log10(Psd_in(q)/max(Psd_in(q))),'k')
+hold on
+
+for i = 1:N
+    [Psd_out(:,i),F_out(:,i)] = pwelch(e(i,:)/sqrt(Fs)
+    ,blackman(Nfft),[],Nfft, Fs,'centered');
+    plot(F_out(q,i)*1e-6, 10*log10(Psd_out(q,i)
+    /max(Psd_out(q,i))))
+end
+
+grid on
+xlabel('Frequency (MHz)');
+ylabel('Normalised PSD (dB)');
+legend('Ideal signal', '0.6 $\lambda$', '0.5 $\lambda$', 
+'0.4 $\lambda$', '0.3 $\lambda$', '0.2 $\lambda$', 
+'0.1 $\lambda$');
+title('Power Spectral Density')
+
+\end{lstlisting}
+
+Code to plot ACPR
+\begin{lstlisting}[frame = single]
+
+for i = 1:N
+    A=10*log10(Psd_out(q,i)/max(Psd_out(q,i)));
+    Index = F_in(q); x = find(Index == 0); 
+    IndexL = [x-150:x-60];
+    IndexH = [x+60:x+150];
+    Acpr_L=mean(A(IndexL));
+    Acpr_H=mean(A(IndexH));
+
+    ACPR(i) = (Acpr_L+Acpr_H)/2;
+end
+
+X = [0.6 0.5 0.4 0.3 0.2 0.1]';
+
+figure(3)
+plot(X,ACPR)
+xlabel('Distance between antennas ($\lambda$)');
+ylabel('ACPR (dB)')
+title('ACPR vs spacing of Tx antennas')
+ylim([-46 -37])
+
+\end{lstlisting}
+
+
+
+Code to plot antenna S-parameters
+\begin{lstlisting}[frame = single]
+%% Load S-parameters for two ant
+clear
+clc
+close all
+
+filename = ['SPAR/0p1.s2p'; 'SPAR/0p2.s2p'; 'SPAR/0p3.s2p'; 
+'SPAR/0p4.s2p'; 'SPAR/0p5.s2p'; 'SPAR/0p6.s2p'];
+
+for i = 1:6
+file = fopen(filename(i,:));
+Data = cell2mat(textscan(file,'%f %f %f %f %f %f %
+f %f %f %*[^\n]','HeaderLines',5));
+file = fclose(file);
+
+f = Data(:,1);
+S11 = Data(:,2)+1j*Data(:,3);
+S11 = 10.^(S11/10);
+
+S21 = Data(:,4)+1j*Data(:,5);
+S21 = 10.^(S21/10);
+
+S12 = Data(:,6)+1j*Data(:,7);
+S12 = 10.^(S12/10);
+
+S22 = Data(:,8)+1j*Data(:,9);
+S22 = 10.^(S22/10);
+
+
+plot(f,10*log10(abs(S22)))
+hold on
+end
+
+title('S_{22}')
+xlabel('Frequency (Hz)')
+ylabel('S_{22} (dB)')
+
+legend('d=0.1$\lambda$' ,'d=0.2$\lambda$' ,'d=0.3$\lambda$' 
+,'d=0.4$\lambda$' ,'d=0.5$\lambda$' ,'d=0.6$\lambda$')
+\end{lstlisting}
+
+
+Code to plot antenna farfield
+\begin{lstlisting}[frame = single]
+%% plot antenna farfield
+clear
+clc
+close all
+
+file1 = fopen('Data/4th_element_4_array.txt');
+Data1 = cell2mat(textscan(file1,'%f %f %f %f %f 
+%f %f %f %*[^\n]','HeaderLines',2));
+file1 = fclose(file1);
+
+s = 121;
+phi = Data1(72601:s:79860,2); %phi axis
+theta = Data1(1:s,3); %theta axis
+
+mag = zeros(length(phi),length(theta));
+index = (72601:79860);
+gaindB = Data1(index,8);
+
+for i = 1:length(phi)
+   mag(i,:) = gaindB((1+(s*(i-1)):(s*i)));
+end
+phi(end) = pi;
+
+figure(1)
+patternCustom(mag,theta*180/pi,phi*180/pi)
+
+ gain = max(gaindB)
+\end{lstlisting}
+
+
+
+
+
+
 
