@@ -9,13 +9,13 @@
 \label{fig:amp_lin}
 \end{figure} 
 
-An ideal power amplifier has an linear response over all frequencies and input power. This is depicted in \ref{fig:amp_lin} as Linear response. Unfortunately this is not true and therefore a measurement of a power amplifier has been done. The measurement shows that the amplifier at some level can be assumed linear, but at a point the amplifier will saturate due to the supply voltage and the gain will compress. The point where there is 1dB from the linear response to the real response is called the 1dB compression point (P1dB) which is also depicted in  figure \ref{fig_amp_lin}. The non-linear gain response causes a distortion at the output which can be described by equation \ref{eq:dest} \citep{NI}. If a input-signal using two tones is considered then there will be a difference and a sum of the frequencies presented at the output which is caused by the cubic term in equation \ref{eq:dest2}.
+An ideal power amplifier has an linear response over all frequencies and input power. This is depicted in \ref{fig:amp_lin} as Linear response. Unfortunately this is not true and therefore a measurement of a power amplifier has been done. The measurement shows that the amplifier at some level can be assumed linear, but at a point the amplifier will saturate due to the supply voltage and the gain will compress. The point where there is 1dB from the linear response to the real response is called the 1dB compression point (P1dB) which is also depicted in  figure \ref{fig:amp_lin}. The non-linear gain response causes a distortion at the output which can be described by equation \ref{eq:dest} \citep{NI}. 
 
 \begin{equation} \label{eq:dest}
 V_{out} = a_0 + a_1 V_{in} + a_2 V_{in}^2 + a_3 V_{in}^3 + a_4 V_{in}^4 + ... 
 \end{equation}
 
-Where $V_{out}$ is the output signal from the amplifier, $a_1, a_2 ,a_3..$ is coefficients describing the ratio of the distortion and $V_{in}$ is the input signal. If a single tone input is presented, then the output will consist of purely odd and even harmonic distortion. 
+Where $V_{out}$ is the output signal from the amplifier, $a_1, a_2 ,a_3..$ is coefficients describing the ratio of the distortion and $V_{in}$ is the input signal. If a single tone input is presented, then the output will consist of purely odd and even harmonic distortion. On the other hand if a input-signal using two tones is considered then there will be a difference and a sum of the frequencies presented at the output which is caused by the cubic term in equation \ref{eq:dest2}. 
 
 \begin{equation}\label{eq:dest1}
 V_{in} = sin(\omega_1 t) + sin(\omega_2 t)
@@ -24,6 +24,7 @@ V_{in} = sin(\omega_1 t) + sin(\omega_2 t)
 \begin{equation} \label{eq:dest2}
 V_{out} = a_0 + a_1 (sin(\omega_1 t) + sin(\omega_2 t)) + a_2 (sin(\omega_1 t) + sin(\omega_2 t))^2 + a_3 (sin(\omega_1 t) + sin(\omega_2 t))^3 + ... 
 \end{equation}
+
 
 This is also called Two-Tone Third-Order Intermodulation Distortion and is also depicted in figure \ref{fig:amp_lin} as 3rd order distortion with a slope of 3:1. It can bee seen that when the output power increases then the 3rd order distortion increases 3 times. A measurement of this is called the third-order-intercept-point (IP3 or TOI). However, the intercept point it not directly measurable since the amplifier reaches compression way before. It can bee seen from figure \ref{fig:amp_psd} that the distorted component are spaced too close in frequency to be effectively filtered. This will cause distortion into nearby channels and is measured as Adjacent Channel Power Ratio (ACPR).
 
@@ -44,7 +45,7 @@ This is also called Two-Tone Third-Order Intermodulation Distortion and is also 
 \label{fig:acpr}
 \end{figure}
 
-Due to the non-linearity of the PA described before, spectral regrowth will occur which will affect nearby channels. The Adjacent Channel Power Ratio (ACPR) is a measure of the power of the distortion components, caused by the non-linearity of the PA, that are leaked into the adjacent channel see figure \ref{fig:acpr}. The formula for the ACPR is given by equation \ref{eq:acpr} and is used after a Fourier transform has been performed at the output signal of the PA.
+Due to the non-linearity of the PA described before, spectral regrowth will occur which will affect nearby channels. The Adjacent Channel Power Ratio (ACPR) is a measure of the power of the distorted components, caused by the non-linearity of the PA, that are leaked into the adjacent channel. See figure \ref{fig:acpr}. The formula for the ACPR is given by equation \ref{eq:acpr} and is used after a Fourier transform has been performed at the output signal of the PA.
 
 \begin{equation} \label{eq:acpr}
 	ACPR = \frac{\int_{adjch}^{} |Y(f)|^2 df }{\int_{mainch}^{} |Y(f)|^2 df}
@@ -82,7 +83,7 @@ x(t) = a(t)e^{j\phi(t)}
 
 Where $a(t)$ is the envelope of the signal and $e^{j\phi(t)}$ is the phase of the input signal. Then the distorted output of the amplifier will be that of equation \ref{eq:amam2} where $g(t)$ is the amplitude distortion and $f(t)$ is the phase distortion also called Amplitude to Amplitude (AM/AM) and Amplitude to Phase (AM/PM) distortion. AM/AM distortion can be defined as the deviation from the constant gain when PA is
 operated in compression region. On the other hand, the increased phase change at compression
-region can be termed as AM/PM distortion.In presence of wideband signals having non constant amplitude, PA behaves as nonlinear system and exhibits two types of non-linearities \citep{guo2015} which is static distortion and memory effects.  
+region can be termed as AM/PM distortion. In presence of wideband signals having non constant amplitude, PA behaves as nonlinear system and exhibits two types of non-linearities \citep{guo2015} which is static distortion and memory effects.  
 
 \begin{equation}\label{eq:amam2}
 y(t) = g(a(t))e^{j\phi(t)+f(a(t))}
@@ -178,7 +179,7 @@ When several antennas are spaced relatively close to each other it is called an 
 AF = \sum_{n=1}^{N} e^{(n J 2\pi d \cos(\alpha)+JB(n))}
 \end{equation}
 
-Where N is number of antennas in the array, d is the distance between the antennas, $\alpha$ is the azimuth angle from $0..2\pi$ and B is the feeding phase of a single antenna. In figure \ref{fig:af_2ant} and \ref{fig:af_4ant} the array factor for 2 and 4 antennas spaced  $d = [0.1 \ 0.2 \ 0.3 \ 0.4 \ 0.5 \ 0.6]^T \lambda$ are plotted respectively. It is seen that the energy doubles in the $90^\circ$ for all distances in figure \ref{fig:af_2ant} while it becomes 4 times greater in figure \ref{fig:af_4ant}. This seems also to correspond with the meausrement in chapter \ref{ch:ant_meas}.   
+Where N is number of antennas in the array, d is the distance between the antennas, $\alpha$ is the azimuth angle from $0..2\pi$ and B is the feeding phase of a single antenna. In figure \ref{fig:af_2ant} and \ref{fig:af_4ant} the array factor for 2 and 4 antennas spaced  $d = [0.1 \ 0.2 \ 0.3 \ 0.4 \ 0.5 \ 0.6]^T \lambda$ are plotted respectively. It is seen that the energy doubles in the $90^\circ$ direction for all distances in figure \ref{fig:af_2ant} while it becomes 4 times greater in figure \ref{fig:af_4ant}. This seems also to correspond with the meausrement in chapter \ref{ch:ant_meas}.   
 
 
 \begin{figure}[H]

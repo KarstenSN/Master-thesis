@@ -18,13 +18,13 @@ The amplifier used for measurements is a CGH400006P 6W RF Power GaN HEMT transis
 \centering 
 \includegraphics[scale = 0.4]{figures/measurement/cree/cree_schematic.png}
 \caption{Schematic of the amplifier board (PACKAGE) is the GaN HEMT transistor. \citep{cree2019}}
-\label{fig:meas_amp}
+\label{fig:meas_amp_sch}
 \end{figure}
 
 
 \begin{figure}[H]
 \centering 
-\includegraphics[scale = 0.06]{figures/measurement/cree/meas1/meas_set_1.jpg}
+\includegraphics[scale = 0.1]{figures/measurement/cree/meas1/meas_set_1.jpg}
 \caption{Picture of the mesurement setup }
 \label{fig:meas_amp_pic}
 \end{figure}
@@ -65,17 +65,17 @@ It can be seen from figure \ref{fig:meas_amp_response} that the amplifier in thi
 \label{fig:meas_amp2}
 \end{figure}
 
-Since now it has been proven that the DPD works well for a single amplifier connected to a fixed load, it is necessary to see if there would be any changes when the amplifier is connected to a single Tx antenna. The measurement setup is depicted in figure \ref{fig:meas_amp2}. The output of the amplifier is connected to one Tx antenna with a gain at 11dB. The Rx antenna are spaced 1m apart which gives loss at 43dB in free space. The total loss can be calculated as:
+Since now it has been proven that the DPD works well for a single amplifier connected to a fixed load, it is necessary to see if there would be any changes when the amplifier is connected to a single Tx antenna. The measurement setup is depicted in figure \ref{fig:meas_amp2}. The output of the amplifier is connected to one Tx antenna with a gain at 11dB. The Rx antenna are spaced 1m apart which also has a gain at 11db. The distance between  the antennas gives a loss at 43dB in free space. The total loss can be calculated as:
 
 \begin{equation}
  L_{dB} = 20log_{10}(d)+20log_{10}(f)+20log_{10}(\frac{4\pi}{c})+G_t+G_r = 21.3dB
 \end{equation}
-Where $d$ is distance between the antennas, $f$ is the center frequency, $c=3.0e8$ is the speed of light and $G_t$ $G_r$ is the gain of the transmitting antenna and receiving antenna respectively \citep{Balanis2005}. In order to compensate for the loss and to drive the spectrum analyser in the same power level as in the former measurement, the attenuator has been reduced to 6dB. It is seen from figure \ref{fig:meas_amp2_amam} that the gain now is close to 10dB which is not exact the same as before but close. The error is caused by the compensation for the free space loss that is not fully correct. The distortion seen in figure \ref{fig:meas_amp2_PSD} is lowered with DPD and therfore it can be concluded that the DPD still works with one antenna connected to the amplifier. The model used for DPD is the model for the amplifier only. In next section the antennas are taken into account before the DPD.      
+Where $d$ is distance between the antennas, $f$ is the center frequency, $c=3.0e8$ is the speed of light and $G_t$ $G_r$ is the gain of the transmitting antenna and receiving antenna respectively \citep{Balanis2005}. In order to compensate for the loss and to drive the spectrum analyser in the same power level as in the former measurement, the attenuator has been reduced to 6dB. It is seen from figure \ref{fig:meas_amp2_amam} that the gain now is close to 10dB which is not exact the same as before but close. The error is caused by the compensation for the free space loss that is not fully correct. The distortion seen in figure \ref{fig:meas_amp2_PSD} is lowered with DPD and therfore it can be concluded that the DPD still works with one antenna connected to the amplifier. The model used for DPD is the model for the amplifier only. In next section the antennas are taken into account before the DPD linke in figure \ref{fig:dpd_pdpd}.      
 
 
 \begin{figure}[H]
 \centering 
-\includegraphics[scale = 0.08]{figures/measurement/cree/meas2/meas2.jpg}
+\includegraphics[scale = 0.1]{figures/measurement/cree/meas2/meas2.jpg}
 \caption{Picture of the mesurement setup for one amplifier with one Tx and one Rx antenna }
 \label{fig:meas_amp2_pic}
 \end{figure}
@@ -113,7 +113,7 @@ In this section it is measured if it has an impact if two amplifiers are connect
 
 \begin{figure}[H]
 \centering 
-\includegraphics[scale = 0.06]{figures/measurement/cree/meas3/meas3.jpg}
+\includegraphics[scale = 0.1]{figures/measurement/cree/meas3/meas3.jpg}
 \caption{Picture of measurement setup using two Tx antennas}
 \label{fig:meas_amp3-2}
 \end{figure}
@@ -261,7 +261,7 @@ In this section it is measured if it has an impact if two amplifiers are connect
 \label{fig:meas2_dpd}
 \end{figure}
 
-From the AM/AM plots it can be seen that when doing DPD with only the model for the amplifier taken into account,  there are lots of non-linearity about 22-27dBm input. When treating the amplifiers with antennas as one model the AM/AM linearity is improved but it seems that the DPD algorithm tends to overcompensate at high power values. From the PSD plots it is seen that the ACPR is decreased when treating the setup as one model. This can also be seen in figure \ref{fig:meas2_dpd} where the ACPR is shown for the diffrent distances. It is seen that the ACPR nearly is a constant value and only small variations is seen. The small variations could be caused by the gain difference in the antenna array, where the highest gain is at $0.5\lambda$ which then has the lowest ACPR for the ''Amp DPD''. The antenna measurement is presented in section \ref{ch:ant_meas}.    
+From the AM/AM plots it can be seen that when doing DPD with only the model for the amplifier taken into account,  there are lots of non-linearity about 22-27dBm input. When treating the amplifiers with antennas as one model the AM/AM linearity is improved but it seems that the DPD algorithm tends to overcompensate at high power values. From the PSD plots it is seen that the ACPR is decreased when treating the setup as one model. This can also be seen in figure \ref{fig:meas2_dpd} where the ACPR is shown for the diffrent distances. It is seen that the ACPR is close to -45dB for all distances and only small variations is seen. The small variations is caused by the difference in the antenna array, where the highest gain is at $0.5\lambda$ which then has the lowest ACPR for the ''Amp DPD''. The antenna measurement is presented in section \ref{ch:ant_meas}.    
 
 
 
@@ -274,7 +274,7 @@ In this section measurement is done at four amplifiers and four antennas. The se
 
 \begin{figure}[H]
 \centering 
-\includegraphics[scale = 0.06]{figures/measurement/cree/meas4/meas4.jpg}
+\includegraphics[scale = 0.1]{figures/measurement/cree/meas4/meas4.jpg}
 \caption{Picture of measurement setup using four Tx antennas}
 \label{fig:meas_amp4}
 \end{figure}
@@ -423,7 +423,7 @@ In this section measurement is done at four amplifiers and four antennas. The se
 \label{fig:meas4_dpd}
 \end{figure}
 
-It can be seen from figure \ref{fig:meas4_amam1} to \ref{fig:meas4_dpd} that it does not introduce other problems when introducing four amplifiers than using two. The DPD algorithm still tends to overcompensate at high power values but still maintains a low ACPR. The ACPR is depicted in figure \ref{fig:meas4_dpd} and shows like in the former section that the ACPR changes due to antenna gain. The lowest ACPR is found at $0.5\lambda$ like in the case with two amplifiers. Since the ACPR seems to be a constant value if there is accounted for the antenna gain. A test has been made where the DPD model is obtained at $0.5\lambda$ and used at the other distances also. This was expected to make a large difference in the distortion since the S-parameters of the antennas changes a lot. See section \ref{ch:ant_meas} for antenna measurement. But from figure \ref{fig:meas4_amam5_4} and \ref{fig:meas4_amam6_4} it can be seen that the ACPR becomes linke the ACPR in figure \ref{fig:meas4_dpd}.
+It can be seen from figure \ref{fig:meas4_amam1} to \ref{fig:meas4_dpd} that the DPD algorithm still tends to overcompensate at high power values but still maintains a low ACPR. The ACPR is depicted in figure \ref{fig:meas4_dpd} and shows that the ACPR now changes more due to spacing in the antenna array, than in the case with two antennas. The lowest ACPR is found at $0.5\lambda$ like in the case with two antennas. Since the ACPR has the same shape in both cases for "Amp DPD" and "Sys DPD", a test has been made where the DPD model is obtained at $0.5\lambda$ and used at the other distances also. This was expected to make a large difference in the distortion since the S-parameters of the antennas changes a lot. See section \ref{ch:ant_meas} for antenna measurement. But from figure \ref{fig:meas4_amam5_4} and \ref{fig:meas4_amam6_4} it can be seen that the ACPR becomes somewhat linke the ACPR in figure \ref{fig:meas4_dpd}.
 
 \begin{figure}[H]
   \centering
@@ -446,20 +446,20 @@ It can be seen from figure \ref{fig:meas4_amam1} to \ref{fig:meas4_dpd} that it 
 
 
 \section{Two amplifiers different current}
-In the former measurement the drain current for each amplifier has been ajusted to 100mA by tuning the gate voltage, to ensure same working conditions for all four amplifiers. In this section it is measured if it has any impact that the current is different. First all four amplifiers is connected to the same gate voltage and the current is measured in each amplifier. The two amplifiers with the largest difference is then used for these measurement. The results are shown in figure \ref{fig:meas5_1} to \ref{fig:meas5_9} which shows that when the gate voltage is ajusted the performance of the amplifiers changes. This is seen at the AM/AM plots where a difference clearly is seen. This is also why DPD with only considering one amplifier as a model not can be used for multiple amplifiers if the current is different. The results shows thou that if the amplifiers with antennas are treated as a hole, then the DPD algorithm works well and therefore a different bias current is not a huge problem when doing so.
+In the former measurement the drain current for each amplifier has been adjusted to 100mA by tuning the gate voltage, to ensure same working conditions for all four amplifiers. In this section it is measured if it has any impact that the current is different. First all four amplifiers is connected to the same gate voltage and the current is measured in each amplifier. The two amplifiers with the largest difference is then used for these measurement. The results are shown in figure \ref{fig:meas5_1} to \ref{fig:meas5_9} which shows that when the gate voltage is ajusted the performance of the amplifiers changes. This is seen at the AM/AM plots where a difference clearly is seen. This is also why DPD with only considering one amplifier as a model not can be used for multiple amplifiers if the current is different. The results shows thou that if the amplifiers with antennas are treated as a hole, then the DPD algorithm works well and therefore a different bias current is not a huge problem when doing so.
 
 
 \begin{figure}[H]
   \centering
   \begin{minipage}[b]{0.5\textwidth}
 	\includegraphics[scale = 0.5]{figures/measurement/cree/meas5/amam_no_dpd_2p798v.png}
-	\caption{AM/AM distortion at 56mA in amplifier 1 and 100mA in amplifier 2 with gate voltages at 2.798V without DPD}	
+	\caption{AM/AM distortion at 56mA in amplifier 1 and 100mA in amplifier 2 with gate voltages at -2.798V without DPD}	
     \label{fig:meas5_1}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.4\textwidth}
 	\includegraphics[scale = 0.5]{figures/measurement/cree/meas5/amam_sys_dpd_2p798v.png}
-	\caption{AM/AM distortion at 56mA in amplifier 1 and 100mA in amplifier 2 with gate voltages at 2.798V with DPD}
+	\caption{AM/AM distortion at 56mA in amplifier 1 and 100mA in amplifier 2 with gate voltages at -2.798V with DPD}
     \label{fig:meas5_1}
   \end{minipage}
 \end{figure}
@@ -468,13 +468,13 @@ In the former measurement the drain current for each amplifier has been ajusted 
   \centering
   \begin{minipage}[b]{0.5\textwidth}
 	\includegraphics[scale = 0.5]{figures/measurement/cree/meas5/psd_2p798v.png}
-	\caption{PSD at 56mA in amplifier 1 and 100mA in amplifier 2 with gate voltages at 2.798V}	
+	\caption{PSD at 56mA in amplifier 1 and 100mA in amplifier 2 with gate voltages at -2.798V}	
     \label{fig:meas5_3}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.4\textwidth}
 	\includegraphics[scale = 0.5]{figures/measurement/cree/meas5/amam_no_dpd_2p742v.png}
-	\caption{AM/AM distortion at 75mA in amplifier 1 and 112mA in amplifier 2 with gate voltages at 2.742V without DPD}
+	\caption{AM/AM distortion at 75mA in amplifier 1 and 112mA in amplifier 2 with gate voltages at -2.742V without DPD}
     \label{fig:meas5_4}
   \end{minipage}
 \end{figure}
@@ -483,13 +483,13 @@ In the former measurement the drain current for each amplifier has been ajusted 
   \centering
   \begin{minipage}[b]{0.5\textwidth}
 	\includegraphics[scale = 0.5]{figures/measurement/cree/meas5/amam_sys_dpd_2p742v.png}
-	\caption{AM/AM distortion at 75mA in amplifier 1 and 112mA in amplifier 2 with gate voltages at 2.742V with DPD}	
+	\caption{AM/AM distortion at 75mA in amplifier 1 and 112mA in amplifier 2 with gate voltages at -2.742V with DPD}	
     \label{fig:meas5_5}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.4\textwidth}
 	\includegraphics[scale = 0.5]{figures/measurement/cree/meas5/psd_2p742v.png}
-	\caption{PSD at 75mA in amplifier 1 and 112mA in amplifier 2 with gate voltages at 2.742V}
+	\caption{PSD at 75mA in amplifier 1 and 112mA in amplifier 2 with gate voltages at -2.742V}
     \label{fig:meas5_6}
   \end{minipage}
 \end{figure}
@@ -499,13 +499,13 @@ In the former measurement the drain current for each amplifier has been ajusted 
   \centering
   \begin{minipage}[b]{0.5\textwidth}
 	\includegraphics[scale = 0.5]{figures/measurement/cree/meas5/amam_no_dpd_2p672v.png}
-	\caption{AM/AM distortion at 100mA in amplifier 1 and 136mA in amplifier 2 with gate voltages at 2.672V without DPD}	
+	\caption{AM/AM distortion at 100mA in amplifier 1 and 136mA in amplifier 2 with gate voltages at -2.672V without DPD}	
     \label{fig:meas5_7}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.4\textwidth}
 	\includegraphics[scale = 0.5]{figures/measurement/cree/meas5/amam_sys_dpd_2p672v.png}
-	\caption{AM/AM distortion at 100mA in amplifier 1 and 137mA in amplifier 2 with gate voltages at 2.672V with DPD}
+	\caption{AM/AM distortion at 100mA in amplifier 1 and 137mA in amplifier 2 with gate voltages at -2.672V with DPD}
     \label{fig:meas5_8}
   \end{minipage}
 \end{figure}
@@ -514,7 +514,7 @@ In the former measurement the drain current for each amplifier has been ajusted 
 \begin{figure}[H]
 \centering 
 \includegraphics[scale = 0.5]{figures/measurement/cree/meas5/psd_2p672v.png}
-\caption{PSD at 100mA in amplifier 1 and 137mA in amplifier 2 with gate voltages at 2.672V}
+\caption{PSD at 100mA in amplifier 1 and 137mA in amplifier 2 with gate voltages at -2.672V}
 \label{fig:meas5_9}
 \end{figure}
 
