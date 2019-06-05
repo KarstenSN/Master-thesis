@@ -1,24 +1,24 @@
 \select@language {english}
 \select@language {danish}
 \select@language {english}
-\contentsline {chapter}{Preface}{xi}{chapter*.3}
+\contentsline {chapter}{Preface}{ix}{chapter*.2}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}Basic Theory}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Non-linearity}{3}{section.2.1}
-\contentsline {subsubsection}{Distortion due to non-linearity}{5}{subsubsection*.6}
-\contentsline {section}{\numberline {2.2}AM/AM and AM/PM distortion}{7}{section.2.2}
-\contentsline {subsubsection}{Memory effects}{7}{subsubsection*.10}
-\contentsline {section}{\numberline {2.3}Efficiency}{8}{section.2.3}
+\contentsline {subsubsection}{Distortion due to non-linearity}{5}{subsubsection*.5}
+\contentsline {section}{\numberline {2.2}AM/AM and AM/PM distortion}{6}{section.2.2}
+\contentsline {subsubsection}{Memory effects}{7}{subsubsection*.8}
+\contentsline {section}{\numberline {2.3}Efficiency}{7}{section.2.3}
 \contentsline {section}{\numberline {2.4}Antenna Diversity and MIMO}{8}{section.2.4}
 \contentsline {section}{\numberline {2.5}Array factor}{10}{section.2.5}
 \contentsline {chapter}{\numberline {3}Amplifier modelling}{13}{chapter.3}
 \contentsline {section}{\numberline {3.1}Pre-distortion}{13}{section.3.1}
 \contentsline {section}{\numberline {3.2}DPD models}{13}{section.3.2}
-\contentsline {subsubsection}{Weiner}{13}{subsubsection*.17}
-\contentsline {subsubsection}{Hammerstein}{14}{subsubsection*.18}
-\contentsline {subsubsection}{Memory Polynomial}{14}{subsubsection*.19}
-\contentsline {subsubsection}{Estimation of coefficients}{14}{subsubsection*.20}
-\contentsline {subsubsection}{Estimation in MATLAB}{15}{subsubsection*.21}
+\contentsline {subsubsection}{Weiner}{13}{subsubsection*.15}
+\contentsline {subsubsection}{Hammerstein}{14}{subsubsection*.16}
+\contentsline {subsubsection}{Memory Polynomial}{14}{subsubsection*.17}
+\contentsline {subsubsection}{Estimation of coefficients}{14}{subsubsection*.18}
+\contentsline {subsubsection}{Estimation in MATLAB}{15}{subsubsection*.19}
 \contentsline {section}{\numberline {3.3}Crosstalk}{17}{section.3.3}
 \contentsline {chapter}{\numberline {4}Measurement}{21}{chapter.4}
 \contentsline {section}{\numberline {4.1}Amplifier}{21}{section.4.1}
@@ -32,5 +32,5 @@
 \contentsline {section}{\numberline {5.3}Four antennas}{44}{section.5.3}
 \contentsline {section}{\numberline {5.4}Single element four antennas}{49}{section.5.4}
 \contentsline {chapter}{\numberline {6}Conclusion}{53}{chapter.6}
-\contentsline {chapter}{Bibliography}{55}{chapter*.89}
+\contentsline {chapter}{Bibliography}{55}{chapter*.88}
 \contentsline {chapter}{\numberline {A}MATLAB code}{57}{appendix.A}

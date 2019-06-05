@@ -16,6 +16,18 @@
 \newblock {\em Antenna Theory Analysis And Design}.
 \newblock Wiley, 3. ed. edition.
 
+\bibitem[{Cree}, 2019]{cree2019}
+{Cree} (2019).
+\newblock Cgh40006p datasheet.
+\newblock \url{https://www.mouser.com/ds/2/90/gh40006p-876367.pdf}.
+
+\bibitem[{Dennis R. Morgan, et. al.}, 2006]{morgan2006}
+{Dennis R. Morgan, et. al.} (2006).
+\newblock A generalized memory polynomial model for digital predistortion of rf
+  power amplifiers.
+\newblock IEEE TRANSACTIONS ON SIGNAL PROCESSING, VOL. 54, NO. 10, OCTOBER
+  2006.
+
 \bibitem[{Katharina Hausmair, et. al}, 2017]{Hausmair2017}
 {Katharina Hausmair, et. al} (2017).
 \newblock Digital predistortion for multi-antenna transmitters affected by

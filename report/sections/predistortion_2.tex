@@ -3,8 +3,7 @@
 
 \section{Amplifier}
 
-The amplifier used for measurements is a CGH400006P 6W RF Power GaN HEMT transistor mounted at a development board for this transistor type, driven in class AB. The Transistor has a specified mean gain at 13dB and a maximum output at 32dBm which gives a maximum input at 19dBm. This is a large amount of power to deliver for a signal generator so in order to protect the equipment an amplifier has been connected to the output. With cable loss taken into account the amplifier has a gain at 44dB. Futher after the amplifier a four port power divider has been connected to prepare the measurement setup to connect several amplifiers. A block diagram of the setup is depicted in figure \ref{fig:meas_amp}. The output of the amplifier is connected to a 31dBm attenuator to ensure that the spectrum analyser is operated under safe conditions. The signal generator generates a input signal that is a 10MHz LTE signal with a baseband frequency at 3.5GHz.   
-
+The amplifier used for measurements is a CGH400006P 6W RF Power GaN HEMT transistor mounted at a development board for this transistor type, driven in class AB. The Transistor has a specified mean gain at 13dB and a maximum output at 32dBm which gives a maximum input at 19dBm. This is a large amount of power to deliver for a signal generator so in order to protect the equipment an amplifier has been connected to the output. With cable loss taken into account the amplifier has a gain at 44dB. Futher after the amplifier a four port power divider has been connected to prepare the measurement setup to connect several amplifiers. A block diagram of the setup is depicted in figure \ref{fig:meas_amp}. The output of the amplifier is connected to a 31dB attenuator to ensure that the spectrum analyser is operated under safe conditions. The signal generator generates a input signal that is a 10MHz LTE signal with a baseband frequency at 3.5GHz.   
 
 
 \begin{figure}[H]
@@ -14,6 +13,15 @@ The amplifier used for measurements is a CGH400006P 6W RF Power GaN HEMT transis
 \label{fig:meas_amp}
 \end{figure}
 
+
+\begin{figure}[H]
+\centering 
+\includegraphics[scale = 0.4]{figures/measurement/cree/cree_schematic.png}
+\caption{Schematic of the amplifier board (PACKAGE) is the GaN HEMT transistor. \citep{cree2019}}
+\label{fig:meas_amp}
+\end{figure}
+
+
 \begin{figure}[H]
 \centering 
 \includegraphics[scale = 0.06]{figures/measurement/cree/meas1/meas_set_1.jpg}
@@ -22,7 +30,7 @@ The amplifier used for measurements is a CGH400006P 6W RF Power GaN HEMT transis
 \end{figure}
  
 
-In order to use DPD at the amplifier, it is important to drive the amplifier at its 1dB compression point or more. Therfore the first measurement that has to be done is to measure the gain response of the amplifier to find the the input power level that satisfies this. The gate voltage for the amplifier is $V_g = 2.798V$ and the drain current is $I_d = 100mA$. The result are depicted in figure \ref{fig:meas_amp_response}.   
+In order to use DPD at the amplifier, it is important to drive the amplifier at its 1dB compression point or more. Therfore the first measurement that has to be done is to measure the gain response of the amplifier to find the input power level that satisfies this. The gate voltage for the amplifier is $V_g = -2.798V$ and the drain current is $I_d = 100mA$. The result are depicted in figure \ref{fig:meas_amp_response}.   
 
 \begin{figure}[H]
 \centering 
@@ -62,12 +70,12 @@ Since now it has been proven that the DPD works well for a single amplifier conn
 \begin{equation}
  L_{dB} = 20log_{10}(d)+20log_{10}(f)+20log_{10}(\frac{4\pi}{c})+G_t+G_r = 21.3dB
 \end{equation}
-Where $d$ is distance between the antennas, $f$ is the center frequency, $c=3.0e8$ is the speed of light and $G_t$ $G_r$ is the gain of the transmitting antenna and receiving antenna respectively \citep{Balanis2005}. In order to compensate for the loss and to drive the spectrum analyser in the same power level as in the former measurement, the attenuator has been reduced to 6dB. It is seen from figure \ref{fig:meas_amp2_amam} that the gain now is close to 10dB which is caused by the compensation for the free space loss that is not correct but close. The distortion seen in figure \ref{fig:meas_amp2_PSD} is lowered with DPD and therfore it can be concluded that the DPD still works with one antenna connected to the amplifier. The model used for DPD is the model for the amplifier only.     
+Where $d$ is distance between the antennas, $f$ is the center frequency, $c=3.0e8$ is the speed of light and $G_t$ $G_r$ is the gain of the transmitting antenna and receiving antenna respectively \citep{Balanis2005}. In order to compensate for the loss and to drive the spectrum analyser in the same power level as in the former measurement, the attenuator has been reduced to 6dB. It is seen from figure \ref{fig:meas_amp2_amam} that the gain now is close to 10dB which is not exact the same as before but close. The error is caused by the compensation for the free space loss that is not fully correct. The distortion seen in figure \ref{fig:meas_amp2_PSD} is lowered with DPD and therfore it can be concluded that the DPD still works with one antenna connected to the amplifier. The model used for DPD is the model for the amplifier only. In next section the antennas are taken into account before the DPD.      
 
 
 \begin{figure}[H]
 \centering 
-\includegraphics[scale = 0.06]{figures/measurement/cree/meas2/meas2.jpg}
+\includegraphics[scale = 0.08]{figures/measurement/cree/meas2/meas2.jpg}
 \caption{Picture of the mesurement setup for one amplifier with one Tx and one Rx antenna }
 \label{fig:meas_amp2_pic}
 \end{figure}
@@ -100,7 +108,7 @@ Where $d$ is distance between the antennas, $f$ is the center frequency, $c=3.0e
 \label{fig:meas_amp3}
 \end{figure}
 
-In this section it is measured if it has an impact if two amplifiers are connected to an antenna each, spaced at different distances. The measurement setup is depicted in figure \ref{fig:meas_amp3}. Since the extra amplifier and antenna will introduce 3dB more power, 3dB is added to the attenuator to ensure the same power level at the input to the spectrum analyzer. The measurements has all been done at the same powerlevel but the distances of the antennas are varied from 0.1 wavelength to 0.6 in steps of 0.1. First a measurement of the system is done without DPD for all distances, where the measured signal is imported into MATLAB and an inverse signal is generated. This inverse signal is then uploaded to the signal generator and the new measurement is called "With sys DPD" for each distance. Then a meausrement with the inverse signal in the former section is applied for each distance and the measured signal is then called "With amp DPD".The results can be seen from figure \ref{fig:meas3_amam1} to \ref{fig:meas3_amam6}.   
+In this section it is measured if it has an impact if two amplifiers are connected to an antenna each, spaced at different distances. The measurement setup is depicted in figure \ref{fig:meas_amp3}. Since the extra amplifier and antenna will introduce 3dB more power, 3dB is added to the attenuator to ensure the same power level at the input to the spectrum analyzer. The measurements has all been done at the same powerlevel but the distances of the antennas are varied from 0.1 wavelength to 0.6 in steps of 0.1. First a measurement of the system is done without DPD for all distances, where the measured signal is imported into MATLAB and an inverse signal is generated. This inverse signal is then uploaded to the signal generator and the new measurement is called "With sys DPD" for each distance. Then a meausrement with the inverse signal from the former section is applied for each distance and the measured signal is then called "With amp DPD".The results can be seen from figure \ref{fig:meas3_amam1} to \ref{fig:meas3_amam6}.   
 
 
 \begin{figure}[H]
@@ -253,7 +261,7 @@ In this section it is measured if it has an impact if two amplifiers are connect
 \label{fig:meas2_dpd}
 \end{figure}
 
-From the AM/AM plots it can be seen that when doing DPD with only the model for the amplifier taken into account,  there are lots of non-linearity about 22-27dBm input. When treating the amplifiers with antennas as one model the AM/AM linearity is improved but it seems that the DPD algorithm tends to overcompensate at high power values. From the PSD plots it is seen that the ACPR is decreased when treating the setup as one model. This can also be seen in figure \ref{fig:meas2_dpd} where the ACPR is shown for the diffrent distances. It is seen that the ACPR changes due to the distance between the antennas. This is caused by the gain difference in the antenna array, where the highest gain is at $0.5\lambda$ which then has the lowest ACPR. The antenna measurement is presented in section \ref{ch:ant_meas}.    
+From the AM/AM plots it can be seen that when doing DPD with only the model for the amplifier taken into account,  there are lots of non-linearity about 22-27dBm input. When treating the amplifiers with antennas as one model the AM/AM linearity is improved but it seems that the DPD algorithm tends to overcompensate at high power values. From the PSD plots it is seen that the ACPR is decreased when treating the setup as one model. This can also be seen in figure \ref{fig:meas2_dpd} where the ACPR is shown for the diffrent distances. It is seen that the ACPR nearly is a constant value and only small variations is seen. The small variations could be caused by the gain difference in the antenna array, where the highest gain is at $0.5\lambda$ which then has the lowest ACPR for the ''Amp DPD''. The antenna measurement is presented in section \ref{ch:ant_meas}.    
 
 
 
@@ -262,7 +270,7 @@ From the AM/AM plots it can be seen that when doing DPD with only the model for 
 
 \section{Four amplifiers four antennas}
 
-In this section measurement is done at four amplifiers and four antennas. The setup for the measurement is the same as in figure \ref{fig:meas_amp2} but with four amplifier chains instead of two. The results are shown in figure \ref{fig:meas_amp4} to \ref{fig:meas4_amam6_3}.
+In this section measurement is done at four amplifiers and four antennas. The setup for the measurement is the same as in figure \ref{fig:meas_amp2} but with four amplifier branches instead of two. The results are shown in figure \ref{fig:meas_amp4} to \ref{fig:meas4_amam6_3}.
 
 \begin{figure}[H]
 \centering 
@@ -421,13 +429,13 @@ It can be seen from figure \ref{fig:meas4_amam1} to \ref{fig:meas4_dpd} that it 
   \centering
   \begin{minipage}[b]{0.5\textwidth}
 	\includegraphics[scale = 0.5]{figures/measurement/cree/meas4/PSD_dif.png}
-	\caption{PSD of measurement where the DPD model is obtained at 0.6$\lambda$ but is also used at other distances}	
+	\caption{PSD of measurement where the DPD model is obtained at 0.5$\lambda$ but is also used at other distances}	
     \label{fig:meas4_amam5_4}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.4\textwidth}
 	\includegraphics[scale = 0.5]{figures/measurement/cree/meas4/ACPR_dif.png}
-	\caption{ACPR of measurement where the DPD model is obtained at 0.6$\lambda$ but is also used at other distances}
+	\caption{ACPR of measurement where the DPD model is obtained at 0.5$\lambda$ but is also used at other distances}
     \label{fig:meas4_amam6_4}
   \end{minipage}
 \end{figure}
@@ -438,7 +446,7 @@ It can be seen from figure \ref{fig:meas4_amam1} to \ref{fig:meas4_dpd} that it 
 
 
 \section{Two amplifiers different current}
-In the former measurement the drain current for each amplifier has been ajusted to 100mA by tuning the gate voltage, to ensure same working conditions for all four amplifiers. In this section is is measured if it has any impact that the current is different. First all four amplifiers is connected to the same gate voltage and the current is measured in each amplifier. The two amplifiers with the largest difference is then used for these measurement. The results are shown in figure \ref{fig:meas5_1} to \ref{fig:meas5_9} which shows that when the gate voltage is ajusted the performance of the amplifiers changes. This is seen at the AM/AM plots where a difference clearly is seen. This is also why DPD with only considering one amplifier as a model not can be used for multiple amplifiers if the current is different. The results shows thou that if the amplifiers with antennas are treated as a hole, then the DPD algorithm works well and therefore a different bias current is not a huge problem when doing so.
+In the former measurement the drain current for each amplifier has been ajusted to 100mA by tuning the gate voltage, to ensure same working conditions for all four amplifiers. In this section it is measured if it has any impact that the current is different. First all four amplifiers is connected to the same gate voltage and the current is measured in each amplifier. The two amplifiers with the largest difference is then used for these measurement. The results are shown in figure \ref{fig:meas5_1} to \ref{fig:meas5_9} which shows that when the gate voltage is ajusted the performance of the amplifiers changes. This is seen at the AM/AM plots where a difference clearly is seen. This is also why DPD with only considering one amplifier as a model not can be used for multiple amplifiers if the current is different. The results shows thou that if the amplifiers with antennas are treated as a hole, then the DPD algorithm works well and therefore a different bias current is not a huge problem when doing so.
 
 
 \begin{figure}[H]

@@ -1,6 +1,4 @@
-\chapter{Basic Theory}\label{ch:1}
-
-In this section, some basic theory is given to provide the reader with a basic understanding of the measurement that has been performed in section 4. 
+\chapter{Basic Theory}\label{ch:2}
 
 \section{Non-linearity}
 
@@ -11,7 +9,7 @@ In this section, some basic theory is given to provide the reader with a basic u
 \label{fig:amp_lin}
 \end{figure} 
 
-An ideal power amplifier has an linear response over all frequencies and input power. This is depicted in \ref{fig:amp_lin} as Linear response. Unfortunately this is not true and therefore a measurement of a power amplifier has been done. The measurement shows that the amplifier at some level can be assumed linear, but at a point the amplifier will saturate due to the supply voltage and the gain will compress. The point where there is 1dB from the linear response to the real response is called the 1dB compression point (P1dB) which is also depicted in the figure. The non-linear gain response causes a distortion at the output which can be described by equation \ref{eq:dest} \citep{NI}. If a input-signal using two tones is considered then there will be a difference and a sum of the frequencies presented at the output which is caused by the cubic term in equation \ref{eq:dest2}.
+An ideal power amplifier has an linear response over all frequencies and input power. This is depicted in \ref{fig:amp_lin} as Linear response. Unfortunately this is not true and therefore a measurement of a power amplifier has been done. The measurement shows that the amplifier at some level can be assumed linear, but at a point the amplifier will saturate due to the supply voltage and the gain will compress. The point where there is 1dB from the linear response to the real response is called the 1dB compression point (P1dB) which is also depicted in  figure \ref{fig_amp_lin}. The non-linear gain response causes a distortion at the output which can be described by equation \ref{eq:dest} \citep{NI}. If a input-signal using two tones is considered then there will be a difference and a sum of the frequencies presented at the output which is caused by the cubic term in equation \ref{eq:dest2}.
 
 \begin{equation} \label{eq:dest}
 V_{out} = a_0 + a_1 V_{in} + a_2 V_{in}^2 + a_3 V_{in}^3 + a_4 V_{in}^4 + ... 
@@ -27,7 +25,7 @@ V_{in} = sin(\omega_1 t) + sin(\omega_2 t)
 V_{out} = a_0 + a_1 (sin(\omega_1 t) + sin(\omega_2 t)) + a_2 (sin(\omega_1 t) + sin(\omega_2 t))^2 + a_3 (sin(\omega_1 t) + sin(\omega_2 t))^3 + ... 
 \end{equation}
 
-This is also called Two-Tone Third-Order Intermodulation Distortion and is also depicted in figure \ref{fig:amp_lin} as 3rd order distortion with a slope of 3:1. It can bee seen that when the output power increases then the 3rd order distortion increases 3 times. A measurement of this is called the third-order-intercept-point (IP3 or TOI). However, the intercept point it not directly measurable since the amplifier reaches compression way before. It can bee seen from figure \ref{fig:amp_psd} that the distorted component are spaced too close in frequency to be effectively filtered. This will cause distortion into nearby channels and is measured as Adjacent Chennel Power Ratio (ACPR).
+This is also called Two-Tone Third-Order Intermodulation Distortion and is also depicted in figure \ref{fig:amp_lin} as 3rd order distortion with a slope of 3:1. It can bee seen that when the output power increases then the 3rd order distortion increases 3 times. A measurement of this is called the third-order-intercept-point (IP3 or TOI). However, the intercept point it not directly measurable since the amplifier reaches compression way before. It can bee seen from figure \ref{fig:amp_psd} that the distorted component are spaced too close in frequency to be effectively filtered. This will cause distortion into nearby channels and is measured as Adjacent Channel Power Ratio (ACPR).
 
 \begin{figure}[H]
 \centering 
@@ -67,12 +65,12 @@ Another measure of the error is the Error Vector Measurement (EVM) or  Relative 
 	EVM = \frac{P_{error}}{P_{reference}} = \frac{E[|z(t)-x(t)|^2]}{E[|x(t)^2|]}
 \end{equation}  
  
-\begin{figure}[H]
-\centering 
-\includegraphics[scale = 0.5]{figures/ch1/ads_nonlin_dest.png}
-\caption{Destortion simulated in ADS, where blue is input-signal and red is output-signal. The simulation is made with a single amplifier connected to a $50\Omega$ resistor. It is clearly that the output-signal is distorted. The ACPR becomes -45dB with a BW at 10MHZ}
-\label{fig:pre_cons}
-\end{figure}
+%\begin{figure}[H]
+%\centering 
+%\includegraphics[scale = 0.5]{figures/ch1/ads_nonlin_dest.png}
+%\caption{Destortion simulated in ADS, where blue is input-signal and red is output-signal. The simulation is made %with a single amplifier connected to a $50\Omega$ resistor. It is clearly that the output-signal is distorted. The %ACPR becomes -45dB with a BW at 10MHZ}
+%\label{fig:pre_cons}
+%\end{figure}
 
 
 \section{AM/AM and AM/PM distortion}
@@ -82,9 +80,9 @@ If the input signal to the PA is modelled as equation \ref{eq:amam1}
 x(t) = a(t)e^{j\phi(t)}
 \end{equation}
 
-Where $a(t)$ is the envelope of the signal and $e^{j\phi(t)}$ is the phase of the input signal. Then the distorted output of the amplifier will be that of equation \ref{eq:amam1} where $g(t)$ is the amplitude distortion and $f(t)$ is the phase distortion also called Amplitude to Amplitude (AM/AM) and Amplitude to Phase (AM/PM) distortion. AM/AM distortion can be defined as the deviation from the constant gain when PA is
+Where $a(t)$ is the envelope of the signal and $e^{j\phi(t)}$ is the phase of the input signal. Then the distorted output of the amplifier will be that of equation \ref{eq:amam2} where $g(t)$ is the amplitude distortion and $f(t)$ is the phase distortion also called Amplitude to Amplitude (AM/AM) and Amplitude to Phase (AM/PM) distortion. AM/AM distortion can be defined as the deviation from the constant gain when PA is
 operated in compression region. On the other hand, the increased phase change at compression
-region can be termed as AM/PM distortion.In presence of wideband signals having non constant amplitude, PA behaves as nonlinear system and exhibits two types of non-linearities which is static distortion and memory effects.  
+region can be termed as AM/PM distortion.In presence of wideband signals having non constant amplitude, PA behaves as nonlinear system and exhibits two types of non-linearities \citep{guo2015} which is static distortion and memory effects.  
 
 \begin{equation}\label{eq:amam2}
 y(t) = g(a(t))e^{j\phi(t)+f(a(t))}
@@ -100,7 +98,7 @@ y(t) = g(a(t))e^{j\phi(t)+f(a(t))}
 \end{figure}
 
 
-In modern communication systems, the input power to the PA may be adjusted corresponding to the needs by the network. This makes a suddenly increase or decrease in the power as depicted in figure \ref{fig:mem_amp} which makes the PA work in the transient stage \citep{guo2015} \citep{liu2007}. The transient stage is where the power suddenly increases or decreases to another mean power, whereas the steady state is when the PA operates under stable conditions where the mean power is constant. When the PA is operated in steady state under a high mean power, the amplifier will begin to dissipate heat. This will cause the internal transistors to operate under a hot state where the characteristic of the transistors will change due to a colder state. If the mean power suddenly is decreased the amplifier will still be hot, but with time the amplifier will cool down and the characteristic will change. This can be called slow memory effects whereas fast memory effects is when the amplifier is driven in its steady state and the parasitics of the components distort the signal. Also antennas at the output of the amplifier has an important role specially if several antennas are connected to form an array. The electrical field will couple to each other and cause fields that will affect the memory effects in the system. 
+In modern communication systems, the input power to the PA may be adjusted corresponding to the needs by the network. This makes a suddenly increase or decrease in the power as depicted in figure \ref{fig:mem_amp} which makes the PA work in the transient stage \citep{liu2007}. The transient stage is where the power suddenly increases or decreases to another mean power, whereas the steady state is when the PA operates under stable conditions where the mean power is constant. When the PA is operated in steady state under a high mean power, the amplifier will begin to dissipate heat. This will cause the internal transistors to operate under a hot state where the characteristic of the transistors will change due to a colder state. If the mean power suddenly is decreased the amplifier will still be hot, but with time the amplifier will cool down and the characteristic will change. This can be called slow memory effects whereas fast memory effects is when the amplifier is driven in its steady state and the parasitics of the components distort the signal. Also antennas at the output of the amplifier has an important role specially if several antennas are connected to form an array. The electrical field will couple to each other and cause fields that will affect the memory effects in the system. 
 
 
 \section{Efficiency}
@@ -170,17 +168,17 @@ A = -2Re(S_{12}^*(1-S_{11}))
 B = |1-S_{11}|^2 + |S_{12}|^2
 \end{equation}
 
-
+Because of the correlation factor all the measurements in this report will be done with an Tx antenna spacing at $d = [0.1 \ 0.2 \ 0.3 \ 0.4 \ 0.5 \ 0.6]^T \lambda$. It is assumed that for most of the cases an antenna array is spaced with $0.5\lambda$ between the elements. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Array factor}
-When several antennas are spaced relatively close to each other it is called an antenna array. If the antennas are isotopic and are spaced with a quarter wavelength then the array will radiate twice the energy in the direction perpendicular to the array, thou the gain along the array will become zero. A mathematical expression of this is called the array factor (AF).
+When several antennas are spaced relatively close to each other it is called an antenna array. If the antennas are isotopic and are spaced with a half wavelength then the array will radiate twice the energy in the direction perpendicular to the array, thou the gain along the array will become zero. A mathematical expression of this is called the array factor (AF).
 
 \begin{equation}
 AF = \sum_{n=1}^{N} e^{(n J 2\pi d \cos(\alpha)+JB(n))}
 \end{equation}
 
-Where N is number of antennas in the array, d is the distance between the antennas, $\alpha$ is the azimuth angle from $0..2\pi$ and B is the feeding phase of a single antenna. In figure \ref{fig:af_2ant} and \ref{fig:af_4ant} the array factor for 2 and 4 antennas spaced $[0.1, 0.2, 0.3, 0.4, 0.5, 0.6]\lambda$ are plotted respectively. It is seen that the energy doubles in the $90^\circ$ for all distances in figure \ref{fig:af_2ant} while it becomes 4 times greater in figure \ref{fig:af_4ant}.   
+Where N is number of antennas in the array, d is the distance between the antennas, $\alpha$ is the azimuth angle from $0..2\pi$ and B is the feeding phase of a single antenna. In figure \ref{fig:af_2ant} and \ref{fig:af_4ant} the array factor for 2 and 4 antennas spaced  $d = [0.1 \ 0.2 \ 0.3 \ 0.4 \ 0.5 \ 0.6]^T \lambda$ are plotted respectively. It is seen that the energy doubles in the $90^\circ$ for all distances in figure \ref{fig:af_2ant} while it becomes 4 times greater in figure \ref{fig:af_4ant}. This seems also to correspond with the meausrement in chapter \ref{ch:ant_meas}.   
 
 
 \begin{figure}[H]

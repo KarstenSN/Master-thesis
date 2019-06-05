@@ -1,4 +1,4 @@
-\chapter{Amplifier modelling}
+\chapter{Amplifier modelling}\label{ch:3}
 
 \section{Pre-distortion}
 
@@ -9,7 +9,7 @@
 \label{fig:pre_cons}
 \end{figure}
 
-In figure \ref{fig:pre_cons} the consept of Digital Pre-Distortion (DPD) is depicted. DPD is a way to "distort" the incomming signal with the inverse transfer-function of the amplifier. For example the gain of the amplifier is ideally linear in the small-signal region and gets non-linear at higher signal levels. To overcome this, a block called the predistorter inverses this non-linear curve which is the exact inverse of the PA, then a linear amplification can be achieved at the final PA output. But to archive this inverse of the PA all the non-linear effects has to be accounted for including memory effects. 
+In figure \ref{fig:pre_cons} the consept of Digital Pre-Distortion (DPD) is depicted. DPD is a way to "distort" the incomming signal with the inverse transfer-function of the amplifier. For example the gain of the amplifier is ideally linear in the small-signal region and gets non-linear at higher signal levels. To overcome this, a block called the predistorter inverses this non-linear curve which is the exact inverse of the PA, then a linear amplification can be achieved at the final PA output. But to archive this inverse of the PA all the non-linear effects has to be accounted for including memory effects. To do that several models has been proposed \citep{morgan2006}.
 
 \section{DPD models}
 
@@ -133,8 +133,7 @@ In figure \ref{fig:dpd_amam} a AM/AM plot is depicted of measurements done at an
 
 
 \section{Crosstalk}
-Crosstalk is coupling from one branch to another branch. When only a signal is present on a single branch, no crosstalk would appear to this branch. On the other hand if a signal is presented at two branches then crosstalk would appear to both of them. There exist three types of crosstalk which is: Crosstalk before the PA's, see figure \ref{fig:cross_bf}, Crosstalk after the PA's, see figure \ref{fig:cross_af} and Crosstalk on the antennas and mishmash due to coupling. Crosstalk before the PA is also called nonlinear since it is amplified by the non linear PA. The nonlinear crosstalk and the PA nonlinear response should be jointly
-compensated by a predistorter to get a reliable system performance \citep{islam2017} denoted $\mu_k (.)$. The output from the branches would become that of equation \ref{eq:nonlin}.
+Crosstalk is coupling from one branch to another branch. When only a signal is present on a single branch, no crosstalk would appear to this branch. On the other hand if a signal is presented at two branches then crosstalk would appear to both of them. There exist three types of crosstalk which is: Crosstalk before the PA's, see figure \ref{fig:cross_bf}, Crosstalk after the PA's, see figure \ref{fig:cross_af} and Crosstalk on the antennas and mishmash due to coupling. Crosstalk before the PA is also called nonlinear since it is amplified by the non linear PA. It is is shown in \citep{islam2017} that the nonlinear crosstalk can be modelled as a pre-distorter denoted $\mu_k (.)$. The output from the PAs would become that of equation \ref{eq:nonlin}.
 
 \begin{equation} \label{eq:nonlin}
 Y_{1k} = fk(uk(X_{11},X_{12},X_{13},X_{1k}))
@@ -167,7 +166,7 @@ When no isolators is presented the output will now be affected by the crosstalk 
 and the output signals $b_{2k}$ is determined by the characteristics
 of the antenna arrays S-parameters. The system model of the multi-antenna
 transmitter can, therefore, be split in to a crosstalk and
-mismatch model (CTMM). This block can further be used together with a dual-input-DPD which holds the model for the PA, see figure \ref{fig:cross_ctmm}. 
+mismatch model (CTMM). This block can further be used together with a dual-input-DPD which holds the model for the PA, to linearise the PA. See figure \ref{fig:cross_ctmm}. 
 
 
 \begin{figure}[H]
@@ -192,7 +191,7 @@ The CTMM describe the crosstalk and mishmash signals $a_{2k}$ as a function of t
  a_{2k} = \sum_{i=1}^{K} \lambda_{ki} b_{2i} = \boldsymbol{b}_2^T \boldsymbol{\lambda}_k
 \end{equation}
 
-Where $\boldsymbol{b}_2 = [b_{21},...,b_{2K}]^T$ are complex coefficients describing the input to the antenna and $\boldsymbol{\lambda}_k = [\lambda_{k1},...,\lambda_{kK}]^T$ are complex coefficients describing the reflection from the antenna, which also corresponds to S-parameters. The Dual-Input PA Model is then a function of the signals $a_{1k}$ and $a_{2k}$ which becomes a lengthy equation that is not further described here. The model can thou be found in \citep{Hausmair2017}. Its has been found that the approach is capable of reducing the ACPR of a measurement setup using 4-Tx antennas from -36.3dB to -50.7dB which is nearly distortion free. The problem with the model is thou that the S-parameters for the antennas has to be known and that the method needs feedback from each amplifier. This is a large problem if several amplifiers is used since it will increase complexity in the layout and also if the S-parameters cannot be measured it introduces an other problem. A solution to this problem can be to treat the amplifiers with antennas as one system and then do the DPD at the receiver side as depicted in figure \ref{fig:dpd_pdpd}. In order to make this configuration to work, the transmitter side has to send a pilot sequence to the receiver that is known for the receiver. Then the receiver can obtain the coefficients for the DPD algorithm and then do the estimation of the signal it self or it can transmit the DPD coefficients to the transmitter. The benefits with this approach is that also the channel is taken into account. Another problem that can be omitted with this approach is that when doing DPD in the conventional way, the amplifier has to act identical to the pre distorted signal that it did to the non-distorted which not always come true.  
+Where $\boldsymbol{b}_2 = [b_{21},...,b_{2K}]^T$ are complex coefficients describing the input to the antenna and $\boldsymbol{\lambda}_k = [\lambda_{k1},...,\lambda_{kK}]^T$ are complex coefficients describing the reflection from the antenna, which also corresponds to S-parameters. The Dual-Input PA Model is then a function of the signals $a_{1k}$ and $a_{2k}$ which becomes a lengthy equation that is not further described here. The model can thou be found in \citep{Hausmair2017}. Its has been found that the approach is capable of reducing the ACPR of a measurement setup using 4-Tx antennas from -36.3dB to -50.7dB which is nearly distortion free. The problem with the model is thou that the S-parameters for the antennas has to be known and that the method needs feedback from each amplifier. This is a large problem if several amplifiers is used since it will increase complexity in the layout and also if the S-parameters cannot be measured it introduces an other problem. A solution to this problem can be to treat the amplifiers with antennas as one system and then do the DPD at the receiver side as depicted in figure \ref{fig:dpd_pdpd}. In order to make this configuration to work, the transmitter side has to send a pilot sequence to the receiver that is known for the receiver. Then the receiver can obtain the coefficients for the DPD algorithm and then do the estimation of the signal it self or it can transmit the DPD coefficients to the transmitter. The benefits with this approach is that also the channel is taken into account. Another problem that can be omitted with this approach is that when doing DPD in the conventional way, the amplifier has to act identical to the pre distorted signal that it did to the non-distorted which not always come true.
 
  
 \begin{figure}[H]
@@ -202,7 +201,7 @@ Where $\boldsymbol{b}_2 = [b_{21},...,b_{2K}]^T$ are complex coefficients descri
 \label{fig:dpd_pdpd}
 \end{figure}
 
-
+To prove that this method could work is is necessary to make measurements at a setup with several PAs with antennas. If it is possible to measure a non predistorted signal with a receiver antenna connected to a spectrum analyser, import this signal into MATLAB and obtain a DPD model, generate a predistorted signal, send the predistorted signal to the amplifiers and measure a signal with no or little distortion at the Rx antanna. Then it is most likely that the method could work.    
 
 
 

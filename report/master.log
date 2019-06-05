@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.10)  31 MAY 2019 13:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.10)  5 JUN 2019 12:08
 entering extended mode
 **./master.tex
 (master.tex
@@ -1142,7 +1142,7 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 166.
 \c@exa=\count158
 ) (master.aux
 
-LaTeX Warning: Label `fig:pre_cons' multiply defined.
+LaTeX Warning: Label `fig:meas_amp' multiply defined.
 
 
 LaTeX Warning: Label `fig:meas5_1' multiply defined.
@@ -1383,7 +1383,8 @@ Package babel Info: Redefining danish shorthand "~
 \tf@toc=\write5
 \openout5 = `master.toc'.
 
- [7
+ (sections/preface.tex
+[7
 
 ]
 
@@ -1394,11 +1395,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [8
 
-] (master.tdo)
-\tf@tdo=\write6
-\openout6 = `master.tdo'.
-
- (sections/preface.tex [9]
+]) [9]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1406,15 +1403,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [10
-
-]) [11]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[12
 
 ] (sections/introduction.tex
 Chapter 1.
@@ -1436,14 +1424,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 Chapter 2.
-<figures/ch1/amp_lin.png, id=233, 415.43205pt x 284.5029pt>
+<figures/ch1/amp_lin.png, id=229, 415.43205pt x 284.5029pt>
 File: figures/ch1/amp_lin.png Graphic file (type png)
 
 <use figures/ch1/amp_lin.png>
-Package pdftex.def Info: figures/ch1/amp_lin.png used on input line 9.
+Package pdftex.def Info: figures/ch1/amp_lin.png used on input line 7.
 (pdftex.def)             Requested size: 332.34608pt x 227.60262pt.
- [3 <./figures/ch1/amp_lin.png (PNG copy)>]
-Overfull \hbox (15.43762pt too wide) detected at line 28
+
+
+LaTeX Warning: Reference `fig_amp_lin' on page 3 undefined on input line 12.
+
+[3 <./figures/ch1/amp_lin.png (PNG copy)>]
+Overfull \hbox (15.43762pt too wide) detected at line 26
 []\OML/lmm/m/it/10.95 V[] \OT1/lmr/m/n/10.95 = \OML/lmm/m/it/10.95 a[] \OT1/lmr
 /m/n/10.95 + \OML/lmm/m/it/10.95 a[]\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 sin
 \OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 ![]t\OT1/lmr/m/n/10.95 ) + \OML/lmm/m/i
@@ -1461,14 +1453,14 @@ it/10.95 a[]\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 sin\OT1/lmr/m/n/10.95 (\OML
 File: figures/ch1/amp_psd.png Graphic file (type png)
 
 <use figures/ch1/amp_psd.png>
-Package pdftex.def Info: figures/ch1/amp_psd.png used on input line 34.
+Package pdftex.def Info: figures/ch1/amp_psd.png used on input line 32.
 (pdftex.def)             Requested size: 206.04337pt x 114.87839pt.
 
 <figures/ch1/acpr.png, id=248, 640.64343pt x 371.88937pt>
 File: figures/ch1/acpr.png Graphic file (type png)
 
 <use figures/ch1/acpr.png>
-Package pdftex.def Info: figures/ch1/acpr.png used on input line 44.
+Package pdftex.def Info: figures/ch1/acpr.png used on input line 42.
 (pdftex.def)             Requested size: 320.32092pt x 185.94423pt.
 
 
@@ -1478,11 +1470,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4 <./figures/ch1/amp_psd.png>]
-<figures/ch1/evm.png, id=270, 322.95656pt x 197.98969pt>
+<figures/ch1/evm.png, id=269, 322.95656pt x 197.98969pt>
 File: figures/ch1/evm.png Graphic file (type png)
 
 <use figures/ch1/evm.png>
-Package pdftex.def Info: figures/ch1/evm.png used on input line 59.
+Package pdftex.def Info: figures/ch1/evm.png used on input line 57.
 (pdftex.def)             Requested size: 258.36559pt x 158.39195pt.
 
 
@@ -1492,30 +1484,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [5 <./figures/ch1/acpr.png>]
-<figures/ch1/ads_nonlin_dest.png, id=280, 495.35063pt x 354.57469pt>
-File: figures/ch1/ads_nonlin_dest.png Graphic file (type png)
-
-<use figures/ch1/ads_nonlin_dest.png>
-Package pdftex.def Info: figures/ch1/ads_nonlin_dest.png used on input line 72.
-
-(pdftex.def)             Requested size: 247.67471pt x 177.28691pt.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 73.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 73.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[6 <./figures/ch1/evm.png> <./figures/ch1/ads_nonlin_dest.png>]
-<figures/ch1/amplitude.png, id=292, 415.43205pt x 284.5029pt>
+<figures/ch1/amplitude.png, id=283, 415.43205pt x 284.5029pt>
 File: figures/ch1/amplitude.png Graphic file (type png)
 
 <use figures/ch1/amplitude.png>
-Package pdftex.def Info: figures/ch1/amplitude.png used on input line 97.
+Package pdftex.def Info: figures/ch1/amplitude.png used on input line 95.
 (pdftex.def)             Requested size: 290.80045pt x 199.15067pt.
 
 
@@ -1524,12 +1497,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
+[6 <./figures/ch1/evm.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [7 <./figures/ch1/amplitude.png (PNG copy)>]
-<figures/ch1/mimo.png, id=310, 582.67688pt x 359.84438pt>
+<figures/ch1/mimo.png, id=306, 582.67688pt x 359.84438pt>
 File: figures/ch1/mimo.png Graphic file (type png)
 
 <use figures/ch1/mimo.png>
-Package pdftex.def Info: figures/ch1/mimo.png used on input line 126.
+Package pdftex.def Info: figures/ch1/mimo.png used on input line 124.
 (pdftex.def)             Requested size: 233.06662pt x 143.9352pt.
 
 
@@ -1539,11 +1519,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8 <./figures/ch1/mimo.png>]
-<figures/ch1/correlation.png, id=332, 415.43205pt x 284.5029pt>
+<figures/ch1/correlation.png, id=330, 415.43205pt x 284.5029pt>
 File: figures/ch1/correlation.png Graphic file (type png)
 
 <use figures/ch1/correlation.png>
-Package pdftex.def Info: figures/ch1/correlation.png used on input line 154.
+Package pdftex.def Info: figures/ch1/correlation.png used on input line 152.
 (pdftex.def)             Requested size: 290.80045pt x 199.15067pt.
 
 
@@ -1552,37 +1532,38 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9] <figures/measurement/af_2ant.png, id=350, 415.43205pt x 284.5029pt>
+[9 <./figures/ch1/correlation.png (PNG copy)>]
+<figures/measurement/af_2ant.png, id=350, 415.43205pt x 284.5029pt>
 File: figures/measurement/af_2ant.png Graphic file (type png)
 
 <use figures/measurement/af_2ant.png>
-Package pdftex.def Info: figures/measurement/af_2ant.png used on input line 188
+Package pdftex.def Info: figures/measurement/af_2ant.png used on input line 186
 .
 (pdftex.def)             Requested size: 290.80045pt x 199.15067pt.
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[10 <./figures/ch1/correlation.png (PNG copy)>]
-<figures/measurement/af_4ant.png, id=362, 415.43205pt x 284.5029pt>
+<figures/measurement/af_4ant.png, id=351, 415.43205pt x 284.5029pt>
 File: figures/measurement/af_4ant.png Graphic file (type png)
 
 <use figures/measurement/af_4ant.png>
-Package pdftex.def Info: figures/measurement/af_4ant.png used on input line 196
+Package pdftex.def Info: figures/measurement/af_4ant.png used on input line 194
 .
 (pdftex.def)             Requested size: 290.80045pt x 199.15067pt.
-) (sections/predistortion_3.tex
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11 <./figures/measurement/af_2ant.png (PNG copy)> <./figures/measurement/af_4a
-nt.png (PNG copy)>]
+[10 <./figures/measurement/af_2ant.png (PNG copy)>])
+(sections/predistortion_3.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11 <./figures/measurement/af_4ant.png (PNG copy)>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1593,7 +1574,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 Chapter 3.
-<figures/ch1/predistortion_consept.png, id=371, 407.27156pt x 165.61874pt>
+<figures/ch1/predistortion_consept.png, id=368, 407.27156pt x 165.61874pt>
 File: figures/ch1/predistortion_consept.png Graphic file (type png)
 
 <use figures/ch1/predistortion_consept.png>
@@ -1670,10 +1651,10 @@ File: figures/ch1/crosstalk_before.png Graphic file (type png)
 
 <use figures/ch1/crosstalk_before.png>
 Package pdftex.def Info: figures/ch1/crosstalk_before.png used on input line 14
-8.
+7.
 (pdftex.def)             Requested size: 226.59601pt x 196.48357pt.
 
-Overfull \hbox (26.00407pt too wide) in paragraph at lines 148--149
+Overfull \hbox (26.00407pt too wide) in paragraph at lines 147--148
 [][] 
  []
 
@@ -1681,11 +1662,11 @@ Overfull \hbox (26.00407pt too wide) in paragraph at lines 148--149
 File: figures/ch1/crosstalk_after.png Graphic file (type png)
 
 <use figures/ch1/crosstalk_after.png>
-Package pdftex.def Info: figures/ch1/crosstalk_after.png used on input line 154
+Package pdftex.def Info: figures/ch1/crosstalk_after.png used on input line 153
 .
 (pdftex.def)             Requested size: 196.85999pt x 180.29814pt.
 
-Overfull \hbox (36.3889pt too wide) in paragraph at lines 154--155
+Overfull \hbox (36.3889pt too wide) in paragraph at lines 153--154
 [][] 
  []
 
@@ -1694,18 +1675,18 @@ File: figures/ch1/crosstalk_antenna.png Graphic file (type png)
 
 <use figures/ch1/crosstalk_antenna.png>
 Package pdftex.def Info: figures/ch1/crosstalk_antenna.png used on input line 1
-76.
+75.
 (pdftex.def)             Requested size: 154.32617pt x 144.91605pt.
 
 <figures/ch1/crosstalk_ctmm.png, id=474, 381.67593pt x 289.08pt>
 File: figures/ch1/crosstalk_ctmm.png Graphic file (type png)
 
 <use figures/ch1/crosstalk_ctmm.png>
-Package pdftex.def Info: figures/ch1/crosstalk_ctmm.png used on input line 182.
+Package pdftex.def Info: figures/ch1/crosstalk_ctmm.png used on input line 181.
 
 (pdftex.def)             Requested size: 190.8375pt x 144.53964pt.
 
-Overfull \hbox (30.36641pt too wide) in paragraph at lines 182--184
+Overfull \hbox (30.36641pt too wide) in paragraph at lines 181--183
 [][] 
  []
 
@@ -1720,7 +1701,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: figures/ch1/postDPD.pdf Graphic file (type pdf)
 
 <use figures/ch1/postDPD.pdf>
-Package pdftex.def Info: figures/ch1/postDPD.pdf used on input line 200.
+Package pdftex.def Info: figures/ch1/postDPD.pdf used on input line 199.
 (pdftex.def)             Requested size: 345.0146pt x 161.54643pt.
 
 
@@ -1744,25 +1725,31 @@ id other resource which is no dict (key 'ProcSets', type <array>); ignored.
 >]
 Chapter 4.
 
-<figures/measurement/cree/meas1/meas_set_1.pdf, id=520, 463.7325pt x 59.2614pt>
+<figures/measurement/cree/meas1/meas_set_1.pdf, id=519, 463.7325pt x 59.2614pt>
 File: figures/measurement/cree/meas1/meas_set_1.pdf Graphic file (type pdf)
 <use figures/measurement/cree/meas1/meas_set_1.pdf>
 Package pdftex.def Info: figures/measurement/cree/meas1/meas_set_1.pdf used on 
-input line 12.
+input line 11.
 (pdftex.def)             Requested size: 417.35538pt x 53.33473pt.
 
-Overfull \hbox (16.17151pt too wide) in paragraph at lines 12--13
+Overfull \hbox (16.17151pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-<figures/measurement/cree/meas1/meas_set_1.jpg, id=521, 3131.7pt x 4175.6pt>
-File: figures/measurement/cree/meas1/meas_set_1.jpg Graphic file (type jpg)
 
-<use figures/measurement/cree/meas1/meas_set_1.jpg>
-Package pdftex.def Info: figures/measurement/cree/meas1/meas_set_1.jpg used on 
-input line 19.
-(pdftex.def)             Requested size: 187.89389pt x 250.52519pt.
- [21
+<figures/measurement/cree/cree_schematic.png, id=520, 1034.36438pt x 610.53094p
+t>
+File: figures/measurement/cree/cree_schematic.png Graphic file (type png)
+ <use figures/measurement/cree/cree_schematic.png>
+Package pdftex.def Info: figures/measurement/cree/cree_schematic.png used on in
+put line 19.
+(pdftex.def)             Requested size: 413.73842pt x 244.20804pt.
+
+Overfull \hbox (12.55455pt too wide) in paragraph at lines 19--20
+ [][] 
+ []
+
+[21
 
  <./figures/measurement/cree/meas1/meas_set_1.pdf
 
@@ -1770,12 +1757,20 @@ pdfTeX warning: pdflatex (file ./figures/measurement/cree/meas1/meas_set_1.pdf)
 : PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type 
 <array>); ignored.
 >]
-<figures/measurement/cree/meas1/gainResponse.png, id=537, 415.43205pt x 284.502
+<figures/measurement/cree/meas1/meas_set_1.jpg, id=542, 2348.775pt x 3131.7pt>
+File: figures/measurement/cree/meas1/meas_set_1.jpg Graphic file (type jpg)
+
+<use figures/measurement/cree/meas1/meas_set_1.jpg>
+Package pdftex.def Info: figures/measurement/cree/meas1/meas_set_1.jpg used on 
+input line 27.
+(pdftex.def)             Requested size: 140.92041pt x 187.89389pt.
+
+<figures/measurement/cree/meas1/gainResponse.png, id=544, 415.43205pt x 284.502
 9pt>
 File: figures/measurement/cree/meas1/gainResponse.png Graphic file (type png)
  <use figures/measurement/cree/meas1/gainResponse.png>
 Package pdftex.def Info: figures/measurement/cree/meas1/gainResponse.png used o
-n input line 29.
+n input line 37.
 (pdftex.def)             Requested size: 290.80045pt x 199.15067pt.
 
 
@@ -1784,22 +1779,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22 <./figures/measurement/cree/meas1/meas_set_1.jpg> <./figures/measurement/cr
-ee/meas1/gainResponse.png (PNG copy)>]
-<figures/measurement/cree/meas1/AMAM.png, id=547, 415.43205pt x 284.5029pt>
+[22 <./figures/measurement/cree/cree_schematic.png> <./figures/measurement/cree
+/meas1/meas_set_1.jpg>]
+<figures/measurement/cree/meas1/AMAM.png, id=556, 415.43205pt x 284.5029pt>
 File: figures/measurement/cree/meas1/AMAM.png Graphic file (type png)
 
 <use figures/measurement/cree/meas1/AMAM.png>
 Package pdftex.def Info: figures/measurement/cree/meas1/AMAM.png used on input 
-line 38.
+line 46.
 (pdftex.def)             Requested size: 290.80045pt x 199.15067pt.
 
-<figures/measurement/cree/meas1/PSD_1.png, id=548, 415.43205pt x 284.5029pt>
+<figures/measurement/cree/meas1/PSD_1.png, id=557, 415.43205pt x 284.5029pt>
 File: figures/measurement/cree/meas1/PSD_1.png Graphic file (type png)
 
 <use figures/measurement/cree/meas1/PSD_1.png>
 Package pdftex.def Info: figures/measurement/cree/meas1/PSD_1.png used on input
- line 46.
+ line 54.
 (pdftex.def)             Requested size: 290.80045pt x 199.15067pt.
 
 
@@ -1808,23 +1803,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23 <./figures/measurement/cree/meas1/AMAM.png (PNG copy)> <./figures/measureme
-nt/cree/meas1/PSD_1.png (PNG copy)>]
-<figures/measurement/cree/meas2/meas2.pdf, id=555, 384.47638pt x 138.5175pt>
+[23 <./figures/measurement/cree/meas1/gainResponse.png (PNG copy)> <./figures/m
+easurement/cree/meas1/AMAM.png (PNG copy)>]
+<figures/measurement/cree/meas2/meas2.pdf, id=564, 384.47638pt x 138.5175pt>
 File: figures/measurement/cree/meas2/meas2.pdf Graphic file (type pdf)
 
 <use figures/measurement/cree/meas2/meas2.pdf>
 Package pdftex.def Info: figures/measurement/cree/meas2/meas2.pdf used on input
- line 55.
+ line 63.
 (pdftex.def)             Requested size: 346.02554pt x 124.66458pt.
-
-<figures/measurement/cree/meas2/meas2.jpg, id=561, 4175.6pt x 3131.7pt>
-File: figures/measurement/cree/meas2/meas2.jpg Graphic file (type jpg)
-
-<use figures/measurement/cree/meas2/meas2.jpg>
-Package pdftex.def Info: figures/measurement/cree/meas2/meas2.jpg used on input
- line 70.
-(pdftex.def)             Requested size: 250.52519pt x 187.89389pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1832,25 +1819,34 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24 <./figures/measurement/cree/meas2/meas2.pdf
+[24 <./figures/measurement/cree/meas1/PSD_1.png (PNG copy)> <./figures/measurem
+ent/cree/meas2/meas2.pdf
 
 pdfTeX warning: pdflatex (file ./figures/measurement/cree/meas2/meas2.pdf): PDF
  inclusion: invalid other resource which is no dict (key 'ProcSets', type <arra
 y>); ignored.
->] <figures/measurement/cree/meas2/AMAM.png, id=580, 415.43205pt x 284.5029pt>
+>] <figures/measurement/cree/meas2/meas2.jpg, id=585, 3131.7pt x 2348.775pt>
+File: figures/measurement/cree/meas2/meas2.jpg Graphic file (type jpg)
+
+<use figures/measurement/cree/meas2/meas2.jpg>
+Package pdftex.def Info: figures/measurement/cree/meas2/meas2.jpg used on input
+ line 78.
+(pdftex.def)             Requested size: 250.54112pt x 187.90584pt.
+
+<figures/measurement/cree/meas2/AMAM.png, id=586, 415.43205pt x 284.5029pt>
 File: figures/measurement/cree/meas2/AMAM.png Graphic file (type png)
 
 <use figures/measurement/cree/meas2/AMAM.png>
 Package pdftex.def Info: figures/measurement/cree/meas2/AMAM.png used on input 
-line 79.
+line 87.
 (pdftex.def)             Requested size: 290.80045pt x 199.15067pt.
 
-<figures/measurement/cree/meas2/PSD.png, id=581, 415.43205pt x 284.5029pt>
+<figures/measurement/cree/meas2/PSD.png, id=587, 415.43205pt x 284.5029pt>
 File: figures/measurement/cree/meas2/PSD.png Graphic file (type png)
 
 <use figures/measurement/cree/meas2/PSD.png>
 Package pdftex.def Info: figures/measurement/cree/meas2/PSD.png used on input l
-ine 87.
+ine 95.
 (pdftex.def)             Requested size: 290.80045pt x 199.15067pt.
 
 
@@ -1861,15 +1857,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [25 <./figures/measurement/cree/meas2/meas2.jpg> <./figures/measurement/cree/me
 as2/AMAM.png (PNG copy)>]
-<figures/measurement/cree/meas3/meas3.pdf, id=588, 498.90388pt x 225.7233pt>
+<figures/measurement/cree/meas3/meas3.pdf, id=596, 498.90388pt x 225.7233pt>
 File: figures/measurement/cree/meas3/meas3.pdf Graphic file (type pdf)
 
 <use figures/measurement/cree/meas3/meas3.pdf>
 Package pdftex.def Info: figures/measurement/cree/meas3/meas3.pdf used on input
- line 98.
+ line 106.
 (pdftex.def)             Requested size: 449.00934pt x 203.14908pt.
 
-Overfull \hbox (47.82547pt too wide) in paragraph at lines 98--99
+Overfull \hbox (47.82547pt too wide) in paragraph at lines 106--107
  [][] 
  []
 
@@ -1885,64 +1881,68 @@ t/cree/meas3/meas3.pdf
 pdfTeX warning: pdflatex (file ./figures/measurement/cree/meas3/meas3.pdf): PDF
  inclusion: invalid other resource which is no dict (key 'ProcSets', type <arra
 y>); ignored.
->] <figures/measurement/cree/meas3/meas3.jpg, id=606, 3131.7pt x 4175.6pt>
+>] <figures/measurement/cree/meas3/meas3.jpg, id=614, 2348.775pt x 3131.7pt>
 File: figures/measurement/cree/meas3/meas3.jpg Graphic file (type jpg)
 
 <use figures/measurement/cree/meas3/meas3.jpg>
 Package pdftex.def Info: figures/measurement/cree/meas3/meas3.jpg used on input
- line 108.
-(pdftex.def)             Requested size: 187.89389pt x 250.52519pt.
+ line 116.
+(pdftex.def)             Requested size: 140.92041pt x 187.89389pt.
 
-<figures/measurement/cree/meas3/amam_amp_dpd_0p1.png, id=607, 415.43205pt x 284
+<figures/measurement/cree/meas3/amam_amp_dpd_0p1.png, id=615, 415.43205pt x 284
 .5029pt>
 File: figures/measurement/cree/meas3/amam_amp_dpd_0p1.png Graphic file (type pn
 g)
  <use figures/measurement/cree/meas3/amam_amp_dpd_0p1.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/amam_amp_dpd_0p1.png us
-ed on input line 116.
+ed on input line 124.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 116--117
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 124--125
 [][] 
  []
 
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 125.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 125.
 
-<figures/measurement/cree/meas3/amam_sys_dpd_0p1.png, id=608, 415.43205pt x 284
+<figures/measurement/cree/meas3/amam_sys_dpd_0p1.png, id=616, 415.43205pt x 284
 .5029pt>
 File: figures/measurement/cree/meas3/amam_sys_dpd_0p1.png Graphic file (type pn
 g)
  <use figures/measurement/cree/meas3/amam_sys_dpd_0p1.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/amam_sys_dpd_0p1.png us
-ed on input line 122.
+ed on input line 130.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 122--123
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 130--131
 [][] 
  []
 
 
-<figures/measurement/cree/meas3/psd_0p1.png, id=609, 415.43205pt x 284.5029pt>
+<figures/measurement/cree/meas3/psd_0p1.png, id=617, 415.43205pt x 284.5029pt>
 File: figures/measurement/cree/meas3/psd_0p1.png Graphic file (type png)
 
 <use figures/measurement/cree/meas3/psd_0p1.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/psd_0p1.png used on inp
-ut line 131.
+ut line 139.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 131--132
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 139--140
 [][] 
  []
 
 
-<figures/measurement/cree/meas3/psd_0p2.png, id=610, 415.43205pt x 284.5029pt>
+<figures/measurement/cree/meas3/psd_0p2.png, id=618, 415.43205pt x 284.5029pt>
 File: figures/measurement/cree/meas3/psd_0p2.png Graphic file (type png)
 
 <use figures/measurement/cree/meas3/psd_0p2.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/psd_0p2.png used on inp
-ut line 137.
+ut line 145.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 137--138
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 145--146
 [][] 
  []
 
@@ -1955,84 +1955,84 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [27 <./figures/measurement/cree/meas3/meas3.jpg> <./figures/measurement/cree/me
 as3/amam_amp_dpd_0p1.png (PNG copy)> <./figures/measurement/cree/meas3/amam_sys
 _dpd_0p1.png (PNG copy)>]
-<figures/measurement/cree/meas3/amam_amp_dpd_0p2.png, id=619, 415.43205pt x 284
+<figures/measurement/cree/meas3/amam_amp_dpd_0p2.png, id=629, 415.43205pt x 284
 .5029pt>
 File: figures/measurement/cree/meas3/amam_amp_dpd_0p2.png Graphic file (type pn
 g)
  <use figures/measurement/cree/meas3/amam_amp_dpd_0p2.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/amam_amp_dpd_0p2.png us
-ed on input line 146.
+ed on input line 154.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 146--147
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 154--155
 [][] 
  []
 
 
-<figures/measurement/cree/meas3/amam_sys_dpd_0p2.png, id=620, 415.43205pt x 284
+<figures/measurement/cree/meas3/amam_sys_dpd_0p2.png, id=630, 415.43205pt x 284
 .5029pt>
 File: figures/measurement/cree/meas3/amam_sys_dpd_0p2.png Graphic file (type pn
 g)
  <use figures/measurement/cree/meas3/amam_sys_dpd_0p2.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/amam_sys_dpd_0p2.png us
-ed on input line 152.
+ed on input line 160.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 152--153
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 160--161
 [][] 
  []
 
 
-<figures/measurement/cree/meas3/amam_amp_dpd_0p3.png, id=621, 415.43205pt x 284
+<figures/measurement/cree/meas3/amam_amp_dpd_0p3.png, id=631, 415.43205pt x 284
 .5029pt>
 File: figures/measurement/cree/meas3/amam_amp_dpd_0p3.png Graphic file (type pn
 g)
  <use figures/measurement/cree/meas3/amam_amp_dpd_0p3.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/amam_amp_dpd_0p3.png us
-ed on input line 161.
+ed on input line 169.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 161--162
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 169--170
 [][] 
  []
 
 
-<figures/measurement/cree/meas3/amam_sys_dpd_0p3.png, id=622, 415.43205pt x 284
+<figures/measurement/cree/meas3/amam_sys_dpd_0p3.png, id=632, 415.43205pt x 284
 .5029pt>
 File: figures/measurement/cree/meas3/amam_sys_dpd_0p3.png Graphic file (type pn
 g)
  <use figures/measurement/cree/meas3/amam_sys_dpd_0p3.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/amam_sys_dpd_0p3.png us
-ed on input line 167.
+ed on input line 175.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 167--168
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 175--176
 [][] 
  []
 
 
-<figures/measurement/cree/meas3/psd_0p3.png, id=623, 415.43205pt x 284.5029pt>
+<figures/measurement/cree/meas3/psd_0p3.png, id=633, 415.43205pt x 284.5029pt>
 File: figures/measurement/cree/meas3/psd_0p3.png Graphic file (type png)
 
 <use figures/measurement/cree/meas3/psd_0p3.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/psd_0p3.png used on inp
-ut line 176.
+ut line 184.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 176--177
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 184--185
 [][] 
  []
 
 
-<figures/measurement/cree/meas3/psd_0p4.png, id=624, 415.43205pt x 284.5029pt>
+<figures/measurement/cree/meas3/psd_0p4.png, id=634, 415.43205pt x 284.5029pt>
 File: figures/measurement/cree/meas3/psd_0p4.png Graphic file (type png)
 
 <use figures/measurement/cree/meas3/psd_0p4.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/psd_0p4.png used on inp
-ut line 182.
+ut line 190.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 182--183
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 190--191
 [][] 
  []
 
@@ -2047,84 +2047,84 @@ ement/cree/meas3/psd_0p2.png (PNG copy)> <./figures/measurement/cree/meas3/amam
 _amp_dpd_0p2.png (PNG copy)> <./figures/measurement/cree/meas3/amam_sys_dpd_0p2
 .png (PNG copy)> <./figures/measurement/cree/meas3/amam_amp_dpd_0p3.png (PNG co
 py)> <./figures/measurement/cree/meas3/amam_sys_dpd_0p3.png (PNG copy)>]
-<figures/measurement/cree/meas3/amam_amp_dpd_0p4.png, id=631, 415.43205pt x 284
+<figures/measurement/cree/meas3/amam_amp_dpd_0p4.png, id=641, 415.43205pt x 284
 .5029pt>
 File: figures/measurement/cree/meas3/amam_amp_dpd_0p4.png Graphic file (type pn
 g)
  <use figures/measurement/cree/meas3/amam_amp_dpd_0p4.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/amam_amp_dpd_0p4.png us
-ed on input line 191.
+ed on input line 199.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 191--192
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 199--200
 [][] 
  []
 
 
-<figures/measurement/cree/meas3/amam_sys_dpd_0p4.png, id=632, 415.43205pt x 284
+<figures/measurement/cree/meas3/amam_sys_dpd_0p4.png, id=642, 415.43205pt x 284
 .5029pt>
 File: figures/measurement/cree/meas3/amam_sys_dpd_0p4.png Graphic file (type pn
 g)
  <use figures/measurement/cree/meas3/amam_sys_dpd_0p4.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/amam_sys_dpd_0p4.png us
-ed on input line 197.
+ed on input line 205.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 197--198
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 205--206
 [][] 
  []
 
 
-<figures/measurement/cree/meas3/amam_amp_dpd_0p5.png, id=633, 415.43205pt x 284
+<figures/measurement/cree/meas3/amam_amp_dpd_0p5.png, id=643, 415.43205pt x 284
 .5029pt>
 File: figures/measurement/cree/meas3/amam_amp_dpd_0p5.png Graphic file (type pn
 g)
  <use figures/measurement/cree/meas3/amam_amp_dpd_0p5.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/amam_amp_dpd_0p5.png us
-ed on input line 206.
+ed on input line 214.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 206--207
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 214--215
 [][] 
  []
 
 
-<figures/measurement/cree/meas3/amam_sys_dpd_0p5.png, id=634, 415.43205pt x 284
+<figures/measurement/cree/meas3/amam_sys_dpd_0p5.png, id=644, 415.43205pt x 284
 .5029pt>
 File: figures/measurement/cree/meas3/amam_sys_dpd_0p5.png Graphic file (type pn
 g)
  <use figures/measurement/cree/meas3/amam_sys_dpd_0p5.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/amam_sys_dpd_0p5.png us
-ed on input line 212.
+ed on input line 220.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 212--213
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 220--221
 [][] 
  []
 
 
-<figures/measurement/cree/meas3/psd_0p5.png, id=635, 415.43205pt x 284.5029pt>
+<figures/measurement/cree/meas3/psd_0p5.png, id=645, 415.43205pt x 284.5029pt>
 File: figures/measurement/cree/meas3/psd_0p5.png Graphic file (type png)
 
 <use figures/measurement/cree/meas3/psd_0p5.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/psd_0p5.png used on inp
-ut line 221.
+ut line 229.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 221--222
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 229--230
 [][] 
  []
 
 
-<figures/measurement/cree/meas3/psd_0p6.png, id=636, 415.43205pt x 284.5029pt>
+<figures/measurement/cree/meas3/psd_0p6.png, id=646, 415.43205pt x 284.5029pt>
 File: figures/measurement/cree/meas3/psd_0p6.png Graphic file (type png)
 
 <use figures/measurement/cree/meas3/psd_0p6.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/psd_0p6.png used on inp
-ut line 227.
+ut line 235.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 227--228
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 235--236
 [][] 
  []
 
@@ -2139,40 +2139,40 @@ ement/cree/meas3/psd_0p4.png (PNG copy)> <./figures/measurement/cree/meas3/amam
 _amp_dpd_0p4.png (PNG copy)> <./figures/measurement/cree/meas3/amam_sys_dpd_0p4
 .png (PNG copy)> <./figures/measurement/cree/meas3/amam_amp_dpd_0p5.png (PNG co
 py)> <./figures/measurement/cree/meas3/amam_sys_dpd_0p5.png (PNG copy)>]
-<figures/measurement/cree/meas3/amam_amp_dpd_0p6.png, id=644, 415.43205pt x 284
+<figures/measurement/cree/meas3/amam_amp_dpd_0p6.png, id=654, 415.43205pt x 284
 .5029pt>
 File: figures/measurement/cree/meas3/amam_amp_dpd_0p6.png Graphic file (type pn
 g)
  <use figures/measurement/cree/meas3/amam_amp_dpd_0p6.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/amam_amp_dpd_0p6.png us
-ed on input line 237.
+ed on input line 245.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 237--238
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 245--246
 [][] 
  []
 
 
-<figures/measurement/cree/meas3/amam_sys_dpd_0p6.png, id=645, 415.43205pt x 284
+<figures/measurement/cree/meas3/amam_sys_dpd_0p6.png, id=655, 415.43205pt x 284
 .5029pt>
 File: figures/measurement/cree/meas3/amam_sys_dpd_0p6.png Graphic file (type pn
 g)
  <use figures/measurement/cree/meas3/amam_sys_dpd_0p6.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/amam_sys_dpd_0p6.png us
-ed on input line 243.
+ed on input line 251.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 243--244
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 251--252
 [][] 
  []
 
 
-<figures/measurement/cree/meas3/acpr_two_ant.png, id=646, 415.43205pt x 284.502
+<figures/measurement/cree/meas3/acpr_two_ant.png, id=656, 415.43205pt x 284.502
 9pt>
 File: figures/measurement/cree/meas3/acpr_two_ant.png Graphic file (type png)
  <use figures/measurement/cree/meas3/acpr_two_ant.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/acpr_two_ant.png used o
-n input line 251.
+n input line 259.
 (pdftex.def)             Requested size: 249.26114pt x 170.70305pt.
 
 
@@ -2185,22 +2185,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 ement/cree/meas3/psd_0p6.png (PNG copy)> <./figures/measurement/cree/meas3/amam
 _amp_dpd_0p6.png (PNG copy)> <./figures/measurement/cree/meas3/amam_sys_dpd_0p6
 .png (PNG copy)> <./figures/measurement/cree/meas3/acpr_two_ant.png (PNG copy)>
-] <figures/measurement/cree/meas4/meas4.jpg, id=659, 3131.7pt x 4175.6pt>
+] <figures/measurement/cree/meas4/meas4.jpg, id=669, 3131.7pt x 4175.6pt>
 File: figures/measurement/cree/meas4/meas4.jpg Graphic file (type jpg)
 
 <use figures/measurement/cree/meas4/meas4.jpg>
 Package pdftex.def Info: figures/measurement/cree/meas4/meas4.jpg used on input
- line 269.
+ line 277.
 (pdftex.def)             Requested size: 187.89389pt x 250.52519pt.
 File: figures/measurement/cree/meas3/amam_amp_dpd_0p1.png Graphic file (type pn
 g)
 
 <use figures/measurement/cree/meas3/amam_amp_dpd_0p1.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/amam_amp_dpd_0p1.png us
-ed on input line 277.
+ed on input line 285.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 277--278
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 285--286
 [][] 
  []
 
@@ -2208,10 +2208,10 @@ File: figures/measurement/cree/meas3/amam_sys_dpd_0p1.png Graphic file (type pn
 g)
 <use figures/measurement/cree/meas3/amam_sys_dpd_0p1.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/amam_sys_dpd_0p1.png us
-ed on input line 283.
+ed on input line 291.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 283--284
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 291--292
 [][] 
  []
 
@@ -2226,20 +2226,20 @@ File: figures/measurement/cree/meas3/psd_0p1.png Graphic file (type png)
 
 <use figures/measurement/cree/meas3/psd_0p1.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/psd_0p1.png used on inp
-ut line 292.
+ut line 300.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 292--293
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 300--301
 [][] 
  []
 
 File: figures/measurement/cree/meas3/psd_0p2.png Graphic file (type png)
 <use figures/measurement/cree/meas3/psd_0p2.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/psd_0p2.png used on inp
-ut line 298.
+ut line 306.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 298--299
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 306--307
 [][] 
  []
 
@@ -2247,10 +2247,10 @@ File: figures/measurement/cree/meas3/amam_amp_dpd_0p2.png Graphic file (type pn
 g)
 <use figures/measurement/cree/meas3/amam_amp_dpd_0p2.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/amam_amp_dpd_0p2.png us
-ed on input line 307.
+ed on input line 315.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 307--308
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 315--316
 [][] 
  []
 
@@ -2258,10 +2258,10 @@ File: figures/measurement/cree/meas3/amam_sys_dpd_0p2.png Graphic file (type pn
 g)
 <use figures/measurement/cree/meas3/amam_sys_dpd_0p2.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/amam_sys_dpd_0p2.png us
-ed on input line 313.
+ed on input line 321.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 313--314
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 321--322
 [][] 
  []
 
@@ -2269,10 +2269,10 @@ File: figures/measurement/cree/meas3/amam_amp_dpd_0p3.png Graphic file (type pn
 g)
 <use figures/measurement/cree/meas3/amam_amp_dpd_0p3.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/amam_amp_dpd_0p3.png us
-ed on input line 322.
+ed on input line 330.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 322--323
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 330--331
 [][] 
  []
 
@@ -2280,10 +2280,10 @@ File: figures/measurement/cree/meas3/amam_sys_dpd_0p3.png Graphic file (type pn
 g)
 <use figures/measurement/cree/meas3/amam_sys_dpd_0p3.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/amam_sys_dpd_0p3.png us
-ed on input line 328.
+ed on input line 336.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 328--329
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 336--337
 [][] 
  []
 
@@ -2297,20 +2297,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: figures/measurement/cree/meas3/psd_0p3.png Graphic file (type png)
  <use figures/measurement/cree/meas3/psd_0p3.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/psd_0p3.png used on inp
-ut line 337.
+ut line 345.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 337--338
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 345--346
 [][] 
  []
 
 File: figures/measurement/cree/meas3/psd_0p4.png Graphic file (type png)
 <use figures/measurement/cree/meas3/psd_0p4.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/psd_0p4.png used on inp
-ut line 343.
+ut line 351.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 343--344
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 351--352
 [][] 
  []
 
@@ -2318,10 +2318,10 @@ File: figures/measurement/cree/meas3/amam_amp_dpd_0p4.png Graphic file (type pn
 g)
 <use figures/measurement/cree/meas3/amam_amp_dpd_0p4.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/amam_amp_dpd_0p4.png us
-ed on input line 352.
+ed on input line 360.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 352--353
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 360--361
 [][] 
  []
 
@@ -2329,10 +2329,10 @@ File: figures/measurement/cree/meas3/amam_sys_dpd_0p4.png Graphic file (type pn
 g)
 <use figures/measurement/cree/meas3/amam_sys_dpd_0p4.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/amam_sys_dpd_0p4.png us
-ed on input line 358.
+ed on input line 366.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 358--359
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 366--367
 [][] 
  []
 
@@ -2340,10 +2340,10 @@ File: figures/measurement/cree/meas3/amam_amp_dpd_0p5.png Graphic file (type pn
 g)
 <use figures/measurement/cree/meas3/amam_amp_dpd_0p5.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/amam_amp_dpd_0p5.png us
-ed on input line 367.
+ed on input line 375.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 367--368
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 375--376
 [][] 
  []
 
@@ -2351,10 +2351,10 @@ File: figures/measurement/cree/meas3/amam_sys_dpd_0p5.png Graphic file (type pn
 g)
 <use figures/measurement/cree/meas3/amam_sys_dpd_0p5.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/amam_sys_dpd_0p5.png us
-ed on input line 373.
+ed on input line 381.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 373--374
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 381--382
 [][] 
  []
 
@@ -2368,20 +2368,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: figures/measurement/cree/meas3/psd_0p5.png Graphic file (type png)
  <use figures/measurement/cree/meas3/psd_0p5.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/psd_0p5.png used on inp
-ut line 382.
+ut line 390.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 382--383
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 390--391
 [][] 
  []
 
 File: figures/measurement/cree/meas3/psd_0p6.png Graphic file (type png)
 <use figures/measurement/cree/meas3/psd_0p6.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/psd_0p6.png used on inp
-ut line 388.
+ut line 396.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 388--389
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 396--397
 [][] 
  []
 
@@ -2389,10 +2389,10 @@ File: figures/measurement/cree/meas3/amam_amp_dpd_0p6.png Graphic file (type pn
 g)
 <use figures/measurement/cree/meas3/amam_amp_dpd_0p6.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/amam_amp_dpd_0p6.png us
-ed on input line 398.
+ed on input line 406.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 398--399
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 406--407
 [][] 
  []
 
@@ -2400,20 +2400,20 @@ File: figures/measurement/cree/meas3/amam_sys_dpd_0p6.png Graphic file (type pn
 g)
 <use figures/measurement/cree/meas3/amam_sys_dpd_0p6.png>
 Package pdftex.def Info: figures/measurement/cree/meas3/amam_sys_dpd_0p6.png us
-ed on input line 404.
+ed on input line 412.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 404--405
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 412--413
 [][] 
  []
 
 
-<figures/measurement/cree/meas4/acpr_four_ant.png, id=681, 415.43205pt x 284.50
+<figures/measurement/cree/meas4/acpr_four_ant.png, id=691, 415.43205pt x 284.50
 29pt>
 File: figures/measurement/cree/meas4/acpr_four_ant.png Graphic file (type png)
  <use figures/measurement/cree/meas4/acpr_four_ant.png>
 Package pdftex.def Info: figures/measurement/cree/meas4/acpr_four_ant.png used 
-on input line 413.
+on input line 421.
 (pdftex.def)             Requested size: 249.26114pt x 170.70305pt.
 
 
@@ -2423,27 +2423,27 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [34]
-<figures/measurement/cree/meas4/PSD_dif.png, id=695, 415.43205pt x 284.5029pt>
+<figures/measurement/cree/meas4/PSD_dif.png, id=705, 415.43205pt x 284.5029pt>
 File: figures/measurement/cree/meas4/PSD_dif.png Graphic file (type png)
 
 <use figures/measurement/cree/meas4/PSD_dif.png>
 Package pdftex.def Info: figures/measurement/cree/meas4/PSD_dif.png used on inp
-ut line 423.
+ut line 431.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 423--424
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 431--432
 [][] 
  []
 
 
-<figures/measurement/cree/meas4/ACPR_dif.png, id=696, 415.43205pt x 284.5029pt>
+<figures/measurement/cree/meas4/ACPR_dif.png, id=706, 415.43205pt x 284.5029pt>
 File: figures/measurement/cree/meas4/ACPR_dif.png Graphic file (type png)
 <use figures/measurement/cree/meas4/ACPR_dif.png>
 Package pdftex.def Info: figures/measurement/cree/meas4/ACPR_dif.png used on in
-put line 429.
+put line 437.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 429--430
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 437--438
 [][] 
  []
 
@@ -2456,57 +2456,57 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [35 <./figures/measurement/cree/meas4/acpr_four_ant.png (PNG copy)> <./figures/
 measurement/cree/meas4/PSD_dif.png (PNG copy)> <./figures/measurement/cree/meas
 4/ACPR_dif.png (PNG copy)>]
-<figures/measurement/cree/meas5/amam_no_dpd_2p798v.png, id=705, 415.43205pt x 2
+<figures/measurement/cree/meas5/amam_no_dpd_2p798v.png, id=715, 415.43205pt x 2
 84.5029pt>
 File: figures/measurement/cree/meas5/amam_no_dpd_2p798v.png Graphic file (type 
 png)
  <use figures/measurement/cree/meas5/amam_no_dpd_2p798v.png>
 Package pdftex.def Info: figures/measurement/cree/meas5/amam_no_dpd_2p798v.png 
-used on input line 447.
+used on input line 455.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 447--448
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 455--456
 [][] 
  []
 
 
-<figures/measurement/cree/meas5/amam_sys_dpd_2p798v.png, id=706, 415.43205pt x 
+<figures/measurement/cree/meas5/amam_sys_dpd_2p798v.png, id=716, 415.43205pt x 
 284.5029pt>
 File: figures/measurement/cree/meas5/amam_sys_dpd_2p798v.png Graphic file (type
  png)
  <use figures/measurement/cree/meas5/amam_sys_dpd_2p798v.png>
 Package pdftex.def Info: figures/measurement/cree/meas5/amam_sys_dpd_2p798v.png
- used on input line 453.
+ used on input line 461.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 453--454
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 461--462
 [][] 
  []
 
 
-<figures/measurement/cree/meas5/psd_2p798v.png, id=707, 415.43205pt x 284.5029p
+<figures/measurement/cree/meas5/psd_2p798v.png, id=717, 415.43205pt x 284.5029p
 t>
 File: figures/measurement/cree/meas5/psd_2p798v.png Graphic file (type png)
  <use figures/measurement/cree/meas5/psd_2p798v.png>
 Package pdftex.def Info: figures/measurement/cree/meas5/psd_2p798v.png used on 
-input line 462.
+input line 470.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 462--463
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 470--471
 [][] 
  []
 
 
-<figures/measurement/cree/meas5/amam_no_dpd_2p742v.png, id=708, 415.43205pt x 2
+<figures/measurement/cree/meas5/amam_no_dpd_2p742v.png, id=718, 415.43205pt x 2
 84.5029pt>
 File: figures/measurement/cree/meas5/amam_no_dpd_2p742v.png Graphic file (type 
 png)
  <use figures/measurement/cree/meas5/amam_no_dpd_2p742v.png>
 Package pdftex.def Info: figures/measurement/cree/meas5/amam_no_dpd_2p742v.png 
-used on input line 468.
+used on input line 476.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 468--469
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 476--477
 [][] 
  []
 
@@ -2518,57 +2518,57 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [36 <./figures/measurement/cree/meas5/amam_no_dpd_2p798v.png (PNG copy)> <./fig
 ures/measurement/cree/meas5/amam_sys_dpd_2p798v.png (PNG copy)>]
-<figures/measurement/cree/meas5/amam_sys_dpd_2p742v.png, id=715, 415.43205pt x 
+<figures/measurement/cree/meas5/amam_sys_dpd_2p742v.png, id=725, 415.43205pt x 
 284.5029pt>
 File: figures/measurement/cree/meas5/amam_sys_dpd_2p742v.png Graphic file (type
  png)
  <use figures/measurement/cree/meas5/amam_sys_dpd_2p742v.png>
 Package pdftex.def Info: figures/measurement/cree/meas5/amam_sys_dpd_2p742v.png
- used on input line 477.
+ used on input line 485.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 477--478
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 485--486
 [][] 
  []
 
 
-<figures/measurement/cree/meas5/psd_2p742v.png, id=716, 415.43205pt x 284.5029p
+<figures/measurement/cree/meas5/psd_2p742v.png, id=726, 415.43205pt x 284.5029p
 t>
 File: figures/measurement/cree/meas5/psd_2p742v.png Graphic file (type png)
  <use figures/measurement/cree/meas5/psd_2p742v.png>
 Package pdftex.def Info: figures/measurement/cree/meas5/psd_2p742v.png used on 
-input line 483.
+input line 491.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 483--484
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 491--492
 [][] 
  []
 
 
-<figures/measurement/cree/meas5/amam_no_dpd_2p672v.png, id=717, 415.43205pt x 2
+<figures/measurement/cree/meas5/amam_no_dpd_2p672v.png, id=727, 415.43205pt x 2
 84.5029pt>
 File: figures/measurement/cree/meas5/amam_no_dpd_2p672v.png Graphic file (type 
 png)
  <use figures/measurement/cree/meas5/amam_no_dpd_2p672v.png>
 Package pdftex.def Info: figures/measurement/cree/meas5/amam_no_dpd_2p672v.png 
-used on input line 493.
+used on input line 501.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (7.12358pt too wide) in paragraph at lines 493--494
+Overfull \hbox (7.12358pt too wide) in paragraph at lines 501--502
 [][] 
  []
 
 
-<figures/measurement/cree/meas5/amam_sys_dpd_2p672v.png, id=718, 415.43205pt x 
+<figures/measurement/cree/meas5/amam_sys_dpd_2p672v.png, id=728, 415.43205pt x 
 284.5029pt>
 File: figures/measurement/cree/meas5/amam_sys_dpd_2p672v.png Graphic file (type
  png)
  <use figures/measurement/cree/meas5/amam_sys_dpd_2p672v.png>
 Package pdftex.def Info: figures/measurement/cree/meas5/amam_sys_dpd_2p672v.png
- used on input line 499.
+ used on input line 507.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 
-Overfull \hbox (47.24443pt too wide) in paragraph at lines 499--500
+Overfull \hbox (47.24443pt too wide) in paragraph at lines 507--508
 [][] 
  []
 
@@ -2582,12 +2582,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 surement/cree/meas5/amam_no_dpd_2p742v.png (PNG copy)> <./figures/measurement/c
 ree/meas5/amam_sys_dpd_2p742v.png (PNG copy)> <./figures/measurement/cree/meas5
 /psd_2p742v.png (PNG copy)>]
-<figures/measurement/cree/meas5/psd_2p672v.png, id=726, 415.43205pt x 284.5029p
+<figures/measurement/cree/meas5/psd_2p672v.png, id=735, 415.43205pt x 284.5029p
 t>
 File: figures/measurement/cree/meas5/psd_2p672v.png Graphic file (type png)
  <use figures/measurement/cree/meas5/psd_2p672v.png>
 Package pdftex.def Info: figures/measurement/cree/meas5/psd_2p672v.png used on 
-input line 508.
+input line 516.
 (pdftex.def)             Requested size: 207.71552pt x 142.2511pt.
 )
 (sections/antenna_measurement.tex
@@ -2601,7 +2601,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 ures/measurement/cree/meas5/amam_sys_dpd_2p672v.png (PNG copy)> <./figures/meas
 urement/cree/meas5/psd_2p672v.png (PNG copy)>]
 Chapter 5.
-<figures/measurement/antennas/one_ant.jpg, id=735, 3131.7pt x 4175.6pt>
+<figures/measurement/antennas/one_ant.jpg, id=744, 3131.7pt x 4175.6pt>
 File: figures/measurement/antennas/one_ant.jpg Graphic file (type jpg)
 
 <use figures/measurement/antennas/one_ant.jpg>
@@ -2611,7 +2611,7 @@ Package pdftex.def Info: figures/measurement/antennas/one_ant.jpg used on input
  [39
 
 ]
-<figures/measurement/antennas/one_ant.png, id=743, 415.43205pt x 284.5029pt>
+<figures/measurement/antennas/one_ant.png, id=753, 415.43205pt x 284.5029pt>
 File: figures/measurement/antennas/one_ant.png Graphic file (type png)
 
 <use figures/measurement/antennas/one_ant.png>
@@ -2619,7 +2619,7 @@ Package pdftex.def Info: figures/measurement/antennas/one_ant.png used on input
  line 15.
 (pdftex.def)             Requested size: 332.34608pt x 227.60262pt.
 
-<figures/measurement/antennas/spar_single_ant_s11.png, id=744, 415.43205pt x 28
+<figures/measurement/antennas/spar_single_ant_s11.png, id=754, 415.43205pt x 28
 4.5029pt>
 File: figures/measurement/antennas/spar_single_ant_s11.png Graphic file (type p
 ng)
@@ -2636,7 +2636,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [40 <./figures/measurement/antennas/one_ant.jpg> <./figures/measurement/antenna
 s/one_ant.png (PNG copy)>]
-<figures/measurement/antennas/two_ant.jpg, id=753, 3131.7pt x 4175.6pt>
+<figures/measurement/antennas/two_ant.jpg, id=763, 3131.7pt x 4175.6pt>
 File: figures/measurement/antennas/two_ant.jpg Graphic file (type jpg)
 
 <use figures/measurement/antennas/two_ant.jpg>
@@ -2651,7 +2651,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [41 <./figures/measurement/antennas/spar_single_ant_s11.png (PNG copy)>]
-<figures/measurement/antennas/array_2_0p1.png, id=763, 415.43205pt x 284.5029pt
+<figures/measurement/antennas/array_2_0p1.png, id=773, 415.43205pt x 284.5029pt
 >
 File: figures/measurement/antennas/array_2_0p1.png Graphic file (type png)
  <use figures/measurement/antennas/array_2_0p1.png>
@@ -2664,7 +2664,7 @@ Overfull \hbox (7.12358pt too wide) in paragraph at lines 44--45
  []
 
 
-<figures/measurement/antennas/array_2_0p2.png, id=764, 415.43205pt x 284.5029pt
+<figures/measurement/antennas/array_2_0p2.png, id=774, 415.43205pt x 284.5029pt
 >
 File: figures/measurement/antennas/array_2_0p2.png Graphic file (type png)
  <use figures/measurement/antennas/array_2_0p2.png>
@@ -2677,7 +2677,7 @@ Overfull \hbox (47.24443pt too wide) in paragraph at lines 50--51
  []
 
 
-<figures/measurement/antennas/array_2_0p3.png, id=765, 415.43205pt x 284.5029pt
+<figures/measurement/antennas/array_2_0p3.png, id=775, 415.43205pt x 284.5029pt
 >
 File: figures/measurement/antennas/array_2_0p3.png Graphic file (type png)
  <use figures/measurement/antennas/array_2_0p3.png>
@@ -2690,7 +2690,7 @@ Overfull \hbox (7.12358pt too wide) in paragraph at lines 59--60
  []
 
 
-<figures/measurement/antennas/array_2_0p4.png, id=766, 415.43205pt x 284.5029pt
+<figures/measurement/antennas/array_2_0p4.png, id=776, 415.43205pt x 284.5029pt
 >
 File: figures/measurement/antennas/array_2_0p4.png Graphic file (type png)
  <use figures/measurement/antennas/array_2_0p4.png>
@@ -2711,7 +2711,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [42 <./figures/measurement/antennas/two_ant.jpg> <./figures/measurement/antenna
 s/array_2_0p1.png (PNG copy)> <./figures/measurement/antennas/array_2_0p2.png (
 PNG copy)>]
-<figures/measurement/antennas/array_2_0p5.png, id=772, 415.43205pt x 284.5029pt
+<figures/measurement/antennas/array_2_0p5.png, id=782, 415.43205pt x 284.5029pt
 >
 File: figures/measurement/antennas/array_2_0p5.png Graphic file (type png)
  <use figures/measurement/antennas/array_2_0p5.png>
@@ -2724,7 +2724,7 @@ Overfull \hbox (7.12358pt too wide) in paragraph at lines 74--75
  []
 
 
-<figures/measurement/antennas/array_2_0p6.png, id=773, 415.43205pt x 284.5029pt
+<figures/measurement/antennas/array_2_0p6.png, id=783, 415.43205pt x 284.5029pt
 >
 File: figures/measurement/antennas/array_2_0p6.png Graphic file (type png)
  <use figures/measurement/antennas/array_2_0p6.png>
@@ -2737,7 +2737,7 @@ Overfull \hbox (47.24443pt too wide) in paragraph at lines 80--81
  []
 
 
-<figures/measurement/antennas/spar_two_ant_s11.png, id=774, 415.43205pt x 284.5
+<figures/measurement/antennas/spar_two_ant_s11.png, id=784, 415.43205pt x 284.5
 029pt>
 File: figures/measurement/antennas/spar_two_ant_s11.png Graphic file (type png)
 
@@ -2751,7 +2751,7 @@ Overfull \hbox (7.12358pt too wide) in paragraph at lines 90--91
  []
 
 
-<figures/measurement/antennas/spar_two_ant_s22.png, id=775, 415.43205pt x 284.5
+<figures/measurement/antennas/spar_two_ant_s22.png, id=785, 415.43205pt x 284.5
 029pt>
 File: figures/measurement/antennas/spar_two_ant_s22.png Graphic file (type png)
 
@@ -2765,7 +2765,7 @@ Overfull \hbox (47.24443pt too wide) in paragraph at lines 96--97
  []
 
 
-<figures/measurement/antennas/spar_two_ant_s12.png, id=776, 415.43205pt x 284.5
+<figures/measurement/antennas/spar_two_ant_s12.png, id=786, 415.43205pt x 284.5
 029pt>
 File: figures/measurement/antennas/spar_two_ant_s12.png Graphic file (type png)
 
@@ -2779,7 +2779,7 @@ Overfull \hbox (7.12358pt too wide) in paragraph at lines 105--106
  []
 
 
-<figures/measurement/antennas/spar_two_ant_s21.png, id=777, 415.43205pt x 284.5
+<figures/measurement/antennas/spar_two_ant_s21.png, id=787, 415.43205pt x 284.5
 029pt>
 File: figures/measurement/antennas/spar_two_ant_s21.png Graphic file (type png)
 
@@ -2803,7 +2803,7 @@ urement/antennas/array_2_0p4.png (PNG copy)> <./figures/measurement/antennas/ar
 ray_2_0p5.png (PNG copy)> <./figures/measurement/antennas/array_2_0p6.png (PNG 
 copy)> <./figures/measurement/antennas/spar_two_ant_s11.png (PNG copy)> <./figu
 res/measurement/antennas/spar_two_ant_s22.png (PNG copy)>]
-<figures/measurement/antennas/four_ant.jpg, id=789, 3131.7pt x 4175.6pt>
+<figures/measurement/antennas/four_ant.jpg, id=798, 3131.7pt x 4175.6pt>
 File: figures/measurement/antennas/four_ant.jpg Graphic file (type jpg)
 
 <use figures/measurement/antennas/four_ant.jpg>
@@ -2819,7 +2819,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [44 <./figures/measurement/antennas/spar_two_ant_s12.png (PNG copy)> <./figures
 /measurement/antennas/spar_two_ant_s21.png (PNG copy)>]
-<figures/measurement/antennas/array_4_0p1.png, id=798, 415.43205pt x 284.5029pt
+<figures/measurement/antennas/array_4_0p1.png, id=807, 415.43205pt x 284.5029pt
 >
 File: figures/measurement/antennas/array_4_0p1.png Graphic file (type png)
  <use figures/measurement/antennas/array_4_0p1.png>
@@ -2832,7 +2832,7 @@ Overfull \hbox (7.12358pt too wide) in paragraph at lines 133--134
  []
 
 
-<figures/measurement/antennas/array_4_0p2.png, id=799, 415.43205pt x 284.5029pt
+<figures/measurement/antennas/array_4_0p2.png, id=808, 415.43205pt x 284.5029pt
 >
 File: figures/measurement/antennas/array_4_0p2.png Graphic file (type png)
  <use figures/measurement/antennas/array_4_0p2.png>
@@ -2845,7 +2845,7 @@ Overfull \hbox (47.24443pt too wide) in paragraph at lines 139--140
  []
 
 
-<figures/measurement/antennas/array_4_0p3.png, id=800, 415.43205pt x 284.5029pt
+<figures/measurement/antennas/array_4_0p3.png, id=809, 415.43205pt x 284.5029pt
 >
 File: figures/measurement/antennas/array_4_0p3.png Graphic file (type png)
  <use figures/measurement/antennas/array_4_0p3.png>
@@ -2858,7 +2858,7 @@ Overfull \hbox (7.12358pt too wide) in paragraph at lines 148--149
  []
 
 
-<figures/measurement/antennas/array_4_0p4.png, id=801, 415.43205pt x 284.5029pt
+<figures/measurement/antennas/array_4_0p4.png, id=810, 415.43205pt x 284.5029pt
 >
 File: figures/measurement/antennas/array_4_0p4.png Graphic file (type png)
  <use figures/measurement/antennas/array_4_0p4.png>
@@ -2879,7 +2879,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [45 <./figures/measurement/antennas/four_ant.jpg> <./figures/measurement/antenn
 as/array_4_0p1.png (PNG copy)> <./figures/measurement/antennas/array_4_0p2.png 
 (PNG copy)>]
-<figures/measurement/antennas/array_4_0p5.png, id=807, 415.43205pt x 284.5029pt
+<figures/measurement/antennas/array_4_0p5.png, id=817, 415.43205pt x 284.5029pt
 >
 File: figures/measurement/antennas/array_4_0p5.png Graphic file (type png)
  <use figures/measurement/antennas/array_4_0p5.png>
@@ -2892,7 +2892,7 @@ Overfull \hbox (7.12358pt too wide) in paragraph at lines 163--164
  []
 
 
-<figures/measurement/antennas/array_4_0p6.png, id=808, 415.43205pt x 284.5029pt
+<figures/measurement/antennas/array_4_0p6.png, id=818, 415.43205pt x 284.5029pt
 >
 File: figures/measurement/antennas/array_4_0p6.png Graphic file (type png)
  <use figures/measurement/antennas/array_4_0p6.png>
@@ -2905,7 +2905,7 @@ Overfull \hbox (47.24443pt too wide) in paragraph at lines 169--170
  []
 
 
-<figures/measurement/antennas/spar_four_ant_s11.png, id=809, 415.43205pt x 284.
+<figures/measurement/antennas/spar_four_ant_s11.png, id=819, 415.43205pt x 284.
 5029pt>
 File: figures/measurement/antennas/spar_four_ant_s11.png Graphic file (type png
 )
@@ -2919,7 +2919,7 @@ Overfull \hbox (7.12358pt too wide) in paragraph at lines 180--181
  []
 
 
-<figures/measurement/antennas/spar_four_ant_s22.png, id=810, 415.43205pt x 284.
+<figures/measurement/antennas/spar_four_ant_s22.png, id=820, 415.43205pt x 284.
 5029pt>
 File: figures/measurement/antennas/spar_four_ant_s22.png Graphic file (type png
 )
@@ -2933,7 +2933,7 @@ Overfull \hbox (47.24443pt too wide) in paragraph at lines 186--187
  []
 
 
-<figures/measurement/antennas/spar_four_ant_s33.png, id=811, 415.43205pt x 284.
+<figures/measurement/antennas/spar_four_ant_s33.png, id=821, 415.43205pt x 284.
 5029pt>
 File: figures/measurement/antennas/spar_four_ant_s33.png Graphic file (type png
 )
@@ -2947,7 +2947,7 @@ Overfull \hbox (7.12358pt too wide) in paragraph at lines 196--197
  []
 
 
-<figures/measurement/antennas/spar_four_ant_s44.png, id=812, 415.43205pt x 284.
+<figures/measurement/antennas/spar_four_ant_s44.png, id=822, 415.43205pt x 284.
 5029pt>
 File: figures/measurement/antennas/spar_four_ant_s44.png Graphic file (type png
 )
@@ -2971,7 +2971,7 @@ urement/antennas/array_4_0p4.png (PNG copy)> <./figures/measurement/antennas/ar
 ray_4_0p5.png (PNG copy)> <./figures/measurement/antennas/array_4_0p6.png (PNG 
 copy)> <./figures/measurement/antennas/spar_four_ant_s11.png (PNG copy)> <./fig
 ures/measurement/antennas/spar_four_ant_s22.png (PNG copy)>]
-<figures/measurement/antennas/spar_four_ant_s12.png, id=818, 415.43205pt x 284.
+<figures/measurement/antennas/spar_four_ant_s12.png, id=828, 415.43205pt x 284.
 5029pt>
 File: figures/measurement/antennas/spar_four_ant_s12.png Graphic file (type png
 )
@@ -2985,7 +2985,7 @@ Overfull \hbox (7.12358pt too wide) in paragraph at lines 212--213
  []
 
 
-<figures/measurement/antennas/spar_four_ant_s21.png, id=819, 415.43205pt x 284.
+<figures/measurement/antennas/spar_four_ant_s21.png, id=829, 415.43205pt x 284.
 5029pt>
 File: figures/measurement/antennas/spar_four_ant_s21.png Graphic file (type png
 )
@@ -2999,7 +2999,7 @@ Overfull \hbox (47.24443pt too wide) in paragraph at lines 218--219
  []
 
 
-<figures/measurement/antennas/spar_four_ant_s13.png, id=820, 415.43205pt x 284.
+<figures/measurement/antennas/spar_four_ant_s13.png, id=830, 415.43205pt x 284.
 5029pt>
 File: figures/measurement/antennas/spar_four_ant_s13.png Graphic file (type png
 )
@@ -3013,7 +3013,7 @@ Overfull \hbox (7.12358pt too wide) in paragraph at lines 227--228
  []
 
 
-<figures/measurement/antennas/spar_four_ant_s31.png, id=821, 415.43205pt x 284.
+<figures/measurement/antennas/spar_four_ant_s31.png, id=831, 415.43205pt x 284.
 5029pt>
 File: figures/measurement/antennas/spar_four_ant_s31.png Graphic file (type png
 )
@@ -3027,7 +3027,7 @@ Overfull \hbox (47.24443pt too wide) in paragraph at lines 233--234
  []
 
 
-<figures/measurement/antennas/spar_four_ant_s14.png, id=822, 415.43205pt x 284.
+<figures/measurement/antennas/spar_four_ant_s14.png, id=832, 415.43205pt x 284.
 5029pt>
 File: figures/measurement/antennas/spar_four_ant_s14.png Graphic file (type png
 )
@@ -3041,7 +3041,7 @@ Overfull \hbox (7.12358pt too wide) in paragraph at lines 243--244
  []
 
 
-<figures/measurement/antennas/spar_four_ant_s41.png, id=823, 415.43205pt x 284.
+<figures/measurement/antennas/spar_four_ant_s41.png, id=833, 415.43205pt x 284.
 5029pt>
 File: figures/measurement/antennas/spar_four_ant_s41.png Graphic file (type png
 )
@@ -3066,7 +3066,7 @@ s/measurement/antennas/spar_four_ant_s44.png (PNG copy)> <./figures/measurement
 r_four_ant_s21.png (PNG copy)> <./figures/measurement/antennas/spar_four_ant_s1
 3.png (PNG copy)> <./figures/measurement/antennas/spar_four_ant_s31.png (PNG co
 py)>]
-<figures/measurement/antennas/spar_four_ant_s23.png, id=831, 415.43205pt x 284.
+<figures/measurement/antennas/spar_four_ant_s23.png, id=841, 415.43205pt x 284.
 5029pt>
 File: figures/measurement/antennas/spar_four_ant_s23.png Graphic file (type png
 )
@@ -3080,7 +3080,7 @@ Overfull \hbox (7.12358pt too wide) in paragraph at lines 259--260
  []
 
 
-<figures/measurement/antennas/spar_four_ant_s32.png, id=832, 415.43205pt x 284.
+<figures/measurement/antennas/spar_four_ant_s32.png, id=842, 415.43205pt x 284.
 5029pt>
 File: figures/measurement/antennas/spar_four_ant_s32.png Graphic file (type png
 )
@@ -3093,7 +3093,7 @@ Overfull \hbox (47.24443pt too wide) in paragraph at lines 265--266
 [][] 
  []
 
-<figures/measurement/antennas/spar_meas.jpg, id=833, 4175.6pt x 3131.7pt>
+<figures/measurement/antennas/spar_meas.jpg, id=843, 4175.6pt x 3131.7pt>
 File: figures/measurement/antennas/spar_meas.jpg Graphic file (type jpg)
 
 <use figures/measurement/antennas/spar_meas.jpg>
@@ -3111,7 +3111,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 s/measurement/antennas/spar_four_ant_s41.png (PNG copy)> <./figures/measurement
 /antennas/spar_four_ant_s23.png (PNG copy)> <./figures/measurement/antennas/spa
 r_four_ant_s32.png (PNG copy)>]
-<figures/measurement/antennas/single_element_array.jpg, id=841, 4175.6pt x 3131
+<figures/measurement/antennas/single_element_array.jpg, id=851, 4175.6pt x 3131
 .7pt>
 File: figures/measurement/antennas/single_element_array.jpg Graphic file (type 
 jpg)
@@ -3127,7 +3127,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [49 <./figures/measurement/antennas/spar_meas.jpg>]
-<figures/measurement/antennas/1st_element_4_array.png, id=849, 415.43205pt x 28
+<figures/measurement/antennas/1st_element_4_array.png, id=858, 415.43205pt x 28
 4.5029pt>
 File: figures/measurement/antennas/1st_element_4_array.png Graphic file (type p
 ng)
@@ -3141,7 +3141,7 @@ Overfull \hbox (7.12358pt too wide) in paragraph at lines 299--300
  []
 
 
-<figures/measurement/antennas/2nd_element_4_array.png, id=850, 415.43205pt x 28
+<figures/measurement/antennas/2nd_element_4_array.png, id=859, 415.43205pt x 28
 4.5029pt>
 File: figures/measurement/antennas/2nd_element_4_array.png Graphic file (type p
 ng)
@@ -3155,7 +3155,7 @@ Overfull \hbox (47.24443pt too wide) in paragraph at lines 305--306
  []
 
 
-<figures/measurement/antennas/3rd_element_4_array.png, id=851, 415.43205pt x 28
+<figures/measurement/antennas/3rd_element_4_array.png, id=860, 415.43205pt x 28
 4.5029pt>
 File: figures/measurement/antennas/3rd_element_4_array.png Graphic file (type p
 ng)
@@ -3169,7 +3169,7 @@ Overfull \hbox (7.12358pt too wide) in paragraph at lines 315--316
  []
 
 
-<figures/measurement/antennas/4th_element_4_array.png, id=852, 415.43205pt x 28
+<figures/measurement/antennas/4th_element_4_array.png, id=861, 415.43205pt x 28
 4.5029pt>
 File: figures/measurement/antennas/4th_element_4_array.png Graphic file (type p
 ng)
@@ -3219,22 +3219,27 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [54
 
 ]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 24.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 22.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-))
-(sections/appAname.tex [55]
+)
+Underfull \hbox (badness 3815) in paragraph at lines 20--23
+[]\T1/lmr/m/n/10.95 Cree (2019).  Cgh40006p datasheet.  [][]$\T1/lmtt/m/n/10.95
+ https : / / www . mouser . com / ds / 2 / 90 /
+ []
+
+[55]) (sections/appAname.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[56
+[56]
+Appendix A.
+[57
 
 ]
-Appendix A.
-[57]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -3249,8 +3254,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [59])
-\tf@thm=\write7
-\openout7 = `master.thm'.
+\tf@thm=\write6
+\openout6 = `master.thm'.
 
  
 AED: lastpage setting LastPage
@@ -3267,7 +3272,10 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: 0C203A481BB5DFABE85A08332CC64A78;1886.
+(rerunfilecheck)             Checksum: FD68C951DDC59176B8B6F7A2BA61E0F8;1886.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -3275,10 +3283,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 49.
  ) 
 Here is how much of TeX's memory you used:
- 23025 strings out of 493333
- 414007 string characters out of 3139188
- 501804 words of memory out of 3000000
- 25557 multiletter control sequences out of 15000+200000
+ 23029 strings out of 493333
+ 414172 string characters out of 3139188
+ 502939 words of memory out of 3000000
+ 25564 multiletter control sequences out of 15000+200000
  101192 words of font info for 74 fonts, out of 3000000 for 9000
  1146 hyphenation exceptions out of 8191
  64i,14n,77p,1849b,1849s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3302,9 +3310,9 @@ public/lm/lmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx1
 0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/lm/lmtt10.pfb>
-Output written on master.pdf (72 pages, 39622954 bytes).
+Output written on master.pdf (70 pages, 41516078 bytes).
 PDF statistics:
- 1196 PDF objects out of 1200 (max. 8388607)
- 385 named destinations out of 1000 (max. 500000)
+ 1211 PDF objects out of 1440 (max. 8388607)
+ 384 named destinations out of 1000 (max. 500000)
  768 words of extra memory for PDF output out of 10000 (max. 10000000)
 
